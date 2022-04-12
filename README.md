@@ -273,7 +273,7 @@ Keyless，顾名思义是无私钥的意思。在这我们把 Keyless 分为两�
 验证是否被 Tether 冻结，可以在 USDT 合约地址进行：
 >https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#readContract
 
-![](res/usdt_isblacklisted.png)
+<img src="res/usdt_isblacklisted.png" width="700">
 
 在 isBlackListed 输入目标钱包地址即可判断。USDT 所在的其他链大体同理（别较真）。
 
@@ -367,7 +367,7 @@ DeFi 安全至少包括如下几部分：
 
 链上可以直接看到 Timelock 的时间锁（delay 参数）是 48 小时（172800 秒）：
 
-![](res/compound_timelock.png)
+<img src="res/compound_timelock.png" width="700">
 
 也就是说，如果 Compound 的 admin（项目方）需要变更目标智能合约的一些关键值时，这笔交易上链后会有记录，但必须等到 48 小时后才可以最终完成执行。这意味着，只要你愿意，你是可以审计 admin 的每一次操作，你至少有 48 小时来反应。比如如果你不放心，你可以在 48 小时内把资金撤走。
 
@@ -396,11 +396,11 @@ DeFi 安全至少包括如下几部分：
 
 第三方作恶，主要指的是两种：
 
-* 一种是供应链作恶，比如前端依赖的第三方模块被植入了后门，随着打包发布一起被直接带入目标前端页面了。如 SushiSwap（仅仅举例子，并不代表截图里的项目有发生这个问题）：
-![](res/sushiswap_3rd.png)
+* 一种是供应链作恶，比如前端依赖的第三方模块被植入了后门，随着打包发布一起被直接带入目标前端页面了。如 SushiSwap（仅仅举例子，并不代表截图里的项目有发生这个问题）：<br>
+    <img src="res/sushiswap_3rd.png" width="500">
 
-* 一种是前端页面引入的第三方远程 JavaScript 文件，如果这个 JavaScript 文件作恶或被黑，那么目标前端页面可能就会被影响，如 OpenSea（仅仅举例子，并不代表截图里的项目有发生这个问题）：
-![](res/opensea_3rd.png)
+* 一种是前端页面引入的第三方远程 JavaScript 文件，如果这个 JavaScript 文件作恶或被黑，那么目标前端页面可能就会被影响，如 OpenSea（仅仅举例子，并不代表截图里的项目有发生这个问题）：<br>
+    <img src="res/opensea_3rd.png" width="800">
 
 为什么这里说可能会被影响是因为，如果项目方在前端页面以下面这样的方式来引用第三方远程 JavaScript 文件的话，就可能不会被影响：
 
@@ -508,7 +508,7 @@ OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件�
 
 我这里拿其中一个 NFT 市场进行具体说明（不一定是 OpenSea）。当目标用户在 NFT 市场里授权了相关 NFT 挂单后，攻击者构造了正确的待签名内容，通过 Keccak256 哈希后，在钓鱼页面上弹出了待签名的内容给用户，此时用户看到的东西如下：
 
-![](res/metamask_sign.jpg)
+<img src="res/metamask_sign.jpg" width="360">
 
 仔细看，MetaMask 弹出的这个窗口，能看出什么？账户及余额、签名请求的来源网站、正在签名的消息，没了...就这点内容，用户怎么会想到自己一旦点击了“签名”后，灾难就来了，自己的相关 NFT 就可以被盗走了。
 
@@ -551,7 +551,7 @@ OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件�
 
 好，让我们来看看这个反常识真实案例。
 
-![](res/solana_nft_phishing.jpg)
+<img src="res/solana_nft_phishing.jpg" width="800">
 
 2022.3.5，一个安全预警：Solana 上的授权钓鱼残忍多了，攻击者批量给用户空投 NFT(图 1) ，用户通过空投 NFT 描述内容里的链接(www_officialsolanarares_net)进入目标网站，连接钱包(图 2)，点击页面上的“Mint”，出现批准提示框(图 3)。注意，此时的批准提示框并没有什么特别提示，当批准后，该钱包里的所有 SOL 都会被转走。
 
@@ -607,7 +607,7 @@ OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件�
 
 其实这个弹窗，甚至整个 x.html 内容都不是这个文件本身的，全部都是 Cloudflare 提供的，原理见下图：
 
-![](res/cloudflare_worker.png)
+<img src="res/cloudflare_worker.png" width="800">
 
 截图里这段代码意思很简单：如果我是黑客，我控制了你的 Cloudflare 账号，我就可以利用 Workers 特性，往任意页面注入任意恶意脚本。但此时用户是很难意识到目标页面被这样偷偷劫持篡改了，目标页面不会有任何错误提示（比如 HTTPS 证书错误），甚至项目方也一时半会意识不到这地方会出问题，可能花了大量的时间排查服务器、人员等安全。等意识到这个，损失也就大了。
 
@@ -835,7 +835,7 @@ Discord 上发生了这么多起 NFT 被盗案，请问其中的攻击技术要�
 
 >https://suite.trẹzor.com
 
-![](res/trezor_phishing.jpg)
+<img src="res/trezor_phishing.jpg" width="800">
 
 这个域名是有“亮点”的，仔细看那个 ẹ 并不是英文字母 e。非常的迷惑性，实际上这是 Punycode，标准说明是这样的：
 

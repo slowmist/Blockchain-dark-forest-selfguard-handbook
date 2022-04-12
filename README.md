@@ -760,7 +760,7 @@ SIM 卡还有个风险，就是如果手机丢了或被盗了，SIM 卡被取出
 
 有时候会遇到 PGP、OpenPGP 及 GPG 这几种看去相似的叫法，简单这样区分下：
 
-* PGP 是 Pretty Good Privacy 的缩写，是商用加密软件，发布近 26 年了，现在在赛门铁克麾下。
+* PGP 是 Pretty Good Privacy 的缩写，是商用加密软件，发布 30 多年了，现在在赛门铁克麾下。
 * OpenPGP 是一种加密标准，衍生自 PGP。
 * GPG，全称 GnuPG，基于 OpenPGP 标准的开源加密软件。
 

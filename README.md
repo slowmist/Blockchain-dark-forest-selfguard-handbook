@@ -685,7 +685,7 @@ Windows 10(及以上版本) 和 macOS 的安全性都挺让人满意了，你选
 
 ### 浏览器
 
-浏览器方面流行的主要就是 Chrome、Firefox 了，加密货币行业还有人会用 Brave，也行。知名度高的，团队强大的，安全更新也会比较及时。浏览器安全话题实在太广泛，对你来说，你只需注意这几点就好：
+浏览器方面流行的主要就是 Chrome、Firefox 了，加密货币行业还有人会用 Brave，也很棒，这款浏览器的隐私安全性方面做的很好。知名度高的，团队强大的，安全更新也会比较及时。浏览器安全话题实在太广泛，对你来说，你只需注意这几点就好：
 
 * 有更新就及时更新，千万别侥幸。
 * 扩展如无必要就不安装，安装也看清楚口碑、用户规模、背后是哪家知名公司维护的，并警惕扩展申请的权限，还有扩展必须来自浏览器自己的应用商城。
@@ -693,6 +693,8 @@ Windows 10(及以上版本) 和 macOS 的安全性都挺让人满意了，你选
 * 一些隐私保护的知名扩展（如 uBlock Origin、HTTPS Everywhere、ClearURLs 等），看你个人喜好。
 
 Firefox 上我还会用 NoScript 这个上古扩展神器，NoScript 可以很好对抗 JavaScript 作恶情况，当年威震四方。现在的浏览器越来越安全了，同源安全策略、CSP 安全策略、Cookie 安全策略、HTTP 安全响应头策略、扩展安全策略等等等，浏览器现在的安全高度确实是不可同日而语。NoScript 这种安全扩展被使用的空间也就越来越小了，感兴趣的可以自行了解。
+
+重点介绍一下 Brave 浏览器，这个浏览器是原 Mozilla 的 CEO Brendan Eich（同时也是 JavaScript 的创造者）在离开 Mozilla 后成立的 Brave 软件公司制作的，Brave 浏览器本身基于 Chromium 开发，并且全部开源（代码发布在 GitHub 上），和 Chrome 一样，也可以直接从 Chrome 应用商店安装浏览器扩展。与此同时，在保持和 Chrome 几乎一样（甚至更多）功能的情况下，根据 <https://privacytests.org/> 的对比结果，Brave 浏览器的隐私安全性要高于常用的 Chrome、Chromium、Firefox、Edge 等浏览器。在 EFF 的 [隐私追踪测试](https://coveryourtracks.eff.org/) 中也是为数不多可以将重要的浏览器指纹随机化的浏览器。
 
 ### 密码管理器
 

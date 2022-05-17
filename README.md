@@ -1,529 +1,526 @@
-区块链黑暗森林自救手册<br>
-*掌握这些，掌握你的加密货币安全。*
-
 Blockchain dark forest selfguard handbook<br>
 *Master these, master the security of your cryptocurrency.<br>*
 
-作者：余弦@慢雾安全团队<br>
-联系我：Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
+*Note: V1, Update Logs, please see the Chinese version.*
+
+Author: Cos@SlowMist Team<br>
+Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+
+Translator: 
+>[Alphatu](https://twitter.com/Alphatu4) | C. | [CJ](https://twitter.com/0xnjars) | [JZ](https://twitter.com/scorpionzhang) | [Lovepeace](https://twitter.com/lovepeace_53) | [Neethan](https://mobile.twitter.com/neethanverse) | [pseudoyu](https://twitter.com/pseudo_yu) | [SassyPanda](https://twitter.com/sassypandacap) | ss | [XL](https://twitter.com/leixing0309)
+
+Proofreader:
+>[SassyPanda](https://twitter.com/sassypandacap) | [JZ](https://twitter.com/scorpionzhang) | [Neethan](https://mobile.twitter.com/neethanverse) | [Alphatu](https://twitter.com/Alphatu4) | [pseudoyu](https://twitter.com/pseudo_yu)
 
 ![alt this](res/this.png)
 
-| 日期 | 更新日志 |
-| --- | --- |
-| 2022/4/15 | V1 出现，仅仅修正了点错别字，一些不错的建议，我将在之后的小版本里加入，感谢:) |
-| 2022/4/12 | V1 Beta 出现，中文，用碎片时间断断续续写了三周:grinning: |
+:anchor:**Contents**
+- [Prologue](#prologue)
+- [A Diagram](#a-diagram)
+  - [Create A Wallet](#create-a-wallet)
+    - [Download](#download)
+    - [Mnemonic Phrase](#mnemonic-phrase)
+    - [Keyless](#keyless)
+  - [Back up your wallet](#back-up-your-wallet)
+    - [Mnemonic Phrase / Private Key](#mnemonic-phrase--private-key)
+    - [Encryption](#encryption)
+  - [How to use Your Wallet](#how-to-use-your-wallet)
+    - [AML](#aml)
+    - [Cold Wallet](#cold-wallet)
+    - [Hot Wallet](#hot-wallet)
+    - [What is DeFi Security](#what-is-defi-security)
+    - [NFT Security](#nft-security)
+    - [BE CAREFUL With Signing!](#be-careful-with-signing)
+    - [Be CAREFUL With Counter-intuitive Signatures Requests!](#be-careful-with-counter-intuitive-signatures-requests)
+    - [Some Advanced Attacking Methodologies](#some-advanced-attacking-methodologies)
+  - [Traditional Privacy Protection](#traditional-privacy-protection)
+    - [Operation System](#operation-system)
+    - [Mobile phone](#mobile-phone)
+    - [Network](#network)
+    - [Browsers](#browsers)
+    - [Password Manager](#password-manager)
+    - [Two-Factor Authentication](#two-factor-authentication)
+    - [Scientific Internet Surfing](#scientific-internet-surfing)
+    - [Email](#email)
+    - [SIM Card](#sim-card)
+    - [GPG](#gpg)
+    - [Segregation](#segregation)
+  - [Security of Human Nature](#security-of-human-nature)
+    - [Telegram](#telegram)
+    - [Discord](#discord)
+    - ["Official" phishing](#official-phishing)
+    - [Web3 Privacy Issues](#web3-privacy-issues)
+- [Blockchain Shenanigans](#blockchain-shenanigans)
+- [What to do When You get hacked](#what-to-do-when-you-get-hacked)
+  - [Stop Loss First](#stop-loss-first)
+  - [Protect The Scene](#protect-the-scene)
+  - [Root Cause Analysis](#root-cause-analysis)
+  - [Source Tracing](#source-tracing)
+  - [Conclusion of Cases](#conclusion-of-cases)
+- [Misconception](#misconception)
+  - [Code Is Law](#code-is-law)
+  - [Not Your Keys, Not Your Coins](#not-your-keys-not-your-coins)
+  - [In Blockchain We Trust](#in-blockchain-we-trust)
+  - [Cryptographic Security is Security](#cryptographic-security-is-security)
+  - [Is it humiliating to be hacked?](#is-it-humiliating-to-be-hacked)
+  - [Immediately Update](#immediately-update)
+- [Conclusion](#conclusion)
+- [Appendix](#appendix)
+  - [Security rules and principles](#security-rules-and-principles)
+  - [Contributors](#contributors)
+  - [Official Sites](#official-sites)
 
-*注：选择 GitHub 方便协同及看到历史更新记录。你可以 Watch、Fork 及 Star，当然我更希望你能参与贡献:)*
+# Prologue
 
-:anchor:**目录**
-- [引子](#引子)
-- [一张图](#一张图)
-    - [创建钱包](#创建钱包)
-        - [Download](#download)
-        - [Mnemonic Phrase](#mnemonic-phrase)
-        - [Keyless](#keyless)
-    - [备份钱包](#备份钱包)
-        - [助记词/私钥类型](#助记词私钥类型)
-        - [Encryption](#encryption)
-    - [使用钱包](#使用钱包)
-        - [AML](#aml)
-        - [Cold Wallet](#cold-wallet)
-        - [Hot Wallet](#hot-wallet)
-        - [DeFi 安全到底是什么](#defi-安全到底是什么)
-        - [NFT 安全](#nft-安全)
-        - [小心签名！](#小心签名)
-        - [小心反常识签名！](#小心反常识签名)
-        - [一些高级攻击方式](#一些高级攻击方式)
-    - [传统隐私保护](#传统隐私保护)
-        - [操作系统](#操作系统)
-        - [手机](#手机)
-        - [网络](#网络)
-        - [浏览器](#浏览器)
-        - [密码管理器](#密码管理器)
-        - [双因素认证](#双因素认证)
-        - [科学上网](#科学上网)
-        - [邮箱](#邮箱)
-        - [SIM 卡](#sim-卡)
-        - [GPG](#gpg)
-        - [隔离环境](#隔离环境)
-    - [人性安全](#人性安全)
-        - [Telegram](#telegram)
-        - [Discord](#discord)
-        - [来自“官方”的钓鱼](#来自官方的钓鱼)
-        - [Web3 隐私问题](#web3-隐私问题)
-- [区块链作恶方式](#区块链作恶方式)
-- [被盗了怎么办](#被盗了怎么办)
-    - [止损第一](#止损第一)
-    - [保护好现场](#保护好现场)
-    - [分析原因](#分析原因)
-    - [追踪溯源](#追踪溯源)
-    - [结案](#结案)
-- [误区](#误区)
-    - [Code Is Law](#code-is-law)
-    - [Not Your Keys, Not Your Coins](#not-your-keys-not-your-coins)
-    - [In Blockchain We Trust](#in-blockchain-we-trust)
-    - [密码学安全就是安全](#密码学安全就是安全)
-    - [被黑很丢人](#被黑很丢人)
-    - [立即更新](#立即更新)
-- [总结](#总结)
-- [附](#附)
-    - [安全法则及原则](#安全法则及原则)
-    - [贡献者](#贡献者)
-    - [那些官网](#那些官网)
+First of all, congratulations for finding this handbook! No matter who you are - if you are a cryptocurrency holder or you want to jump into the crypto world in the future, this handbook will help you a lot. You should read this handbook closely and apply its teachings in real life.
 
-# 引子
+Additionally, to understand this handbook completely requires some background knowledge. However, please do not worry. As for beginners, do not be afraid of the knowledge barriers which can be overcome. If you encounter something that you don't understand, and need to explore more, Google is highly recommended. Also, it is important to keep one security rule in mind: Be skeptical! No matter what information you see on the web, you should always seek out at least two sources for cross-reference.
 
-首先，需要先恭喜你的是：你看到了这本手册。我不清楚你是谁，但如果你持有加密货币或对这个世界有兴趣，未来可能会持有加密货币，那么这本手册值得你反复阅读并谨慎实践。
+Again, always be skeptical :) including the knowledge mentioned in this handbook.
 
-其次，需要有心理准备的是：本手册的阅读需要一定的知识背景，我尽量照顾初学者，但很难。我希望初学者不必恐惧这些知识壁垒，因为其中大量是可以“玩”出来的。如果你遇到不懂的知识点，需要扩展了解的话，建议你用好 Google。并强烈建议你掌握一个安全原则：网络上的知识，凡事都参考至少两个来源的信息，彼此佐证，始终保持怀疑。
+Blockchain is a great invention that brings about a change in production relations and solves the problem of trust to some degree. Specifically, blockchain creates many “trust” scenarios without the need for centralization and third parties, such as  immutability, execution as agreed, and prevention of repudiation. However, the reality is cruel. There are many misunderstandings about blockchain, and the bad guys will use these misunderstandings to exploit the loophole and steal money from people, causing a lot of financial losses. Today, the crypto world has already become a dark forest.
 
-是的，始终保持怀疑！包括本手册提到的任何知识点:)
+Please remember the following two security rules to survive the blockchain dark forest.
 
-区块链是个伟大的发明，它带来了某些生产关系的变革，让“信任”这种宝贵的东西得以部分解决。这已经很难得了，不需要中心化、不需要第三方角色，有些“信任”基于区块链就可以得到很好解决，不可篡改、按约定执行、防止抵赖。但，现实是残酷的，人们对区块链的理解会存在许多误区。这些误区导致了坏人轻易钻了空子，频繁将黑手伸进了人们的钱包，造成了大量的资金损失。这早已是黑暗森林。
+1. **Zero Trust**：Be skeptical, and always be skeptical.
+2. **Continuous Security Validation**: To trust something, you must have the ability to validate itMake validation a habit.
 
-在区块链黑暗森林世界里，首先牢记下面这两大安全法则：
+*Note: The two security rules above are the core principles of this handbook , and all the other security principles mentioned in this handbook are derived from them.*
 
-1. 零信任。简单来说就是保持怀疑，而且是始终保持怀疑。
-2. 持续验证。你要相信，你就必须有能力去验证你怀疑的点，并把这种能力养成习惯。
+Okay, that's all for our introduction. Let's start with a diagram and explore this dark forest to see what risks we will encounter and how we should deal with them.
 
-*注：本手册中，安全法则就这两大，其他都可以认为是这两大推论出来的安全原则。*
-
-好，引子部分就到这。下面我们从一张图开始，进入到这个黑暗森林，看看我们都会遇到哪些风险及我们应该如何应对。
-
-# 一张图
+# A Diagram
 
 ![](res/web3_hacking_map.jpg)
 
-在仔细看后文之前，你可以先粗略过下这张图。这张图是你在这个世界（无论你如何称呼这个世界，区块链、加密货币还是 Web3 都行）里关键活动有关的内容，从流程上包括三大部分：创建钱包、备份钱包及使用钱包。
+You can skim through this diagram before taking a closer look at the rest of the handbook. It is all about the key activities in this world (whatever you want to call it: blockchain, cryptocurrency or Web3), which consists of three main processes: creating a wallet, backing up a wallet and using a wallet.
 
-我们顺着这三大流程，将涉及到的每个关键点展开分析。
+Let's follow these three processes and analyze each of them.
 
-## 创建钱包
+## Create A Wallet
 
-钱包最最最核心的就是那个私钥（或助记词）。
+The core of the wallet is the private key (or seed phase).
 
-私钥长这样：
+Here's how the private key looks like:
 
 >0xa164d4767469de4faf09793ceea07d5a2f5d3cef7f6a9658916c581829ff5584
 
-助记词长这样：
+In addition, here's how the seed phase looks like:
 
 >cruel weekend spike point innocent dizzy alien use evoke shed adjust wrong
 
-*注：用以太坊举例，关于私钥/助记词的基础知识请自行扩展。*
+*Note: We are using Ethereum as an example here. Please check out more details of private keys/seed phrase yourself.*
 
-私钥即身份，如果私钥丢了或被盗了，那么这个身份也就不是你的了。钱包应用其实很多，知名的也不少，我并不打算也不可能一一介绍。不过该手册确实会提到一些具体的钱包，请注意，能被提到的必然是我有基本信任的，但我不担保你在使用过程中可能出现的安全问题或目标钱包可能出现并不在我预期内的安全风险（后文我不会再不断去废话这些，引子里提到的两大安全法则希望你牢记心中）。
+The private key is your identify. If the private key is lost/stolen, then you lost your identify. There are many well-known wallet applications, and this handbook won't cover all of them. 
 
-钱包从应用分类来说主要包括几种：PC 钱包、浏览器扩展钱包、移动端钱包、硬件钱包及网页钱包等。从触网与否来说主要可以分为冷钱包和热钱包。当我们要进入这个世界，首先要思考将拥有的钱包的用途，用途决定了你将用哪个钱包，同时用途也决定了你会如何对待这个钱包。
+However, I will mention some specific wallets. Please note, the wallets mentioned here can be trusted to some degree. But I cannot guarantee they will have no security issues or risks, expected or not, during use (I won’t repeat more. Please always keep in mind the two main security rules mentioned in the prologue)
 
-无论你选择什么钱包，但至少有一点可以肯定的：在这个世界玩久了后，你不可能只有一个钱包。
+Classified by application, there are PC wallets, browser extension wallets, mobile wallets, hardware wallets and web wallets. In terms of internet connection, they can be mainly divided into cold wallets and hot wallets. Before we jump into the crypto world, we must first think about the purpose of the wallet. The purpose not only determines which wallet we should use, but also how we use the wallet.
 
-于是这里我们又需要记住一个安全原则：做好隔离，也就是鸡蛋不要放在一个篮子里。一般来说使用越频繁的钱包，自然也加大了出问题的风险。时刻牢记：面对一个新事物时，先准备个单独的钱包，用单独的小资金去玩一段时间。除非你已经如我这般，经历无数，对许多事物都了然于心。但，常在河边走，哪有不湿鞋呢？
+No matter what kind of wallet you choose, one thing is for sure: after you have enough experience in this world, one wallet is not enough.
+
+Here we should keep in mind another security principle: isolation, i.e., don't put all your eggs in one basket.The more frequently a wallet is used, the more risky it is. Always remember: when trying anything new, first prepare a separate wallet and try it out for a while with a small amount of money. Even for a crypto veteran like me, if you play with fire, you are more easily to get burned.
 
 ### Download
 
-单这么简单的一点，其实也不简单，原因：
+This sounds simple, but in fact it is not easy. The reasons are as follows:
 
-1. 许多人（真是许多人）找不到正确的官网，正确的应用市场，于是安装了假钱包。
-2. 许多许多人对下载了的应用不知道如何确认是否被篡改过。
+1. Many people cannot find the real official website, or the right application market, and eventually install a fake wallet.
+2. Many people do not know how to identify whether the downloaded application has been tampered or not.
 
-于是，出师未捷身先死。还没来得及进入这个世界，就已经钱包空空了。
+Thus, for many people, before they enter the blockchain world, their wallet is already empty.
 
-针对上面的第 1 点，找到正确的官网是有技巧的，比如：
+To solve the first problem above, there are some techniques to find the correct official website, such as
 
-* Google
-* 行业知名收录，如 CoinMarketCap
-* 多问一些比较信任的人
+* using Google
+* using well-known official websites, such as CoinMarketCap
+* asking trusted people and friends
 
-好，上面这几点得到的信息可以全部结合起来参考，互相佐证，最终真相只有一个:)恭喜你，找到了正确的官网。
+You can cross-reference the information obtained from these different sources, and ultimately there is only one truth:) Congratulations, you have found the correct official website.
 
-接着，你要下载安装应用了，**如果是 PC 钱包**，根据官网提供的下载链接，下载后需要自己去安装。但在安装之前，建议做下是否篡改的校验工作，虽然这个做法并无法防止源头就被完全篡改的情况（比如官方自己内部作恶、内部被黑、官网被入侵替换了相关信息等等），但可以防止如：源头被部分篡改、被中间人劫持篡改等这些情况。
+Next, you have to download and install the application. **If it is a PC wallet**, after downloading from  the official website, you need to install it yourself. It is highly recommended to verify whether the link has been tampered before installation. Although this verification may not prevent cases where the source code was altered completely (due to insider scam, internal hacking, or the official website may be hacked, etc.) However, it can prevent cases such as the partial tampering of the source code, man-in-the-middle attack, etc.
 
-是否篡改的校验，实际上就是文件一致性校验。常见的方式有两种：
+The method to verify whether a file has been tampered is the file consistency check. Usually there are two ways:
 
-* 一种是哈希校验，比如 MD5、SHA256 等，MD5 绝大多数情况下够用，但存在被哈希碰撞的极小风险，所以业内一般选择 SHA256，够用且够安全。
-* 另一种是 GPG 签名校验，这个其实也很流行，强烈建议掌握 GPG 工具、命令、方法，虽然对于新人来说有那么些费力，但上手后，相信我，你会很快乐的。
+* **Hash checks**: such as MD5, SHA256, etc. MD5 works for most cases, but there is still a tiny risk of hash collision, so we generally choose SHA256, which is safe enough.
+* **GPG signature verification**: this method is also very popular. It is highly recommended to master GPG tools, commands, and methods. Although this method is a bit difficult for newcomers, you will find it very useful once you get familiar with it.
 
-话虽至此，其实业内这样做的项目方并不多，所以一旦遇到，真是难能可贵，弥足珍惜，比如一款比特币钱包 Sparrow Wallet，下载页面的“Verifying the Release”简直良心了，提到的两种方式都有清晰指南，可以直接参考学习：
+However, there are not many  projects in the crypto world that provides verification. So,it is lucky to find one. For example, here is a bitcoin wallet called Sparrow Wallet. Its download page says "Verifying the Release", which is really impressive, and there are clear guidelines for both of the methods mentioned above, so you can use for reference:
 
 >https://sparrowwallet.com/download/
 
-这个页面提到的 GPG 工具有两个：
+The download page mentioned two GPG tools:
 
-* GPG Suite，macOS 下运行的。
-* Gpg4win，Windows 下运行的。
+* GPG Suite, for MacOS.
+* Gpg4win, for Windows.
 
-如果你细心观察，你会发现这两个 GPG 工具的下载相关页面其实都有给出两种方法的一致性校验说明，但不好意思的是，并没手把手教你如何校验。估计吧，都是认为你会是聪明人，该补上的知识你已经补上了:)
+If you pay attention, you will find the download pages for both o GPG tools give some instructions on how to check the consistency of both methods. However, there is no step-by-step guide, that is to say, you need to learn and practice yourself:)
 
-**如果是浏览器扩展钱包**，比如这世界家喻户晓的 MetaMask，你唯一有机会注意的就是目标扩展下载页面里的用户数多不多、评分情况如何，比如 MetaMask 在 Chrome 网上应用店里，用户数可是超过一千万的，同时有两千多用户评分的，虽然最终评分并不高。有人要说这不可以刷出来吗？这位朋友，是这样的，刷，我相信，不过刷的量如此之巨大，当各方是傻子呢。
+**If it is a browser extension wallet**, such as MetaMask, the only thing you have to pay attention to is the download number and rating in the Chrome web store. MetaMask, for example, has more than 10 million downloads and more than 2,000 ratings (though the overall rating is not high). Some people might think that the downloads numberand ratings may be inflated. Truth to be told, it is very difficult to fake such a large number.   
 
-**如果是移动端钱包**，判断方式类似扩展钱包，不过需要注意的是，iPhone 的 App Store 是分区的，加密货币在中国大陆被驱赶得不行，所以如果你用 App Store 中国区账号下载到了钱包，建议只有一个：别用，换成如美区的 App Store 账号下载吧。另外，通过正确的官网也能引导到正确的下载位置（比如全球知名的 imToken、Trust Wallet 等，官网安全一定要做好，官网都被黑了，那这安全责任就真大了）。
+**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc,. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
 
-**如果是硬件钱包**，简单来说，可以从官网源头的引导下购买，不要直接去在线商城，到手后也需要留意是否存在被异动手脚的情况，当然有些针对硬件包装的异动是很高明的，不一定都能看得出。此时建议：无论如何，使用时，先连续至少三次从头开始的创建，记录下生成的助记词、相关钱包地址，不会重复就行。
+**If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is inact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
 
-**如果是网页钱包**，非常不建议使用这种在线的钱包，除非你不得已，那么识别好是官方的后，速战速决吧，千万别有任何感情依赖。
+**If it is a web wallet**, we highly recommend not to use it.Unless you have no choice, make sure it is authentic and then use it sparingly and never rely on it.
 
 ### Mnemonic Phrase
 
-一般来说，我们创建了钱包后，直接打交道的关键信息是助记词（而不是私钥），毕竟助记词是方便人类记忆的。助记词是有标准约定的（如 
-BIP39），这就对助记词提了要求，比如一般 12 个英文单词，也可以是其他数量（3 的倍数），不过不会超过 24 个单词，要不然太复杂也就不助记了，数量少于 12 的话，安全性也不靠谱，12、15、18、21、24 都好说。不过从业内习惯来说，一般流行的是 12 位，安全性足够，有的安全严谨到变态的如 Ledger 这类硬件钱包，24 位标配走起。还有除了英文单词，也可以是其他的，比如中文、日文、韩文等等。但也不是什么单词都可以，有一个固定 2048 个单词列表，具体参考：
+After creating a wallet, the key thing that we deal with directly is the mnemonic phrase/seed phrase, not the private key, which is easier to remember. There are standard conventions for mnemonic phrases (e.g., BIP39); there are 12 English words in general; it could be other numbers  (multiples of 3), but not more than 24 words. Otherwise it is too complicated and not easy to remember. If the number of words is less than 12, the security is not reliable. It is common to see 12/15/18/21/24 words. In the blockchain world, 12-word  is popular and secure enough.However, there are still hardcore hardware wallets such as Ledger that starts with 24 words. In addition to English words, some other languages are also available, such as Chinese, Japanese, Korean and so on. Here is a 2048 words list for reference:
 
 >https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md
 
-创建钱包时，助记词的出现是非常敏感的，请留意你身边没有人、摄像头等一切可以导致偷窥发生的情况。同时留意下助记词是不是足够随机出现，正常来说这些知名钱包生成的助记词随机数是绝对足够的，这不以防万一？你真的很难知道，拿到手的钱包到底有没有万一的猫腻。你也不要嫌麻烦，这些安全小习惯形成后，相信我，你真的会很快乐。最后，有的场景下，你甚至可以考虑断网来创建钱包，尤其是你准备把该钱包当成冷钱包使用时，断网简直就是暴力美学。
+When creating a wallet, your seed phrase is vulnerable. Please be aware that you are not surrounded by people or webcams or anything else that can steal your seed phrase. 
+
+Also, please pay attention to whether the seed phrase is randomly generated. Normally well-known wallets can generate a sufficient number of random seed phrases. However, you should always be careful. It's hard to know whether there's something wrong with the wallet. Be patient  because it can be very beneficial to develop these habits for your security. Lastly, sometimes you can even consider disconnecting from the Internet to create a wallet, especially if you are going to use the wallet as a cold wallet. Disconnecting from the Internet always works.
 
 ### Keyless
 
-Keyless，顾名思义是无私钥的意思。在这我们把 Keyless 分为两大场景（注意，这里的区分不代表业内公认区分方式，只能说是方便我讲解）：
+Keyless means no private key. Here we divide Keyless into two major scenarios (for ease of explanation. Such division is not industry standard)
 
-* Custodial，即托管方式。比如中心化交易所、钱包，用户只需注册账号，并不拥有私钥，安全完全依托于这些中心化平台。
-* Non-Custodial，即非托管方式。用户唯一掌握类似私钥的权力，但却不是直接的加密货币私钥（或助记词）。比如依托知名 Cloud 平台做托管、认证授权，此时知名 Cloud 平台成为木桶的那块短板。还有利用了安全多方计算(MPC)来确保不存在单点风险，同时也结合知名 Cloud，将用户体验做到最好。
+* **Custodial**. Examples are centralized exchange and wallet, where users only need to register accounts and do not own the private key. Their security is completely dependent on these centralized platforms.
+* **Non-Custodial**. The user has a private key-like control power, which is not an actual private key (or seed phrase). It relies on well-known Cloud platforms for hosting and authentication/authorization. Hence the security of the Cloud platform becomes the most vulnerable part. Others make use of secure multi-party computing (MPC) to eliminate single point of risk, and also partner with popular Cloud platforms to maximise user experience.
 
-对我来说，Keyless 的几种方式我都有使用。实力雄厚及口碑良好的中心化平台体验好，只要不是因为自身原因导致的被盗币（比如账号相关权限被盗），这些平台也会兜底赔付。至于 MPC 为主的 Keyless 方案是我觉得很有前景且应该尽快普及的，我用过不错的如（ZenGo、Fireblocks、Safeheron）。优势很明显，我这简单提几点：
+Personally, I have used various kinds of Keyless tools. Centralized exchanges with deep pockets and good reputations provide the best experience. As long as you are not personally responsible for losing the token (such as if your account information was hacked), centralized exchanges will usually reimburse your loss. The MPC-based Keyless program looks very promising and should be promoted . I have good experience withZenGo, Fireblocks and Safeheron. The advantages are obvious:
 
-* MPC 算法工程实践在这些知名区块链上，越来越成熟，只需针对私钥开展即可。
-* 一套思路可以解决不同区块链的多签方案差异巨大的问题，使其在用户感知上通用，这是我们常说的：通用多签。
-* 可以确保真实的私钥从不出现，通过多方计算解决单点风险。
-* 结合知名 Cloud（或有人提的 Web2）让 MPC 不仅安全且体验更顺滑。
+* MPC algorithm engineering is becoming more and more mature on the well-known blockchains, and only needs to be done for private keys.
+* One set of ideas can solve the problem of different blockchains having vastly different multi-signature schemes, creating a consistent user experience, which is what we often call: universal multi-signature.
+* It can ensure that the real private key never appears and solve the single point of risk through multi-signature calculation.
+* Combined with Cloud (or Web2.0 technology) makes MPC not only secure but also creates a good experience.
 
-优点明显，但缺点也是有的，我也简单提几点：
+However, there are still some disadvantages:
 
-* 满足业内公认标准且开源的，这方面的成熟度还远不够，各位仍需努力。
-* 有不少人说基本只玩以太坊系列（或者说基于 EVM 的区块链），那么 Gnosis Safe 这种智能合约方式的多签方案也就够了。
+* Not all open source projects can meet the accepted standards of the industry. More work needs to be done.
+* Many people basically only use Ethereum (or EVM-based blockchain). As such, a multi-signature solution based on smart contract approach like Gnosis Safe is enough.
 
-无论哪种方式，只要是你觉得安全可控的、用起来舒服的，那么都是好方式，仁者见仁智者见智。
+Overall, no matter which tool you use, as long as you feel safe and controllable and have a good experience, it's a good tool.
 
-好，创建钱包的相关安全注意点就先介绍这些，有一些通用性的安全问题会统一在之后介绍，先不着急:)
+So far we have covered what we need to be aware of regarding the creation of wallets. Other general security issues will be covered in later sections.
 
-## 备份钱包
+## Back up your wallet
 
-许多挺厉害的人都在这踩坑了，其中包括我，常在河边走，湿鞋我也认，好在这不是个大资产钱包，并且最终我在慢雾的兄弟帮我破解解决了。这也是厉害的地方，我没备份好，我踩坑了，但我却有厉害的资源能帮我解决这个坑。不过我也会冒冷汗，人之常情。冒冷汗的感觉你肯定也不喜欢，那就集中精力学习下如何安全地备份钱包吧。
+This is where many good hands would fall into traps, including myself. I did not back up properly and I knew it would happen sooner or later. Luckily, it was not a wallet with a large amount of assets and friends at SlowMist helped me recover it.  Still, it was  a scary experience which I don’t think anyone would ever want to go through. So buckle up and let’s learn how to back up your wallet safely.
 
-### 助记词/私钥类型
+### Mnemonic Phrase / Private Key
 
-我们所说的备份钱包，其实归根结底是备份助记词（或私钥，为了方便介绍，后文一般情况下只提助记词）。我们拿到的助记词其实可以主要分为几种类型：
+When we talk about backing up a wallet, we are essentially talking about backing up the mnemonic phrase (or the private key. For convenience, we will use the mnemonic phrase in the following). Most mnemonic phrases can be categorized as follows:
 
-* 明文
-* 带密码
-* 多签
-* Shamir's Secret Sharing，简称 SSS
+* Plain Text
+* With Password
+* Multi-signature
+* Shamir's Secret Sharing, or SSS for short
 
-这几种类型，我简单展开说说。
+I will briefly explain each type.
 
-**明文**，很好理解，那 12 个英文单词你拿到了，里面的资产就是你的了。其实这个时候可以考虑做些特别的“乱序规律”，甚至把某个把单词替换为其他的单词。这样做对于坏人来说头疼了，但如果这个“规律”你自己忘记了，就轮到你头疼了。千万不要觉得你头疼是不可能的，相信我，一年、两年、五年后，记忆这东西真的会错乱。几年前，我玩 Ledger 硬件钱包时，就踩坑了，助记词 24 个单词，我抄写备份时打乱了顺序，几年后我忘记了排序规律，且不记得自己是不是替换了其中的单词。如前面说的，我的问题后来解决了，专门的破解程序碰撞出了正确的助记词顺序且纠正了其中的个把单词。
+**Plain Text**, Plain text is easy to understand. Once you have those 12 English words, you own the assets in the wallet. You can consider doing some special shuffling, or even replace one of the words with something else. Both would increase the difficulty for hackers to hack into your wallet, however, you would have a big headache if you forget about the  rules. Your memory isn’t bulletproof. Trust me, your memory will tangle up after several years. A few years ago, when I used the Ledger hardware wallet, I changed the order of the 24-word-mnemonic phrase. After a few years, I forgot the order and I wasn’t sure if  I had replaced any word. As mentioned earlier, my problem was solved with a special code breaker program that uses brute force to guess the correct sequence and words. 
 
-**带密码**，根据标准，助记词是可以带密码的，助记词还是那样的助记词，只是带上密码后会得到不一样的种子，这个种子就是之后拿来派生出一系列私钥、公钥及对应地址。此时，你不仅要备份好助记词，这个密码也千万别忘记了。顺便说下，带密码的形式，除了配套助记词，私钥也有相关标准（如 BIP38），还有如以太坊系列常见的 Keystore 文件。
+**With Password**, According to the standard, mnemonic phrases can have a password. It’s still the same phrase but with the password, a different seed phrase will be obtained. The seed phrase is used to derive a series of private keys, public keys and corresponding addresses. So you should not only back up the mnemonic phrases, but also the password. By the way, private keys can also have a password and it has its own standards, such as BIP 38 for bitcoin and Keystore for ethereum.
 
-**多签**，可以理解为目标资金需要多个人签名授权才可以使用，多签很灵活，可以设置审批策略，比如 3 个人都有钥匙（助记词或私钥），需要满足至少 2 人的签名审批，目标资金才可以使用。每个区块链都会有自己的多签解决方案，比特币系列的很好理解，知名的比特币钱包都原生支持多签。不过以太坊系列的，主要通过智能合约来实现多签，如 Gnosis Safe。另外，除了这些比较普遍的多签方案，还有一类正在流行的：MPC(Secure Multi-Party Computation)，即安全多方计算，和传统多签体验接近，但原理却很不一样，通过 MPC，可以实现通用多签，并不需要不同链不同的多签方式。
+**Multi-Signature**, As the name suggests, it requires signatures from multiple people to access wallets. It’s very flexible as you can set your own rules. For example, if there’re 3 people have the key (mnemonic words or private keys), you can require at least two persons to sign to access the wallets. Each blockchain has its own multi-signature solution. Most well-known Bitcoin wallets support multi-signature. However, in Ethereum, multi-signature is mainly supported through smart contracts, such as Gnosis Safe. Furthermore, MPC, or Secure Multi-Party Computation is becoming more and more popular.. It provides an experience similar to the traditional multi-signature, but with different technology. Unlike multi-signature, MPC is blockchain agnostic and can work with all protocols.
 
-**SSS**，Shamir 秘密共享方案，作用就是将种子分割为多个分片（常见的每个分片有 20 个单词），恢复钱包时，需要使用指定数量的分片才能恢复。具体参考业内最佳实践：
+**SSS**, Shamir's Secret Sharing, SSS breaks down the seed into multiple shares (normally, each share contains 20 words). To recover the wallet, a specified number of shares has to be collected and used. For details, refer to the industry best practices below:
 
->https://support.keyst.one/v/chinese/gao-ji-gong-neng/zhu-ji-ci/chuang-jian-dao-ru-fen-pian-zhu-ji-ci<br>
+>https://support.keyst.one/advanced-features/recovery-phrase/import-or-create-shamir-backup<br>
 >https://wiki.trezor.io/Shamir_backup
 
-用了多签、SSS 这类方案，其实会放心很多，避免了单点风险，但管理上也相对复杂了，而且这很多时候会涉及到多个人。便捷与安全是永恒的矛盾，具体看自己。但在法则、原则上千万别偷懒。
+Using solutions such as multi-signature and SSS will give you peace of mind and avoid single-point risks, but it could make management relatively complicated and sometimes multiple parties will be involved. There is always a compromise between convenience and security. It is up to the individual to decide but never be lazy in principles.
 
 ### Encryption
 
-加密是个非常非常大的概念，无论对称、非对称还是其他什么高级的，只要加密了后，多年以后，你或者你的灾备人可以很好解开，而其他人解不开的加密就是好加密。
+Encryption is a very, very broad concept. It doesn't matter if the encryption is symmetric, asymmetric or uses other advanced technologies; as long as an encrypted message can be easily decrypted by you or your emergency handling team easily but nobody else after decades, it is good encryption.
 
-根据“零信任”这个安全法则，当我们在备份钱包时，每个环节都要假设可能会被入侵，哪怕物理环境，如保险箱。别忘了，这个世界除了你自己，并没有其他人是完全可信的，其实有的时候自己也不可信，比如记忆可能会淡忘、错乱等。但我不会把这个世界假设的如此可怕，否则最终还是会把事情搞砸了。
+Based on the security principle of "zero trust", when we are backing up wallets, we have to assume that any step could be hacked, including physical environments such as a safe. Keep in mind that there is no one other than yourself who can be fully trusted. In fact, sometimes you can’t even trust yourself, because your memories may fade away or misplaced. However, I won’t make pessimistic assumptions all the time, otherwise it would lead me to some unwanted results. 
 
-备份时一定要特别考虑灾备。灾备主要就是要避免单点风险，万一你没了，万一你备份目标所在的环境没了，该怎么办？所以重要的东西，一定要有灾备人；重要的东西，一定有多处备份。
+When backing up, special consideration must be given to disaster recovery. The main purpose of disaster recovery is to avoid a single point of risk. What would happen if you are gone or the environment where you store the backup is down? Therefore, for important stuff, there must be a disaster recovery person and there must be multiple backups.
 
-那么，灾备人的选择我就不废话了，看你信任谁吧。我重点提提多处备份。先看看备份位置的几个基本形态：
+I won’t elaborate too much on how to choose the disaster recovery person because it depends on who you trust. I will focus on how to do the multi-backups. Let's take a look at some basic forms of backup locations:
 
 * Cloud
 * Paper
 * Device
 * Brain
 
-**Cloud**，许多人谈云备份色变，似乎黑客真的就上天入地，来无影去无踪的。其实攻防对抗永远都是成本对抗，看谁投入的大，无论是人才还是钱。对于我来说，我会比较信任 Google、Apple、微软等提供的相关云端服务，因为我知道他们的安全团队是如何实力，安全投入是如何之大。但除了对抗外部黑客入侵，我还很关心内部安全风控的能力及隐私数据保护有关的约束力。我比较信任的几个，都算是把这些我在意的安全风险规避得不错的。但凡事绝无绝对。如果我选择这些云来备份我非常重要的数据（如钱包），我一定还会给钱包再做至少一次加密的。
+**Cloud**, Many people don’t trust backup on Cloud, they think it is vulnerable to hacker attacks.  At the end of the day, it is all about which side - the attacker or the defender - put in more effort, in terms of both manpower and budgets. Personally, I have faith in cloud services powered by Google, Apple, Microsoft, etc., because I know how strong their security teams are and how much they have spent on security. In addition to fighting against external hackers, I also care a lot about internal security risk control and private data protection. The few service providers I trust are doing a relatively better job in these areas. But nothing is absolute. If I choose any of these cloud services to back up important data (such as wallets), I will definitely encrypt the wallets at least one more time.
 
-我强烈推荐掌握 GPG，除了前面提到的“签名验证”用途之外，加解密方面安全性也足够强了。关于 GPG 这块的入门可以参考：
+I strongly recommend mastering GPG. It can be used for the  "signature verification", and provides strong security of encryption and decryption in the meantime. You can learn more about GPG at:
 
 >https://www.ruanyifeng.com/blog/2013/07/gpg.html
 
-好，你掌握了 GPG:) 现在你已经在离线安全环境下用 GPG 加密了你的钱包（助记词或私钥）有关内容，你可以把加密后的文件直接扔到这些云服务里去了，保存好，没事的。但这里我需要提醒下，你 GPG 的私钥别丢了、私钥密码别忘记了...
+Okay, you have mastered GPG :) Now that you have encrypted  related data in your wallet (mnemonic phrase or private key) with GPG in an offline secured environment, you can now throw the encrypted files directly into these cloud services and save it there. All will be good. But I need to remind you here: never lose the private key to your GPG or forget the password of the private key...
 
-到这，安全带来的麻烦似乎还没适应，GPG 好不容易入门了，你还得备份好 GPG 的私钥及私钥密码。其实真到这步了，你也熟悉了，再备份这点东西其实也就不麻烦了。这点我不展开，留给实践出真知的你。
+At this point, you might find this extra level of security is quite troublesome: you have to learn about GPG and back up your GPG private key and passwords. In reality, if you have done all the aforementioned steps, you are already familiar with the process and won’t find it as difficult or troublesome. I will say no more because practice makes perfect.
 
-如果你想偷懒，还有一种方案是可以考虑的，只是安全性上会打点折扣，我不好衡量具体折扣多少，但有时候有的场景下我也会偷懒，于是我会考虑用知名的工具来做辅助。这个工具就是 1Password。1Password 新版本已经支持直接保存钱包相关内容，如助记词、密码、钱包地址等，这方便用户。其实其他同类型工具（如 Bitwarden）也可以，只是使用起来不像这样方便。
+If you want to save some effort, there is another possibility but its security may be discounted. I can't measure the exact discount but sometimes I would be lazy when I would use some well-known tools for assistance. That tool is 1Password. The latest version of 1Password already supports direct storage of wallet-related data, such as mnemonic words, passwords, wallet addresses, etc., which is convenient for users. Other tools (such as Bitwarden) can achieve something similar, but they are not as convenient.
 
-**Paper**，许多硬件钱包都会附带几张质量上乘的纸卡片，你可以将助记词（明文、SSS 等形式的）抄写在上面。除了纸质的，还有钢板的（抗火抗水抗腐蚀，当然我没验证）。助记词抄写完成后，会做一次验证，没问题后，放进你觉得安全的位置，比如保险箱。其实我个人挺喜欢 Paper 的，Paper 所处环境不错的话，寿命远大于电子设备。
+**Paper**, Many hardware wallets come with several high-quality paper cards on which you can write down your mnemonic phrases (in plaintext, SSS, etc.). In addition to paper, some people also use steel plates (fire-resistant, water-resistant and corrosion-resistant, of course, I have not tried those). Test it after you copy over the mnemonic phrases and if everything works, put it in a place where you feel secure, such as in a safe. I personally like using paper a lot because if properly stored, paper has a much longer lifespan than electronics.
 
-**Device**，各种设备吧，电子设备是常用的一种，电脑、iPad、iPhone、移动硬盘、U 盘等都可以拿来做备份，看个人喜好。然后设备间的安全传输，让我比较有安全感的是：隔空投送(AirDrop)、USB 等这类点对点且挺难出现中间人劫持情况的方式。只是我天然对电子设备不放心的一点是多年后可能就坏了，所以会保持每年至少一次的检查习惯。有一些重复做法（如加密）参考 Cloud 小点里的说法就行。
+**Device**, It refers to all kinds of equipment; electronics are a common type for backup, such as a computer, an iPad, an iPhone, or a hard drive, etc, depending on personal preference. We also have to think about the secure transmission between devices. I feel comfortable using peer-to-peer methods such as AirDrop and USB where it is difficult for a middleman to hijack the process. I am just naturally uneasy about the fact that electronic equipment may break down after a couple of years, so I maintain the habit of checking the device at least once a year. There are some repeated steps (such as encryption) which you can refer to the Cloud section.
 
-**Brain**，脑记很爽很刺激，其实每个人都有自己的“记忆宫殿”的，这玩意不玄乎，可以训练，熟能生巧，加深记忆。有不少东西确实还是脑记好，至于到底是不是只唯一用脑记看你自己。反正注意两种风险：一是时间会让记忆淡忘或错乱；二是自己可能出意外。这块不多说了，请自行扩展。
+**Brain**, Relying on your memory is exciting. In fact, everyone has their own "memory palace". Memory is not mysterious and can be trained to work better. There are certain things that are indeed safer with memory. Whether to rely solely on the brain is a personal choice. But pay attention to two risks: firstly, memory fades away as time goes and could  cause confusion; the other risk is that you may have an accident. I will stop here and let you explore more.
 
-现在你都备份好了。加密不能太过分了，否则多年以后等于“同归于尽”，因为到时候你可能自己都解不开。根据安全法则“持续验证”，无论过不过分的加密及备份方法，一定要做到定期不定期地验证，验证频率得看你的记忆，有时候转头可能就忘记了。验证不代表一定都要完整解开看看，只要整个过程不会错，采用部分验证也是可以的。最后，也需要注意验证过程的机密性及安全性。
+Now you are all backed up. Don’t encrypt  too much, otherwise you will suffer from yourself after several years. According to the security principle of  "continuous verification", your encryption and backup methods, whether excessive or not, must be verified continuously, both regularly as well as randomly. The verification frequency depends on your memory and you do not have to complete the whole process. As long as the process is correct, partial verification also works. Finally, it is also necessary to pay attention to the confidentiality and security of the authentication process.
 
-好了，长舒一口气，其实入门是最难的，以上你都准备好后，咱们开始真正进入这个黑暗森林吧:)
+Okay, let’s take a deep breath here. Getting started is the hardest part. Now that you are ready, let’s enter this dark forest :)
 
-## 使用钱包
+## How to use Your Wallet
 
-当你创建及备份好钱包后，真正的大挑战才来了。除非你非常的佛系，不怎么折腾持有的价值资产，平时也不会去玩以太坊系列的 DeFi、NFT、GameFi 等智能合约有关的项目，或者说当下喜欢提的 Web3。那么实际上你的资金是挺安全的。
+Once you have created and backed up your wallets, it comes to the real challenge. If you don’t move around your assets frequently, or you barely interact with  any smart contracts of DeFi, NFT, GameFi, or Web3, the popular term referred to frequently these days, your assets should be relatively safe.
 
 ### AML
 
-嗯，也只是“挺安全”，因为这里还是有风险的，所谓“人在家中坐、祸从天上来”。为什么这样说呢？你想呀，你最开始的加密货币是从哪里来的？不会是凭空出现的吧？那么在加密货币活动可能中，你拿到的加密货币都可能遇到 AML(Anti Money Laundering) 即反洗钱风控。也就是说你此刻持有的加密货币可能是不干净的，甚至如果足够倒霉，还可能存在被直接在链上冻结的情况，比如公开报告中 Tether 曾经在执法单位的要求下冻结了一些 USDT 资金。被冻结列表可以看这：
+However, “relatively safe” doesn’t mean “no risk at all”. Cause “you never know which comes first, tomorrow or accidents”, right?. Why is it? Think about it, where did you get the cryptocurrency? It didn't just come from nowhere, right? You may encounter AML (Anti Money Laundering) on all the cryptocurrencies you get any time. This means that the cryptocurrency you're holding at the moment may be dirty, and if you're not lucky, it may even be frozen directly on the chain. According to public reports, Tether once freezed some USDT assets  as per request from law enforcement agencies. The list of frozen funds can be found here.
 
 >https://dune.xyz/phabc/usdt---banned-addresses
 
-验证是否被 Tether 冻结，可以在 USDT 合约地址进行：
+You can verify if an address is  frozen by Tether from the USDT contract.
+
 >https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#readContract
 
 <img src="res/usdt_isblacklisted.png" width="700">
 
-在 isBlackListed 输入目标钱包地址即可判断。USDT 所在的其他链大体同理（别较真）。
+Use the target wallet address as input  int isBlackListed to check. Other chains that take  USDT have similar verification way.
 
-但你的比特币、以太坊是不会出现链上冻结情况的，也许未来出现了这个情况，那这点本来非常坚定的去中心化信仰可能也就没了。我们现在经常听到的加密货币冻结实际上绝大多数并不是发生在链上的，而是发生在中心化平台里，如中心化交易所（Binance、Coinbase 等）。你的加密货币在这些中心化平台里，意味着你并不是真正意义上持有这些加密货币，中心化平台冻结的其实是你的账号，尤其是你的交易、提币权限。冻结这个概念其实很容易对圈外人造成误解，于是出现一些很烂的自媒体胡乱解读及散播比特币的各种阴谋论。
+However, your BTC and ETH should never ever get frozen.  If this does happen one day in the future, the belief of decentralization would crash as well.  Most cryptocurrency asset frozen cases we have heard today actually happened in centralized platforms (such Binance, Coinbase, etc.) but not on the blockchain. When your cryptocurrency stays in Centralized Exchange platforms, you don’t actually own any of them. When the centralized platforms freeze your account, they are actually revoking your permission to trade or withdraw.. The concept of freezing could be misleading to newbies in the area.  As a result, some reckless self media would spread all kinds of conspiracy theories about BitCoin.
 
-虽然你的比特币、以太坊等不会在链上被冻结，但如果你的这些加密货币本身就涉及到相关执法单位在处理的案件，一旦你的加密货币转移进中心化平台，这些中心化平台就有可能因为 AML 等要求将你的加密货币冻结。
+Though your BTC and ETH assets won’t be frozen on the blockchain, centralized exchanges might freeze your assets according to the requirement of AML once your assets get transferred into these platforms and they are involved in any open cases that law enforcements are working on.
 
-为了比较好地避免 AML 问题，需要选择口碑好的平台、个人等作为你的交易对手。别瞎搞基本问题不大。如果要深度地解决这些问题实际上也是有不少办法的，比如以太坊系列上，几乎所有坏人及特别在意隐私的人都会选择 Tornado Cash 进行混币。更多的方法就不提了，因为这些方法实际上也会被用来作恶。
+To better avoid AML issues, always choose platforms and individuals with a good reputation as your counterparty. There are actually a few solutions  for this type of problem. For example, on Ethereum, almost all bad guys and people who care a lot about their privacy  use Tornado Cash for coin mixing. I won’t dig any more into this topic since most methods here are being used for doing evil.
 
 ### Cold Wallet
 
-冷钱包有好几种使用方法，对于钱包本身来说是不联网的，那么就可以认为这是个冷钱包。那么不联网如何使用？首先，如果仅仅是接收加密货币，问题不大，配合个观察钱包体验就已经挺不错了，比如 imToken、Trust Wallet 等都可以直接添加钱包地址，成为目标钱包地址对应冷钱包的观察钱包。
+There are different ways to use a cold wallet. From a wallet’s perspective, it can be considered as a cold wallet as long as it’s not connected to any network. But how to use it when it’s offline?  First of all, if you just want to receive cryptocurrency, it's not a big deal. A cold wallet could provide excellent experience by working with a Watch-only wallet, such as imToken, Trust Wallet, etc. These wallets could be turned into watch-only wallets by simply adding target wallet addresses.
 
-如果冷钱包要发送加密货币，常见的方式有几种：
+If we want to send cryptocurrency using  cold wallets, here are the most commonly used ways:
 
 * QRCode
 * USB
 * Bluetooth
 
-这几种都需要专门的应用（这里称之：Light App）搭配冷钱包使用，这个 Light App 是联网的，包括前面提到的观察钱包。我们只需明白其中本质原理就会明白这些方式了。本质是：最终只需想办法把签名后的内容广播上链。我大概解析下过程：
+All of these require a dedicated app (called Light App here) to work with the cold wallet. The Light App will be online along with the aforementioned Watch-only wallet. Once we understand the underlying essential principle, we should be able to understand these approaches. The essential principle is:  eventually, it’s just a matter of figuring out how to broadcast signed content onto the blockchain. Detailed process is as follows:
 
-* 待签名的内容由 Light App 通过这些方式传输给冷钱包。
-* 签名由拥有私钥的冷钱包搞定后再通过这些方式传输回 Light App。
-* Light App 将签名后的内容广播上链。
+* The content to be signed is transmitted by the Light App to the Cold Wallet by one of these means.
+* The signature is processed by the cold wallet that has the private key and then transmitted back to the Light App using the same way
+* The Light App broadcasts the signed content on the blockchain.
 
-所以这里无论是二维码(QRCode)、USB、还是蓝牙(Bluetooth)等方式，用途就是如上所说。当然不同的方式会有不同的细节，比如二维码信息容量是有限的，遇到签名数据很大的时候就得拆分。
+So no matter which method is used,  QR code, USB or Bluetooth, it should be following the above process. Of course, details might vary from different methods . For example, QR code has a limited information capacity, so when the signature data is too large, we would have to split it up.
 
-这样使用似乎麻烦了点，不过习惯了就好，甚至满满安全感。但，千万别把安全感加满，因为这里还是有风险的，已经许多案例是因为这些风险而导致损失惨重。风险点如：
+It seems to be a bit troublesome, but it becomes better when you  get used to it. You would even feel a full sense of security. However, don't consider it 100% secure because there are still risks here, and there have been many cases of heavy losses because of these risks. Here are risk points:
 
-* 转币的目标地址没严格检查，导致币转给了其他人。人都是有惯性或惰性的，比如很多时候检查一个钱包地址主要就看开头、结尾几位是不是正确的，而没有几乎完整检查。于是坏人就激动了，专门用程序来跑出头尾几位一样的地址，然后通过一些手法把你的转币目标地址给替换为他控制的地址。
-* 授权相关币种给了未知地址，通常来说授权是以太坊系列智能合约代币的机制，就是那个 approve 函数，一个参数是授权给目标地址，另一个参数是数量。许多人不了解这个机制，于是就可能把无限数量的代币授权给目标地址，此时目标地址就有权限把这些代币转走了。这就是所谓的授权盗币，手法还有其他变种，这里就先不扩展了。
-* 一些看去不重要的签名，实际上藏着巨大的陷阱，这点也先不展开，之后会有解析。
-* 冷钱包可能并没给你足够的必要信息展示，导致你大意了、误判了。
+* The target address of  the coin transfer was not checked carefully, resulting in the coin being transferred to someone else. People are lazy and careless, sometimes . For example, most of the time they only check the beginning and ending few bits of a wallet address instead of fully checking the whole address.. This leaves a backdoor to bad guys.They will run programs to get the wallet address with the same first and last few bits as your desired target address and then replace your coin transfer target address with the one under their control using  some tricks.
+* Coins are authorized to unknown addresses. Usually authorization is the mechanism of the Ethereum smart contract tokens, the "approve" function, with one argument being the target authorization address and the other being the quantity. Many people don't understand this mechanism, so they may authorize an unlimited number of tokens to the target address, at which point the target address has permission to transfer all those tokens away. This is called authorized coin theft, and there are other variants of the technique, but I won't expand on it here.
+* Some signatures that seem not important actually have huge traps in the back, and I won't dig into it now, but will explain the details later.
+* The cold wallet may not have provided enough necessary information, causing you to be careless and misjudged.
 
-这一切都可以归结为两点：
+It all boils down to two points:
 
-* 所见即所签这种用户交互安全机制缺失。
-* 用户的有关知识背景缺失。
+* The user interaction security mechanism of "What you see is what you sign" is missing.
+* Lack of relevant background knowledge of the user.
 
 ### Hot Wallet
 
-相比冷钱包，冷钱包有的风险热钱包基本都会有，除此之外，热钱包多了个：助记词（或私钥）被盗风险。此时的热钱包要考虑的安全就多了，比如运行环境的安全，如果运行环境有相关病毒🦠，那么就有被盗风险。还有热钱包如果存在某些漏洞，通过漏洞也可以直接盗走助记词。
+Compared to a cold wallet, a hot wallet has basically all the risks that a cold wallet would have. Plus, there is one more: the risk of theft of the secret phrase (or private key). At this point there are more security issues to consider with hot wallets, such as the security of the runtime environment. If there are viruses associated with the runtime environment , then there is a risk of getting stolen. There are also hot wallets that have certain vulnerabilities through which the secret phrase can be directly stolen.
 
-热钱包除了常规的转币功能外，如果要与那些 DApp（DeFi、NFT、GameFi 等）交互，要么直接用自带的浏览器访问，要么通过 WalletConnect 协议与 PC 浏览器打开的 DApp 交互。
+In addition to the regular coin transfer function, if you want to interact with other DApps (DeFi, NFT, GameFi, etc.), you either have to access them directly with your own browser or interact with the DApps opened in your PC browser via the WalletConnect protocol.
 
-*注：本手册提到的 DApp 默认指运行在以太坊系列区块链上的智能合约项目。*
+*Note: References of DApps in this handbook refer by default to smart contract projects running on the Ethereum blockchains.*
 
-默认情况下，这样的交互是不会导致助记词被盗的，除非钱包安全设计本身有问题。从我们的安全审计及安全研究历史数据来看，存在钱包助记词被目标页面恶意 JavaScript 直接盗取的风险。但这个情况比较罕见，因为这实际上属于极其低级的错误，知名钱包都不大可能会犯这种错误。
+By default, such interactions do not lead to secret phrase theft, unless there is a problem with the wallet security design itself. From our security audits and security research history, there is a risk of wallet secret phrases being stolen directly by malicious JavaScript on the target page. However, this is a rare case, as it is actually an extremely low-level mistake that no well-known wallet is likely to make.
 
-这里我最担心的问题实际上都不是以上这些，这些对我来说都可控（你也可以的），我最关心/担心的问题是：知名钱包的每次版本迭代是如何确保不会被植入恶意代码或后门？这个问题言下之意很清楚：当前的钱包版本我验证了没什么安全问题，我敢放心用，但我不知道下一个版本安全性如何，毕竟，我或者我的安全团队不可能有那么多时间与精力都去做验证。
+None of these are actually my actual concerns here, they are manageable for me (and for you too). My biggest concern/concern is: how does each iteration of a well-known wallet ensure that no malicious code or backdoor is planted? The implication of this question is clear: I verified that the current version of the wallet has no security issues and I'm comfortable using it, but I don't know how secure the next version will be. After all, I or my security team can't have that much time and energy to do all the verifications.
 
-这里所说的恶意代码或后门造成的盗币事件已经好几起了，如曾经的 CoPay、近期的 AToken 等，具体事件可以自行搜索了解。
+There have been several incidents of coin theft caused by malicious code or backdoors as described here, such as CoPay, AToken, etc. You can search for the specific incidents yourself.
 
-对于这种情况，作恶主要有几种方式：
+In this case, there are several ways of doing evil:
 
-* 钱包运行时，恶意代码将相关助记词直接打包上传到黑客控制的服务端里。
-* 钱包运行时，当用户发起转账，在钱包后台偷偷替换目标地址及金额等信息，此时用户很难察觉。
-* 破坏助记词生成有关的随机数熵值，让这些助记词比较容易被破解。
+* When the wallet is running, the malicious code packages and uploads the relevant secret phrase directly into the hacker-controlled server.
+* When the wallet is running and the user initiates a transfer, information such as the target address and amount is secretly replaced in the wallet backend, and it is difficult for the user to notice.
+* Corrupting the random number entropy values associated with the generation of secret phrases, which makes them relatively easy to decipher.
 
-安全这东西，无知者无畏、知者敬畏，许多点是细思恐极的。所以对于存有重要资产的钱包，我的安全原则也简单：不做轻易更新，够用就好。
+Security is a thing of ignorance and knowledge, and there are many things that could be easily ignored or missed.. So for wallets that hold important assets, my security rule is also simple: no easy updates when it's enough to use.
 
-### DeFi 安全到底是什么
+### What is DeFi Security
 
-当我们提 DApp 时，可能是 DeFi、NFT 或 GameFi 等等，这几个的安全大多是相同的，但会有自身的特别点。我们这里以 DeFi 为例先讲解下，当我们提 DeFi 安全时，到底指的是什么？业内几乎都只看智能合约部分，似乎智能合约安全了也就没事了。其实远远并非如此。
+When we talk about DApp, it could be DeFi, NFT or GameFi etc. The security fundamentals of these are mostly the same, but they will have their respective specifics. Let's first take DeFi as an example to explain. When we talk about DeFi security, what exactly do we mean? People in the industry almost always only look at smart contracts. It seems that when smart contracts are good, everything will be fine. Well actually, this is far from true.
 
-DeFi 安全至少包括如下几部分：
+DeFi security includes at least the following components:
 
-* 智能合约安全
-* 区块链基础安全
-* 前端安全
-* 通信安全
-* 人性安全
-* 金融安全
-* 合规安全
+* Smart Contract Security
+* Blockchain Foundation Security
+* Frontend Security
+* Communication Security
+* Human Security
+* Financial Security
+* Compliance Security
 
-**智能合约安全**
+**Smart Contract Security**
 
-智能合约安全确实是安全审计最重要的切入点，慢雾针对智能合约的安全审计点可以参考：
+Smart contract security is indeed the most important entry point for security audit, and SlowMist's security audit standards for smart contracts can be found at:
 
->https://www.slowmist.com/service-smart-contract-security-audit.html
+>https://www.slowmist.com/en/service-smart-contract-security-audit.html?lang=en
 
-对于高级玩家来说，如果智能合约部分本身安全性可控（无论是自己能安全审计还是读懂专业机构的安全审计报告），那么也就无所谓其他部分的安全了。可控是个很有差异的理解，有的得看玩家实力。比如说智能合约权限过大的风险，玩家是有要求的，除非项目方本身实力雄厚及口碑良好，完全中心化也都无所谓。但对于那些不大知名的、有争议的或新出现的项目，如果你说这个项目的智能合约有权限过大的风险，尤其是这种权限还可以影响你的本金或收益，你肯定就不愿意了。
+For advanced players, if the security of the smart contract part itself is controllable  (whether they can audit themselves or understand security audit reports issued by professional organizations), then it doesn't matter if the other parts are secure. Controllable is a tricky concept, some of which depends on the player's own strength. For example, players have certain requirements in respect of the risk from excessive smart contract authority. If the project itself is strong and the people behind it have a good reputation, complete centralization would not matter. However, for those less well-known, controversial or emerging projects, if you realize that the project's smart contracts possess excessive permission risk, especially if such permissions can also affect your principal or earnings, you will certainly be reluctant.
 
-权限过大这种风险是很微妙的，很多时候权限这东西是方便项目方做相关治理及风险应急的。但对我们来说，这就是人性考量了，万一项目方作恶呢？于是业内有了折中的实践：增加时间锁(Timelock)来解决一些权限过大的风险，比如：
+The risk of excessive permission is very subtle. In many cases, it is in place for the admin of the project to conduct relevant governance and risk contingency. But for users, this is a test on human nature. What if the team decides to  do evil? So there is a trade-off practice in the industry: adding Timelock to mitigate such risks of excessive permission, for example:
 
-> Compound，这个老牌知名的 DeFi 项目，它核心的智能合约模块 Comptroller 及 Governance 的 admin 权限都加了 Timelock 机制：<br>
+> Compound, an established and well-known DeFi project, the core smart contract modules Comptroller and Governance, both haveTimelock mechanism added to their admin permission:<br>
 > Comptroller(0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b)<br>
 > Governance(0xc0da02939e1441f497fd74f78ce7decb17b66529)<br>
-> 的 admin 地址是：<br>
+> The admin these 2 modulesis<br>
 > Timelock(0x6d903f6003cca6255d85cca4d3b5e5146dc33925)
 
-链上可以直接看到 Timelock 的时间锁（delay 参数）是 48 小时（172800 秒）：
+You can directly find out on chain that the Timelock (delay variable) is 48 hours (172,800 seconds):
 
 <img src="res/compound_timelock.png" width="700">
 
-也就是说，如果 Compound 的 admin（项目方）需要变更目标智能合约的一些关键值时，这笔交易上链后会有记录，但必须等到 48 小时后才可以最终完成执行。这意味着，只要你愿意，你是可以审计 admin 的每一次操作，你至少有 48 小时来反应。比如如果你不放心，你可以在 48 小时内把资金撤走。
+That is to say, if the admin of Compound needs to change some key variables of the target smart contract, the transaction will be recorded after it is initiated on the blockchain, but 48 hours must be waited before the transaction can be finalized and executed. This means that if you would like, you can audit every single operation from the admin, and you will have at least 48 hours to act. For example, if you are unsure, you can withdraw your funds within 48 hours. 
 
-还有一种削弱项目方权限过大风险的做法是：将 admin 多签了，比如用 Gnosis Safe 进行多签管理，这样至少不会出现一言堂。这里需要注意的是，多签可以是“皇帝的新衣”，比如一个人掌握了多把钥匙。所以目标项目的多签策略需要公示说明清楚，钥匙都由谁保管，保管钥匙的角色也一定是有口碑的。
+Another way to mitigate the risk of excessive permission of admin is to add multi-signature, such as using Gnosis Safe for multisig management, so that there will at least be no dictator. It should be noted here that multisig can be "the emperor's new clothes". For example, one person may hold multiple keys. Therefore, the multisig strategy of the target project needs to be clearly stated. Who holds the keys, and the identity of each key holder must be reputable. 
 
-这里需要特别注意，任何安全策略，都可能出现“皇帝的新衣”问题，表面做得好，实际上却不是，呈现出了一种虚假安全感。再举个例子，Timelock 这玩意，看去似乎挺好，实际上出现过有的项目方部署的 Timelock 是有后门的情况。用户一般也不会直接去看 Timelock 源码，而且也不一定看得懂，于是放了个后门在那，一时半会还真不一定有人留意到。
+It is worth mentioning here that any security strategy may lead to the problem of "the emperor's new clothes", which the strategy may appear to be well done, but in reality is not, resulting in an illusion of security. Take another example, Timelock looks good on paper. Actually, there have been cases where Timelock deployed by some projects has backdoors. Generally, users don't look into the source code of Timelock, and they would not necessarily understand it even if they do, so the admin puts a backdoor there, and no one would really notice for a long enough time. 
 
-除了权限过大风险，智能合约安全的其他内容也都很关键，但理解门槛还是挺高的，这里就不展开了，我的建议是这样：至少可以逐步学会阅读安全审计报告，熟能生巧。
+In addition to the risk of excessive permission, other elements of smart contract security are also critical. However, I will not expand here, in consideration of the prerequisites for understanding. Here is my advice: you should at least learn to read the security audit report, and practice makes perfect.
 
-**区块链基础安全**
+**Blockchain Foundation Security**
 
-区块链基础安全指的是区块链本身的安全性，如：共识账本安全、虚拟机安全等。如果区块链本身安全性堪忧，其上运行的智能合约项目也可以直接喝西北风了。选择一条拥有足够安全及知名度的区块链，甚至大概率可以源远流长的区块链是多么的重要。
+Blockchain foundation security refers to the security of the blockchain itself, such as consensus ledger security, virtual machine security etc. If the security of the blockchain itself is worrisome, the smart contract projects running on the chain would suffer directly. It is so important to choose a blockchain with sufficient security mechanism and reputation, and better with a higher probability of longevity.
 
-**前端安全**
+**Frontend Security**
 
-前端安全真是魔鬼，与用户走得太近了，特别容易让用户魔怔后上当受骗。可能大家主要的注意力都在自己的钱包上和目标项目的智能合约安全上了，前端安全非常容易被忽视。这里我需要再次强调，前端安全是魔鬼！我重点说说。
+Frontend security is really the devil. It is too close to the users, and it is especially easy to fool users into deception. Perhaps everyone's main focus is on the wallet and smart contract security, resulting in frontend security being easily overlooked. I want to  emphasize again that frontend security is the devil! Allow me to dig deeper. 
 
-前端安全里我最在意的点是：我怎么知道我在这个前端页面里的交互对象就是我以为的智能合约？
+My biggest concern regarding frontend security is: How do I know that the contract I am interacting with from this specific frontend page is the smart contract that I’m expecting?
 
-造成这种不安全感主要是因为以下这两种风险：
+This insecurity is mainly due to two factors:
 
-* 内部作恶
-* 第三方作恶
+* Inside job
+* Third party
 
-内部作恶很好理解，比如开发人员偷偷将前端页面里的目标智能合约地址替换为一个有后门的合约地址，或者直接植入个授权钓鱼脚本。当你访问该前端页面时，你钱包后续的一系列涉及加密货币的操作都可能是在陷阱里完成的。神不知鬼不觉，币没了。
+It is straightforward to understand the inside job. For example, the devs secretly replaces the target smart contract address in the frontend page with a contract address that has a backdoor, or planting an authorization phishing script. When you visit this rigged frontend page, a series of subsequent operations involving cryptos in your wallet may be done in a trap. Before you realized, the coins would be already gone.
 
-第三方作恶，主要指的是两种：
+The third party mainly refers to two types:
 
-* 一种是供应链作恶，比如前端依赖的第三方模块被植入了后门，随着打包发布一起被直接带入目标前端页面了。如 SushiSwap（仅仅举例子，并不代表截图里的项目有发生这个问题）：<br>
+* One is that the dependencies chain is infiltrated. For example, the third-party dependency used by  the frontend page  has a backdoor which gets sneaked into  the target frontend page along with the packaging and release.  The following is the package dependency structure of SushiSwap (for illustration only, it doesn't necessarily mean that the project in the screenshot has such issue):<br>
     <img src="res/sushiswap_3rd.png" width="500">
 
-* 一种是前端页面引入的第三方远程 JavaScript 文件，如果这个 JavaScript 文件作恶或被黑，那么目标前端页面可能就会被影响，如 OpenSea（仅仅举例子，并不代表截图里的项目有发生这个问题）：<br>
+* The other example is third-party remote JavaScript files imported by  the frontend page. If this JavaScript file is hacked, it’s possible that the target frontend page gets affected as well, such as OpenSea (for illustration only, it doesn't necessarily mean that the project in the screenshot has such an issue):<br>
     <img src="res/opensea_3rd.png" width="800">
 
-为什么这里说可能会被影响是因为，如果项目方在前端页面以下面这样的方式来引用第三方远程 JavaScript 文件的话，就可能不会被影响：
+The reason why we said it’s just possible but not certainly is that the risk could be mitigated if devs refer to a third-party remote JavaScript file on the frontend page in the following way:
 
 ><script src="https://example.com/example-framework.js" integrity="sha384-Li9vy3DqF8tnTXuiaAJuML3ky+er10rcgNR/VqsVpcw+ThHmYcwiB1pbOxEbzJr7" crossorigin="anonymous"></script>
 
-这里的关键点是 HTML5 的一个不错的安全机制：标签里的 integrity 属性（SRI 机制），integrity 支持 sha256, sha384, sha512，如果第三方 JavaScript 资源不满足 integrity 的哈希完整性校验，就不会加载，这个可以很好防止非预期的代码执行。但使用这个机制需要目标资源支持 CORS 响应。具体参考：
+The key point here is a nice security mechanism of HTML5: integrity attribute in tags (SRI mechanism). integrity supports SHA256, SHA384 and SHA512. If third-party JavaScript files do not meet the hash integrity check, the files will not be loaded. This can be a good way to prevent unintended code execution. However, utilizing this mechanism requires the target resource to support CORS response. For details, refer to the following:
 
 >https://developer.mozilla.org/zh-CN/docs/Web/Security/Subresource_Integrity
 
-等等，为什么我前面又提了“可能”，是因为有存在被绕过的场景。至于绕过方式我就不提了，因为大多情况下，你只需关注目标前端页面在引入第三方远程 JavaScript 文件时是否有 integrity 机制。可惜的是，OpenSea 没有，让我们祝福它。
+**Communication Security**
 
-**通信安全**
+Let’s focus on HTTPS security in this section. First, the target website must use HTTPS, and HTTP plaintext transmission should never be allowed. This is because HTTP plaintext transmission is too easy to be hijacked by man-in-the-middle attacks. Nowadays HTTPS is very common as a secure transmission protocol. If there is a man-in-the-middle attack on HTTPS, and attackers have injected malicious JavaScript into the web application’s front-end, a very obvious HTTPS certificate error alert will be displayed in the user's browser.
 
-通信安全这部分，重点看 HTTPS 安全就好。首先目标网站一定要 HTTPS，绝不允许存在 HTTP 明文传输的情况。因为 HTTP 明文传输实在太容易被中间人劫持攻击了，现在 HTTPS 这种安全传输协议已经非常普遍。如果 HTTPS 出现中间人劫持攻击，比如植入了恶意 JavaScript 代码到目标前端页面，此时浏览器必然会出现 HTTPS 证书错误的高显目提醒。举个例子，曾经 MyEtherWallet 的坑。
+Let’s use the MyEtherWallet incident as an example to illustrate this point.
 
-MyEtherWallet 曾经是个很流行的网页钱包，现在也挺知名，不过已经不仅仅是网页钱包了。我前面有说过，网页钱包我非常不建议使用，除了前端安全的各种猫腻之外，还可能出现 HTTPS 劫持的风险。
+MyEtherWallet used to be a very popular web application wallet, and up till now it’s still very well known. However it’s no longer just a web application wallet. As mentioned before, I strongly discourage the use of web application wallets due to security reasons. In addition to various issues in front-end security, HTTPS hijacking is also a big potential risk.
 
-2018.4.24，MyEtherWallet 就出现过 HTTPS 劫持的重大安全事件，回顾可见：
+On April 24, 2018, there was a major security incident of HTTPS hijacking in MyEtherWallet. The recap of the incident can be found here:
 
 >https://www.reddit.com/r/MyEtherWallet/comments/8eloo9/official_statement_regarding_dns_spoofing_of/<br>
 >https://www.reddit.com/r/ethereum/comments/8ek86t/warning_myetherwalletcom_highjacked_on_google/
 
 ![](res/myetherwallet_https_hijack.png)
 
-当时黑客是通过 BGP 这个上古协议劫持了 MyEtherWallet 大量用户所用的 DNS 服务（Google Public DNS），这导致许多用户访问 MyEtherWallet 时，浏览器出现 HTTPS 错误证书的提醒。其实吧，遇到错误证书了，原则上就别继续访问了，因为这表示目标页面已经被劫持了。但是真的许多用户不懂这个安全风险，顶多犹豫下就忽略错误证书的提醒继续强制访问了。
+In the attack, the hacker hijacked the DNS service (Google Public DNS) used by a large number of MyEtherWallet users via BGP, an ancient routing protocol, which directly led to the display of HTTPS error alerts in every user’s browser when they tried to visit MyEtherWallet website. In fact, users should stop when they see this alert, as it basically indicates that the target web page has been hijacked. In reality however, many users just quickly ignored the alert and proceeded to continue with their interactions with the hijacked site, because they didn’t understand the security risk behind the HTTPS error alert at all. 
 
-由于目标页面已经被劫持，黑客注入了恶意 JavaScript 代码，直接就盗走了目标用户在目标页面上的明文私钥，之后批量转走这些用户相关的加密货币（主要是 ETH）。
+Since the target web page had been hijacked and the hacker had injected malicious JavaScript in there, upon users’ interaction, the hackers would have successfully stolen their plaintext private key and transferred away their funds  (mostly ETH). 
 
-这绝对是个经典案例，黑客为了盗币，动用了 BGP 劫持，真是杀鸡用了牛刀。之后也出现过几起类似的案例，这里就不提了。这里对于用户来说实际上只需要注意一点，当你真的要用网页钱包或玩相关 DApp 时，一定要注意：当目标页面出现 HTTPS 错误证书提醒时，就立即停止继续访问、关闭页面，那么你什么事都不会有。
+This is definitely a classic case where hackers used BGP hijacking techniques to steal crypto. It’s just overkill. Ever after this there have been several similar cases, and I won’t mention them in detail here. To the user there is only one thing that really needs attention: if you ever decide to use a web application wallet, or try to interact with a DApp, always make sure you stop and close the page whenever you see a HTTPS certificate error alert! And your funds will be fine. There is a cruel reality in security: when there is a risk, don’t give users any choices. As if you do, there will always be users falling into the trap for whatever reasons. In fact, the project team needs to take up the responsibility. As of today, there are already very effective security solutions to the HTTPS hijacking issue mentioned above: the project team needs to properly configure HSTS. HSTS stands for HTTP Strict Transport Security; it is a web security policy mechanism supported by most modern browsers. If HSTS is enabled, in case of a HTTPS certificate error the browser will force users to stop accessing the target web applications and the restriction can’t be bypassed. Now you get what I mean?
 
-安全上有个残酷现实，是这样的：当已经出现风险时，就别给用户选择，一旦给了，总会有用户无论出于何种原因会掉坑里。其实这里项目方是需要肩负起相关责任的，比如这个 HTTPS 劫持，其实已经有很好的安全解决方案，项目方的开发人员只需配置好 HSTS 即可。HSTS 全称 HTTP Strict Transport Security，是浏览器支持的一个 Web 安全策略，如果开启了这个配置，浏览器发现 HTTPS 证书错误后就会强制不让用户继续访问。明白什么意思了吧？
+**Human Nature Security**
 
-**人性安全**
+This section is easy to understand. For example the project team is evil minded and acts in a dishonest way. I have mentioned some relevant contents in previous sections, so here I won’t go into more details. More to be covered in later sections.
 
-人性安全这块很好理解，比如项目方内部作恶，这点在前面已经提了些内容，暂时就不过多展开。因为之后，这块还会专门展开讲讲。
+**Financial Security**
 
-**金融安全**
+Financial Security should be deeply respected. In DeFi, users pay utmost attention to token price and return. They want superior, or at least steady return on investment. In other words, as a user, I play the game to win and if I lose, at least I need to be convinced that it is a fair game. This is just human nature.
 
-金融安全是个很需要敬畏的概念，放在 DeFi 上，涉及到金融的点，用户最关心的是币价、年化收益，一定要好，至少要稳。简而言之是，我作为用户，我玩这个 DeFi，我要赚钱。如果亏了，得让我心服口服。嗯，这也是人性。
+Financial security in DeFi is susceptible to attacks in the forms of:
 
-这部分可能出现诟病的有：
+* Unfair launch practices such as pre-mining or pre-sale;
+* Crypto whale attack;
+* Pump and dump;
+* Black swan events, like sudden market waterfall; or let’s say when one DeFi protocol is nested or interoperated with other DeFi/Tokens, its security/reliability will be highly depending on other protocols
+* Other technical attacks or what we refer to as scientific techniques such as front running, sandwich attack, flash loan attacks, etc
 
-* 不公平启动，比如预挖、老鼠仓。
-* 巨鲸攻击，所谓的钞能力。
-* 黑庄，看谁跑得快。
-* 市场黑天鹅，比如突然的大瀑布，还有如目标 DeFi 与其他 DeFi/Token 套娃或互操作，这个时候木桶短板可能就决定于其他 DeFi/Token 了。
-* 还有一些比较技术性的或者说科学家手法，比如抢跑、三明治攻击、闪电贷攻击等。
+**Compliance Requirements**
 
-**合规安全**
+Compliance requirement is a very big topic, the previously mentioned AML(Anti Money Laundering) is just one of the points. There are also aspects like KYC(Know Your Customer), sanctions, securities risks, etc. In fact for us users these are not something under our control. When we interact with a certain project, as it may be subject to relevant regulations in certain countries, our privacy information might get collected. You might not care about such privacy issues, but there are people who do. 
 
-合规安全是个非常大的话题，前面提到的 AML(Anti Money Laundering) 只是其中一点，还有如 KYC(Know Your Customer)、制裁地区限制、证券风险有关的内容等等。其实对于用户来说，这些不是我们可以对抗的，只能说当玩一个项目时，目标项目可能会受到某些国家的安全监管，因此可能会出现我们在意的隐私信息采集的问题。你可能不在意这点隐私，但却有在意的人。
+For example, in early 2022 there was a small incident: some wallets decided to support Address Ownership Proof Protocol(AOPP) protocol:
 
-比如，2022 年初出现的一件小事：钱包支持 Address Ownership Proof Protocol(AOPP) 协议。
-
-当时我看了下 AOPP 的协议设计，原来支持了 AOPP 的钱包可能泄露用户隐私：监管机构会有能力知道一个被监管的交易所和一个不知道的外部钱包之间的关联。参考：
+I took a look at the protocol design, it turned out that wallets supporting AOPP might leak user privacy. Regulators might get to know the interconnection between a regulated crypto exchange and an unknown external wallet address.
 
 >https://gitlab.com/aopp/address-ownership-proof-protocol
 
-怪不得许多隐私钱包重视这个反馈，纷纷删除了这个协议的支持。话说回来：这个协议设计还真有意思。我注意到也有的钱包暂无计划删除对 AOPP 的支持，比如 EdgeWallet，他们的观点认为 AOPP 并没暴露更多的用户隐私，而且可以让加密货币的流转提供更大的帮助，因为，如果用户无法证明一个外部钱包地址属于自己，那么一些被监管的交易所是不允许用户提币到这个外部钱包地址的。
+No wonder many privacy-oriented wallets are so concerned about user’s feedback and quickly removed AOPP support from their products. But to be honest: The protocol design is quite interesting. I have noticed that some wallets have no plans to remove support for AOPP, such as EdgeWallet. Their opinion is that AOPP doesn’t necessarily expose more user privacy, on the contrary it helps to enhance the circulation of cryptocurrency. In many regulated crypto exchanges, users are not allowed to withdraw to a particular external wallet address, before he can prove his ownership to it.
 
-刚开始知名硬件钱包 Trezor 也是不删除 AOPP 的支持，后来在 Twitter 上迫于社区及用户压力做了删除妥协了。
+At first, the well-known hardware wallet Trezor refused to remove AOPP support. But later it was forced to compromise and did so due to pressures from the community and users on Twitter. 
 
-你看，就这么小的一点，实际上对于有的人来说是隐私大事。这里并不是说要对抗监管，不管合规安全。其实在我的观点里，适当的合规安全妥协是必要的。这个话题就不继续展开说了，按你的舒服的方式去理解就行。
+As you can see, it’s such a small incident but to some people, privacy is really important. This is not to say that we should go against regulations, and totally ignore compliance requirements. As a matter of fact I do believe it’s necessary to have a certain level of compromise to compliance requirements. We won’t continue to deep dive into this topic, feel free to digest the contents in your own ways. 
 
-到这，DeFi 安全的主要部分的相关内容就介绍完了。
+So far, we have covered the majority of content in the DeFi Security section. 
 
-除了以上这些，还有未来的新增或更改而引入的安全问题，我们经常说“安全是动态的、不是静态的”，指的就是这点。比如现在很多项目方都有安全审计及漂亮的安全审计报告，但如果认真阅读质量不错的报告就会发现，这些报告会说明清楚，什么时间范围安全审计了什么内容，内容的唯一标记是什么（比如链上开源验证后的地址或 GitHub 仓库的 commit 地址，再或者目标代码文件的哈希值）。所以报告是静态的，如果你发现目标项目有不符合报告里的描述内容，就可以指出。
+What’s more, there are also security issues introduced by future additions or updates. We often say "security posture is dynamic, not static". For example nowadays most project teams do security audits and show clean security audit reports. If you ever read the good-quality reports carefully you will notice that these reports will clearly explain the scope, timeframe, and the unique identifier of the audited contents (e.g. the verified open source smart contract address, or the commit address on GitHub repo, or the hash of the target source code file). This is to say, the report is static, but if in a project you have observed any deviations from what is mentioned in the report, you can point it out.
 
-### NFT 安全
+### NFT Security
 
-前面提的 DeFi 安全几乎内容都可以应用到 NFT 安全上，但 NFT 又有自己独特的安全点，比如：
+All the previously mentioned contents on DeFi security can be applied to NFT security, and NFT itself has a few very specific and unique security topics, for example:
 
-* Metadata 安全
-* 签名安全
+* Metadata security
+* Signature security
 
-Metadata 指的主要就是图片、动图等内容，关于 Metadata 的具体标准建议可以参考 OpenSea 出的：
+Metadata refers mainly to the embedded picture, motion pictures and other contents. It’s recommended to refer to OpenSea on the specific standards:
 
 >https://docs.opensea.io/docs/metadata-standards
 
-这里可能带来的安全问题主要有两点：
+There are two main security concerns that may arise here:
 
-* 一个是图片（或动图）所在的 URI 是不可信的，比如随便的中心化服务，一方面不稳定，另一方面项目方随便改图片都行，那么 NFT 的数字藏品能力也就没了。一般都会用 IPFS、Arweave  这些去中心化存储，并且用知名的 URI 网关服务。
-* 另一个问题是可能造成隐私泄露，随便的 URI 是可以采集用户的基本隐私的（如 IP、User-Agent 等）。
+* One is that the URI where the image (or motion picture) is located might not be trustworthy. It can just be a randomly selected centralized service, on one hand there is no guarantee of availability, on the other hand the project team can modify the images at will, thus the NFT will no longer become an immutable “digital collectible”. Generally it’s recommended to use centralized storage solutions such as IPFS, Arweave, and select a well-known URI gateway service.
+* Another is the potential for privacy leakage. A randomly selected URI service might capture user’s basic information (such as IP, User-Agent, etc)
 
-签名安全问题很严重，下面展开。
+Signing security is another big concern here, and we will illustrate it below.
 
-### 小心签名！
+### BE CAREFUL With Signing!
 
-签名安全是我特别需要提的，因为签名协议坑很多，已经发生了数起安全事件，尤其围绕 NFT 的。但我注意到其实太多人还是无法很好应对这部分安全问题，究其原因在于很少有人把这部分安全问题讲明白。
+Signature security is something that I want to mention specifically as there are SO MANY pitfalls and you should be careful all the time. There have been several incidents, especially on NFT trading. However, I have noticed that not too many people understand how to prepare for and deal with such security problems. The underlying reason is few people have ever made the problem clear enough.
 
-签名安全里首要遵守的最大安全原则是：所见即所签。即你看到的内容就是你预期要签名的内容，当你签名发出去后，结果就应该是你预期的，绝不是事后拍断大腿的。
+The NO.1 and most important security principle in signature security is: **What you see is what you sign**. That is, the message in the signature request you received is what you should expect after signing. After you sign it, the result should be what you expected instead of something you would regret.
 
-签名安全有关的一些内容在“Cold Wallet”部分有提到，印象不深的建议回顾下，这里重点讲讲不一样的内容。
+Some details of signature security have been mentioned in the "Cold Wallet" section. If you can’t recall, I would suggest you revisit that section. In this section, we will focus on other aspects.
 
-OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件，尤其是 2022.2.20 集中爆发，根本原因在于：
+There were several well-known NFT hacks on OpenSea around 2022. On Feb 20th, 2022, there was a major outbreak. The root causes are:
 
-* 用户在 OpenSea 授权了 NFT（挂单）。
-* 黑客钓鱼拿到用户的相关签名。
+* Users signed NFT listing requests on OpenSea.
+* Hackers phished to obtain relevant signatures from users.
 
-比较正确的解读可以见这：
+It is actually not hard for hackers to obtain the relevant signature. The hacker needs to 1). construct the message to be signed, 2). hash it, 3). trick the target user to sign the request (this would be a blind signing, which means users don’t actually know what they are signing), 4). get the signed content and construct the data. At this point, the user has been hacked.
 
->https://twitter.com/Nesotual/status/1495223117450551300
-
-这个相关签名要拿到其实不难，黑客需构造正确的待签名内容，哈希后，诱骗目标用户完成签名（这里是盲签，也就是说用户实际上不知道自己到底签名的内容是什么），黑客拿到签名后的内容，构造利用数据，完成利用。
-
-我这里拿其中一个 NFT 市场进行具体说明（不一定是 OpenSea）。当目标用户在 NFT 市场里授权了相关 NFT 挂单后，攻击者构造了正确的待签名内容，通过 Keccak256 哈希后，在钓鱼页面上弹出了待签名的内容给用户，此时用户看到的东西如下：
+I will use Opensea as an example (in reality, it could be ANY NFT marketplace). After the target user authorizes the NFT listing operation in the marketplace, the hacker would construct the message to be signed. After hashing it with Keccak256, a signature request would pop up on the phishing page. Users would see something like the following:
 
 <img src="res/metamask_sign.jpg" width="360">
 
-仔细看，MetaMask 弹出的这个窗口，能看出什么？账户及余额、签名请求的来源网站、正在签名的消息，没了...就这点内容，用户怎么会想到自己一旦点击了“签名”后，灾难就来了，自己的相关 NFT 就可以被盗走了。
+Look closely. What kind of information can we get from this MetaMask popup window? Account Info and account balance, the source website where the signature request comes from, the message that users are about to sign and...nothing else. How could users suspect that the disaster is already on the way? And how could they realize that once they click the “Sign” button, their NFTs would be stolen.
 
-这其实就是一种盲签，用户并不需要在 NFT 市场里签名，可以被诱骗在任何网站（钓鱼网站）上签名，而用户根本就不知道这些签名的实际意义，可惜的是黑客知道。对于用户来说，只需牢记：拒绝盲签。OpenSea 之前存在盲签情况，2022.2.20 后改进了，采用 EIP-712 进行了升级改进。但即使不是盲签，还是有用户会粗心大意。
+This is actually an example of blind signing. Users are not required to sign within the NFT marketplace. Instead, users can be tricked into any phishing website to sign the message without fully understanding the actual meaning and consequence of these signatures. Unfortunately, hackers know. As a user, just keep in mind: NEVER BLIND SIGN ANYTHING. OpenSea used to have the blind signing problem, and they fixed it by adopting EIP-712 after Feb 20th 2022. However, without blind signing, users could still be careless and hacked in other ways.
 
-为什么会出现这种情况，最最本质的原因还是在于签名并不存在浏览器同源策略的约束，你可以简单理解为：同源策略可以确保一个行为只在明确的域名下发生，不会跨域发生，除非项目方故意要跨域的发生。如果签名有同源策略，那么非目标域名产生的请求签名，即使用户签名完成了，黑客也没法将这个签名用于目标域名下的攻击。这里就不继续展开说了，协议级别的安全改进，我有注意到新草案，我希望这种情况能尽快得到改善。
+The most essential reason why this is happening is that the signing isn’t restricted to follow the browser's same-origin policy. You can simply understand it as: the same-origin policy can ensure that an action only happens under a specific domain and will not cross domains, unless the project team intentionally wants domain crossing to happen. If signing follows the same-origin policy, then even if the user signs a signature request generated by the non-target domain, hackers can’t use the signature for attacks under the target domain. I will stop here before going into more details. I have noticed new proposals on security improvement at the protocol level, and I hope this situation can be improved as soon as possible.
 
-目前提到的签名安全涵盖了主要方式，但变种其实挺多，无论如何，万变不离其宗。最好的吃透方式是自己从头到尾完整将攻击复现一遍，甚至首创一些独特的攻击方式。比如这里提到的签名，其实里面有大量细节，比如如何构造待签名内容、签名后的内容具体都是什么？除了 approve 这种授权方式，还有其他的吗（有，比如 increaseAllowance）。好吧，这里展开的话就太过技术了。很好的是，你清楚签名的重要性了。
+We have mentioned most of the major attack formats that could occur when signing a message, but there are actually quite a few variants. No matter how different they look, they follow similar patterns. The best way to understand them is to reproduce an attack from beginning to end by yourselves, or even create some unique attack methods. For example, the signature request attack mentioned here actually contains a lot of details, such as how to construct the message to be signed, and what is generated exactly after signing? Is there any authorization methods other than “Approve” (yes, for example: increaseAllowance). Well, it would be too technical if we expand here. The good thing is you should already understand the importance of signing a message.
 
-对于用户来说，取消授权(approve)是可能在源头上对抗这类攻击的，你可以用如下这些知名的工具来操作：
+Users can prevent such attacks at the source by canceling the authorization/approval. The following are some well-known tools that you could use.
 
 * Token Approvals
     >https://etherscan.io/tokenapprovalchecker<br>
-    >是以太坊官方浏览器提供的授权检查及取消的工具，以太坊系列区块链基本都类似，因为他们的区块链浏览器基本都是 Etherscan 代为开发的，如：<br>
+    >This is the tool for authorization check and cancellation provided by Ethereum’s official browser. Other EVM compatible blockchains have something similar as their blockchain browsers are basically developed by Etherscan. For example:<br>
     >https://bscscan.com/tokenapprovalchecker<br>
     >https://hecoinfo.com/tokenapprovalchecker<br>
     >https://polygonscan.com/tokenapprovalchecker<br>
@@ -532,525 +529,528 @@ OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件�
 
 * Revoke.cash
     >https://revoke.cash/<br>
-    >老牌经典，只支持以太坊。
+    >classic tool, supports Ethereum only
 
 * APPROVED.zone
     >https://approved.zone/<br>
-    >也是老牌，也只支持以太坊。
+    >another classic tool, supports Ethereum only
 
-* Rabby 扩展钱包
+* Rabby extension wallet
     >https://rabby.io/<br>
-    >我们安全合作比较多的一款钱包，他们的“授权检查及取消”功能支持的以太坊系列是我见过最多的...
+    >One of the wallets that we have collaborated with a lot. The number of EVM compatible blockchains where they provide "authorization check and cancellation" function is the most that I have ever seen
 
-### 小心反常识签名！
+### Be CAREFUL With Counter-intuitive Signatures Requests!
 
-还没结束，我还想特别提一种风险：**反常识风险**。
+I would like to particularly mention another risk: **counter-intuitive risk**.
 
-什么是反常识，比如你已经特别熟悉以太坊了，各种 DeFi、NFT 玩得小白们直呼你大佬。此时你去玩 Solana，同样也遇到了各种钓鱼网站，你可不畏惧，轻蔑一笑：“这些在以太坊系列生态里都麻了，我怎么可能上当？”
+What is counter-intuitive? For example, you are already very familiar with Ethereum, and have become an OG of all kinds of DeFi and NFTs. When you first enter the Solana ecosystem, you probably would encounter some similar phishing websites. You may feel so well prepared that you start to think "I have seen these a thousand times in the Ethereum ecosystem and how could I get fooled?"
 
-不好意思，黑客笑了，你确实上当了。因为出现了个反常识流程，人都是有惯性或惰性，这导致你大意了，没有闪。
+In the meantime, hackers would be happy as you already got fooled. People follow their intuitive feelings which makes them careless. When there’s a counter-intuitive attack, people would fall into the trap.
 
-好，让我们来看看这个反常识真实案例。
+Ok, let's take a look at a real case that took advantage of counter-intuitiveness.
 
 <img src="res/solana_nft_phishing.jpg" width="800">
 
-2022.3.5，一个安全预警：Solana 上的授权钓鱼残忍多了，攻击者批量给用户空投 NFT(图 1) ，用户通过空投 NFT 描述内容里的链接(www_officialsolanarares_net)进入目标网站，连接钱包(图 2)，点击页面上的“Mint”，出现批准提示框(图 3)。注意，此时的批准提示框并没有什么特别提示，当批准后，该钱包里的所有 SOL 都会被转走。
+First of all, a warning: Authorization phishing on Solana is way more cruel. The example above happened on March 5th, 2022. The attackers airdropped NFTs to users in batches (Figure 1). Users entered the target website through the link in the description of the airdropped NFT (www_officialsolanarares_net) and connected their wallets (Figure 2). After they clicked the “Mint” button on the page, the approval window popped up (Figure 3). Note that there was no special notification or message in the pop up window at this time. Once they approved, all SOLs in the wallet would be transferred away.
 
-当点击“批准”时，用户会和攻击者部署的恶意合约交互：
+When users click the "Approve" button, they are actually interacting with the malicious smart contracts deployed by the attackers:
 *3VtjHnDuDD1QreJiYNziDsdkeALMT6b2F9j3AXdL4q8v*
 
-该恶意合约的功能最终就是发起“SOL Transfer”，将用户的 SOL 几乎全部转走。从链上信息来看，该钓鱼行为已经持续了几天，中招者在不断增加。
+The ultimate goal of this malicious smart contract is to initiate "SOL Transfer", which transfers almost all of the user's SOLs. From analysis of on-chain data, the phishing behavior continued for several days, and the number of victims kept increasing during the period of time.
 
-这里面有两个坑，需要注意的：
-1. 恶意合约在用户批准(Approve)后，可以转走用户的原生资产(这里是 SOL)，这点在以太坊上是不可能的，以太坊的授权钓鱼钓不走以太坊的原生资产(ETH)，但可以钓走其上的 Token。于是这里就存在“常识违背”现象，导致用户容易掉以轻心。
-2. Solana 最知名的钱包 Phantom 在“所见即所签”安全机制上存在缺陷(其他钱包没测试)，没有给用户完备的风险提醒。这非常容易造成安全盲区，导致用户丢币。
+There are two pitfalls from this example that you need to pay attention to:
+1. After the user approves, the malicious smart contract can transfer the user's native assets (SOL in this case). This is not possible on Ethereum. The authorization phishing on Ethereum can only affect other tokens but not the native asset of ETH . This is the counter-intuitive part that would make users lower vigilance.
+2. The most well-known wallet on Solana, Phantom, has loopholes in its security mechanism that it doesn’t follow  the "what you see is what you sign" principle (we haven’t tested other wallets yet), and it doesn’t provide enough risk warning to users. This could easily create security blind spots that cost users’ coins.
 
-### 一些高级攻击方式
+### Some Advanced Attacking Methodologies
 
-高级攻击方式其实真很多，大多在大众视角下无非就是：我被钓鱼了。但这钓鱼可真高级了，比如：
+Actually, there are many advanced attacking methodologies, but they are mostly regarded as phishing from the perspective of the public. However, some are no normal phishing attacks. For example:
 
 >https://twitter.com/Arthur_0x/status/1506167899437686784
 
-黑客通过邮件发送钓鱼，邮件里附带的文档是：
+Hackers sent a phishing e-mail with such an attachment:
 >A Huge Risk of Stablecoin(Protected).docx
 
-这确实是一份很有吸引力的文档...但这份文档打开后电脑就可能被植入木马（一般通过 Office 宏脚本方式或 0day/1day），这类木马一般都会包括如下常规功能：
+To be honest, it is an attractive document. However, once opened user’s computer will be implanted with a Trojan (generally through Office macro or 0day / 1day exploit), which usually contains the following functions:
 
-* 各种凭证采集，如浏览器的，SSH 有关的等，这样黑客就可以把触手伸向目标用户的其他服务。所以中毒后，一般都会建议用户不仅目标设备清理干净，相关账号权限该改的都需要及时更改。
-* 键盘记录，尤其采集那些临时出现的敏感内容，如密码等。
-* 相关截屏、敏感文件采集等。
-* 如果是勒索病毒，进一步的就是将目标设备上的文件都高强度加密了，等待受害者来支付赎金，一般是支付比特币。但这里不是勒索病毒，毕竟勒索病毒的动作太大了，意图直接粗暴。
+* Collecting all sorts of credentials, for example, browser related, or SSH related, etc. In this way, hackers can extend their access to other services of the target user. Therefore, after infection users are generally advised not only to clean up the target device, but also relevant account permissions as well.
+* Keylogger, in particular targeting those temporarily appearing sensitive information such as passwords.
+* Collecting relevant screenshots, sensitive files, etc.
+* If it is ransomware, all files in the target system would be strongly encrypted, and waiting for the victim to pay for the ransom, usually by bitcoin. But in this case it was not ransomware which has more obvious & noisy behavior and straightforward intentions.
 
-除此之外，针对加密货币行业的木马还会进行特别利用定制，如采集知名钱包、交易所的敏感信息，以实施盗币。上面提到的木马，根据专业的分析可以发现存在针对 MetaMask 的特别攻击：
+In addition, Trojans targeting the crypto industry will be specially customized to collect sensitive information from well known wallets or exchanges, in order to steal user’s funds. According to professional analysis, the above mentioned Trojan would conduct a targeted attack on Metamask:
 
 >https://securelist.com/the-bluenoroff-cryptocurrency-hunt-is-still-on/105488/
 
-木马会将用户的 MetaMask 替换为一个有后门的 MetaMask，一个有后门的 MetaMask 就意味着你在其中使用的加密货币就不是你的了。即使你配套硬件钱包，这个有后门的 MetaMask 也会通过篡改目标地址、金额的方式来实施盗币。
+The Trojan will replace user's MetaMask with a fake one with back doors. 
+A backdoored MetaMask basically means that any funds you store inside are no longer yours. Even if you are using a hardware wallet, this fake MetaMask will manage to steal your funds by manipulating the destination address or amount information. 
 
-这种攻击方式是专门针对财富外露的知名人士。我注意到的现象是，有些知名人士过于傲慢，被黑也就是迟早的事了。一般被黑后，许多人会从教训中痛定思痛、全面复盘、全面改进，并与信得过的专业安全人士或机构保持长期的合作及友谊。但，这个世界永远存在例外，有的人或项目方被黑一次，还会有第二、第三次。如果说是天将降大任于斯人也，每次被黑都真的是遇到了对手，那么此人或项目方，我会非常尊重，并称之为先驱，而且大概率之后也能发展起来。可惜的是，许多被黑是因为低级问题，而且可以举一反三的，这就真不可理解了。这种人或项目方建议远离。
+This approach is specially crafted for well known targets with known wallet addresses. What I have noticed is that many such people are too arrogant to prevent themselves from getting hacked. After the hack, many would learn from the lesson, conduct full reviews, have significant improvements, and also form  long term cooperation and friendship with trusted security professionals or agencies. However, there are always exceptions in this world. Some people or projects keep getting hacked again and again. If each time it is because of something no one has encountered before, I would highly respect them and call them pioneers. High chance they will be successful as time goes on. Unfortunately many of the incidents are the results of very stupid and repetitive mistakes that could be avoided easily. I would advise staying away from these projects.  
 
-那种广撒网的钓鱼攻击，其实手法就一般了，无非就是准备了一批域名相近的钓鱼网站，Twitter 等社交平台买号散播，热点及技巧拿捏得好，中招也是不少的。这种钓鱼没什么特别，一般就是粗暴的让用户的钱包授权相关代币（包括 NFT），然后盗走。
+Comparingly, those mass phishing attacks are not comprehensive at all. Attackers would prepare a bunch of similarly looking domain names and spread the payloads by buying accounts, followers, and retweets on Twitter or other social platforms. If managed well, many will fall into the trap. There is really nothing special in this kind of phishing attack,  and normally the attacker will just brutally make the user authorize tokens (including NFT) in order to transfer them away.
 
-还有一些高级攻击，如结合 XSS、CSRF、Reverse Proxy 等技巧来让整个攻击更加丝滑顺畅。没法都展开聊，这里可以专门说其中一个非常细节的利用点（Cloudflare 中间人攻击），属于 Reverse Proxy（反向代理）有关的场景，这个利用点已经发生过真实的盗币攻击，且非常的隐蔽。
+There are other kinds of advanced attacks, for example using techniques like XSS, CSRF, Reverse Proxy to smoothen the attack process. I won’t elaborate on all of them here, except one very special case (Cloudflare Man-in-the-Middle attack) which is one of the scenarios in Reverse Proxy. There have been real attacks that caused financial loss utilizing this extremely covert method. 
 
-这里的问题并不是 Cloudflare 本身作恶或被入侵的问题，而且项目方用了 Cloudflare，项目方的账号权限被盗后的问题。大体过程是这样的，如果你的网站用了 Cloudflare 服务，在管理后台可以注意到 Workers 这个功能模块，这个 Workers 官方说法是：
+The problem here is not Cloudflare itself being evil or getting hacked. Instead it’s the project team’s Cloudflare account that gets compromised. Generally the process is like this: If you use Cloudflare, you will notice this “Worker” module in the dashboard, whose official description is:
 
->构建无服务器应用程序并在全球范围内即时部署，从而获得卓越的性能、可靠性和规模性。具体参考：
+>Building serverless applications and deploying them instantly around the world, achieving excellent performance, reliability and scale. For details, please refer to
 >https://developers.cloudflare.com/workers/
 
-我很早就做了个测试页面：
+I made a test page a long time ago:
 
 >https://xssor.io/s/x.html
 
-你访问后会有个弹窗，内容是：
+When you visit the page there will be a pop-up window saying:
 
 >xssor.io, Hijacked by Cloudflare.
 
-其实这个弹窗，甚至整个 x.html 内容都不是这个文件本身的，全部都是 Cloudflare 提供的，原理见下图：
+In fact, this pop-up, and even the whole content of x.html, doesn’t belong to the document itself. All of them are provided by Cloudflare. The mechanism is shown below:
 
 <img src="res/cloudflare_worker.png" width="800">
 
-截图里这段代码意思很简单：如果我是黑客，我控制了你的 Cloudflare 账号，我就可以利用 Workers 特性，往任意页面注入任意恶意脚本。但此时用户是很难意识到目标页面被这样偷偷劫持篡改了，目标页面不会有任何错误提示（比如 HTTPS 证书错误），甚至项目方也一时半会意识不到这地方会出问题，可能花了大量的时间排查服务器、人员等安全。等意识到这个，损失也就大了。
+The indication of the code snippet in the screenshot is very simple: If I were the hacker and I have controlled your Cloudflare account, I can use Workers to inject arbitrary malicious script to any web page. And it’s very difficult for the users to realize that the target web page has been hijacked and tampered with, as there will be no error alerts (such as HTTPS certificate error). Even the project team won’t easily identify the problem without having to spend a huge amount of time checking the security of their servers and personnel. By the time they realise it is Cloudflare Workers, the loss could already be significant. 
 
-Cloudflare 其实很好，许多网站或 Web 服务都会使用 Cloudflare 来做 Web 防火墙、对抗 DDoS 攻击、全球 CDN 加速、反向代理等场景，由于有免费版本，所以用户众多，类似 Cloudflare 的，还有 Akamai 等服务。
+Cloudflare is actually a good tool. Many websites or web applications will use it as their web application firewall, anti DDoS solution, global CDN, reverse proxy, etc. Because there is a free version, they have a big customer base. Alternatively, there are services like Akaimai etc. 
 
-用户一定要注意自己的这类账号的安全性，账号安全问题从互联网流行开始，全球随时随处都在谈，再说似乎都要炸。但没办法，确实太多人还会因为账号安全而被黑。比如针对重要服务的密码并非唯一使用的强密码（1Password 这类密码安全管理软件普及率其实还是很堪忧的），再比如双因素(2FA)懒得开启、甚至不知道有这玩意、不知道该如何使用。更别提针对一些服务，每年至少要重置下密码吧。
+Users must pay attention to the security of such accounts. Account security issues arise with the rise of the Internet. It’s such a common topic in the world that almost everyone is talking about it everywhere, but still many people are getting hacked because of it. Some root causes might be they don’t use a unique strong password for important services (Password managers like 1Password isn’t that popular anyway), some might be they don’t bother to turn on 2 factor authentication (2FA), or maybe they don’t even know of the thingy. Not to mention for some certain services, passwords should be reset at least annually.
 
-好，一点高级攻击手法就先介绍这些。对于你来说，只需明白这确实是个黑暗森林，但凡有可能就多了解了解各种五花八门的攻击手法。见多后，甚至自己踩过几次坑，你至少也可以成为一名非职业网络安全人员了（这样的一种身份多好，技多不压身）。
+All right, this will be the end of this section. You only need to understand that this is indeed a dark forest, and you should know about as many attacking methodologies as possible. After seeing enough on paper, if you have at least fallen into the traps once or twice, you can consider yourself as an amateur security professional (which will benefit yourself anyway). 
 
-## 传统隐私保护
+## Traditional Privacy Protection
 
-不容易，你学习到这里了。传统隐私保护老生常谈了，2014 年我就写过一篇：
+Congratulations, you've made it to this part. Traditional privacy protection is an old topic: 
+Here's the article I wrote in 2014.
 
->隐私大爆炸，你得学几招保护自己<br>
+>You've got to learn a few tricks to protect yourself in the age of privacy breaches.<br>
 >https://evilcos.me/yinsi.html
 
-回头读这篇文章，绝大多数建议都没过时，我建议你消化下，很快，毕竟当年这篇属于特别入门型的。下面我将开始新的介绍。隐私保护实际上和安全息息相关，在这你也可以认为是你的安全保护，保护的是什么？当然是你的隐私，私钥什么的属于隐私的一种。另外，别认为这是传统就不重视，传统的这些才是基石，基石都不安全了，基石的隐私都没了，上层建筑也就是空中楼阁，危如累卵，脆弱不堪了。
+Rereading this article, although this was an entry level article in 2014, however, most of the advice in it is not outdated.After reading the article again, I' ll introduce something new here: in fact, privacy protection is closely related to security.  Traditional privacy is the cornerstone of security. This section includes your private keys are part of privacy. If the cornerstones are not secure, the privacy of the cornerstones are meaningless, then the superstructure will be as fragile as a building in the air.
 
-这里有两大资源是我非常推荐的：
-
-一个是：
+The following two resources are highly recommended：
 
 >SURVEILLANCE SELF-DEFENSE<br>
 >TIPS, TOOLS AND HOW-TOS FOR SAFER ONLINE COMMUNICATIONS<br>
 >https://ssd.eff.org/
 
-SSD(SURVEILLANCE SELF-DEFENSE) 即监视自卫，由非常知名的电子前沿基金会(EFF)发起，专门出了相关指南来告诉你，在监视/监控横向的互联网世界里，如何避开老大哥(Big Brother)看着你。其中包括了不少有用的工具（比如 Tor、WhatsApp、Signal、PGP 等）。
-
-另一个是：
+SURVEILLANCE SELF-DEFENSE is short for SSD. Launched by the well-known Electronic Frontier Foundation (EFF), which has specially issued relevant guidelines to tell you how to avoid big brother watching you in the monitoring Internet world, of which including several useful tools (such as Tor, WhatsApp, Signal, PGP, etc.)
 
 >Privacy Guide: Fight Surveillance with Encryption and Privacy Tools<br>
 >https://www.privacytools.io/
 
-这个网站是专门罗列相关工具的，已经很全面了。看到了没？它还推荐了加密货币交易所、钱包等。注意，网站里罗列的工具其实不少我都不怎么用，主要是我有一套自己的方式，你也应该逐步形成你自己的方式，不断对比不断完善。
+The above website is comprehensive listing a number of tools. It also recommends some cryptocurrency exchanges, wallets, etc. However, it should be noted that I don't use very many tools listed on the website, because I have my own way.Thus,you should also develop your own way, with comparing and improving continuously.
 
-这里我重点提下我觉得无论如何你都必须掌握的或使用的工具。
+Here are some highlights of the tools that I suggest that you should use.
 
-### 操作系统
+### Operation System
 
-Windows 10(及以上版本) 和 macOS 的安全性都挺让人满意了，你选择哪个都行。你能驾驭好，用 Linux 也是你的自由，比如 Ubuntu，或如 Tails、Whonix 这些隐私及安全变态的操作系统也行。
+Windows 10 Edition (and higher) and macOS are both secure options. If you have the ability, you can choose Linux, such as Ubuntu, or even extremely security & privacy focused ones like Tails, or Whonix.
 
-操作系统方面最容易上手的安全原则是：重视系统安全更新，有安全更新就立即行动。然后才是一些驾驭技能的掌握，很多人说 Windows、Mac 电脑还需要学习什么驾驭技能？点来点去不就行了吗？当然远远不行。对于安全小白来说，安装个杀毒软件是绝对的标配，如卡巴斯基、BitDefender 这种口碑很好的，Mac 上也有。
+On the topic of Operation System, the most straightforward security principle is: pay close attention to system updates, and apply them asap when available. The capability to master the Operating System comes next. People might ask, what on earth do you need to learn in order to master an Operating System like Windows or MacOS? Isn’t it just clicking around? Well it’s actually far from being enough. For novice users, a good antivirus software, like Kaspersky, BitDefender, is a must, and they both are available on MacOS.  
 
-接着记住下载的安全原则，前面有提。不乱下程序其实已经杜绝了绝大多数风险了。
+And then, don’t forget about download security, which I mentioned before. You will have eliminated most of the risks, if you don’t download and install programs recklessly.  
 
-然后可以思考下，如果你这台电脑丢了、被偷了怎么办？电脑就一个开机密码是不够的，如果磁盘没加密保护，坏人把磁盘拆下来，将里面的资料拿走就行了。此时我建议对于重要的电脑设置好磁盘加密保护。参考：
+Next, think about what you are gonna do, if your computer got lost or stolen. Having a boot password is obviously not good enough. If disk encryption is not turned on, bad actors can just take out the harddisk and retrieve the data inside. Thus my advice is that disk encryption should be turned on for important computers.
 
->https://docs.microsoft.com/zh-cn/windows/security/encryption-data-protection<br>
->https://support.apple.com/zh-cn/HT204837
+>https://docs.microsoft.com/en-us/windows/security/encryption-data-protection<br>
+>https://support.apple.com/en-us/HT204837
 
-还有 VeraCrypt 这种磁盘加密神器，曾经是 TrueCrypt，非常传奇，非常强大。如果你感兴趣可以了解并适应下：
+We also have powerful and legendary tools such as VeraCrypt (the former TrueCrypt), feel free to try it out if you are interested:
 
 >https://veracrypt.fr/
 
-更进一步的是启用 BIOS 或固件密码，这点看你自己，反正我是这样做了。不过一定要牢记相关密码，否则可能神仙也救不了你了。这个坑我很荣幸踩过，现在思来想去，浪费了一台笔记本、一点加密货币、一周的时间，但积累了宝贵的踩坑经验。
+You can go one step further to  enable BIOS or firmware password. I have done it myself but it’s totally up to your own choice. Just remember: if you do, remember the password very clearly, or else no one can ever help you out. I am lucky enough to have fallen into the rabbit hole myself before, which cost me a laptop, some crypto, and a week’s time. On the other hand, it's a very good learning experience too.
 
-### 手机
+### Mobile phone
 
-手机主要也就 iPhone、安卓系列，没了，比如曾经我最爱的黑莓，被时代淘汰了。安卓以前的安全性很堪忧，一方面是发展早期，另一方面是版本太多碎片，不同手机品牌都有自己的 fork 版本。现在安全性逐渐好了不少。
+Nowadays iPhone and Android are the only two mainstream mobile phones categories. I used to be a big fan of BlackBerry, but its glory faded away with time. In the past, the security posture of Android phones worried me a lot. On one hand it was still in the early stage, on the other hand the versions were very fragmented, each brand would have its own forked Android version. But now things have improved a lot.
 
-手机方面同样要重视系统的安全更新及下载的安全原则，并且警惕下面这几点：
+On mobile phones we also need to pay attention to security updates and download security. In addition, pay attention of the following points:
 
-* 不要越狱、Root 破解，除非你玩安全研究，否则没必要。如果是为了盗版软件这样做，香不香得看你的驾驭能力。
-* 不要从非官方市场下载 App，还是那句话，除非你能驾驭它。而且即使从官方市场下载的 App 也存在不少假的，注意分辨。
-* 官方的云同步使用的前提是：账号安全方面你确信没问题，否则云端被控，手机也就麻烦了。
+* Do not jailbreak/root your phone, it’s unnecessary unless you are doing relevant security researchIf you are doing it for pirated software it really depends on how well you can master the skill.
+* Don't download apps from unofficial app stores.
+* Don’t do it unless you know what you are doing. Not to mention there are even many fake apps in official app stores.
+* The prerequisite of utilising the official Cloud synchronization function, is that you have to make sure your account is secure, otherwise if the Cloud account gets compromised, so will the mobile phone.
 
-手机方面，我个人会更依赖 iPhone。同时准备至少两个 iCloud 账号，一个中国区、一个海外区，安装不同区域限制的 App 使用（挺奇怪，但这就是现实）。
+Personally I rely more on the iPhone. And you will need at least two iCloud accounts: one China and one overseas. You will need them to install apps with different regional restrictions. (which sounds pretty weird but welcome to the reality)
 
-### 网络
+### Network
 
-网络方面的安全问题曾经是烂透了，这几年逐步好起来了，尤其是 HTTPS Everywhere 策略普及了后。如果真的发生了网络劫持（中间人攻击），那么系统会有相应的错误反馈。但凡事都有例外，所以网络方面，能有安全的选择当然选择安全的。比如不乱连陌生 Wi-Fi，尤其是 4G/5G 这种安全性高的网络如此普及的情况下，除非信号不好，着急使用。
+Network security issues used to be a pain in the ass, but there are already significant improvements in recent years, especially since the mass adoption of HTTPS Everywhere policy. 
 
-如果你很有安全洁癖，你非常重要敏感的设备是可以考虑独立网络的。选择口碑好的路由器、运营商，切勿贪图小便宜，并祈祷路由器、运营商层面不会有高级作恶行为出现。
+In case of an ongoing network hijacking (man-in-the-middle attack) attack, there will be  corresponding system error alerts. But there are always exceptions, so when you have a choice use the more secure option. For example, don’t connect to unfamiliar Wi-Fi networks unless the more popular & secure 4G/5G network is not available or not stable.  
 
-### 浏览器
+### Browsers
 
-浏览器方面流行的主要就是 Chrome、Firefox 了，加密货币行业还有人会用 Brave，也行。知名度高的，团队强大的，安全更新也会比较及时。浏览器安全话题实在太广泛，对你来说，你只需注意这几点就好：
+The most popular browsers are Chrome and Firefox, in crypto fields some will use Brave too. These well known browsers have a strong team and there will be timely security updates. The topic of browser security is very broad. Here are some tips for you to be aware of:
 
-* 有更新就及时更新，千万别侥幸。
-* 扩展如无必要就不安装，安装也看清楚口碑、用户规模、背后是哪家知名公司维护的，并警惕扩展申请的权限，还有扩展必须来自浏览器自己的应用商城。
-* 浏览器可以多个共存，强烈建议：重要的操作在其中一个浏览器中进行，而其他常规、不重要的操作都可以在另一个浏览器中进行。
-* 一些隐私保护的知名扩展（如 uBlock Origin、HTTPS Everywhere、ClearURLs 等），看你个人喜好。
+* Update as quickly as possible, don't take chances.
+* Don’t use an extension if not necessary. If you do, make your decisions based on user’s reviews, number of users, maintaining company, etc, and pay attention to the permission it asks for. Make sure you get the extension from your browser’s official app store.
+* Multiple browsers can be used in parallel, and it is strongly recommended that you perform important operations in one browser, and use another browser for more routine, less important operations.
+* Here are some well-known privacy focused extensions (such as uBlock Origin, HTTPS Everywhere, ClearURLs, etc.), feel free to try them out.
 
-Firefox 上我还会用 NoScript 这个上古扩展神器，NoScript 可以很好对抗 JavaScript 作恶情况，当年威震四方。现在的浏览器越来越安全了，同源安全策略、CSP 安全策略、Cookie 安全策略、HTTP 安全响应头策略、扩展安全策略等等等，浏览器现在的安全高度确实是不可同日而语。NoScript 这种安全扩展被使用的空间也就越来越小了，感兴趣的可以自行了解。
+In Firefox in particular, I will also use the legendary ancient extension NoScript, which had a  proven record of fending off malicious JavaScript payloads. Nowadays browsers are becoming more and more secure as they add support for things like  same-origin policy, CSP, Cookie security policy, HTTP security headers, extension security policy, etc., Thus the need of using a tool such as NoScript is becoming smaller and smaller, feel free to take a look if interested.
 
-### 密码管理器
+### Password Manager
 
-如果你还没用密码管理器，要么就是你不知道用上之后的安全快感，要么就是有自己强大的记忆宫殿。脑记风险前面也说过，一是时间会让记忆淡忘或错乱；二是自己可能出意外。无论如何，我还是推荐你使用密码管理器来搭配你的脑记，知名的如：1Password、Bitwarden 等。
+If you haven't used a password manager yet, either you don't know the convenience of using one, or you have your own strong memory palace. The risk of brain memory has also been mentioned before, one is that time will weaken or disrupt your memory; the other is that you may have an accident. In either case, I still recommend that you use a password manager to go with  your brain memory, use a well-known one like 1Password, Bitwarden, etc.
 
-我并不需要过多讲解这部分的内容，相关教程实在太泛滥了，甚至都不需要教程也很容易上手。我需要提醒的是：
+I don't need to cover this part too much, there are so many related tutorials online, it's easy to get started without even needing a tutorial.
 
-* 千万千万别忘记你的主密码，且主密码相关账号信息别被盗了，否则一窝端。
-* 千万千万确保你的邮箱安全，如果你邮箱被盗，虽然这不会让你的密码管理器里的敏感内容泄露，但坏人有能力销毁这些。
-* 我曾验证过我提到的工具（如 1Password）的安全性，并一直在留意其出现过的安全事件、口碑、动态等，我并无法确保这些工具拥有绝对高度的安全性，尤其无法确保未来它们不会出现什么黑天鹅事件。
+What I need to remind you here is:
+
+* Do not ever forget your master password, and keep your account information safe, otherwise everything will be lost.
+* Make sure your email is secure. If your email is compromised, it might not directly compromise the sensitive information in your password manager, but bad actors have the capability to destroy it.
+* I have verified the security of the tools I mentioned (such as 1Password), and have been closely watching the relevant security incidents, user reviews, news, etc.. But I cannot guarantee that these tools are absolutely secure, and no black swan events are ever gonna happen in the future to them.
  
-有一点我是很欣赏的，比如 1Password 的安全页面有关介绍和说明：
->https://1password.com/zh-cn/security/
+One thing I do appreciate is the introduction and description of 1Password's security page, for example.
+>https://1password.com/security/
   
-其中包括安全设计理念、隐私及安全的相关权威认证、安全设计白皮书、安全审计报告等内容。这些内容的透明公开也是方便业内进行必要的验证。这点是非常值得项目方们学习的。
+This page has security design concepts, relevant privacy and security certificates,  security design white papers, security audit reports, etc. This level of  transparency and openness also facilitates the necessary validation in the industry. All project teams should learn from this. 
 
-Bitwarden 做得更彻底些，是全开源的，包括服务端，任何人都可去验证、审计、贡献。
+Bitwarden goes one step further, as it is fully open source, including the server side, so anyone can validate, audit, and contribute. Now you see? The intention of 1Password and Bitwarden is very clear: 
 
-你意识到了没？1Password、Bitwarden 这样做的意图很明确：
->我很安全很在意隐私，不仅是我自己说，第三方权威也说了，你们也可以来验证，甚至为了方便你们验证，我花费了巨大精力把能透明出来的内容都透明了。如果我说的没做到，你很容易来挑战我。
+>I am very secure and I am concerned about privacy. Not only do I say it myself, third party authorities say so as well. Feel free to audit me, and in order to make it easy for your audits, I spend a lot of effort to be open wherever possible. If what I do doesn’t match what I say, it’s easy to challenge me. And this is called Security Confidence.
 
-这叫什么？这叫安全自信:)
+### Two-Factor Authentication
 
-### 双因素认证
+Speaking of your identity security on the Internet, the first layer relies on passwords, the second layer relies on two factor authentication, and the third layer relies on the risk control ability of the target project itself. I can't say that two factor authentication is a must-have. For example, if you are using a decentralized wallet, one layer of password is annoying enough (now they basically support biometric identification such as facial recognition or fingerprint to improve user experiences), no one wants to use the second factor. But in a centralized platform, you have to use 2FA. . Anyone can access the centralized platform, and if your credentials get stolen, your account is breached and your fund will be lost. On the contrary, the password for your decentralized wallet is just a local authentication, even if the hacker gets the password, they still need to get access to the device where your wallet is located.
 
-你在互联网上的身份安全，第一层靠的是密码，第二层得靠双因素，第三层靠的是目标项目本身的风控能力。我不能说双因素都是标配，比如你在用的去中心化钱包，有一层密码就够烦了（现在基本都配套人脸、指纹这类生物识别来提高体验），双因素就算了吧。但在中心化平台里，没有双因素可不行。因为中心化平台任何人都可以访问或有能力访问，你的密码被盗了，意味着你的账号权限失守，资金也就没了。而你的去中心化钱包，密码仅仅只是发生在本地的认证，黑客即使拿到这个密码，还需要有能力接触到你这个钱包所在的设备。
+Now you see the differences?Some well-known two-factor authentication (2FA) tools include: Google Authenticator, Microsoft Authenticator, etc. Of course, if you use a password manager (such as 1Password), it also comes with a 2FA module, which is very handy. Always remember to make backups, because losing 2FA can be a hassle.
 
-明白其中区别了吧？好，知名的双因素认证(2FA)工具有：Google Authenticator、Microsoft Authenticator 等，当然如果你用密码管理器（如 1Password）也是自带了 2FA 功能的，非常方便。无论如何都记得做好备份，因为丢失 2FA 是一件很麻烦的事。
+In addition, two-factor authentication can also be a broader concept. For example, when an account identifier and a password are used to log in to the target platform, our account identifier is normally an email or mobile phone number. At this time, the mailbox or mobile phone number can be used as  2FAto receive a verification code. But the security level of this method is not as good. For example, if the mailbox is compromised or the SIM card gets hijacked, or the third-party service used for sending emails and text messages is hacked, then the verification code sent by the platform will also be revealed.
 
-另外，双因素认证也可以是个广义概念，比如账号、密码登录目标平台时，我们的账号一般是邮箱或手机号。此时邮箱或手机号通过收到验证码的方式来进行第二步认证，那么这也可以认为这是一种双因素认证方式。只是这种方式安全性就没那么好了，比如邮箱被黑了或手机的 SIM 卡被劫持了，再或者发送邮箱、短信的第三方服务被黑了，那么平台发送的验证码也就被一览无余。
+### Scientific Internet Surfing
 
-### 科学上网
+For policy reasons, let's not talk too much about this, just pick one of the well-known solutions. Things will be more under control if you can build your own solution.After all, our starting point is to surf the Internet scientifically and securely.
 
-这块出于政策原因，不多说，知名的几个自己对比。有能力肯定自建，这样安全可控，毕竟我们的出发点还真是科学上网、安全上网。
+If you are not using a self-built solution, you can’t fully rule out the possibility of a man-in-the-middle attack. As mentioned earlier, the Internet security situation is not as bad as it used to be, especially after the mass adoption of HTTPS Everywhere policy. However, some of the peace may be just the surface of the water, and there are already undercurrents beneath the surface that are not easily noticeable. To be honest, I don't really have a silver bullet for this. . It’s not easy to build your own solution, but it’s definitely worth it. And if you can't, make sure you check using multiple sources and choose a reputable one that has been around for a long time.
 
-如果并非自建，难保不会出现中间人攻击。前面说过，现在网络环境确实没以前那么糟糕，尤其 HTTPS Everywhere 策略普及了后。但有些平静可能只是水面，水面之下早已暗流涌动却不易被察觉。所以这块我并没特别好的安全建议，自建有门槛，但值得，实在不行，一定是多方确认，选择那种存在已久、口碑良好的品牌。
+### Email
 
-### 邮箱
+Email is the cornerstone of our web based identity. . We use email to sign up for a lot of services. Almost all of the email services we use are free. It seems like air, and you don’t think it would disappear. What if one day your Email service is gone, then all the other services that depend on it will be in a rather awkward situation.  This extreme situation is really not impossible if there're wars, natural disasters, etc. Of course, if these extreme situations occur, Email will be less important to you than survival.
 
-邮箱是真正重要的 Web 基础身份，我们会用邮箱注册一大堆服务，我们用的邮箱几乎都是免费的，似乎如空气一般，你觉得它应该不会消失。如果哪天，它消失了？那么依赖这个邮箱的一大堆服务就尴尬了。这种极端情况真不是不会发生，比如因为战争、天灾等。当然如果是这些极端情况发生，对你来说除了生存其他也就不那么重要了。
+When it comes to Email services providers, you should choose from tech giants, such as Gmail, Outlook, or QQ Email. It happens that my previous security researches cover this area. The security posture of these mailboxes is good enough. But still you have to be careful about Email phishing attacks. You don’t need to deal with every single Email, especially the embedded links and attachments, where Trojans may be hidden.
 
-邮箱方面，必然是选择巨头的，如 Gmail、Outlook、QQ 邮箱等。正好我曾经的安全研究方向有这部分，对你来说，这些邮箱安全性足矣。但无论何时你都一定要小心邮箱里发生的钓鱼攻击。并不是每封邮件都需要搭理，尤其是邮件里给的链接、附件文件，病毒木马可能就藏匿在其中。
+If you come across a highly sophiscatedattack on your Email services providers, you're on your own.
 
-如果你遇到针对邮箱的高级攻击，那只能自求多福。
+Besides the email services of these tech giants, if you are very concerned about privacy, you can take a look at  these two well-known privacy-friendly email services: ProtonMail and Tutanota. My suggestion is to separate  these private-friendly mailbox from daily usage, and only use them for services that requires special attention to privacy. You also need to regularly use your free Email services to prevent yout accounts from being suspended due to long time inactivity.  
 
-除了这些巨头的邮箱服务之外，如果你很在意隐私，两款口碑不错的隐私邮箱，你可以了解了解：ProtonMail 与 Tutanota。我的建议是隐私邮箱就拿来隔离做需要特别在意隐私的服务注册，并且注意下活跃频率，长时间不活跃，免费邮箱可能也就回收了。
+### SIM Card
 
-### SIM 卡
+SIM card and mobile phone number are also very important basic identities in many cases, just like email. In recent years, the major operators in our country have done a very good job in the security protection of mobile phone numbers. For example, there are strict security protocols & verification processes for canceling and re-issuing SIM cards, and they all happen on site. On the topic of SIM card attacks , let me give you an example:
 
-SIM 卡，手机号很多时候同邮箱一样也是很重要的基础身份。这些年我们国家的几大运营商对手机号的安全保护做得还是很不错的，比如注销、重办 SIM 卡是有严格的安全认证流程，这些都发生在营业厅里。SIM 卡攻击这块，我举个案例：
+In 2019.5, someone's Coinbase account suffered a SIM Port Attack (SIM card transfer attack), and unfortunately lost more than 100,000 US dollars of cryptocurrency. The attack process is roughly as follows:
 
-2019.5，有人的 Coinbase 账号遭遇了 SIM Port Attack(SIM 卡转移攻击)，损失了超过 10 万美金的加密货币，很惨痛。攻击过程大概是：
+The attacker obtained the privacy information of the target user through social engineering and other methods, and tricked the Mobile phone operator to issue him a new SIM card, and then he easily took over the target user's Coinbase account  through the same mobile phone number. The SIM has been transferred, which is very troublesome. It’s very troublesome if your SIM card got transferred by the attacker, as nowadays, many of the online services use our mobile phone number as a direct authentication factor or 2FA. This is a very centralized authentication mechanism, and the mobile phone number becomes the weak point.
 
-攻击者通过社会工程学等手法拿到目标用户的隐私，并到运营商欺骗得到一张新的 SIM 卡，然后通过同样的手机号轻松搞定目标用户在 Coinbase 上的权限。 SIM 都被转移了，这就很麻烦了，基本来说我们很多在线服务都是通过手机号来做的二次验证或直接身份验证，这是一个非常中心化的认证方式，手机号成为攻击的弱点。
-
-详细分析可以参考：
+For detailed analysis, please refer to:
 >https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124
 
-这块的防御建议其实也简单，启用知名的 2FA 工具。
+The defence suggestion for this is actually simple:enable a well-known 2FA solution.
 
-SIM 卡还有个风险，就是如果手机丢了或被盗了，SIM 卡被取出来使用就尴尬了。我的做法可以供你参考：我的 SIM 卡设置了密码（PIN 码），每次开机或重新使用 SIM 卡都需要输入正确的密码才可以。具体攻略请自行查询。我只提醒：别忘记了这个密码，否则麻烦，耽误事。
+The SIM card has another risk:that is, if the phone is lost or stolen, it will be embarrassing that the bad guy can take out the SIM card and use it. Here is what I did: Enable the SIM card password (PIN code), so every time when I turn on my phone or use my SIM card in a new device, I need to enter the correct password. Please ask Google for detailed howtos.  Here’s the reminder from me: don't forget this password, otherwise it will be very troublesome.
 
 ### GPG
 
-这部分的许多知识点在前文都提到了，不过这里再普及个小概念，以方便日后理解：
+Many contents in this part have been mentioned in previous sections, and I woud like to add more basic concepts here.: Sometimes you will encounter similar-looking names such as PGP, OpenPGP, and GPG. Simply distinguish them as follows:
 
-有时候会遇到 PGP、OpenPGP 及 GPG 这几种看去相似的叫法，简单这样区分下：
+* PGP, short for Pretty Good Privacy, is a 30-year-old commercial encryption software now under the umbrella of Symantec.
+* OpenPGP is an encryption standard derived from PGP.
+* GPG, the full name is GnuPG, is an open source encryption software based on the OpenPGP standard.
 
-* PGP 是 Pretty Good Privacy 的缩写，是商用加密软件，发布 30 多年了，现在在赛门铁克麾下。
-* OpenPGP 是一种加密标准，衍生自 PGP。
-* GPG，全称 GnuPG，基于 OpenPGP 标准的开源加密软件。
+Their cores are similar, and with GPG you are compatible with the others.. Here I strongly recommend again: In security encryption, don’t try to reinvent the wheel; GPG, if used in a correct way, can improve security level significantly!
 
-这几个底层都类似，用 GPG 就可以兼容其他的。这里我再次强烈建议：别整那么多有的没的，安全加密这块，用好 GPG 绝对可以大力提升安全感！
+### Segregation
 
-### 隔离环境
+The core value behind the security principle of segregation, is the zero trust mindset. 
+You have to understand that no matter how strong we are, we will be hacked sooner or later, no matter if it's by external hackers, insiders or ourselves. When hacked, stop loss should be the first step. The ability to stop loss is ignored by many people, and that’s why they get hacked again and again. The root cause is that there is no security design, especially straightforward methods such as segregation
 
-专门强调隔离环境这个安全原则，本质就是要具备零信任安全法则思维。你一定要相信：我们这些人即使再强大，被黑也是迟早的事，无论是被外部人、内部人还是自己。当被黑的时候，止损是第一步。止损能力被许多人忽略了，从而可能因为一次被黑而陆续被黑。究其本质就是因为许多安全设计不存在的，尤其是隔离这种看似粗暴的安全原则。
+A good segregation practice can ensure that in case of security incidents, you only lose those directly related to the compromised target, without affecting other assets.
 
-一个良好的隔离习惯，当被黑时，损失的仅被黑目标的那些隐私，而不会危及到其他隐私。比如：
+For example:
+* If your password security practice is good, when one of your accounts gets hacked, the same password will not compromise other accounts.
+* If your cryptocurrency is not stored under one set of mnemonic seeds, you will not lose everything if you ever step into a trap.
+* If your computer is infected, luckily this is just a computer used for casual activities, and there is nothing important in there So you do not have to panic, as reinstalling the computer would solve most of the problems. If you are good at using virtual machines, things are even better, as you can just restore the snapshot. Good virtual machine tools are: VMware, Parallels.
+* To summarize, you can have at least two accounts, two tools, two devices, etc. It is not impossible to completely create an independent virtual identity after you are familiar with it.
 
-* 如果你的密码安全习惯可以，当你其中一个账号被黑时，同样的密码就不会危及到其他账号。
-* 如果你的加密货币并不只在一个助记词下面，万一踩坑，你也不会归零重启。
-* 你的电脑中毒了，好在这是一台专门拿来浪的电脑，里面并没多少隐私，那你也不会慌，重装可以解决绝大多数的问题。如果你善于使用虚拟机，那就更好了，直接恢复快照就行。不错的虚拟机工具有：VMware、Parallels。
-* 上文提到的许多，你都可以至少两个账号、两个工具、两台设备等等，你熟悉以后完全打造一个独立的虚拟身份也不是不行。
+I mentioned a more extreme opinion before: privacy is not for us to protect, privacy should be controlled.
 
-我以前提过一个比较极端的观点：隐私不是拿来保护的，隐私是拿来控制的。
+The reason for this viewpoint is that: in the current Internet environment, privacy has actually been leaked seriously. Fortunately, privacy-related regulations have become more and more widely adopted in recent years, and people are paying more and more attention. Everything is indeed going in the right direction. But before that, in any case, when you have mastered the knowledge points I have listed, you will be able to control your privacy with ease. On the Internet, if you are used to it, you may have several virtual identities that are almost independent of each other.
 
-提出这个观点的原因是因为：在当下的互联网环境，隐私实际上已经泄露得不行。好在这些年隐私有关的法案越来越普及，大家也越来越重视。一切确实都会往好的方向发展。但在此之前，无论如何，当你掌握了我罗列的这些知识点，你就有能力将你的隐私游刃有余地控制着。在互联网上你如果习惯了，你几乎独立的虚拟身份可能会有好几个。
+## Security of Human Nature
 
-## 人性安全
+Human is always at the highest and eternal risk. There's a quote from The Three-Body Problem: "Weakness and ignorance are not barriers to survival, but arrogance is.."
 
-说了这么多，人才是那个最大且永恒的风险。《三体》里有句话：“弱小和无知不是生存的障碍，傲慢才是。”
+* Don't be arrogant: If you think you're already strong, you're fine with yourself. Don't look down on the whole world. In particular, don't be overly proud and think you can challenge global hackers. There is no end to learning, and there are still many obstacles.
+* Don't be greedy: Greed is indeed the motivation to move forward in many cases, but think about it, why is such a good opportunity just reserved for you?
+* Don't be impulsive: impulsiveness is the devil which will lead you to traps. Rash action is gambling.
 
-* 别傲慢：如果你觉得你已经很强，你自己得瑟就好，不必藐视一切，尤其是傲慢到可以挑战全球黑客们的境地。学无止境、坑无止境。
-* 别贪心：贪确实是很多时候的前进动力，但要琢磨下，凭什么这种好机会留给了你？是你很帅，还是说话好听？:)
-* 别冲动：冲动是魔鬼，处处遇陷阱，没有把握的冲就是赌。
-
-还有一堆人性有关的点，说也说不完，而且关键是我自己也有不少问题。只能说战战兢兢、如履薄冰了。下面重点讲几个需要特别注意的点，都是与人性这些缺陷有关的，坏人利用一些平台的便利性来将人性玩弄得死死的。
+There are endless things  in human nature to talk about and you can’t be more careful. Please pay special attention to the following points, and see how bad actors take advantage of the weakness in human nature, utilizing various convenient platforms.
 
 ### Telegram
 
-以前我说过 Telegram 是最大的暗网了。首先不得不说 Telegram 太强，安全、稳定、足够的开放性设计得到了太多人的喜欢。但 Telegram 的文化土壤也让坏人们很喜欢：Telegram 太好用了，用户基数足够大，功能开放性足够好，非常方便定制各类 Bot 服务，结合加密货币可以让许多交易体验超越 Tor 网络里的那些暗网市场。并且上面的鱼儿太多了。
+I've said before that Telegram is the biggest dark web. I have to say that people like Telegram for its security, stability, and open design features. But the open culture of Telegram also attracts bad guys: huge numbers of users, highly customisable functionality,  easy enough to build all kinds of Bot services. Combining with cryptocurrency, the actual trading experiences are far beyond those dark web marketplaces in Tor. And there are too many fishes in it.
 
-社交账号的唯一字段基本都是类似什么用户名或 XX 号之类的，其他都可以被坏人完全复用。有的社交平台有账号认证机制，比如加个蓝 V 什么的。开放的社交还可以通过一些指标来看是不是真账号，比如 follow 情况、发布的内容情况、内容互动情况等。封闭些的社交确认上麻烦些，但类似 Telegram 这种引入了共同在哪些 Groups 的功能是挺不错的。
+Normally, the unique identifier of social media accounts is only something like a username, user id, but these can be completely cloned by the bad actors. Some social platforms have account validation mechanisms, such as adding a blue V icon or something. Public social media accounts can be validated through some indicators, such as the follower's number, the contents posted, interaction with fans, etc. The non-public social media accounts are a bit more difficult. It's nice to see that Telegram released the function of "Which Groups we are in together".
 
-人性是这样，但凡有空子可以被钻，收益可观时，一定一堆坏人来钻。
+Wherever there are loopholes that can be exploited and the gains are considerable, a bunch of bad guys must be already there, that's human nature.
 
-所以社交平台上充斥了大量钓鱼陷阱，比如你在一个群里聊着聊着，突然冒出了个看去就像官方的客服私聊你（嗯，任意私聊是 Telegram 的机制，并不需要加好友），然后拿出杀猪盘经典话术，一些人就陆续上钩了...
+As a result, social media platforms are full of phishing traps. For example: In a group chat, someone who looks like the official customer service suddenly appeared and started a private chat (any2any private chat is the feature of Telegram, there is no need for friend request), and then out of the classic tactics of spam, fish will bite  one after another.
 
-进一步的话，直接拉你进入另一个群，里面的人除了你，其他都是仿冒的。但你一看就觉得特别真实。黑产里的群克隆技术指的就是这种。
+Or attackers might go one step further, and add you into another group. All participants buy you are fake, but to you it looks so realistic.   We refer to this technique as Group Cloning in underground society.
 
-这些都是初级的人性利用，高级点的就会结合漏洞来利用，更是难防。
+These are just the basic methods of manipulating human nature, the advanced techniques will be combined with vulnerabilities and thus are more difficult to prevent.
 
 ### Discord
 
-Discord 是这两年流行起来的新型社交平台，聊天、群组这些基本功能都有，最核心的功能是一个个独立的社区服务器（不是传统理解的那种服务器），如官方说法：
+Discord is a new and popular social platform/IM software raised in the past two years. The core function is community servers (not the concept of traditional server), as the official statement says:
 
->Discord 致力于打造一个您与您的朋友、家人及社区交谈和闲逛的地方。在 Discord 上有数百万不同的社区，从老朋友组成的小群体到成千上万的人通过共同兴趣连接在一起的大型服务器。
+Discord is a free voice, video, and text chat app that's used by tens of millions of people ages 13+ to talk and hang out with their communities and friends. 
 
-看去美好，但实际上安全设计挑战也是很高的，官方也很努力，有专门的安全规则及政策说明：
+People use Discord daily to talk about many things, ranging from art projects and family trips to homework and mental health support. It's a home for communities of any size, but it's most widely used by small and active groups of people who talk regularly.
+
+It looks great but requires a quite strong security design standard. Discord has specific security rules and policies as in:
 
 >https://discord.com/safety
 
-可惜，许多人不会去仔细阅读的。另外，官方也不一定都能把一些核心安全问题说清楚，因为有的安全问题必须站在攻击者角度才能点透。
+Unfortunately, most people will not bother to read it carefully. What's more, Discord won’t always be able to illustrate certain core security issues clearly, because they will have to put on an attacker's hat which is not always feasible.
 
-下面点出其中一点。
+For instance:
 
-Discord 上发生了这么多起 NFT 被盗案，请问其中的攻击技术要点是什么？如果这都没搞清楚，一堆 Discord 安全建议用处都不大。
+With so many NFT thefts on Discord, what are the key attack methods? Before we figure this out, Discord security advice is useless.
 
-不少项目方的 Discord 服务器被搞的技术要点是那个所谓的 Discord Token，实际上这个玩意是 HTTP 请求头里的 authorization 字段内容。这玩意在 Discord 存在非常久了，对于黑客来说，只要想办法拿到这个 Discord Token，即可几乎完全控制目标的 Discord 权限，也就是说，如果目标是管理员、有管理权限的人或机器人(Bot)，那么黑客就可以用这些特权来作恶了。
+The key reason behind many  project  Discordhacks is actually the Discord Token, which is the content of the authorization field in the HTTP request header. It has existed in Discord for a very long time. For hackers, if they can find a way to get this Discord Token, they can almost control all the privileges of the target Discord server. That is to say,if the target is an administrator, an account with administrative privileges or a Discord bot , the hackers can do anything they want to. For example by announcing a NFT phishing site, they make people think it's the official announcement, and fish will bite the hook.
 
-比如，发布 NFT 钓鱼网站，大家一看：官方发的公告，于是就一股脑儿冲进钓鱼网站了...
+Some might ask, what if I add two-factor authentication (2FA) to my Discord account? Absolutely a good habit! But Discord Token has nothing to do with your account 2FA status. Once your account is breached, you should change your Discord password immediately to make the original Discord Token invalid.
 
-有人可能要问，我的 Discord 账号增加双因素(2FA)认证 OK 吗？绝对好习惯！但应对这个攻击是不行的！Discord Token 无视你是否开启了 2FA。如果你中招过，你应该立即更改 Discord 密码，这样 Discord Token 就会刷新变化了。
+For the question of how the hacker can get the Discord Token, we have figured out at least three major techniques, and we will try to explain it in detail in the future . For normal users, there are a lot that can be done, but the core points are: don’t rush, don’t be greedy, and verify from multiple sources.
 
-至于黑客是如何拿到这个 Discord Token 的，我们已经摸清楚至少三大手法了，后面找机会写清楚。对于普通用户来说，防御建议其实挺多的，核心要点是：不急不贪、多方验证。
+### "Official" phishing
 
-### 来自“官方”的钓鱼
-
-坏人真的善于借势搞事，尤其是借官方的势。能仿冒就尽量仿冒得很像很像，如上面提过的假客服。还有如 2022.4 出头，Trezor 这款知名的硬件钱包的许多用户就收到来自 trezor.us 的钓鱼邮件，实际上 trezor.us 并不是 Trezor 官方域名。Trezor 官方域名只是 trezor.io。仅仅域名后缀不一样。另外钓鱼邮件里传播了如下域名：
+The bad actors are good at taking advantage of role playing, especially the official role. For example we have mentioned the fake customer service method before. Besides that, in April 2022, many users of the well-known hardware wallet Trezor, received phishing emails from trezor.us, which is not the official Trezor domain trezor.io. There is a minor difference in the domain name suffix. What’s more, the following domains were also spread via phishing emails.
 
 >https://suite.trẹzor.com
 
 <img src="res/trezor_phishing.jpg" width="800">
 
-这个域名是有“亮点”的，仔细看那个 ẹ 并不是英文字母 e。非常的迷惑性，实际上这是 Punycode，标准说明是这样的：
+This domain name has a "highlight spot", look closely at the letter ẹ in it, and you can find that is not the letter e. Confusing? It is actually Punycode, the standard description is as below:
 
 >A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)
->也就是国际化域名编码，可以表示 Unicode 码和 ASCII 码的有限字符集。
+>is an internationalized domain name encoding that represents a limited set of characters in both Unicode and ASCII codes.
 
-如果把 trẹzor 解开后的样子是这样：xn--trzor-o51b，这才是真身！
+If someone decode trẹzor, it looks like this: xn-trzor-o51b, which is the real domain name!
 
-Punycode 这种钓鱼方式，几年前就有真实利用了，比如 2018 年时，币安的一些用户就中招过。
+Hackers have been using Punycode for phishing for years, back in 2018, some Binance users were compromised by the same trick.
 
-这种域名看去很像的钓鱼就可以让许多人上当，更别提更高级的攻击方式，比如一些官方邮箱被控制，还有一种用户邮箱 SPF 配置问题导致的邮件伪造攻击。在用户眼里看到的邮件来源就是一模一样的官方特征。
+These kinds of  phishing sites can already make many people fall, not to mention those more advanced attacks such as official mailbox getting controlled, or mail forgery attacks caused by SPF configuration issues. As a result, the source of the email looks exactly the same as the official one.
 
-如果是内部人作恶，那用户就自求多福了。项目方内部的安全风控一定要特别重视人员安全，这永远是最值得花成本、花精力去建设的。人是最大的那只特洛伊木马，但却最容易被忽视。有的人安全意识实在太差，在安全上又不思进取。这种人，谁招谁倒霉。
+If it is a rogue insider, the user can do nothing. project teams should put a lot of effort into preventing insider threats. Insiders are the biggest Trojan horse, but they very often get neglected.
 
-### Web3 隐私问题
+### Web3 Privacy Issues
 
-随着 Web3 的流行，越来越多有趣或无聊的项目出现，如各种 Web3 基础设施、社交平台等。基础设施有的做了海量的数据分析，一不小心就发现感兴趣的目标的各种行为画像了，不仅各区块链上的，还有 Web2 那些知名平台上的。画像一出，目标基本就属于透明人。而 Web3 社交平台的出现也可能加剧这类隐私问题。
+With the growing popularity of Web3, more and more interesting or boring projects appeared: like all kinds of Web3 infrastructures, social platforms, etc. Some of them have done massive data analysis and identified various behavioral portraits of the targets, not only on the blockchain side, but also on well-known Web2 platforms. Once the portrait comes out, the target is basically a transparent person. And the appearance of Web3 social platforms may also aggravate such privacy issues.
 
-想一想，当你将这些 Web3 有关的各种玩意都玩了一遍，如签名绑定、链上各种交互等，你的隐私有没有泄露更多？很多人以为不会，但其实许多碎片拼在一起实际上就能输出更全面的画像：你喜欢收藏哪些 NFT、你加入了哪些社群、你在哪些白名单里、你和谁有了关联、你绑定了哪些 Web2 账号、你活跃在什么时间段里等等等。看吧，区块链有时候让隐私变得更糟糕。如果你在意隐私，那么需要谨慎对待一切新事物，并保持隔离身份的好习惯。
+Think about it, when you play around with all these Web3-related things, such as signature binding, on chain interactions, etc., are you giving away more of your privacy? Many might not agree, but as many pieces come together there will be a more accurate & comprehensive picture: which NFTs you like to collect, which communities you joined, which whitelists you're on, who you're connected with, which Web2 accounts you're bound to, what time periods you're active in, and so on. See, blockchain sometimes makes privacy worse. If you care about privacy, you will have to be careful with everything newly emerged and keep the good habit of segregating your identity.
 
-此时，如果不小心私钥被盗，损失的已经不是资金那么简单的了，是所有一切精心维系的 Web3 权益。我们常说的私钥即身份，现在看来真的是身份了。
+At this point, if the private key is accidentally stolen, the loss is not as simple as just money, but all the carefully maintained Web3 rights and interests. We often say that the private key is the identity, and now you have a real ID problem.
 
-人性安全部分就先到这，不继续展开了，你举一反三。
+Never test human nature.
 
-永远不要去考验人性。
+# Blockchain Shenanigans
 
-# 区块链作恶方式
+Blockchain technology created a whole new industry. Whether you call it BlockFi, DeFi, cryptocurrency, virtual currency, digital currency, Web3, etc, the core of everything is still the blockchain.  Most hype centered on financial activities, such as crypto assets, including non-fungible tokens (or NFT, digital collectible). 
 
-区块链技术的出现诞生了我们现在所处的行业，无论你如何称呼这个行业，链圈、币圈、区块链、加密货币、虚拟货币、数字货币、Crypto、Web3 等等，一切的核心几乎都还是围绕区块链。最热闹的都与金融活动有关，比如币这个玩意，包括非同质化代币（NFT，也叫数字藏品）。
-
-这个行业有超凡的活力与吸引力，但存在太多作恶方式。由于区块链的一些独特性，也出现了些比较独特的作恶方式。这些作恶方式大体包括：盗币、恶意挖矿、勒索病毒、暗网交易、木马的 C2 中转、洗钱、资金盘、博彩等等。2019.1，我做了个思维导图可做参考：
+Blockchain industry is highly dynamic and fascinating, but there are just too many ways to do evil. The special characteristics of blockchain give rise to some rather unique evils, including and not limited to crypto theft, cryptojacking, ransomware, dark web trading, C2 attack, money laundering, Ponzi schemes, gambling, etc. I made a mind map back in 2019 for reference.
 
 >https://github.com/slowmist/Knowledge-Base/blob/master/mindmaps/evil_blockchain.png
 
-同时，我们不断在更新维护的 SlowMist Hacked 区块链被黑档案库，大量的案例索引，一笔笔历史印记：
+Meanwhile, the SlowMist team has been maintaining and updating SlowMist Hacked - an growing database for blockchain-related hacking activities.
 
 >https://hacked.slowmist.io/
 
-本手册提了许多安全点，如果你能消化成自己的，那么真是恭喜你。至于这些五花八门的作恶方式，我就不准备展开了，如果你感兴趣，你应该自己学会扩展。多了解绝对是好事，更何况新型作恶手法总是层出不穷，变种不断。你的能力越大后，我也希望你能参与进来让这个行业更好一些。
+This handbook has introduced many security measures, and if you can apply them to your own security, then congratulations. I won’t elaborate too much on the blockchain shenanigans. If you are interested, you can learn it on your own, which is definitely a good thing, especially since new scams and frauds are continuously evolving. The more you learn, the better you can defend yourself and make this industry better.
 
-# 被盗了怎么办
+# What to do When You get hacked
 
-既然说了被黑是迟早的。那么当被黑时，甚至加密货币被盗时该怎么办？我就简单地直切主题。以下步骤不一定完全这个顺序，有的时候是来回穿梭的，但大体是这样。
+It is only a matter of time before you eventually get hacked. So what to do then? I'll simply cut straight to the chase. The following steps are not necessarily in order; there are times when you have to go back and forth, but the general idea is this.
 
-## 止损第一
+## Stop Loss First
 
-止损就是让损失不要放大了。这分为至少两个阶段：
+Stop loss is about limiting your loss. It can be broken down to at least two phases.
 
-* 眼前着急阶段。眼前的绝对是当务之急的，比如你都看到黑客正在陆续转移你的资产，你还想什么呢？赶紧抢着把剩余资产安全转移呀。有交易抢跑经验的，就抢跑。看资产类型，如果是那种可以链上冻结的，就尽可能联系冻结。有能力做链上追踪分析的发现资金转移进中心化平台，就可以联系做必要风控。
-* 局面控制后阶段。局面稳住后，重点要琢磨的是如何不会出现二次、三次伤害。
+* The Immediate Action Phase. Act immediately! If you see hackers are transferring your assets, think no more. Just Hurry up and transfer the remaining assets to a safe place. If you have experience in front running trades, just grab and run. Depending on the type of asset, if you can freeze your assets on the blockchain, do it as soon as possible; if you can do on-chain analysis and find your assets are transferred into a centralized exchange, you can contact their risk control department.
+* The Post-Action Phase. Once the situation is stabilized, your focus should be on making sure there would not be secondary or tertiary attacks.
 
-## 保护好现场
+## Protect The Scene
 
-发觉出事了，千万冷静，深呼吸三次后，一定要保护好有关现场。有几个经验供参考：
+When you find that something is wrong, stay calm and take a deep breath. Do remember to protect the scene. Here are a few suggestions:
 
-* 针对电脑、服务器这类联网设备，一旦这些是事故主场，立即断网，但不关机（电源供电持续）。有人说如果是破坏性病毒，不关机的话，本地系统的文件就都被病毒破坏了。你说的没错，如果你的反应能快过病毒的话...
-* 除非你自己有能力，否则等待专业安全人员介入取证分析。
+* If the accident happens on a computer, server or other devices connected to the Internet, disconnect the network immediately while keeping the devices on with power supply. Some people may claim that if it is a destructive virus, the local system files will be destroyed by the virus. They are right, however shutting down only helps if you can react faster than the virus...
+* Unless you are capable of handling this by yourself, waiting for security professionals to step in for analysis is always the better choice.
 
-这点很关键，我们遇到不少情况是：当我们介入做分析时，现场已经乱七八糟了，甚至关键证据（如日志、病毒文件）都出现被清理干净的情况。没有保存良好的案发现场，会对后续的分析与追踪溯源产生极大的干扰。
+This is really important as we have encountered quite a few times that the scene was already in a mess by the time we stepped in to do the analysis. And there were even cases when key evidence (e.g. logs, virus files) appeared to have been cleaned up. Without a well-preserved crime scene, it can be extremely disruptive to the subsequent analysis and tracing.
 
-## 分析原因
+## Root Cause Analysis
 
-分析原因的目的是了解对手，输出黑客画像。这个时候事故报告就非常重要，也叫验尸报告(Post Mortem Report)，当然国内把 Post Mortem Report 翻译为验尸报告怪怪的，我们喊事故报告就行。
+The purpose of analyzing the cause is to understand the adversary and output the hacker's portrait. At this point, the incident report is very important, which is also called Post Mortem Report. Incident Report and Post Mortem Report refer to the same thing.
 
-我们遇到许多人被盗币后，来咨询我们怎么办，很纠结的是，许多人难以表达清晰，更别说出具清晰的事故报告了。但我觉得表达是可以练习或依葫芦画瓢出来的。比如至少把以下几点说明下：
+We have met so many people who came to us for help after their coins were stolen, and it was very difficult for many of them to clearly tell what happened. It’s even harder for them to produce a clear incident report. But I think this can be practiced and it would be helpful by referring to examples.  The following can be a good starting point:
 
-* 概要 1：什么人、什么时间、发生了什么事、总损失多少？
-* 概要 2：损失有关的钱包地址、黑客钱包地址、币种类型、数量，一个表格就比较清晰了。
-* 过程描述：这点才是最难的，这里需要把这个事故过程的方方面面细节点描述出来，这甚至会分析出黑客有关的各种痕迹，最终输出黑客画像（其中包括了作恶动机）
+* Summary 1: Who was involved, when did this happen , what has happened, and how much was the total loss?
+* Summary 2: The wallet addresses related to the loss, the wallet address of the hacker, the type of the coin, the quantity of the coin. It could be much clearer with the help of just a single table.
+* Process description: this part is the most difficult. You will need to describe all aspects of the incident with all the details, which is useful to analyze various kinds of traces related to the hacker and eventually get the hacker portrait from them (including the motivation)
 
-我们具体在对接时，模板会复杂的多，循序渐进的。有时候人的记忆也是有问题，甚至出现刻意隐瞒关键信息导致浪费时间或耽误了绝佳时机。所以在实际对接中，消耗是真大，我们需要用我们的经验去做好引导工作。最终和丢币的人或项目方一起出具事故报告，并不断更新这份事故报告。
+When it comes to particular cases, the template will be much more complex. Sometimes human memory can also be unreliable, and there is even a deliberate concealment of key information which can lead to wasted time or delayed timing. So in practice, there would be a huge consumption and we need to use our experience to guide the work well. Finally we produce an incident report with the person or the team who lost the coins, and continue to keep this incident report updated.
 
-## 追踪溯源
+## Source Tracing
 
-根据罗卡定律：凡有入侵、必留痕迹。我们只要用心查，总会有发现。这个查的过程实际上就是取证分析、追踪溯源了。我们会根据取证分析出来的黑客画像来做追踪溯源，并不断充实这个黑客画像，这是一个动态、反复的过程。
+According to Rocca's Law, where there is an invasion, there is a trail. If we investigate hard enough, we will always find some clues. The process of investigation is actually forensic analysis and source tracing. We will trace the sources according to the hacker portrait from the forensic analysis, and constantly enrich it, which is a dynamic and iterative process.
 
-追踪溯源包含两大部分：
+Source tracing consists of two main parts:
 
-* 链上情报：针对钱包地址分析资金走向，比如进了中心化交易所、混币平台等，监控预警新的转移。
-* 链下情报：这部分的情报包括：黑客的 IP、设备信息、邮箱及这几点关联碰撞出来的更丰富信息，其中包括行为信息。
+* On-chain intelligence. We analyze the asset activities of the wallet addresses, such as going into centralized exchanges, coin mixers, etc., monitor it and get alerts of new transfers.
+* Off-chain intelligence: this part covers the hacker's IP, device information, email address and more information from the correlation of these associated points, including behavioral information.
 
-根据这些情报展开的追踪溯源工作就非常多了，甚至需要执法单位的介入。
+There is plenty of source tracing work based on this information, and it would even require the involvement of law enforcement.
 
-## 结案
+## Conclusion of Cases
 
-当然我们都希望有个好结局，历史上披露的公共事件中我们重点参与的且有好结局的，举几个例子：
+Of course we all want a happy ending, and here are some examples of publicly-disclosed events that we have involved which have good results:
 
-* Lendf.Me，价值 2500 万美金
-* SIL Finance，价值 1215 万美金
-* Poly Network，价值 6.1 亿美金
+* Lendf.Me, Worth of $25 million
+* SIL Finance, Worth of $12.15 million
+* Poly Network, Worth of $610 million
 
-我们亲历的还有许多是未公布的好结局、还行的结局。但大多数是不好的结局，挺遗憾。我们在这些过程中积累了大量宝贵经验，希望未来能将好结局的比率提高一个台阶。
+We have experienced many other unpublished cases that ended in good or okay results. However most of them had bad endings, which is quite unfortunate. We've gained a lot of valuable experiences in these processes and we hope to raise the ratio of good endings in the future.
 
-这个部分就简单提到这，我并不打算详细展开，这块的知识量是巨大的，有的我也不擅长。根据不同场景，我们需要掌握的能力有：
+This part is briefly mentioned as above. There is a huge amount of knowledge related to this area and I'm not quite familiar with some of it. Thus, I'm not going to give a detailed explanation here. Depending on the scenario, the abilities we need to master are:
 
-* 智能合约安全分析及取证
-* 链上资金转移分析及取证
-* Web 安全分析及取证
-* Linux 服务器安全分析及取证
-* Windows 安全分析及取证
-* macOS 安全分析及取证
-* 手机安全分析及取证
-* 恶意代码分析及取证
-* 网络设备或平台的安全分析及取证
-* 人员安全分析及取证
+* Smart Contract Security Analysis and Forensics
+* Analysis and forensics of on-chain fund transfers
+* Web Security Analysis and Forensics
+* Linux Server Security Analysis and Forensics
+* Windows Security Analysis and Forensics
+* macOS Security Analysis and Forensics
+* Mobile Security Analysis and Forensics
+* Malicious code analysis and forensics
+* Security analysis and forensics of network devices or platforms
+* Insider security analysis and forensics
 * ...
 
-几乎方方面面，本手册涵盖的安全点也是方方面面，但几乎都只是引入门罢了。
+It covers almost every aspect of security and so does this handbook. However, those security points are only briefly mentioned here as an Introductory guide.
 
-# 误区
+# Misconception
 
-本手册一开始就告诉你需要始终保持怀疑！包括本手册提到的任何知识点。这是个朝气蓬勃的、潜力巨大的行业，充斥大量的陷阱与乱象。这里我们来看看其中的一些误区，这些误区如果当作真理，不加思考的话，就很容易掉入陷阱中，成为乱象的一部分。
+From the very beginning, this handbook tells you to stay skeptical! This includes everything mentioned in here. This is an extremely vibrant and promising industry, full of all kinds of traps and chaos. Here let’s take a look at some of the misconceptions, which, if taken for granted as truth, can easily make you fall into the traps and become part of the chaos itself.
 
 ## Code Is Law
 
-代码即法律。但往往一个项目（尤其特指智能合约有关）被黑了或跑路了，受害者们几乎没人希望代码即法律，最终还是会依赖真法律。
+Code is law. However, when a project (especially smart contract related ones) gets hacked or rugged, no single victim would ever wish for “Code Is Law”, and it turns out they still need to rely on the law in the real world.
 
 ## Not Your Keys, Not Your Coins
 
-不是你的私钥，就不是你的币。其实许多用户拿到了私钥，但没有能力驾驭好自己的私钥，反而因为各种安全问题，币丢了。有时候会发现，币放在足够大且信誉很好的平台里，反而安全了许多。
+If you don’t own your keys, you don’t own your coins. As a matter of fact, many users failed to properly manage their own private keys. Due to various security mispractices they even lose their crypto assets. Sometimes you will find that it’s actually more secure to put your crypto asset in big and reputable platforms.
 
 ## In Blockchain We Trust
 
-因为区块链，我们相信。其实区块链本身确实有能力解决一些根本的信任问题，比如不可篡改、抗审查等，我的资产及有关活动在区块链上，我就可以默认相信没人可以不经授权拿走我的资产，篡改我的活动。但现实往往是残酷的，首先不是所有区块链都有能力做到这些根本点，其次人性永远是最大的突破点。许多黑客手法是超越绝大多数人的想象的，虽说攻防是成本对抗，比如当你的资产不够大，没有黑客会费力针对性地去黑掉你，但，多个这样的你存在，那么也就很有利可图了。
+We trust it because it’s blockchain. In fact, blockchain itself does have the capability to solve many of the fundamental trust issues, since it’s tamper-proof, censorship-resistant, etc; if my asset and related activities are on chain, I can trust by default that no one else will be able to take away my asset or tamper with my activity without authorization. However the reality is often harsh, firstly not every blockchain is able to achieve these fundamental points, and secondly human nature always becomes the weakest link. Many of the hacking techniques nowadays are beyond the imagination of most of us. Though we always say that attack and defense is the balance between cost and impact, when you don’t own a big asset no hacker will waste time to target you. But when there are multiple targets like yourself, it will be very profitable for the hackers to launch the attack. 
 
-我的安全建议说简单也简单：保持对一切的默认不信任（也就是默认怀疑一切），并做好持续验证的工作。验证（Verify）是很关键的安全动作，持续验证是要告诉你，安全不是静态的，此时没问题，不代表未来不会出问题。验证能力是对自己最大的考验，但很有意思，你会因此而掌握足够多的知识。当你足够强时，没人可以轻易欺负你。
+My security advice is very simple: Distrust by default (that is, question everything by default), and conduct continuous verification. Verify is the key security action here, and continuous verification basically means that security is never in a static state, it’s secure now doesn’t mean it’s secure tomorrow. The capability to properly verify is hereby the biggest challenge for us all, but it’s quite interesting, as you will get to master a lot of knowledge in the process. When you are strong enough, no one can easily harm you. 
 
-## 密码学安全就是安全
+## Cryptographic Security is Security
 
-密码学确实很强大很重要。没有这么多密码学家的努力，这么多扎实的密码学算法及工程实现，也就别谈我们现在的通信技术、互联网技术、区块链技术了。可惜有些人却把密码学安全当成一切的安全，于是就会出现一些很奇怪的疑问：
+Cryptography is powerful and important. Without all the hard work of cryptographers, all the solid cryptographic algorithms & engineering implementations, there will be no modern communications technology, Internet, or blockchain technology. However, some individuals consider cryptographic security as absolute security. And thus a bunch of weird questions arises: 
 
->区块链不是号称很安全的吗？私钥不是说破解需要多少多少亿亿亿年吗？为什么 FBI 破解了暗网比特币？为什么周杰伦的 NFT 还会被盗？
+Isn’t blockchain so secure, that it took trillions of years to break a private key? How come the FBI could decrypt Dark Web Bitcoin? Why on earth could Jay Chou’s NFT get stolen?
 
-这些疑问我都可以忍...不能忍的是有所谓安全人士拿密码学安全去忽悠大众，什么军级加密、殿堂级加密、宇宙级加密，系统特别特别安全，黑客没辙。
+I can bear with these novice questions... what I can’t bear with is the fact that many so-called security professionals use cryptographic security concepts to fool the public, they are mentioning terms such as military-grade encryption, world’s best encryption, cosmic-level encryption, absolute system security, unhackability, etc. 
 
-黑客懒得理你...
+Hackers? They don’t give a shit...
 
-## 被黑很丢人
+## Is it humiliating to be hacked?
 
-被黑确实会让心情很复杂，也确实会有丢人的感觉。但你需要明白被黑是 100% 普适现象，绝无例外。没必要五十步笑百步，也没必要觉得丢人就逃避遮掩。
+It is true that getting hacked can bring mixed feelings, and there will be a sense of shame sometimes. But you need to understand that getting hacked is almost  100% guaranteed so there is nothing to be ashamed of. 
 
-被黑后，如果你仅仅需要对自己负责，那随意；如果你需要对一些人、不少人负责的话，一个透明开放的被黑处理态度及负责任做法就非常之关键了。虽然可能会引来嘲讽、质疑、甚至动辄说你在自导自演这起黑客事件。
+Once getting hacked, it doesn’t matter if you are only responsible for yourself. However, if you are responsible for many others, you have to be transparent and open when you are dealing with the incident. 
 
-一个透明开放且不断更新的被黑处理进度，再加上痛定思痛的引以为戒，你总会引来好运。你也可以这样认为：你的项目如果连知名度都没，谁去黑你？丢人的不是被黑，丢人的是：傲慢。
+Although people may question or even accuse you of staging the hack by yourself, a transparent and open updated process will always bring good luck and understanding.
 
-虽说被黑是 100% 普适现象，因为大量是小坑，踩踩小坑，加速成长，大坑还是得尽量避之。
+Think of it this way: if your project isn't well-known, no one will hack you. The shame is not being hacked; the shame is your arrogance.
 
-## 立即更新
+From a probability point of view, getting hacked is a common phenomenon, normally, the majority of the security issues are just small problems, which could help your project grow. However, the severe big problems still have to be avoided as much as possible.
 
-本手册好几次我建议要重视更新，有安全更新就立即更新。那么你仔细思考下，我的这种说法是否具有普适性？
+## Immediately Update
 
-实际上是这样的：大多时候，针对安全方面的“立即更新”是对的。但有些时候，更新解决了一个问题，可能会引入另一个问题。历史上这类案例挺多，可以自行搜索了解。我举例其中一个，关于 iPhone 与 Google Authenticator 的：
+For many times this handbook suggests to pay attention to updating. If there is a security update available, apply it immediately. Now think carefully, is this a silver bullet?
 
->iPhone 新版 iOS 15 系统升级后有个风险，身份验证器 Google Authenticator 里面的信息可能会清空，也可能会 double，如果发现 double 了千万不要去删除重复的条目，这会导致重开 Google Authenticator 后里面的信息全部丢失。建议未升级 iOS 15 系统且有使用 Google Authenticator 的最好先备份一下再升级。
+Actually, in most cases, "update now" is the right thing to do . However, there have been times in history when an update solves one problem but introduces another. An example is iPhone and Google Authenticator:
 
-后来，这个问题，Google 更新了 Authenticator 来全面解决了。
+There is a risk of the new iOS 15 update, that is, the information in Google Authenticator may be wiped or doubled after the iPhone upgrade. In this case, never delete the duplicate entries if you find that they are doubled, as it may cause the loss of all the information in Google Authenticator after reopening.
 
-除了这点之外，钱包的更新我是不建议频繁的，尤其是重资产的钱包。除非是大的安全更新需要你不得不更新钱包，或者有很重要的功能让你不得不更新。这个就需要自己来做风险评估及抉择了。
+For those who have not upgraded to the iOS 15 system and are using Google Authenticator, it is highly recommended to back it up before upgrading.
 
-# 总结
+Later, Google has updated the Authenticator app, solving this problem permanently.
 
-本手册开局这张图:)
+Besides, I don't recommend updating wallets frequently, especially for asset-heavy wallets, unless there is a major security patch, or a very important feature that leads to an inevitable update.  in which cases you will have to do your own risk assessment and make your own decision.
+
+# Conclusion
+
+Recall that this handbook starts with this diagram :)
 
 ![](res/web3_hacking_map.jpg)
 
-你注意到了吗？我特意把图中的人标红了，是想反复提醒：人是万物基础（宇宙学领域称之“人择原理”）。无论是人性安全，还是安全驾驭能力，最终都取决于你。是的，当你足够强时，没人可以轻易欺负你。
+Have you noticed that I have marked in red the person in the diagram?, I do so to remind everybody again that humans are the foundation of all (referred to as "anthropic principle" in cosmology). No matter if it's human nature security, or the ability to master security skills, it all depends on you.  Yes, when you are strong enough, no one can easily harm you. 
 
-我顺着图开始展开，从创建钱包到备份钱包再到使用钱包这三大过程讲解了许多安全要点。接着介绍了传统隐私保护，我说传统的这些是基石，是我们安全地玩区块链生态的基石。人性安全部分再多提都不过。那些五花八门的作恶方式，多了解很好，甚至自己踩了几次坑，许多纸上谈兵的安全意识也就真成了你的安全经验。没有绝对的安全，于是我讲解了被盗了怎么办，我不希望你被盗，但万一发生，我希望这份被盗后的安全指南可以给你带来帮助。最后就是谈一些误区，本意很简单就是希望你有自己的批判思维，因为这个世界很美好，但也很多糟糕。
+I started to expand based on the diagram, and explained many security key points in the three processes, creating wallet, backing up wallet and using wallet. Then I introduced traditional privacy protection. I stated that such traditional ones are the cornerstones and the building blocks for us to stay secure in blockchain ecosystems. The human nature security part cannot be overdressed. It's good to understand more about the various ways of doing evil, especially if you step into a few pits, the security awareness on paper may eventually become your security experience. There is no absolute security, so I explained what to do when you get hacked. I don't want an unfortunate event to happen to you, but in case it happens, I hope this handbook could help you. The last thing is to talk about some misconceptions. My intention is very simple, I hope you can build up your own critical thinking, because the world is both beautiful and terrible. 
 
-我已经很久没写这么多文字了，上一次还是 10 年前，我的那本《Web 前端黑客技术揭秘》，挺酸爽。Web 安全攻防玩了许多年后，网络空间安全也玩了许多年，带队做了个网络空间搜索引擎钟馗之眼(ZoomEye)。我算是涉猎了安全攻防多领域的人了，但能说熟练的也仅个把而已。
+I have not written so many words for a long time. I think the last time was 10 years ago when I wrote the book "Demystify Web Frontend Hacking Techniques".  It was quite bittersweet. After many years in web security as well as cybersecurity, I led a team to create ZoomEye, a cyberspace search engine. Within cybersecurity, I have dabbled in many fields, only a few of which I can say that I am skilled at. 
 
-现在玩区块链安全，我也好，还是整个慢雾也好，都算是跑在比较前面的。这些年遇到的案例实在太多，几乎可以认为每周都可能经历那种恍惚感觉。许多心得体会不记录下来确实可惜，终于在数位朋友的催促下，这本手册诞生了。
+Now in blockchain security, SlowMist and myself are considered to be pioneers . There are so many cases we have encountered in these years that you can almost think we are in a state of trance every single day. It's a pity that many insights are not recorded and shared. And as a result, at the urging of several friends, this handbook was born. 
 
-当你阅读完本手册后，一定需要实践起来、熟练起来、举一反三。如果之后你有自己的发现或经验，我希望你也能贡献出来。如果你觉得敏感，可以适当脱敏，匿名也行。
+When you have finished reading this handbook, you must practice, become proficient and draw inferences. When you have your own discovery or experience afterwards, I hope you will contribute. If you feel there is sensitive information you can mask them out, or anonymise the information.
 
-最后，我需要致谢安全与隐私有关的立法与执法在全球范围内的成熟；各代当之无愧的密码学家、工程师、正义黑客及一切参与创造让这个世界更好的人们的努力，其中一位是中本聪。
+Finally,thanks to the global maturity of security and privacy-related legislation and enforcement; thanks to the efforts of all the pioneering cryptographers, engineers, ethical hackers and all those involved in the creation of a better world, which includes Satoshi Nakamoto.
 
-# 附
+# Appendix
 
-## 安全法则及原则
+## Security rules and principles
 
-本手册提到有关的安全法则及原则，特别整理如下。有不少是融入大段文字里的，我就不做特别提炼了。
+The security rules and principles mentioned in this handbook are summarized as follows. Quite a few rules are being incorporated into the above text and will not be specifically refined here.
 
-两大安全法则：
+Two major security rules:
 
-* 零信任。简单来说就是保持怀疑，而且是始终保持怀疑。
-* 持续验证。你要相信，你就必须有能力去验证你怀疑的点，并把这种能力养成习惯。
+* **Zero trust**. To make it simple,stay skeptical, and always stay so.
+* **Continuous validation**. In order to trust something, you have to validate what you doubt, and make validating a habit.
 
-安全原则：
+Security principles:
 
-* 网络上的知识，凡事都参考至少两个来源的信息，彼此佐证，始终保持怀疑。
-* 做好隔离，也就是鸡蛋不要放在一个篮子里。
-* 对于存有重要资产的钱包，不做轻易更新，够用就好。
-* 所见即所签。即你看到的内容就是你预期要签名的内容，当你签名发出去后，结果就应该是你预期的，绝不是事后拍断大腿的。
-* 重视系统安全更新，有安全更新就立即行动。
-* 不乱下程序其实已经杜绝了绝大多数风险了。
+* For all the knowledge from the Internet, refer to at least two sources,  corroborate each other, and always stay skeptical.
+* Segregate. Don’t put all the eggs in one basket.
+* For wallets with important assets, don’t do unnecessary updates.
+* What you see is what you sign. You need to be aware of what you are signing, and of the expected result after the signed transaction is sent out. Don’t do things that will make you regret afterwards.
+* Pay attention to system security updates. Apply them as soon as they are available.
+* Don't download & install programs recklessly can  actually prevent most risks.
 
-## 贡献者
+## Contributors
 
-感谢贡献者们，这个列表会持续更新，希望你有任何的想法也联系我：
->余弦，Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+Thanks to the contributors, this list will be continuously updated and I hope you can contact me if there are any ideas for this handbook.
 
-贡献者们：
+>Cos，Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+
+Contributors
 ```
-我夫人
-慢雾，Twitter(@SlowMist_Team)，如：Pds、Johan、Kong、Kirk、Thinking、Blue、Lisa、Keywolf...
-即刻
-一些匿名的朋友
+My wife
+SlowMist, Twitter (@SlowMist_Team), e.g. Pds, Johan, Kong, Kirk, Thinking, Blue, Lisa, Keywolf...
+Jike app
+Some anonymous friends ...
 ...
 ```
 
-只要有被采纳收录至本手册的帮助，比如：提供了具体的防御建议、案例；翻译工作；大错误纠错等。
+**If your contribution is accepted for inclusion in this handbook, you will be added to the list of contributors.**
 
-## 那些官网
+**For example**: provided specific safety defense suggestions or cases; participated in translation work; corrected larger errors, etc.
+
+## Official Sites
 ```
 SlowMist https://www.slowmist.com
 CoinMarketCap https://coinmarketcap.com/

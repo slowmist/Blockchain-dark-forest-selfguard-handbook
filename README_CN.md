@@ -1,6 +1,7 @@
 区块链黑暗森林自救手册<br>
 *掌握这些，掌握你的加密货币安全。*
 
+🔥Website: https://darkhandbook.io/<br>
 :us:English：[Blockchain dark forest selfguard handbook](README.md)
 
 Blockchain dark forest selfguard handbook<br>
@@ -1048,7 +1049,7 @@ Punycode 这种钓鱼方式，几年前就有真实利用了，比如 2018 年�
 慢雾，Twitter(@SlowMist_Team)，如：Pds、Johan、Kong、Kirk、Thinking、Blue、Lisa、Keywolf...
 即刻
 一些匿名的朋友
-...
+更多：https://darkhandbook.io/contributors.html
 ```
 
 只要有被采纳收录至本手册的帮助，比如：提供了具体的防御建议、案例；翻译工作；大错误纠错等。

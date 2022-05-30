@@ -1,6 +1,7 @@
 Blockchain dark forest selfguard handbook<br>
 *Master these, master the security of your cryptocurrency.<br>*
 
+:fire:Website: https://darkhandbook.io/<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
 *Note: V1, Update Logs, please see the Chinese version.*
 
@@ -1043,7 +1044,7 @@ My wife
 SlowMist, Twitter (@SlowMist_Team), e.g. Pds, Johan, Kong, Kirk, Thinking, Blue, Lisa, Keywolf...
 Jike app
 Some anonymous friends ...
-...
+More: https://darkhandbook.io/contributors.html
 ```
 
 **If your contribution is accepted for inclusion in this handbook, you will be added to the list of contributors.**

@@ -1,6 +1,11 @@
 ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック<br>
 *当ハンドブックの内容をマスターするということは、暗号資産におけるセキュリティをマスターするということです。<br>*
 
+:fire:Website: https://darkhandbook.io/<br>
+:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
+:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
+*Note: V1, Update Logs, please see the Chinese version.*
+
 著者: 余弦@慢雾安全团队<br>
 連絡先：Twitter([@evilcos](https://twitter.com/evilcos))、Okjike(@余弦.jpg)
 
@@ -495,7 +500,7 @@ OpenSeaでは、2022年頃にユーザーが保有する有名なNFTが盗まれ
 * ユーザーがOpenSeaでNFT（リスティング）の使用権限を与えた。
 * ハッカーは、フィッシングによってユーザーの署名を取得した。
 
-より正しい解釈はこちらをご覧ください：
+より正しい解釈はこちらをご覧ください（リンクが無効になりました）：
 >https://twitter.com/Nesotual/status/1495223117450551300
 
 ハッカーは、署名待ちとなる正しいコンテンツを作成してハッシュ化し、ターゲットユーザーを騙して署名を完了させる必要があります（ここではブラインド署名となり、ユーザーは実際に何を署名しているのか分かりません）。ハッカーは署名されたコンテンツを取得してから悪用するデータを作成し、悪事を行います。

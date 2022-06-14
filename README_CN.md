@@ -2,7 +2,8 @@
 *掌握这些，掌握你的加密货币安全。*
 
 🔥Website: https://darkhandbook.io/<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)
+:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
+:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)
 
 Blockchain dark forest selfguard handbook<br>
 *Master these, master the security of your cryptocurrency.<br>*

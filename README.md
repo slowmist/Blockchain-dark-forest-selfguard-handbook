@@ -3,6 +3,7 @@ Blockchain dark forest selfguard handbook<br>
 
 :fire:Website: https://darkhandbook.io/<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
+:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 *Note: V1, Update Logs, please see the Chinese version.*
 
 Author: Cos@SlowMist Team<br>

@@ -81,7 +81,7 @@ Additionally, to understand this handbook completely requires some background kn
 
 Again, always be skeptical :) including the knowledge mentioned in this handbook.
 
-Blockchain is a great invention that brings about a change in production relations and solves the problem of trust to some degree. Specifically, blockchain creates many “trust” scenarios without the need for centralization and third parties, such as  immutability, execution as agreed, and prevention of repudiation. However, the reality is cruel. There are many misunderstandings about blockchain, and the bad guys will use these misunderstandings to exploit the loophole and steal money from people, causing a lot of financial losses. Today, the crypto world has already become a dark forest.
+Blockchain is a great invention that brings about a change in production relations and solves the problem of trust to some degree. Specifically, blockchain creates many "trust" scenarios without the need for centralization and third parties, such as  immutability, execution as agreed, and prevention of repudiation. However, the reality is cruel. There are many misunderstandings about blockchain, and the bad guys will use these misunderstandings to exploit the loophole and steal money from people, causing a lot of financial losses. Today, the crypto world has already become a dark forest.
 
 Please remember the following two security rules to survive the blockchain dark forest.
 
@@ -102,13 +102,13 @@ Let's follow these three processes and analyze each of them.
 
 ## Create A Wallet
 
-The core of the wallet is the private key (or seed phase).
+The core of the wallet is the private key (or seed phrase).
 
 Here's how the private key looks like:
 
 >0xa164d4767469de4faf09793ceea07d5a2f5d3cef7f6a9658916c581829ff5584
 
-In addition, here's how the seed phase looks like:
+In addition, here's how the seed phrase looks like:
 
 >cruel weekend spike point innocent dizzy alien use evoke shed adjust wrong
 
@@ -116,7 +116,7 @@ In addition, here's how the seed phase looks like:
 
 The private key is your identify. If the private key is lost/stolen, then you lost your identify. There are many well-known wallet applications, and this handbook won't cover all of them. 
 
-However, I will mention some specific wallets. Please note, the wallets mentioned here can be trusted to some degree. But I cannot guarantee they will have no security issues or risks, expected or not, during use (I won’t repeat more. Please always keep in mind the two main security rules mentioned in the prologue)
+However, I will mention some specific wallets. Please note, the wallets mentioned here can be trusted to some degree. But I cannot guarantee they will have no security issues or risks, expected or not, during use (I won't repeat more. Please always keep in mind the two main security rules mentioned in the prologue)
 
 Classified by application, there are PC wallets, browser extension wallets, mobile wallets, hardware wallets and web wallets. In terms of internet connection, they can be mainly divided into cold wallets and hot wallets. Before we jump into the crypto world, we must first think about the purpose of the wallet. The purpose not only determines which wallet we should use, but also how we use the wallet.
 
@@ -148,7 +148,7 @@ The method to verify whether a file has been tampered is the file consistency ch
 * **Hash checks**: such as MD5, SHA256, etc. MD5 works for most cases, but there is still a tiny risk of hash collision, so we generally choose SHA256, which is safe enough.
 * **GPG signature verification**: this method is also very popular. It is highly recommended to master GPG tools, commands, and methods. Although this method is a bit difficult for newcomers, you will find it very useful once you get familiar with it.
 
-However, there are not many  projects in the crypto world that provides verification. So,it is lucky to find one. For example, here is a bitcoin wallet called Sparrow Wallet. Its download page says "Verifying the Release", which is really impressive, and there are clear guidelines for both of the methods mentioned above, so you can use for reference:
+However, there are not many  projects in the crypto world that provides verification. So, it is lucky to find one. For example, here is a bitcoin wallet called Sparrow Wallet. Its download page says "Verifying the Release", which is really impressive, and there are clear guidelines for both of the methods mentioned above, so you can use for reference:
 
 >https://sparrowwallet.com/download/
 
@@ -202,7 +202,7 @@ So far we have covered what we need to be aware of regarding the creation of wal
 
 ## Back up your wallet
 
-This is where many good hands would fall into traps, including myself. I did not back up properly and I knew it would happen sooner or later. Luckily, it was not a wallet with a large amount of assets and friends at SlowMist helped me recover it.  Still, it was  a scary experience which I don’t think anyone would ever want to go through. So buckle up and let’s learn how to back up your wallet safely.
+This is where many good hands would fall into traps, including myself. I did not back up properly and I knew it would happen sooner or later. Luckily, it was not a wallet with a large amount of assets and friends at SlowMist helped me recover it.  Still, it was  a scary experience which I don't think anyone would ever want to go through. So buckle up and let's learn how to back up your wallet safely.
 
 ### Mnemonic Phrase / Private Key
 
@@ -215,11 +215,11 @@ When we talk about backing up a wallet, we are essentially talking about backing
 
 I will briefly explain each type.
 
-**Plain Text**, Plain text is easy to understand. Once you have those 12 English words, you own the assets in the wallet. You can consider doing some special shuffling, or even replace one of the words with something else. Both would increase the difficulty for hackers to hack into your wallet, however, you would have a big headache if you forget about the  rules. Your memory isn’t bulletproof. Trust me, your memory will tangle up after several years. A few years ago, when I used the Ledger hardware wallet, I changed the order of the 24-word-mnemonic phrase. After a few years, I forgot the order and I wasn’t sure if  I had replaced any word. As mentioned earlier, my problem was solved with a special code breaker program that uses brute force to guess the correct sequence and words. 
+**Plain Text**, Plain text is easy to understand. Once you have those 12 English words, you own the assets in the wallet. You can consider doing some special shuffling, or even replace one of the words with something else. Both would increase the difficulty for hackers to hack into your wallet, however, you would have a big headache if you forget about the  rules. Your memory isn't bulletproof. Trust me, your memory will tangle up after several years. A few years ago, when I used the Ledger hardware wallet, I changed the order of the 24-word-mnemonic phrase. After a few years, I forgot the order and I wasn't sure if  I had replaced any word. As mentioned earlier, my problem was solved with a special code breaker program that uses brute force to guess the correct sequence and words. 
 
-**With Password**, According to the standard, mnemonic phrases can have a password. It’s still the same phrase but with the password, a different seed phrase will be obtained. The seed phrase is used to derive a series of private keys, public keys and corresponding addresses. So you should not only back up the mnemonic phrases, but also the password. By the way, private keys can also have a password and it has its own standards, such as BIP 38 for bitcoin and Keystore for ethereum.
+**With Password**, According to the standard, mnemonic phrases can have a password. It's still the same phrase but with the password, a different seed phrase will be obtained. The seed phrase is used to derive a series of private keys, public keys and corresponding addresses. So you should not only back up the mnemonic phrases, but also the password. By the way, private keys can also have a password and it has its own standards, such as BIP 38 for bitcoin and Keystore for ethereum.
 
-**Multi-Signature**, As the name suggests, it requires signatures from multiple people to access wallets. It’s very flexible as you can set your own rules. For example, if there’re 3 people have the key (mnemonic words or private keys), you can require at least two persons to sign to access the wallets. Each blockchain has its own multi-signature solution. Most well-known Bitcoin wallets support multi-signature. However, in Ethereum, multi-signature is mainly supported through smart contracts, such as Gnosis Safe. Furthermore, MPC, or Secure Multi-Party Computation is becoming more and more popular.. It provides an experience similar to the traditional multi-signature, but with different technology. Unlike multi-signature, MPC is blockchain agnostic and can work with all protocols.
+**Multi-Signature**, As the name suggests, it requires signatures from multiple people to access wallets. It's very flexible as you can set your own rules. For example, if there're 3 people have the key (mnemonic words or private keys), you can require at least two persons to sign to access the wallets. Each blockchain has its own multi-signature solution. Most well-known Bitcoin wallets support multi-signature. However, in Ethereum, multi-signature is mainly supported through smart contracts, such as Gnosis Safe. Furthermore, MPC, or Secure Multi-Party Computation is becoming more and more popular.. It provides an experience similar to the traditional multi-signature, but with different technology. Unlike multi-signature, MPC is blockchain agnostic and can work with all protocols.
 
 **SSS**, Shamir's Secret Sharing, SSS breaks down the seed into multiple shares (normally, each share contains 20 words). To recover the wallet, a specified number of shares has to be collected and used. For details, refer to the industry best practices below:
 
@@ -232,18 +232,18 @@ Using solutions such as multi-signature and SSS will give you peace of mind and 
 
 Encryption is a very, very broad concept. It doesn't matter if the encryption is symmetric, asymmetric or uses other advanced technologies; as long as an encrypted message can be easily decrypted by you or your emergency handling team easily but nobody else after decades, it is good encryption.
 
-Based on the security principle of "zero trust", when we are backing up wallets, we have to assume that any step could be hacked, including physical environments such as a safe. Keep in mind that there is no one other than yourself who can be fully trusted. In fact, sometimes you can’t even trust yourself, because your memories may fade away or misplaced. However, I won’t make pessimistic assumptions all the time, otherwise it would lead me to some unwanted results. 
+Based on the security principle of "zero trust", when we are backing up wallets, we have to assume that any step could be hacked, including physical environments such as a safe. Keep in mind that there is no one other than yourself who can be fully trusted. In fact, sometimes you can't even trust yourself, because your memories may fade away or misplaced. However, I won't make pessimistic assumptions all the time, otherwise it would lead me to some unwanted results. 
 
 When backing up, special consideration must be given to disaster recovery. The main purpose of disaster recovery is to avoid a single point of risk. What would happen if you are gone or the environment where you store the backup is down? Therefore, for important stuff, there must be a disaster recovery person and there must be multiple backups.
 
-I won’t elaborate too much on how to choose the disaster recovery person because it depends on who you trust. I will focus on how to do the multi-backups. Let's take a look at some basic forms of backup locations:
+I won't elaborate too much on how to choose the disaster recovery person because it depends on who you trust. I will focus on how to do the multi-backups. Let's take a look at some basic forms of backup locations:
 
 * Cloud
 * Paper
 * Device
 * Brain
 
-**Cloud**, Many people don’t trust backup on Cloud, they think it is vulnerable to hacker attacks.  At the end of the day, it is all about which side - the attacker or the defender - put in more effort, in terms of both manpower and budgets. Personally, I have faith in cloud services powered by Google, Apple, Microsoft, etc., because I know how strong their security teams are and how much they have spent on security. In addition to fighting against external hackers, I also care a lot about internal security risk control and private data protection. The few service providers I trust are doing a relatively better job in these areas. But nothing is absolute. If I choose any of these cloud services to back up important data (such as wallets), I will definitely encrypt the wallets at least one more time.
+**Cloud**, Many people don't trust backup on Cloud, they think it is vulnerable to hacker attacks.  At the end of the day, it is all about which side - the attacker or the defender - put in more effort, in terms of both manpower and budgets. Personally, I have faith in cloud services powered by Google, Apple, Microsoft, etc., because I know how strong their security teams are and how much they have spent on security. In addition to fighting against external hackers, I also care a lot about internal security risk control and private data protection. The few service providers I trust are doing a relatively better job in these areas. But nothing is absolute. If I choose any of these cloud services to back up important data (such as wallets), I will definitely encrypt the wallets at least one more time.
 
 I strongly recommend mastering GPG. It can be used for the  "signature verification", and provides strong security of encryption and decryption in the meantime. You can learn more about GPG at:
 
@@ -251,7 +251,7 @@ I strongly recommend mastering GPG. It can be used for the  "signature verificat
 
 Okay, you have mastered GPG :) Now that you have encrypted  related data in your wallet (mnemonic phrase or private key) with GPG in an offline secured environment, you can now throw the encrypted files directly into these cloud services and save it there. All will be good. But I need to remind you here: never lose the private key to your GPG or forget the password of the private key...
 
-At this point, you might find this extra level of security is quite troublesome: you have to learn about GPG and back up your GPG private key and passwords. In reality, if you have done all the aforementioned steps, you are already familiar with the process and won’t find it as difficult or troublesome. I will say no more because practice makes perfect.
+At this point, you might find this extra level of security is quite troublesome: you have to learn about GPG and back up your GPG private key and passwords. In reality, if you have done all the aforementioned steps, you are already familiar with the process and won't find it as difficult or troublesome. I will say no more because practice makes perfect.
 
 If you want to save some effort, there is another possibility but its security may be discounted. I can't measure the exact discount but sometimes I would be lazy when I would use some well-known tools for assistance. That tool is 1Password. The latest version of 1Password already supports direct storage of wallet-related data, such as mnemonic words, passwords, wallet addresses, etc., which is convenient for users. Other tools (such as Bitwarden) can achieve something similar, but they are not as convenient.
 
@@ -261,17 +261,17 @@ If you want to save some effort, there is another possibility but its security m
 
 **Brain**, Relying on your memory is exciting. In fact, everyone has their own "memory palace". Memory is not mysterious and can be trained to work better. There are certain things that are indeed safer with memory. Whether to rely solely on the brain is a personal choice. But pay attention to two risks: firstly, memory fades away as time goes and could  cause confusion; the other risk is that you may have an accident. I will stop here and let you explore more.
 
-Now you are all backed up. Don’t encrypt  too much, otherwise you will suffer from yourself after several years. According to the security principle of  "continuous verification", your encryption and backup methods, whether excessive or not, must be verified continuously, both regularly as well as randomly. The verification frequency depends on your memory and you do not have to complete the whole process. As long as the process is correct, partial verification also works. Finally, it is also necessary to pay attention to the confidentiality and security of the authentication process.
+Now you are all backed up. Don't encrypt  too much, otherwise you will suffer from yourself after several years. According to the security principle of  "continuous verification", your encryption and backup methods, whether excessive or not, must be verified continuously, both regularly as well as randomly. The verification frequency depends on your memory and you do not have to complete the whole process. As long as the process is correct, partial verification also works. Finally, it is also necessary to pay attention to the confidentiality and security of the authentication process.
 
-Okay, let’s take a deep breath here. Getting started is the hardest part. Now that you are ready, let’s enter this dark forest :)
+Okay, let's take a deep breath here. Getting started is the hardest part. Now that you are ready, let's enter this dark forest :)
 
 ## How to use Your Wallet
 
-Once you have created and backed up your wallets, it comes to the real challenge. If you don’t move around your assets frequently, or you barely interact with  any smart contracts of DeFi, NFT, GameFi, or Web3, the popular term referred to frequently these days, your assets should be relatively safe.
+Once you have created and backed up your wallets, it comes to the real challenge. If you don't move around your assets frequently, or you barely interact with  any smart contracts of DeFi, NFT, GameFi, or Web3, the popular term referred to frequently these days, your assets should be relatively safe.
 
 ### AML
 
-However, “relatively safe” doesn’t mean “no risk at all”. Cause “you never know which comes first, tomorrow or accidents”, right?. Why is it? Think about it, where did you get the cryptocurrency? It didn't just come from nowhere, right? You may encounter AML (Anti Money Laundering) on all the cryptocurrencies you get any time. This means that the cryptocurrency you're holding at the moment may be dirty, and if you're not lucky, it may even be frozen directly on the chain. According to public reports, Tether once freezed some USDT assets  as per request from law enforcement agencies. The list of frozen funds can be found here.
+However, "relatively safe" doesn't mean "no risk at all". Cause "you never know which comes first, tomorrow or accidents", right?. Why is it? Think about it, where did you get the cryptocurrency? It didn't just come from nowhere, right? You may encounter AML (Anti Money Laundering) on all the cryptocurrencies you get any time. This means that the cryptocurrency you're holding at the moment may be dirty, and if you're not lucky, it may even be frozen directly on the chain. According to public reports, Tether once freezed some USDT assets  as per request from law enforcement agencies. The list of frozen funds can be found here.
 
 >https://dune.xyz/phabc/usdt---banned-addresses
 
@@ -283,15 +283,15 @@ You can verify if an address is  frozen by Tether from the USDT contract.
 
 Use the target wallet address as input  int isBlackListed to check. Other chains that take  USDT have similar verification way.
 
-However, your BTC and ETH should never ever get frozen.  If this does happen one day in the future, the belief of decentralization would crash as well.  Most cryptocurrency asset frozen cases we have heard today actually happened in centralized platforms (such Binance, Coinbase, etc.) but not on the blockchain. When your cryptocurrency stays in Centralized Exchange platforms, you don’t actually own any of them. When the centralized platforms freeze your account, they are actually revoking your permission to trade or withdraw.. The concept of freezing could be misleading to newbies in the area.  As a result, some reckless self media would spread all kinds of conspiracy theories about BitCoin.
+However, your BTC and ETH should never ever get frozen.  If this does happen one day in the future, the belief of decentralization would crash as well.  Most cryptocurrency asset frozen cases we have heard today actually happened in centralized platforms (such Binance, Coinbase, etc.) but not on the blockchain. When your cryptocurrency stays in Centralized Exchange platforms, you don't actually own any of them. When the centralized platforms freeze your account, they are actually revoking your permission to trade or withdraw.. The concept of freezing could be misleading to newbies in the area.  As a result, some reckless self media would spread all kinds of conspiracy theories about BitCoin.
 
-Though your BTC and ETH assets won’t be frozen on the blockchain, centralized exchanges might freeze your assets according to the requirement of AML once your assets get transferred into these platforms and they are involved in any open cases that law enforcements are working on.
+Though your BTC and ETH assets won't be frozen on the blockchain, centralized exchanges might freeze your assets according to the requirement of AML once your assets get transferred into these platforms and they are involved in any open cases that law enforcements are working on.
 
-To better avoid AML issues, always choose platforms and individuals with a good reputation as your counterparty. There are actually a few solutions  for this type of problem. For example, on Ethereum, almost all bad guys and people who care a lot about their privacy  use Tornado Cash for coin mixing. I won’t dig any more into this topic since most methods here are being used for doing evil.
+To better avoid AML issues, always choose platforms and individuals with a good reputation as your counterparty. There are actually a few solutions  for this type of problem. For example, on Ethereum, almost all bad guys and people who care a lot about their privacy  use Tornado Cash for coin mixing. I won't dig any more into this topic since most methods here are being used for doing evil.
 
 ### Cold Wallet
 
-There are different ways to use a cold wallet. From a wallet’s perspective, it can be considered as a cold wallet as long as it’s not connected to any network. But how to use it when it’s offline?  First of all, if you just want to receive cryptocurrency, it's not a big deal. A cold wallet could provide excellent experience by working with a Watch-only wallet, such as imToken, Trust Wallet, etc. These wallets could be turned into watch-only wallets by simply adding target wallet addresses.
+There are different ways to use a cold wallet. From a wallet's perspective, it can be considered as a cold wallet as long as it's not connected to any network. But how to use it when it's offline?  First of all, if you just want to receive cryptocurrency, it's not a big deal. A cold wallet could provide excellent experience by working with a Watch-only wallet, such as imToken, Trust Wallet, etc. These wallets could be turned into watch-only wallets by simply adding target wallet addresses.
 
 If we want to send cryptocurrency using  cold wallets, here are the most commonly used ways:
 
@@ -299,7 +299,7 @@ If we want to send cryptocurrency using  cold wallets, here are the most commonl
 * USB
 * Bluetooth
 
-All of these require a dedicated app (called Light App here) to work with the cold wallet. The Light App will be online along with the aforementioned Watch-only wallet. Once we understand the underlying essential principle, we should be able to understand these approaches. The essential principle is:  eventually, it’s just a matter of figuring out how to broadcast signed content onto the blockchain. Detailed process is as follows:
+All of these require a dedicated app (called Light App here) to work with the cold wallet. The Light App will be online along with the aforementioned Watch-only wallet. Once we understand the underlying essential principle, we should be able to understand these approaches. The essential principle is:  eventually, it's just a matter of figuring out how to broadcast signed content onto the blockchain. Detailed process is as follows:
 
 * The content to be signed is transmitted by the Light App to the Cold Wallet by one of these means.
 * The signature is processed by the cold wallet that has the private key and then transmitted back to the Light App using the same way
@@ -391,7 +391,7 @@ Blockchain foundation security refers to the security of the blockchain itself, 
 
 Frontend security is really the devil. It is too close to the users, and it is especially easy to fool users into deception. Perhaps everyone's main focus is on the wallet and smart contract security, resulting in frontend security being easily overlooked. I want to  emphasize again that frontend security is the devil! Allow me to dig deeper. 
 
-My biggest concern regarding frontend security is: How do I know that the contract I am interacting with from this specific frontend page is the smart contract that I’m expecting?
+My biggest concern regarding frontend security is: How do I know that the contract I am interacting with from this specific frontend page is the smart contract that I'm expecting?
 
 This insecurity is mainly due to two factors:
 
@@ -405,10 +405,10 @@ The third party mainly refers to two types:
 * One is that the dependencies chain is infiltrated. For example, the third-party dependency used by  the frontend page  has a backdoor which gets sneaked into  the target frontend page along with the packaging and release.  The following is the package dependency structure of SushiSwap (for illustration only, it doesn't necessarily mean that the project in the screenshot has such issue):<br>
     <img src="res/sushiswap_3rd.png" width="500">
 
-* The other example is third-party remote JavaScript files imported by  the frontend page. If this JavaScript file is hacked, it’s possible that the target frontend page gets affected as well, such as OpenSea (for illustration only, it doesn't necessarily mean that the project in the screenshot has such an issue):<br>
+* The other example is third-party remote JavaScript files imported by  the frontend page. If this JavaScript file is hacked, it's possible that the target frontend page gets affected as well, such as OpenSea (for illustration only, it doesn't necessarily mean that the project in the screenshot has such an issue):<br>
     <img src="res/opensea_3rd.png" width="800">
 
-The reason why we said it’s just possible but not certainly is that the risk could be mitigated if devs refer to a third-party remote JavaScript file on the frontend page in the following way:
+The reason why we said it's just possible but not certainly is that the risk could be mitigated if devs refer to a third-party remote JavaScript file on the frontend page in the following way:
 
 ><script src="https://example.com/example-framework.js" integrity="sha384-Li9vy3DqF8tnTXuiaAJuML3ky+er10rcgNR/VqsVpcw+ThHmYcwiB1pbOxEbzJr7" crossorigin="anonymous"></script>
 
@@ -418,11 +418,11 @@ The key point here is a nice security mechanism of HTML5: integrity attribute in
 
 **Communication Security**
 
-Let’s focus on HTTPS security in this section. First, the target website must use HTTPS, and HTTP plaintext transmission should never be allowed. This is because HTTP plaintext transmission is too easy to be hijacked by man-in-the-middle attacks. Nowadays HTTPS is very common as a secure transmission protocol. If there is a man-in-the-middle attack on HTTPS, and attackers have injected malicious JavaScript into the web application’s front-end, a very obvious HTTPS certificate error alert will be displayed in the user's browser.
+Let's focus on HTTPS security in this section. First, the target website must use HTTPS, and HTTP plaintext transmission should never be allowed. This is because HTTP plaintext transmission is too easy to be hijacked by man-in-the-middle attacks. Nowadays HTTPS is very common as a secure transmission protocol. If there is a man-in-the-middle attack on HTTPS, and attackers have injected malicious JavaScript into the web application's front-end, a very obvious HTTPS certificate error alert will be displayed in the user's browser.
 
-Let’s use the MyEtherWallet incident as an example to illustrate this point.
+Let's use the MyEtherWallet incident as an example to illustrate this point.
 
-MyEtherWallet used to be a very popular web application wallet, and up till now it’s still very well known. However it’s no longer just a web application wallet. As mentioned before, I strongly discourage the use of web application wallets due to security reasons. In addition to various issues in front-end security, HTTPS hijacking is also a big potential risk.
+MyEtherWallet used to be a very popular web application wallet, and up till now it's still very well known. However it's no longer just a web application wallet. As mentioned before, I strongly discourage the use of web application wallets due to security reasons. In addition to various issues in front-end security, HTTPS hijacking is also a big potential risk.
 
 On April 24, 2018, there was a major security incident of HTTPS hijacking in MyEtherWallet. The recap of the incident can be found here:
 
@@ -431,15 +431,15 @@ On April 24, 2018, there was a major security incident of HTTPS hijacking in MyE
 
 ![](res/myetherwallet_https_hijack.png)
 
-In the attack, the hacker hijacked the DNS service (Google Public DNS) used by a large number of MyEtherWallet users via BGP, an ancient routing protocol, which directly led to the display of HTTPS error alerts in every user’s browser when they tried to visit MyEtherWallet website. In fact, users should stop when they see this alert, as it basically indicates that the target web page has been hijacked. In reality however, many users just quickly ignored the alert and proceeded to continue with their interactions with the hijacked site, because they didn’t understand the security risk behind the HTTPS error alert at all. 
+In the attack, the hacker hijacked the DNS service (Google Public DNS) used by a large number of MyEtherWallet users via BGP, an ancient routing protocol, which directly led to the display of HTTPS error alerts in every user's browser when they tried to visit MyEtherWallet website. In fact, users should stop when they see this alert, as it basically indicates that the target web page has been hijacked. In reality however, many users just quickly ignored the alert and proceeded to continue with their interactions with the hijacked site, because they didn't understand the security risk behind the HTTPS error alert at all. 
 
-Since the target web page had been hijacked and the hacker had injected malicious JavaScript in there, upon users’ interaction, the hackers would have successfully stolen their plaintext private key and transferred away their funds  (mostly ETH). 
+Since the target web page had been hijacked and the hacker had injected malicious JavaScript in there, upon users' interaction, the hackers would have successfully stolen their plaintext private key and transferred away their funds  (mostly ETH). 
 
-This is definitely a classic case where hackers used BGP hijacking techniques to steal crypto. It’s just overkill. Ever after this there have been several similar cases, and I won’t mention them in detail here. To the user there is only one thing that really needs attention: if you ever decide to use a web application wallet, or try to interact with a DApp, always make sure you stop and close the page whenever you see a HTTPS certificate error alert! And your funds will be fine. There is a cruel reality in security: when there is a risk, don’t give users any choices. As if you do, there will always be users falling into the trap for whatever reasons. In fact, the project team needs to take up the responsibility. As of today, there are already very effective security solutions to the HTTPS hijacking issue mentioned above: the project team needs to properly configure HSTS. HSTS stands for HTTP Strict Transport Security; it is a web security policy mechanism supported by most modern browsers. If HSTS is enabled, in case of a HTTPS certificate error the browser will force users to stop accessing the target web applications and the restriction can’t be bypassed. Now you get what I mean?
+This is definitely a classic case where hackers used BGP hijacking techniques to steal crypto. It's just overkill. Ever after this there have been several similar cases, and I won't mention them in detail here. To the user there is only one thing that really needs attention: if you ever decide to use a web application wallet, or try to interact with a DApp, always make sure you stop and close the page whenever you see a HTTPS certificate error alert! And your funds will be fine. There is a cruel reality in security: when there is a risk, don't give users any choices. As if you do, there will always be users falling into the trap for whatever reasons. In fact, the project team needs to take up the responsibility. As of today, there are already very effective security solutions to the HTTPS hijacking issue mentioned above: the project team needs to properly configure HSTS. HSTS stands for HTTP Strict Transport Security; it is a web security policy mechanism supported by most modern browsers. If HSTS is enabled, in case of a HTTPS certificate error the browser will force users to stop accessing the target web applications and the restriction can't be bypassed. Now you get what I mean?
 
 **Human Nature Security**
 
-This section is easy to understand. For example the project team is evil minded and acts in a dishonest way. I have mentioned some relevant contents in previous sections, so here I won’t go into more details. More to be covered in later sections.
+This section is easy to understand. For example the project team is evil minded and acts in a dishonest way. I have mentioned some relevant contents in previous sections, so here I won't go into more details. More to be covered in later sections.
 
 **Financial Security**
 
@@ -450,7 +450,7 @@ Financial security in DeFi is susceptible to attacks in the forms of:
 * Unfair launch practices such as pre-mining or pre-sale;
 * Crypto whale attack;
 * Pump and dump;
-* Black swan events, like sudden market waterfall; or let’s say when one DeFi protocol is nested or interoperated with other DeFi/Tokens, its security/reliability will be highly depending on other protocols
+* Black swan events, like sudden market waterfall; or let's say when one DeFi protocol is nested or interoperated with other DeFi/Tokens, its security/reliability will be highly depending on other protocols
 * Other technical attacks or what we refer to as scientific techniques such as front running, sandwich attack, flash loan attacks, etc
 
 **Compliance Requirements**
@@ -463,15 +463,15 @@ I took a look at the protocol design, it turned out that wallets supporting AOPP
 
 >https://gitlab.com/aopp/address-ownership-proof-protocol
 
-No wonder many privacy-oriented wallets are so concerned about user’s feedback and quickly removed AOPP support from their products. But to be honest: The protocol design is quite interesting. I have noticed that some wallets have no plans to remove support for AOPP, such as EdgeWallet. Their opinion is that AOPP doesn’t necessarily expose more user privacy, on the contrary it helps to enhance the circulation of cryptocurrency. In many regulated crypto exchanges, users are not allowed to withdraw to a particular external wallet address, before he can prove his ownership to it.
+No wonder many privacy-oriented wallets are so concerned about user's feedback and quickly removed AOPP support from their products. But to be honest: The protocol design is quite interesting. I have noticed that some wallets have no plans to remove support for AOPP, such as EdgeWallet. Their opinion is that AOPP doesn't necessarily expose more user privacy, on the contrary it helps to enhance the circulation of cryptocurrency. In many regulated crypto exchanges, users are not allowed to withdraw to a particular external wallet address, before he can prove his ownership to it.
 
 At first, the well-known hardware wallet Trezor refused to remove AOPP support. But later it was forced to compromise and did so due to pressures from the community and users on Twitter. 
 
-As you can see, it’s such a small incident but to some people, privacy is really important. This is not to say that we should go against regulations, and totally ignore compliance requirements. As a matter of fact I do believe it’s necessary to have a certain level of compromise to compliance requirements. We won’t continue to deep dive into this topic, feel free to digest the contents in your own ways. 
+As you can see, it's such a small incident but to some people, privacy is really important. This is not to say that we should go against regulations, and totally ignore compliance requirements. As a matter of fact I do believe it's necessary to have a certain level of compromise to compliance requirements. We won't continue to deep dive into this topic, feel free to digest the contents in your own ways. 
 
 So far, we have covered the majority of content in the DeFi Security section. 
 
-What’s more, there are also security issues introduced by future additions or updates. We often say "security posture is dynamic, not static". For example nowadays most project teams do security audits and show clean security audit reports. If you ever read the good-quality reports carefully you will notice that these reports will clearly explain the scope, timeframe, and the unique identifier of the audited contents (e.g. the verified open source smart contract address, or the commit address on GitHub repo, or the hash of the target source code file). This is to say, the report is static, but if in a project you have observed any deviations from what is mentioned in the report, you can point it out.
+What's more, there are also security issues introduced by future additions or updates. We often say "security posture is dynamic, not static". For example nowadays most project teams do security audits and show clean security audit reports. If you ever read the good-quality reports carefully you will notice that these reports will clearly explain the scope, timeframe, and the unique identifier of the audited contents (e.g. the verified open source smart contract address, or the commit address on GitHub repo, or the hash of the target source code file). This is to say, the report is static, but if in a project you have observed any deviations from what is mentioned in the report, you can point it out.
 
 ### NFT Security
 
@@ -480,14 +480,14 @@ All the previously mentioned contents on DeFi security can be applied to NFT sec
 * Metadata security
 * Signature security
 
-Metadata refers mainly to the embedded picture, motion pictures and other contents. It’s recommended to refer to OpenSea on the specific standards:
+Metadata refers mainly to the embedded picture, motion pictures and other contents. It's recommended to refer to OpenSea on the specific standards:
 
 >https://docs.opensea.io/docs/metadata-standards
 
 There are two main security concerns that may arise here:
 
-* One is that the URI where the image (or motion picture) is located might not be trustworthy. It can just be a randomly selected centralized service, on one hand there is no guarantee of availability, on the other hand the project team can modify the images at will, thus the NFT will no longer become an immutable “digital collectible”. Generally it’s recommended to use centralized storage solutions such as IPFS, Arweave, and select a well-known URI gateway service.
-* Another is the potential for privacy leakage. A randomly selected URI service might capture user’s basic information (such as IP, User-Agent, etc)
+* One is that the URI where the image (or motion picture) is located might not be trustworthy. It can just be a randomly selected centralized service, on one hand there is no guarantee of availability, on the other hand the project team can modify the images at will, thus the NFT will no longer become an immutable "digital collectible". Generally it's recommended to use centralized storage solutions such as IPFS, Arweave, and select a well-known URI gateway service.
+* Another is the potential for privacy leakage. A randomly selected URI service might capture user's basic information (such as IP, User-Agent, etc)
 
 Signing security is another big concern here, and we will illustrate it below.
 
@@ -497,32 +497,32 @@ Signature security is something that I want to mention specifically as there are
 
 The NO.1 and most important security principle in signature security is: **What you see is what you sign**. That is, the message in the signature request you received is what you should expect after signing. After you sign it, the result should be what you expected instead of something you would regret.
 
-Some details of signature security have been mentioned in the "Cold Wallet" section. If you can’t recall, I would suggest you revisit that section. In this section, we will focus on other aspects.
+Some details of signature security have been mentioned in the "Cold Wallet" section. If you can't recall, I would suggest you revisit that section. In this section, we will focus on other aspects.
 
 There were several well-known NFT hacks on OpenSea around 2022. On Feb 20th, 2022, there was a major outbreak. The root causes are:
 
 * Users signed NFT listing requests on OpenSea.
 * Hackers phished to obtain relevant signatures from users.
 
-It is actually not hard for hackers to obtain the relevant signature. The hacker needs to 1). construct the message to be signed, 2). hash it, 3). trick the target user to sign the request (this would be a blind signing, which means users don’t actually know what they are signing), 4). get the signed content and construct the data. At this point, the user has been hacked.
+It is actually not hard for hackers to obtain the relevant signature. The hacker needs to 1). construct the message to be signed, 2). hash it, 3). trick the target user to sign the request (this would be a blind signing, which means users don't actually know what they are signing), 4). get the signed content and construct the data. At this point, the user has been hacked.
 
 I will use Opensea as an example (in reality, it could be ANY NFT marketplace). After the target user authorizes the NFT listing operation in the marketplace, the hacker would construct the message to be signed. After hashing it with Keccak256, a signature request would pop up on the phishing page. Users would see something like the following:
 
 <img src="res/metamask_sign.jpg" width="360">
 
-Look closely. What kind of information can we get from this MetaMask popup window? Account Info and account balance, the source website where the signature request comes from, the message that users are about to sign and...nothing else. How could users suspect that the disaster is already on the way? And how could they realize that once they click the “Sign” button, their NFTs would be stolen.
+Look closely. What kind of information can we get from this MetaMask popup window? Account Info and account balance, the source website where the signature request comes from, the message that users are about to sign and...nothing else. How could users suspect that the disaster is already on the way? And how could they realize that once they click the "Sign" button, their NFTs would be stolen.
 
 This is actually an example of blind signing. Users are not required to sign within the NFT marketplace. Instead, users can be tricked into any phishing website to sign the message without fully understanding the actual meaning and consequence of these signatures. Unfortunately, hackers know. As a user, just keep in mind: NEVER BLIND SIGN ANYTHING. OpenSea used to have the blind signing problem, and they fixed it by adopting EIP-712 after Feb 20th 2022. However, without blind signing, users could still be careless and hacked in other ways.
 
-The most essential reason why this is happening is that the signing isn’t restricted to follow the browser's same-origin policy. You can simply understand it as: the same-origin policy can ensure that an action only happens under a specific domain and will not cross domains, unless the project team intentionally wants domain crossing to happen. If signing follows the same-origin policy, then even if the user signs a signature request generated by the non-target domain, hackers can’t use the signature for attacks under the target domain. I will stop here before going into more details. I have noticed new proposals on security improvement at the protocol level, and I hope this situation can be improved as soon as possible.
+The most essential reason why this is happening is that the signing isn't restricted to follow the browser's same-origin policy. You can simply understand it as: the same-origin policy can ensure that an action only happens under a specific domain and will not cross domains, unless the project team intentionally wants domain crossing to happen. If signing follows the same-origin policy, then even if the user signs a signature request generated by the non-target domain, hackers can't use the signature for attacks under the target domain. I will stop here before going into more details. I have noticed new proposals on security improvement at the protocol level, and I hope this situation can be improved as soon as possible.
 
-We have mentioned most of the major attack formats that could occur when signing a message, but there are actually quite a few variants. No matter how different they look, they follow similar patterns. The best way to understand them is to reproduce an attack from beginning to end by yourselves, or even create some unique attack methods. For example, the signature request attack mentioned here actually contains a lot of details, such as how to construct the message to be signed, and what is generated exactly after signing? Is there any authorization methods other than “Approve” (yes, for example: increaseAllowance). Well, it would be too technical if we expand here. The good thing is you should already understand the importance of signing a message.
+We have mentioned most of the major attack formats that could occur when signing a message, but there are actually quite a few variants. No matter how different they look, they follow similar patterns. The best way to understand them is to reproduce an attack from beginning to end by yourselves, or even create some unique attack methods. For example, the signature request attack mentioned here actually contains a lot of details, such as how to construct the message to be signed, and what is generated exactly after signing? Is there any authorization methods other than "Approve" (yes, for example: increaseAllowance). Well, it would be too technical if we expand here. The good thing is you should already understand the importance of signing a message.
 
 Users can prevent such attacks at the source by canceling the authorization/approval. The following are some well-known tools that you could use.
 
 * Token Approvals
     >https://etherscan.io/tokenapprovalchecker<br>
-    >This is the tool for authorization check and cancellation provided by Ethereum’s official browser. Other EVM compatible blockchains have something similar as their blockchain browsers are basically developed by Etherscan. For example:<br>
+    >This is the tool for authorization check and cancellation provided by Ethereum's official browser. Other EVM compatible blockchains have something similar as their blockchain browsers are basically developed by Etherscan. For example:<br>
     >https://bscscan.com/tokenapprovalchecker<br>
     >https://hecoinfo.com/tokenapprovalchecker<br>
     >https://polygonscan.com/tokenapprovalchecker<br>
@@ -547,13 +547,13 @@ I would like to particularly mention another risk: **counter-intuitive risk**.
 
 What is counter-intuitive? For example, you are already very familiar with Ethereum, and have become an OG of all kinds of DeFi and NFTs. When you first enter the Solana ecosystem, you probably would encounter some similar phishing websites. You may feel so well prepared that you start to think "I have seen these a thousand times in the Ethereum ecosystem and how could I get fooled?"
 
-In the meantime, hackers would be happy as you already got fooled. People follow their intuitive feelings which makes them careless. When there’s a counter-intuitive attack, people would fall into the trap.
+In the meantime, hackers would be happy as you already got fooled. People follow their intuitive feelings which makes them careless. When there's a counter-intuitive attack, people would fall into the trap.
 
 Ok, let's take a look at a real case that took advantage of counter-intuitiveness.
 
 <img src="res/solana_nft_phishing.jpg" width="800">
 
-First of all, a warning: Authorization phishing on Solana is way more cruel. The example above happened on March 5th, 2022. The attackers airdropped NFTs to users in batches (Figure 1). Users entered the target website through the link in the description of the airdropped NFT (www_officialsolanarares_net) and connected their wallets (Figure 2). After they clicked the “Mint” button on the page, the approval window popped up (Figure 3). Note that there was no special notification or message in the pop up window at this time. Once they approved, all SOLs in the wallet would be transferred away.
+First of all, a warning: Authorization phishing on Solana is way more cruel. The example above happened on March 5th, 2022. The attackers airdropped NFTs to users in batches (Figure 1). Users entered the target website through the link in the description of the airdropped NFT (www_officialsolanarares_net) and connected their wallets (Figure 2). After they clicked the "Mint" button on the page, the approval window popped up (Figure 3). Note that there was no special notification or message in the pop up window at this time. Once they approved, all SOLs in the wallet would be transferred away.
 
 When users click the "Approve" button, they are actually interacting with the malicious smart contracts deployed by the attackers:
 *3VtjHnDuDD1QreJiYNziDsdkeALMT6b2F9j3AXdL4q8v*
@@ -562,7 +562,7 @@ The ultimate goal of this malicious smart contract is to initiate "SOL Transfer"
 
 There are two pitfalls from this example that you need to pay attention to:
 1. After the user approves, the malicious smart contract can transfer the user's native assets (SOL in this case). This is not possible on Ethereum. The authorization phishing on Ethereum can only affect other tokens but not the native asset of ETH . This is the counter-intuitive part that would make users lower vigilance.
-2. The most well-known wallet on Solana, Phantom, has loopholes in its security mechanism that it doesn’t follow  the "what you see is what you sign" principle (we haven’t tested other wallets yet), and it doesn’t provide enough risk warning to users. This could easily create security blind spots that cost users’ coins.
+2. The most well-known wallet on Solana, Phantom, has loopholes in its security mechanism that it doesn't follow  the "what you see is what you sign" principle (we haven't tested other wallets yet), and it doesn't provide enough risk warning to users. This could easily create security blind spots that cost users' coins.
 
 ### Some Advanced Attacking Methodologies
 
@@ -573,14 +573,14 @@ Actually, there are many advanced attacking methodologies, but they are mostly r
 Hackers sent a phishing e-mail with such an attachment:
 >A Huge Risk of Stablecoin(Protected).docx
 
-To be honest, it is an attractive document. However, once opened user’s computer will be implanted with a Trojan (generally through Office macro or 0day / 1day exploit), which usually contains the following functions:
+To be honest, it is an attractive document. However, once opened user's computer will be implanted with a Trojan (generally through Office macro or 0day / 1day exploit), which usually contains the following functions:
 
 * Collecting all sorts of credentials, for example, browser related, or SSH related, etc. In this way, hackers can extend their access to other services of the target user. Therefore, after infection users are generally advised not only to clean up the target device, but also relevant account permissions as well.
 * Keylogger, in particular targeting those temporarily appearing sensitive information such as passwords.
 * Collecting relevant screenshots, sensitive files, etc.
 * If it is ransomware, all files in the target system would be strongly encrypted, and waiting for the victim to pay for the ransom, usually by bitcoin. But in this case it was not ransomware which has more obvious & noisy behavior and straightforward intentions.
 
-In addition, Trojans targeting the crypto industry will be specially customized to collect sensitive information from well known wallets or exchanges, in order to steal user’s funds. According to professional analysis, the above mentioned Trojan would conduct a targeted attack on Metamask:
+In addition, Trojans targeting the crypto industry will be specially customized to collect sensitive information from well known wallets or exchanges, in order to steal user's funds. According to professional analysis, the above mentioned Trojan would conduct a targeted attack on Metamask:
 
 >https://securelist.com/the-bluenoroff-cryptocurrency-hunt-is-still-on/105488/
 
@@ -591,9 +591,9 @@ This approach is specially crafted for well known targets with known wallet addr
 
 Comparingly, those mass phishing attacks are not comprehensive at all. Attackers would prepare a bunch of similarly looking domain names and spread the payloads by buying accounts, followers, and retweets on Twitter or other social platforms. If managed well, many will fall into the trap. There is really nothing special in this kind of phishing attack,  and normally the attacker will just brutally make the user authorize tokens (including NFT) in order to transfer them away.
 
-There are other kinds of advanced attacks, for example using techniques like XSS, CSRF, Reverse Proxy to smoothen the attack process. I won’t elaborate on all of them here, except one very special case (Cloudflare Man-in-the-Middle attack) which is one of the scenarios in Reverse Proxy. There have been real attacks that caused financial loss utilizing this extremely covert method. 
+There are other kinds of advanced attacks, for example using techniques like XSS, CSRF, Reverse Proxy to smoothen the attack process. I won't elaborate on all of them here, except one very special case (Cloudflare Man-in-the-Middle attack) which is one of the scenarios in Reverse Proxy. There have been real attacks that caused financial loss utilizing this extremely covert method. 
 
-The problem here is not Cloudflare itself being evil or getting hacked. Instead it’s the project team’s Cloudflare account that gets compromised. Generally the process is like this: If you use Cloudflare, you will notice this “Worker” module in the dashboard, whose official description is:
+The problem here is not Cloudflare itself being evil or getting hacked. Instead it's the project team's Cloudflare account that gets compromised. Generally the process is like this: If you use Cloudflare, you will notice this "Worker" module in the dashboard, whose official description is:
 
 >Building serverless applications and deploying them instantly around the world, achieving excellent performance, reliability and scale. For details, please refer to
 >https://developers.cloudflare.com/workers/
@@ -606,15 +606,15 @@ When you visit the page there will be a pop-up window saying:
 
 >xssor.io, Hijacked by Cloudflare.
 
-In fact, this pop-up, and even the whole content of x.html, doesn’t belong to the document itself. All of them are provided by Cloudflare. The mechanism is shown below:
+In fact, this pop-up, and even the whole content of x.html, doesn't belong to the document itself. All of them are provided by Cloudflare. The mechanism is shown below:
 
 <img src="res/cloudflare_worker.png" width="800">
 
-The indication of the code snippet in the screenshot is very simple: If I were the hacker and I have controlled your Cloudflare account, I can use Workers to inject arbitrary malicious script to any web page. And it’s very difficult for the users to realize that the target web page has been hijacked and tampered with, as there will be no error alerts (such as HTTPS certificate error). Even the project team won’t easily identify the problem without having to spend a huge amount of time checking the security of their servers and personnel. By the time they realise it is Cloudflare Workers, the loss could already be significant. 
+The indication of the code snippet in the screenshot is very simple: If I were the hacker and I have controlled your Cloudflare account, I can use Workers to inject arbitrary malicious script to any web page. And it's very difficult for the users to realize that the target web page has been hijacked and tampered with, as there will be no error alerts (such as HTTPS certificate error). Even the project team won't easily identify the problem without having to spend a huge amount of time checking the security of their servers and personnel. By the time they realise it is Cloudflare Workers, the loss could already be significant. 
 
 Cloudflare is actually a good tool. Many websites or web applications will use it as their web application firewall, anti DDoS solution, global CDN, reverse proxy, etc. Because there is a free version, they have a big customer base. Alternatively, there are services like Akaimai etc. 
 
-Users must pay attention to the security of such accounts. Account security issues arise with the rise of the Internet. It’s such a common topic in the world that almost everyone is talking about it everywhere, but still many people are getting hacked because of it. Some root causes might be they don’t use a unique strong password for important services (Password managers like 1Password isn’t that popular anyway), some might be they don’t bother to turn on 2 factor authentication (2FA), or maybe they don’t even know of the thingy. Not to mention for some certain services, passwords should be reset at least annually.
+Users must pay attention to the security of such accounts. Account security issues arise with the rise of the Internet. It's such a common topic in the world that almost everyone is talking about it everywhere, but still many people are getting hacked because of it. Some root causes might be they don't use a unique strong password for important services (Password managers like 1Password isn't that popular anyway), some might be they don't bother to turn on 2 factor authentication (2FA), or maybe they don't even know of the thingy. Not to mention for some certain services, passwords should be reset at least annually.
 
 All right, this will be the end of this section. You only need to understand that this is indeed a dark forest, and you should know about as many attacking methodologies as possible. After seeing enough on paper, if you have at least fallen into the traps once or twice, you can consider yourself as an amateur security professional (which will benefit yourself anyway). 
 
@@ -639,7 +639,7 @@ SURVEILLANCE SELF-DEFENSE is short for SSD. Launched by the well-known Electroni
 >Privacy Guide: Fight Surveillance with Encryption and Privacy Tools<br>
 >https://www.privacytools.io/
 
-The above website is comprehensive listing a number of tools. It also recommends some cryptocurrency exchanges, wallets, etc. However, it should be noted that I don't use very many tools listed on the website, because I have my own way.Thus,you should also develop your own way, with comparing and improving continuously.
+The above website is comprehensive listing a number of tools. It also recommends some cryptocurrency exchanges, wallets, etc. However, it should be noted that I don't use very many tools listed on the website, because I have my own way. Thus, you should also develop your own way, with comparing and improving continuously.
 
 Here are some highlights of the tools that I suggest that you should use.
 
@@ -647,9 +647,9 @@ Here are some highlights of the tools that I suggest that you should use.
 
 Windows 10 Edition (and higher) and macOS are both secure options. If you have the ability, you can choose Linux, such as Ubuntu, or even extremely security & privacy focused ones like Tails, or Whonix.
 
-On the topic of Operation System, the most straightforward security principle is: pay close attention to system updates, and apply them asap when available. The capability to master the Operating System comes next. People might ask, what on earth do you need to learn in order to master an Operating System like Windows or MacOS? Isn’t it just clicking around? Well it’s actually far from being enough. For novice users, a good antivirus software, like Kaspersky, BitDefender, is a must, and they both are available on MacOS.  
+On the topic of Operation System, the most straightforward security principle is: pay close attention to system updates, and apply them asap when available. The capability to master the Operating System comes next. People might ask, what on earth do you need to learn in order to master an Operating System like Windows or MacOS? Isn't it just clicking around? Well it's actually far from being enough. For novice users, a good antivirus software, like Kaspersky, BitDefender, is a must, and they both are available on MacOS.  
 
-And then, don’t forget about download security, which I mentioned before. You will have eliminated most of the risks, if you don’t download and install programs recklessly.  
+And then, don't forget about download security, which I mentioned before. You will have eliminated most of the risks, if you don't download and install programs recklessly.  
 
 Next, think about what you are gonna do, if your computer got lost or stolen. Having a boot password is obviously not good enough. If disk encryption is not turned on, bad actors can just take out the harddisk and retrieve the data inside. Thus my advice is that disk encryption should be turned on for important computers.
 
@@ -660,7 +660,7 @@ We also have powerful and legendary tools such as VeraCrypt (the former TrueCryp
 
 >https://veracrypt.fr/
 
-You can go one step further to  enable BIOS or firmware password. I have done it myself but it’s totally up to your own choice. Just remember: if you do, remember the password very clearly, or else no one can ever help you out. I am lucky enough to have fallen into the rabbit hole myself before, which cost me a laptop, some crypto, and a week’s time. On the other hand, it's a very good learning experience too.
+You can go one step further to  enable BIOS or firmware password. I have done it myself but it's totally up to your own choice. Just remember: if you do, remember the password very clearly, or else no one can ever help you out. I am lucky enough to have fallen into the rabbit hole myself before, which cost me a laptop, some crypto, and a week's time. On the other hand, it's a very good learning experience too.
 
 ### Mobile phone
 
@@ -668,9 +668,9 @@ Nowadays iPhone and Android are the only two mainstream mobile phones categories
 
 On mobile phones we also need to pay attention to security updates and download security. In addition, pay attention of the following points:
 
-* Do not jailbreak/root your phone, it’s unnecessary unless you are doing relevant security researchIf you are doing it for pirated software it really depends on how well you can master the skill.
+* Do not jailbreak/root your phone, it's unnecessary unless you are doing relevant security researchIf you are doing it for pirated software it really depends on how well you can master the skill.
 * Don't download apps from unofficial app stores.
-* Don’t do it unless you know what you are doing. Not to mention there are even many fake apps in official app stores.
+* Don't do it unless you know what you are doing. Not to mention there are even many fake apps in official app stores.
 * The prerequisite of utilising the official Cloud synchronization function, is that you have to make sure your account is secure, otherwise if the Cloud account gets compromised, so will the mobile phone.
 
 Personally I rely more on the iPhone. And you will need at least two iCloud accounts: one China and one overseas. You will need them to install apps with different regional restrictions. (which sounds pretty weird but welcome to the reality)
@@ -679,14 +679,14 @@ Personally I rely more on the iPhone. And you will need at least two iCloud acco
 
 Network security issues used to be a pain in the ass, but there are already significant improvements in recent years, especially since the mass adoption of HTTPS Everywhere policy. 
 
-In case of an ongoing network hijacking (man-in-the-middle attack) attack, there will be  corresponding system error alerts. But there are always exceptions, so when you have a choice use the more secure option. For example, don’t connect to unfamiliar Wi-Fi networks unless the more popular & secure 4G/5G network is not available or not stable.  
+In case of an ongoing network hijacking (man-in-the-middle attack) attack, there will be  corresponding system error alerts. But there are always exceptions, so when you have a choice use the more secure option. For example, don't connect to unfamiliar Wi-Fi networks unless the more popular & secure 4G/5G network is not available or not stable.  
 
 ### Browsers
 
 The most popular browsers are Chrome and Firefox, in crypto fields some will use Brave too. These well known browsers have a strong team and there will be timely security updates. The topic of browser security is very broad. Here are some tips for you to be aware of:
 
 * Update as quickly as possible, don't take chances.
-* Don’t use an extension if not necessary. If you do, make your decisions based on user’s reviews, number of users, maintaining company, etc, and pay attention to the permission it asks for. Make sure you get the extension from your browser’s official app store.
+* Don't use an extension if not necessary. If you do, make your decisions based on user's reviews, number of users, maintaining company, etc, and pay attention to the permission it asks for. Make sure you get the extension from your browser's official app store.
 * Multiple browsers can be used in parallel, and it is strongly recommended that you perform important operations in one browser, and use another browser for more routine, less important operations.
 * Here are some well-known privacy focused extensions (such as uBlock Origin, HTTPS Everywhere, ClearURLs, etc.), feel free to try them out.
 
@@ -711,7 +711,7 @@ This page has security design concepts, relevant privacy and security certificat
 
 Bitwarden goes one step further, as it is fully open source, including the server side, so anyone can validate, audit, and contribute. Now you see? The intention of 1Password and Bitwarden is very clear: 
 
->I am very secure and I am concerned about privacy. Not only do I say it myself, third party authorities say so as well. Feel free to audit me, and in order to make it easy for your audits, I spend a lot of effort to be open wherever possible. If what I do doesn’t match what I say, it’s easy to challenge me. And this is called Security Confidence.
+>I am very secure and I am concerned about privacy. Not only do I say it myself, third party authorities say so as well. Feel free to audit me, and in order to make it easy for your audits, I spend a lot of effort to be open wherever possible. If what I do doesn't match what I say, it's easy to challenge me. And this is called Security Confidence.
 
 ### Two-Factor Authentication
 
@@ -725,13 +725,13 @@ In addition, two-factor authentication can also be a broader concept. For exampl
 
 For policy reasons, let's not talk too much about this, just pick one of the well-known solutions. Things will be more under control if you can build your own solution.After all, our starting point is to surf the Internet scientifically and securely.
 
-If you are not using a self-built solution, you can’t fully rule out the possibility of a man-in-the-middle attack. As mentioned earlier, the Internet security situation is not as bad as it used to be, especially after the mass adoption of HTTPS Everywhere policy. However, some of the peace may be just the surface of the water, and there are already undercurrents beneath the surface that are not easily noticeable. To be honest, I don't really have a silver bullet for this. . It’s not easy to build your own solution, but it’s definitely worth it. And if you can't, make sure you check using multiple sources and choose a reputable one that has been around for a long time.
+If you are not using a self-built solution, you can't fully rule out the possibility of a man-in-the-middle attack. As mentioned earlier, the Internet security situation is not as bad as it used to be, especially after the mass adoption of HTTPS Everywhere policy. However, some of the peace may be just the surface of the water, and there are already undercurrents beneath the surface that are not easily noticeable. To be honest, I don't really have a silver bullet for this. . It's not easy to build your own solution, but it's definitely worth it. And if you can't, make sure you check using multiple sources and choose a reputable one that has been around for a long time.
 
 ### Email
 
-Email is the cornerstone of our web based identity. . We use email to sign up for a lot of services. Almost all of the email services we use are free. It seems like air, and you don’t think it would disappear. What if one day your Email service is gone, then all the other services that depend on it will be in a rather awkward situation.  This extreme situation is really not impossible if there're wars, natural disasters, etc. Of course, if these extreme situations occur, Email will be less important to you than survival.
+Email is the cornerstone of our web based identity. . We use email to sign up for a lot of services. Almost all of the email services we use are free. It seems like air, and you don't think it would disappear. What if one day your Email service is gone, then all the other services that depend on it will be in a rather awkward situation.  This extreme situation is really not impossible if there're wars, natural disasters, etc. Of course, if these extreme situations occur, Email will be less important to you than survival.
 
-When it comes to Email services providers, you should choose from tech giants, such as Gmail, Outlook, or QQ Email. It happens that my previous security researches cover this area. The security posture of these mailboxes is good enough. But still you have to be careful about Email phishing attacks. You don’t need to deal with every single Email, especially the embedded links and attachments, where Trojans may be hidden.
+When it comes to Email services providers, you should choose from tech giants, such as Gmail, Outlook, or QQ Email. It happens that my previous security researches cover this area. The security posture of these mailboxes is good enough. But still you have to be careful about Email phishing attacks. You don't need to deal with every single Email, especially the embedded links and attachments, where Trojans may be hidden.
 
 If you come across a highly sophiscatedattack on your Email services providers, you're on your own.
 
@@ -743,14 +743,14 @@ SIM card and mobile phone number are also very important basic identities in man
 
 In 2019.5, someone's Coinbase account suffered a SIM Port Attack (SIM card transfer attack), and unfortunately lost more than 100,000 US dollars of cryptocurrency. The attack process is roughly as follows:
 
-The attacker obtained the privacy information of the target user through social engineering and other methods, and tricked the Mobile phone operator to issue him a new SIM card, and then he easily took over the target user's Coinbase account  through the same mobile phone number. The SIM has been transferred, which is very troublesome. It’s very troublesome if your SIM card got transferred by the attacker, as nowadays, many of the online services use our mobile phone number as a direct authentication factor or 2FA. This is a very centralized authentication mechanism, and the mobile phone number becomes the weak point.
+The attacker obtained the privacy information of the target user through social engineering and other methods, and tricked the Mobile phone operator to issue him a new SIM card, and then he easily took over the target user's Coinbase account  through the same mobile phone number. The SIM has been transferred, which is very troublesome. It's very troublesome if your SIM card got transferred by the attacker, as nowadays, many of the online services use our mobile phone number as a direct authentication factor or 2FA. This is a very centralized authentication mechanism, and the mobile phone number becomes the weak point.
 
 For detailed analysis, please refer to:
 >https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124
 
 The defence suggestion for this is actually simple:enable a well-known 2FA solution.
 
-The SIM card has another risk:that is, if the phone is lost or stolen, it will be embarrassing that the bad guy can take out the SIM card and use it. Here is what I did: Enable the SIM card password (PIN code), so every time when I turn on my phone or use my SIM card in a new device, I need to enter the correct password. Please ask Google for detailed howtos.  Here’s the reminder from me: don't forget this password, otherwise it will be very troublesome.
+The SIM card has another risk:that is, if the phone is lost or stolen, it will be embarrassing that the bad guy can take out the SIM card and use it. Here is what I did: Enable the SIM card password (PIN code), so every time when I turn on my phone or use my SIM card in a new device, I need to enter the correct password. Please ask Google for detailed howtos.  Here's the reminder from me: don't forget this password, otherwise it will be very troublesome.
 
 ### GPG
 
@@ -760,12 +760,12 @@ Many contents in this part have been mentioned in previous sections, and I woud 
 * OpenPGP is an encryption standard derived from PGP.
 * GPG, the full name is GnuPG, is an open source encryption software based on the OpenPGP standard.
 
-Their cores are similar, and with GPG you are compatible with the others.. Here I strongly recommend again: In security encryption, don’t try to reinvent the wheel; GPG, if used in a correct way, can improve security level significantly!
+Their cores are similar, and with GPG you are compatible with the others.. Here I strongly recommend again: In security encryption, don't try to reinvent the wheel; GPG, if used in a correct way, can improve security level significantly!
 
 ### Segregation
 
 The core value behind the security principle of segregation, is the zero trust mindset. 
-You have to understand that no matter how strong we are, we will be hacked sooner or later, no matter if it's by external hackers, insiders or ourselves. When hacked, stop loss should be the first step. The ability to stop loss is ignored by many people, and that’s why they get hacked again and again. The root cause is that there is no security design, especially straightforward methods such as segregation
+You have to understand that no matter how strong we are, we will be hacked sooner or later, no matter if it's by external hackers, insiders or ourselves. When hacked, stop loss should be the first step. The ability to stop loss is ignored by many people, and that's why they get hacked again and again. The root cause is that there is no security design, especially straightforward methods such as segregation
 
 A good segregation practice can ensure that in case of security incidents, you only lose those directly related to the compromised target, without affecting other assets.
 
@@ -787,7 +787,7 @@ Human is always at the highest and eternal risk. There's a quote from The Three-
 * Don't be greedy: Greed is indeed the motivation to move forward in many cases, but think about it, why is such a good opportunity just reserved for you?
 * Don't be impulsive: impulsiveness is the devil which will lead you to traps. Rash action is gambling.
 
-There are endless things  in human nature to talk about and you can’t be more careful. Please pay special attention to the following points, and see how bad actors take advantage of the weakness in human nature, utilizing various convenient platforms.
+There are endless things  in human nature to talk about and you can't be more careful. Please pay special attention to the following points, and see how bad actors take advantage of the weakness in human nature, utilizing various convenient platforms.
 
 ### Telegram
 
@@ -815,21 +815,21 @@ It looks great but requires a quite strong security design standard. Discord has
 
 >https://discord.com/safety
 
-Unfortunately, most people will not bother to read it carefully. What's more, Discord won’t always be able to illustrate certain core security issues clearly, because they will have to put on an attacker's hat which is not always feasible.
+Unfortunately, most people will not bother to read it carefully. What's more, Discord won't always be able to illustrate certain core security issues clearly, because they will have to put on an attacker's hat which is not always feasible.
 
 For instance:
 
 With so many NFT thefts on Discord, what are the key attack methods? Before we figure this out, Discord security advice is useless.
 
-The key reason behind many  project  Discordhacks is actually the Discord Token, which is the content of the authorization field in the HTTP request header. It has existed in Discord for a very long time. For hackers, if they can find a way to get this Discord Token, they can almost control all the privileges of the target Discord server. That is to say,if the target is an administrator, an account with administrative privileges or a Discord bot , the hackers can do anything they want to. For example by announcing a NFT phishing site, they make people think it's the official announcement, and fish will bite the hook.
+The key reason behind many  project  Discordhacks is actually the Discord Token, which is the content of the authorization field in the HTTP request header. It has existed in Discord for a very long time. For hackers, if they can find a way to get this Discord Token, they can almost control all the privileges of the target Discord server. That is to say, if the target is an administrator, an account with administrative privileges or a Discord bot , the hackers can do anything they want to. For example by announcing a NFT phishing site, they make people think it's the official announcement, and fish will bite the hook.
 
 Some might ask, what if I add two-factor authentication (2FA) to my Discord account? Absolutely a good habit! But Discord Token has nothing to do with your account 2FA status. Once your account is breached, you should change your Discord password immediately to make the original Discord Token invalid.
 
-For the question of how the hacker can get the Discord Token, we have figured out at least three major techniques, and we will try to explain it in detail in the future . For normal users, there are a lot that can be done, but the core points are: don’t rush, don’t be greedy, and verify from multiple sources.
+For the question of how the hacker can get the Discord Token, we have figured out at least three major techniques, and we will try to explain it in detail in the future . For normal users, there are a lot that can be done, but the core points are: don't rush, don't be greedy, and verify from multiple sources.
 
 ### "Official" phishing
 
-The bad actors are good at taking advantage of role playing, especially the official role. For example we have mentioned the fake customer service method before. Besides that, in April 2022, many users of the well-known hardware wallet Trezor, received phishing emails from trezor.us, which is not the official Trezor domain trezor.io. There is a minor difference in the domain name suffix. What’s more, the following domains were also spread via phishing emails.
+The bad actors are good at taking advantage of role playing, especially the official role. For example we have mentioned the fake customer service method before. Besides that, in April 2022, many users of the well-known hardware wallet Trezor, received phishing emails from trezor.us, which is not the official Trezor domain trezor.io. There is a minor difference in the domain name suffix. What's more, the following domains were also spread via phishing emails.
 
 >https://suite.trẹzor.com
 
@@ -870,7 +870,7 @@ Meanwhile, the SlowMist team has been maintaining and updating SlowMist Hacked -
 
 >https://hacked.slowmist.io/
 
-This handbook has introduced many security measures, and if you can apply them to your own security, then congratulations. I won’t elaborate too much on the blockchain shenanigans. If you are interested, you can learn it on your own, which is definitely a good thing, especially since new scams and frauds are continuously evolving. The more you learn, the better you can defend yourself and make this industry better.
+This handbook has introduced many security measures, and if you can apply them to your own security, then congratulations. I won't elaborate too much on the blockchain shenanigans. If you are interested, you can learn it on your own, which is definitely a good thing, especially since new scams and frauds are continuously evolving. The more you learn, the better you can defend yourself and make this industry better.
 
 # What to do When You get hacked
 
@@ -896,7 +896,7 @@ This is really important as we have encountered quite a few times that the scene
 
 The purpose of analyzing the cause is to understand the adversary and output the hacker's portrait. At this point, the incident report is very important, which is also called Post Mortem Report. Incident Report and Post Mortem Report refer to the same thing.
 
-We have met so many people who came to us for help after their coins were stolen, and it was very difficult for many of them to clearly tell what happened. It’s even harder for them to produce a clear incident report. But I think this can be practiced and it would be helpful by referring to examples.  The following can be a good starting point:
+We have met so many people who came to us for help after their coins were stolen, and it was very difficult for many of them to clearly tell what happened. It's even harder for them to produce a clear incident report. But I think this can be practiced and it would be helpful by referring to examples.  The following can be a good starting point:
 
 * Summary 1: Who was involved, when did this happen , what has happened, and how much was the total loss?
 * Summary 2: The wallet addresses related to the loss, the wallet address of the hacker, the type of the coin, the quantity of the coin. It could be much clearer with the help of just a single table.
@@ -943,37 +943,37 @@ It covers almost every aspect of security and so does this handbook. However, th
 
 # Misconception
 
-From the very beginning, this handbook tells you to stay skeptical! This includes everything mentioned in here. This is an extremely vibrant and promising industry, full of all kinds of traps and chaos. Here let’s take a look at some of the misconceptions, which, if taken for granted as truth, can easily make you fall into the traps and become part of the chaos itself.
+From the very beginning, this handbook tells you to stay skeptical! This includes everything mentioned in here. This is an extremely vibrant and promising industry, full of all kinds of traps and chaos. Here let's take a look at some of the misconceptions, which, if taken for granted as truth, can easily make you fall into the traps and become part of the chaos itself.
 
 ## Code Is Law
 
-Code is law. However, when a project (especially smart contract related ones) gets hacked or rugged, no single victim would ever wish for “Code Is Law”, and it turns out they still need to rely on the law in the real world.
+Code is law. However, when a project (especially smart contract related ones) gets hacked or rugged, no single victim would ever wish for "Code Is Law", and it turns out they still need to rely on the law in the real world.
 
 ## Not Your Keys, Not Your Coins
 
-If you don’t own your keys, you don’t own your coins. As a matter of fact, many users failed to properly manage their own private keys. Due to various security mispractices they even lose their crypto assets. Sometimes you will find that it’s actually more secure to put your crypto asset in big and reputable platforms.
+If you don't own your keys, you don't own your coins. As a matter of fact, many users failed to properly manage their own private keys. Due to various security mispractices they even lose their crypto assets. Sometimes you will find that it's actually more secure to put your crypto asset in big and reputable platforms.
 
 ## In Blockchain We Trust
 
-We trust it because it’s blockchain. In fact, blockchain itself does have the capability to solve many of the fundamental trust issues, since it’s tamper-proof, censorship-resistant, etc; if my asset and related activities are on chain, I can trust by default that no one else will be able to take away my asset or tamper with my activity without authorization. However the reality is often harsh, firstly not every blockchain is able to achieve these fundamental points, and secondly human nature always becomes the weakest link. Many of the hacking techniques nowadays are beyond the imagination of most of us. Though we always say that attack and defense is the balance between cost and impact, when you don’t own a big asset no hacker will waste time to target you. But when there are multiple targets like yourself, it will be very profitable for the hackers to launch the attack. 
+We trust it because it's blockchain. In fact, blockchain itself does have the capability to solve many of the fundamental trust issues, since it's tamper-proof, censorship-resistant, etc; if my asset and related activities are on chain, I can trust by default that no one else will be able to take away my asset or tamper with my activity without authorization. However the reality is often harsh, firstly not every blockchain is able to achieve these fundamental points, and secondly human nature always becomes the weakest link. Many of the hacking techniques nowadays are beyond the imagination of most of us. Though we always say that attack and defense is the balance between cost and impact, when you don't own a big asset no hacker will waste time to target you. But when there are multiple targets like yourself, it will be very profitable for the hackers to launch the attack. 
 
-My security advice is very simple: Distrust by default (that is, question everything by default), and conduct continuous verification. Verify is the key security action here, and continuous verification basically means that security is never in a static state, it’s secure now doesn’t mean it’s secure tomorrow. The capability to properly verify is hereby the biggest challenge for us all, but it’s quite interesting, as you will get to master a lot of knowledge in the process. When you are strong enough, no one can easily harm you. 
+My security advice is very simple: Distrust by default (that is, question everything by default), and conduct continuous verification. Verify is the key security action here, and continuous verification basically means that security is never in a static state, it's secure now doesn't mean it's secure tomorrow. The capability to properly verify is hereby the biggest challenge for us all, but it's quite interesting, as you will get to master a lot of knowledge in the process. When you are strong enough, no one can easily harm you. 
 
 ## Cryptographic Security is Security
 
 Cryptography is powerful and important. Without all the hard work of cryptographers, all the solid cryptographic algorithms & engineering implementations, there will be no modern communications technology, Internet, or blockchain technology. However, some individuals consider cryptographic security as absolute security. And thus a bunch of weird questions arises: 
 
-Isn’t blockchain so secure, that it took trillions of years to break a private key? How come the FBI could decrypt Dark Web Bitcoin? Why on earth could Jay Chou’s NFT get stolen?
+Isn't blockchain so secure, that it took trillions of years to break a private key? How come the FBI could decrypt Dark Web Bitcoin? Why on earth could Jay Chou's NFT get stolen?
 
-I can bear with these novice questions... what I can’t bear with is the fact that many so-called security professionals use cryptographic security concepts to fool the public, they are mentioning terms such as military-grade encryption, world’s best encryption, cosmic-level encryption, absolute system security, unhackability, etc. 
+I can bear with these novice questions... what I can't bear with is the fact that many so-called security professionals use cryptographic security concepts to fool the public, they are mentioning terms such as military-grade encryption, world's best encryption, cosmic-level encryption, absolute system security, unhackability, etc. 
 
-Hackers? They don’t give a shit...
+Hackers? They don't give a shit...
 
 ## Is it humiliating to be hacked?
 
 It is true that getting hacked can bring mixed feelings, and there will be a sense of shame sometimes. But you need to understand that getting hacked is almost  100% guaranteed so there is nothing to be ashamed of. 
 
-Once getting hacked, it doesn’t matter if you are only responsible for yourself. However, if you are responsible for many others, you have to be transparent and open when you are dealing with the incident. 
+Once getting hacked, it doesn't matter if you are only responsible for yourself. However, if you are responsible for many others, you have to be transparent and open when you are dealing with the incident. 
 
 Although people may question or even accuse you of staging the hack by yourself, a transparent and open updated process will always bring good luck and understanding.
 
@@ -1011,7 +1011,7 @@ Now in blockchain security, SlowMist and myself are considered to be pioneers . 
 
 When you have finished reading this handbook, you must practice, become proficient and draw inferences. When you have your own discovery or experience afterwards, I hope you will contribute. If you feel there is sensitive information you can mask them out, or anonymise the information.
 
-Finally,thanks to the global maturity of security and privacy-related legislation and enforcement; thanks to the efforts of all the pioneering cryptographers, engineers, ethical hackers and all those involved in the creation of a better world, which includes Satoshi Nakamoto.
+Finally, thanks to the global maturity of security and privacy-related legislation and enforcement; thanks to the efforts of all the pioneering cryptographers, engineers, ethical hackers and all those involved in the creation of a better world, which includes Satoshi Nakamoto.
 
 # Appendix
 
@@ -1021,15 +1021,15 @@ The security rules and principles mentioned in this handbook are summarized as f
 
 Two major security rules:
 
-* **Zero trust**. To make it simple,stay skeptical, and always stay so.
+* **Zero trust**. To make it simple, stay skeptical, and always stay so.
 * **Continuous validation**. In order to trust something, you have to validate what you doubt, and make validating a habit.
 
 Security principles:
 
 * For all the knowledge from the Internet, refer to at least two sources,  corroborate each other, and always stay skeptical.
-* Segregate. Don’t put all the eggs in one basket.
-* For wallets with important assets, don’t do unnecessary updates.
-* What you see is what you sign. You need to be aware of what you are signing, and of the expected result after the signed transaction is sent out. Don’t do things that will make you regret afterwards.
+* Segregate. Don't put all the eggs in one basket.
+* For wallets with important assets, don't do unnecessary updates.
+* What you see is what you sign. You need to be aware of what you are signing, and of the expected result after the signed transaction is sent out. Don't do things that will make you regret afterwards.
 * Pay attention to system security updates. Apply them as soon as they are available.
 * Don't download & install programs recklessly can  actually prevent most risks.
 
@@ -1037,7 +1037,7 @@ Security principles:
 
 Thanks to the contributors, this list will be continuously updated and I hope you can contact me if there are any ideas for this handbook.
 
->Cos，Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+>Cos, Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
 
 Contributors
 ```

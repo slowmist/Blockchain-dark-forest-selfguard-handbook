@@ -85,8 +85,8 @@ Blockchain is a great invention that brings about a change in production relatio
 
 Please remember the following two security rules to survive the blockchain dark forest.
 
-1. **Zero Trust**：Be skeptical, and always be skeptical.
-2. **Continuous Security Validation**: To trust something, you must have the ability to validate itMake validation a habit.
+1. **Zero Trust**：To make it simple, stay skeptical, and always stay so.
+2. **Continuous Security Validation**: In order to trust something, you have to validate what you doubt, and make validating a habit.
 
 *Note: The two security rules above are the core principles of this handbook , and all the other security principles mentioned in this handbook are derived from them.*
 
@@ -157,11 +157,11 @@ The download page mentioned two GPG tools:
 * GPG Suite, for MacOS.
 * Gpg4win, for Windows.
 
-If you pay attention, you will find the download pages for both o GPG tools give some instructions on how to check the consistency of both methods. However, there is no step-by-step guide, that is to say, you need to learn and practice yourself:)
+If you pay attention, you will find the download pages for both GPG tools give some instructions on how to check the consistency of both methods. However, there is no step-by-step guide, that is to say, you need to learn and practice yourself:)
 
 **If it is a browser extension wallet**, such as MetaMask, the only thing you have to pay attention to is the download number and rating in the Chrome web store. MetaMask, for example, has more than 10 million downloads and more than 2,000 ratings (though the overall rating is not high). Some people might think that the downloads numberand ratings may be inflated. Truth to be told, it is very difficult to fake such a large number.   
 
-**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc,. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
+**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc., It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
 
 **If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is inact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
 
@@ -283,7 +283,7 @@ You can verify if an address is  frozen by Tether from the USDT contract.
 
 Use the target wallet address as input  int isBlackListed to check. Other chains that take  USDT have similar verification way.
 
-However, your BTC and ETH should never ever get frozen.  If this does happen one day in the future, the belief of decentralization would crash as well.  Most cryptocurrency asset frozen cases we have heard today actually happened in centralized platforms (such Binance, Coinbase, etc.) but not on the blockchain. When your cryptocurrency stays in Centralized Exchange platforms, you don't actually own any of them. When the centralized platforms freeze your account, they are actually revoking your permission to trade or withdraw.. The concept of freezing could be misleading to newbies in the area.  As a result, some reckless self media would spread all kinds of conspiracy theories about BitCoin.
+However, your BTC and ETH should never ever get frozen.  If this does happen one day in the future, the belief of decentralization would crash as well.  Most cryptocurrency asset frozen cases we have heard today actually happened in centralized platforms (such Binance, Coinbase, etc.) but not on the blockchain. When your cryptocurrency stays in Centralized Exchange platforms, you don't actually own any of them. When the centralized platforms freeze your account, they are actually revoking your permission to trade or withdraw. The concept of freezing could be misleading to newbies in the area.  As a result, some reckless self media would spread all kinds of conspiracy theories about BitCoin.
 
 Though your BTC and ETH assets won't be frozen on the blockchain, centralized exchanges might freeze your assets according to the requirement of AML once your assets get transferred into these platforms and they are involved in any open cases that law enforcements are working on.
 
@@ -309,7 +309,7 @@ So no matter which method is used,  QR code, USB or Bluetooth, it should be foll
 
 It seems to be a bit troublesome, but it becomes better when you  get used to it. You would even feel a full sense of security. However, don't consider it 100% secure because there are still risks here, and there have been many cases of heavy losses because of these risks. Here are risk points:
 
-* The target address of  the coin transfer was not checked carefully, resulting in the coin being transferred to someone else. People are lazy and careless, sometimes . For example, most of the time they only check the beginning and ending few bits of a wallet address instead of fully checking the whole address.. This leaves a backdoor to bad guys.They will run programs to get the wallet address with the same first and last few bits as your desired target address and then replace your coin transfer target address with the one under their control using  some tricks.
+* The target address of  the coin transfer was not checked carefully, resulting in the coin being transferred to someone else. People are lazy and careless, sometimes . For example, most of the time they only check the beginning and ending few bits of a wallet address instead of fully checking the whole address. This leaves a backdoor to bad guys.They will run programs to get the wallet address with the same first and last few bits as your desired target address and then replace your coin transfer target address with the one under their control using  some tricks.
 * Coins are authorized to unknown addresses. Usually authorization is the mechanism of the Ethereum smart contract tokens, the "approve" function, with one argument being the target authorization address and the other being the quantity. Many people don't understand this mechanism, so they may authorize an unlimited number of tokens to the target address, at which point the target address has permission to transfer all those tokens away. This is called authorized coin theft, and there are other variants of the technique, but I won't expand on it here.
 * Some signatures that seem not important actually have huge traps in the back, and I won't dig into it now, but will explain the details later.
 * The cold wallet may not have provided enough necessary information, causing you to be careless and misjudged.
@@ -339,7 +339,7 @@ In this case, there are several ways of doing evil:
 * When the wallet is running and the user initiates a transfer, information such as the target address and amount is secretly replaced in the wallet backend, and it is difficult for the user to notice.
 * Corrupting the random number entropy values associated with the generation of secret phrases, which makes them relatively easy to decipher.
 
-Security is a thing of ignorance and knowledge, and there are many things that could be easily ignored or missed.. So for wallets that hold important assets, my security rule is also simple: no easy updates when it's enough to use.
+Security is a thing of ignorance and knowledge, and there are many things that could be easily ignored or missed. So for wallets that hold important assets, my security rule is also simple: no easy updates when it's enough to use.
 
 ### What is DeFi Security
 
@@ -702,7 +702,7 @@ What I need to remind you here is:
 
 * Do not ever forget your master password, and keep your account information safe, otherwise everything will be lost.
 * Make sure your email is secure. If your email is compromised, it might not directly compromise the sensitive information in your password manager, but bad actors have the capability to destroy it.
-* I have verified the security of the tools I mentioned (such as 1Password), and have been closely watching the relevant security incidents, user reviews, news, etc.. But I cannot guarantee that these tools are absolutely secure, and no black swan events are ever gonna happen in the future to them.
+* I have verified the security of the tools I mentioned (such as 1Password), and have been closely watching the relevant security incidents, user reviews, news, etc,. But I cannot guarantee that these tools are absolutely secure, and no black swan events are ever gonna happen in the future to them.
  
 One thing I do appreciate is the introduction and description of 1Password's security page, for example.
 >https://1password.com/security/
@@ -715,7 +715,7 @@ Bitwarden goes one step further, as it is fully open source, including the serve
 
 ### Two-Factor Authentication
 
-Speaking of your identity security on the Internet, the first layer relies on passwords, the second layer relies on two factor authentication, and the third layer relies on the risk control ability of the target project itself. I can't say that two factor authentication is a must-have. For example, if you are using a decentralized wallet, one layer of password is annoying enough (now they basically support biometric identification such as facial recognition or fingerprint to improve user experiences), no one wants to use the second factor. But in a centralized platform, you have to use 2FA. . Anyone can access the centralized platform, and if your credentials get stolen, your account is breached and your fund will be lost. On the contrary, the password for your decentralized wallet is just a local authentication, even if the hacker gets the password, they still need to get access to the device where your wallet is located.
+Speaking of your identity security on the Internet, the first layer relies on passwords, the second layer relies on two factor authentication, and the third layer relies on the risk control ability of the target project itself. I can't say that two factor authentication is a must-have. For example, if you are using a decentralized wallet, one layer of password is annoying enough (now they basically support biometric identification such as facial recognition or fingerprint to improve user experiences), no one wants to use the second factor. But in a centralized platform, you have to use 2FA. Anyone can access the centralized platform, and if your credentials get stolen, your account is breached and your fund will be lost. On the contrary, the password for your decentralized wallet is just a local authentication, even if the hacker gets the password, they still need to get access to the device where your wallet is located.
 
 Now you see the differences?Some well-known two-factor authentication (2FA) tools include: Google Authenticator, Microsoft Authenticator, etc. Of course, if you use a password manager (such as 1Password), it also comes with a 2FA module, which is very handy. Always remember to make backups, because losing 2FA can be a hassle.
 
@@ -725,11 +725,11 @@ In addition, two-factor authentication can also be a broader concept. For exampl
 
 For policy reasons, let's not talk too much about this, just pick one of the well-known solutions. Things will be more under control if you can build your own solution.After all, our starting point is to surf the Internet scientifically and securely.
 
-If you are not using a self-built solution, you can't fully rule out the possibility of a man-in-the-middle attack. As mentioned earlier, the Internet security situation is not as bad as it used to be, especially after the mass adoption of HTTPS Everywhere policy. However, some of the peace may be just the surface of the water, and there are already undercurrents beneath the surface that are not easily noticeable. To be honest, I don't really have a silver bullet for this. . It's not easy to build your own solution, but it's definitely worth it. And if you can't, make sure you check using multiple sources and choose a reputable one that has been around for a long time.
+If you are not using a self-built solution, you can't fully rule out the possibility of a man-in-the-middle attack. As mentioned earlier, the Internet security situation is not as bad as it used to be, especially after the mass adoption of HTTPS Everywhere policy. However, some of the peace may be just the surface of the water, and there are already undercurrents beneath the surface that are not easily noticeable. To be honest, I don't really have a silver bullet for this. It's not easy to build your own solution, but it's definitely worth it. And if you can't, make sure you check using multiple sources and choose a reputable one that has been around for a long time.
 
 ### Email
 
-Email is the cornerstone of our web based identity. . We use email to sign up for a lot of services. Almost all of the email services we use are free. It seems like air, and you don't think it would disappear. What if one day your Email service is gone, then all the other services that depend on it will be in a rather awkward situation.  This extreme situation is really not impossible if there're wars, natural disasters, etc. Of course, if these extreme situations occur, Email will be less important to you than survival.
+Email is the cornerstone of our web based identity. We use email to sign up for a lot of services. Almost all of the email services we use are free. It seems like air, and you don't think it would disappear. What if one day your Email service is gone, then all the other services that depend on it will be in a rather awkward situation.  This extreme situation is really not impossible if there're wars, natural disasters, etc. Of course, if these extreme situations occur, Email will be less important to you than survival.
 
 When it comes to Email services providers, you should choose from tech giants, such as Gmail, Outlook, or QQ Email. It happens that my previous security researches cover this area. The security posture of these mailboxes is good enough. But still you have to be careful about Email phishing attacks. You don't need to deal with every single Email, especially the embedded links and attachments, where Trojans may be hidden.
 
@@ -760,7 +760,7 @@ Many contents in this part have been mentioned in previous sections, and I woud 
 * OpenPGP is an encryption standard derived from PGP.
 * GPG, the full name is GnuPG, is an open source encryption software based on the OpenPGP standard.
 
-Their cores are similar, and with GPG you are compatible with the others.. Here I strongly recommend again: In security encryption, don't try to reinvent the wheel; GPG, if used in a correct way, can improve security level significantly!
+Their cores are similar, and with GPG you are compatible with the others. Here I strongly recommend again: In security encryption, don't try to reinvent the wheel; GPG, if used in a correct way, can improve security level significantly!
 
 ### Segregation
 
@@ -781,7 +781,7 @@ The reason for this viewpoint is that: in the current Internet environment, priv
 
 ## Security of Human Nature
 
-Human is always at the highest and eternal risk. There's a quote from The Three-Body Problem: "Weakness and ignorance are not barriers to survival, but arrogance is.."
+Human is always at the highest and eternal risk. There's a quote from The Three-Body Problem: "Weakness and ignorance are not barriers to survival, but arrogance is."
 
 * Don't be arrogant: If you think you're already strong, you're fine with yourself. Don't look down on the whole world. In particular, don't be overly proud and think you can challenge global hackers. There is no end to learning, and there are still many obstacles.
 * Don't be greedy: Greed is indeed the motivation to move forward in many cases, but think about it, why is such a good opportunity just reserved for you?

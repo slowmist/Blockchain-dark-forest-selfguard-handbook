@@ -161,7 +161,7 @@ If you pay attention, you will find the download pages for both GPG tools give s
 
 **If it is a browser extension wallet**, such as MetaMask, the only thing you have to pay attention to is the download number and rating in the Chrome web store. MetaMask, for example, has more than 10 million downloads and more than 2,000 ratings (though the overall rating is not high). Some people might think that the downloads numberand ratings may be inflated. Truth to be told, it is very difficult to fake such a large number.   
 
-**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc., It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
+**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
 
 **If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is inact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
 
@@ -690,7 +690,7 @@ The most popular browsers are Chrome and Firefox, in crypto fields some will use
 * Multiple browsers can be used in parallel, and it is strongly recommended that you perform important operations in one browser, and use another browser for more routine, less important operations.
 * Here are some well-known privacy focused extensions (such as uBlock Origin, HTTPS Everywhere, ClearURLs, etc.), feel free to try them out.
 
-In Firefox in particular, I will also use the legendary ancient extension NoScript, which had a  proven record of fending off malicious JavaScript payloads. Nowadays browsers are becoming more and more secure as they add support for things like  same-origin policy, CSP, Cookie security policy, HTTP security headers, extension security policy, etc., Thus the need of using a tool such as NoScript is becoming smaller and smaller, feel free to take a look if interested.
+In Firefox in particular, I will also use the legendary ancient extension NoScript, which had a  proven record of fending off malicious JavaScript payloads. Nowadays browsers are becoming more and more secure as they add support for things like  same-origin policy, CSP, Cookie security policy, HTTP security headers, extension security policy, etc. Thus the need of using a tool such as NoScript is becoming smaller and smaller, feel free to take a look if interested.
 
 ### Password Manager
 
@@ -702,7 +702,7 @@ What I need to remind you here is:
 
 * Do not ever forget your master password, and keep your account information safe, otherwise everything will be lost.
 * Make sure your email is secure. If your email is compromised, it might not directly compromise the sensitive information in your password manager, but bad actors have the capability to destroy it.
-* I have verified the security of the tools I mentioned (such as 1Password), and have been closely watching the relevant security incidents, user reviews, news, etc,. But I cannot guarantee that these tools are absolutely secure, and no black swan events are ever gonna happen in the future to them.
+* I have verified the security of the tools I mentioned (such as 1Password), and have been closely watching the relevant security incidents, user reviews, news, etc. But I cannot guarantee that these tools are absolutely secure, and no black swan events are ever gonna happen in the future to them.
  
 One thing I do appreciate is the introduction and description of 1Password's security page, for example.
 >https://1password.com/security/

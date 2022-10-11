@@ -359,7 +359,7 @@ DeFi security includes at least the following components:
 
 Smart contract security is indeed the most important entry point for security audit, and SlowMist's security audit standards for smart contracts can be found at:
 
->https://www.slowmist.com/en/service-smart-contract-security-audit.html?lang=en
+>https://www.slowmist.com/service-smart-contract-security-audit.html
 
 For advanced players, if the security of the smart contract part itself is controllable  (whether they can audit themselves or understand security audit reports issued by professional organizations), then it doesn't matter if the other parts are secure. Controllable is a tricky concept, some of which depends on the player's own strength. For example, players have certain requirements in respect of the risk from excessive smart contract authority. If the project itself is strong and the people behind it have a good reputation, complete centralization would not matter. However, for those less well-known, controversial or emerging projects, if you realize that the project's smart contracts possess excessive permission risk, especially if such permissions can also affect your principal or earnings, you will certainly be reluctant.
 

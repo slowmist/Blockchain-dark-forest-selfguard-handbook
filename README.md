@@ -85,7 +85,7 @@ Blockchain is a great invention that brings about a change in production relatio
 
 Please remember the following two security rules to survive the blockchain dark forest.
 
-1. **Zero Trust**：To make it simple, stay skeptical, and always stay so.
+1. **Zero Trust**: To make it simple, stay skeptical, and always stay so.
 2. **Continuous Security Validation**: In order to trust something, you have to validate what you doubt, and make validating a habit.
 
 *Note: The two security rules above are the core principles of this handbook , and all the other security principles mentioned in this handbook are derived from them.*

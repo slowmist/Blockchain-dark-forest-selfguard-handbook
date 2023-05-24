@@ -15,6 +15,7 @@ Blockchain dark forest selfguard handbook<br>
 
 | 日期 | 更新日志 |
 | --- | --- |
+| 2023/05/24 | `小心签名！`章节做了点更新。 |
 | 2023/01/07 | 我在我的个人 GitHub 做扩展阅读更新：https://github.com/evilcos/darkhandbook |
 | 2022/06/14 | V1 [日文版](README_JP.md)出现，感谢翻译者们。 |
 | 2022/05/17 | V1 [英文版](README.md)出现，一点小修正，感谢翻译者们。 |
@@ -539,15 +540,16 @@ OpenSea 在 2022 年前后出现过数起用户持有的知名 NFT 被盗事件�
 
 * Revoke.cash
     >https://revoke.cash/<br>
-    >老牌经典，只支持以太坊。
-
-* APPROVED.zone
-    >https://approved.zone/<br>
-    >也是老牌，也只支持以太坊。
+    >老牌经典，支持多链，越来越强。
 
 * Rabby 扩展钱包
     >https://rabby.io/<br>
     >我们安全合作比较多的一款钱包，他们的“授权检查及取消”功能支持的以太坊系列是我见过最多的...
+
+:warning:**注意**：如果你想对签名安全有更全面深入的了解，可以见我在下面这个仓库里的扩展补充：
+
+> https://github.com/evilcos/darkhandbook<br>
+> 我不得不承认，签名安全的知识点对于初学者来说是非常不友好的。这个仓库里汇总了许多有关内容，你可以自行翻阅，如果都能看懂，我相信这方面的安全知识不会再成为你的负担:)
 
 ### 小心反常识签名！
 

@@ -531,7 +531,7 @@ Users can prevent such attacks at the source by canceling the authorization/appr
 
 * Revoke.cash
     >https://revoke.cash/<br>
-    >classic tool, supports Ethereum only
+    >Super old school with good fame &Multi-chain Supporting with increasingly power
 
 * Rabby extension wallet
     >https://rabby.io/<br>

@@ -533,13 +533,14 @@ Users can prevent such attacks at the source by canceling the authorization/appr
     >https://revoke.cash/<br>
     >classic tool, supports Ethereum only
 
-* APPROVED.zone
-    >https://approved.zone/<br>
-    >another classic tool, supports Ethereum only
-
 * Rabby extension wallet
     >https://rabby.io/<br>
     >One of the wallets that we have collaborated with a lot. The number of EVM compatible blockchains where they provide "authorization check and cancellation" function is the most that I have ever seen
+
+:warning:**Note**: If you want a more comprehensive and in-depth understanding of SIGNATURE SECURITY, please check the extensions in the following repository additions as a reference:
+
+>https://github.com/evilcos/darkhandbook<br>
+>It is true that the knowledge of SIGNATURE SECURITY is quite challenging for beginners. The repository compiles relevant content, and carefully reading through it will help you grasp the security knowledge. Thus, you will no longer find it difficult. (If you can read and understand everything, I believe that security knowledge will no longer be tough for you :)
 
 ### Be CAREFUL With Counter-intuitive Signatures Requests!
 

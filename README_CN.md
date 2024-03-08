@@ -140,7 +140,7 @@ Blockchain dark forest selfguard handbook<br>
 
 针对上面的第 1 点，找到正确的官网是有技巧的，比如：
 
-* Google
+* Google（注意搜索结果里的广告条目，非常不靠谱）
 * 行业知名收录，如 CoinMarketCap
 * 多问一些比较信任的人
 

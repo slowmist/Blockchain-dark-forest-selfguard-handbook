@@ -135,7 +135,7 @@ Thus, for many people, before they enter the blockchain world, their wallet is a
 
 To solve the first problem above, there are some techniques to find the correct official website, such as
 
-* using Google
+* using Google(Exercise caution with the advertised entries in search results, as they are often unreliable.)
 * using well-known official websites, such as CoinMarketCap
 * asking trusted people and friends
 

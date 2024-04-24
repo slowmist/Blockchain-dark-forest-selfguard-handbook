@@ -15,6 +15,7 @@ Blockchain dark forest selfguard handbook<br>
 
 | 日期 | 更新日志 |
 | --- | --- |
+| 2024/04/24 | V1.2 新增`那些工具`章节及更新`贡献者`、`那些官网`。 |
 | 2023/05/24 | V1.1 `小心签名！`章节做了点更新。 |
 | 2023/01/07 | 我在我的个人 GitHub 做扩展阅读更新：https://github.com/evilcos/darkhandbook |
 | 2022/06/14 | V1 [日文版](README_JP.md)出现，感谢翻译者们。 |
@@ -78,6 +79,7 @@ Blockchain dark forest selfguard handbook<br>
 - [附](#附)
     - [安全法则及原则](#安全法则及原则)
     - [贡献者](#贡献者)
+    - [那些工具](#那些工具)
     - [那些官网](#那些官网)
 
 # 引子
@@ -1051,13 +1053,49 @@ Punycode 这种钓鱼方式，几年前就有真实利用了，比如 2018 年�
 贡献者们：
 ```
 我夫人
-慢雾，Twitter(@SlowMist_Team)，如：Pds、Johan、Kong、Kirk、Thinking、Blue、Lisa、Keywolf...
+慢雾，Twitter(@SlowMist_Team)，如：Pds | Johan | Kong | Kirk | Thinking | Blue | Lisa | Keywolf...
+英文译者，如：Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss | XL
+日文译者，如：Jack Jia | Mia
 即刻
 一些匿名的朋友
 更多：https://darkhandbook.io/contributors.html
 ```
 
 只要有被采纳收录至本手册的帮助，比如：提供了具体的防御建议、案例；翻译工作；大错误纠错等。
+
+## 那些工具
+
+这本手册（大家常称之为“黑手册”）诞生至今已超两年，很欣慰的是帮到了许多人。虽然影响力越来越大，也不少朋友催更，但我意识到我除了在本手册上做一点小更新，主要都在更新手册有关的[扩展阅读](https://github.com/evilcos/darkhandbook)。不得不说扩展阅读的内容偏技术，对新人挺不友好。而且我知道其实真没那么多人愿意沉下心来学习安全知识，这个小章节本来是要推荐一些对新手友好的工具（包括钱包、安全扩展、有关脚本工具等），但还是反复犹豫了很久，最终还是决定不做特别推荐，因为这行业发展过快，本手册里其实已经提到了不少优秀的工具，经过了时间考验，但这些工具都一定有未来吗？能一直优秀吗？真不确定。
+
+之前我有提过，如果推荐了某个工具，我会尽量做到客观中立，并请大家牢记以下几点：
+
+* 没有绝对的安全，零信任+持续验证是这个黑暗森林里时刻需要存在的条件反射能力。如果哪天这些工具出了什么 bug 或安全问题，甚至更恶劣的情况，比如新版本植入了后门，那么请自行承担这种风险。在使用这些工具前，我建议你保持独立思维，切勿轻信。
+* 我研究能力不错，朋友也多，好的东西时机到了自然会推荐。所以不用着急，如果你的工具不错，首先是得到大家的信任，自然而然我就会推荐。
+* 你有个性，我也有。
+* 远离币价。
+* 信任的建立很不容易，但坍塌就是一瞬间的事，所以请互相珍惜。
+
+虽然在这个小章节里我不做工具的特别推荐，但希望给大家分享一种很好的思维方式：防火墙思维。之前不断强调的“零信任”、“持续验证”其实都是防火墙思维。
+
+比如，钱包使用上，签名是资金安全的重灾区，种类繁杂的签名钓鱼方式，随便举例如：
+
+- eth_sign/personal_sign/eth_signTypedData_* 这种原生签名利用，eth_sign 已经被钱包们封堵得越来越少了
+- Token/NFT 类似 approve/permit 这些授权函数的利用
+- 类似 Uniswap swapExactTokensForTokens/permit2 等这些强大函数的利用
+- OpenSea/Blur 等协议函数的利用（五花八门）
+- TX data 4byte 利用，Claim Rewards/Security Update 等
+- 用 Create2 预创建资金接收地址，绕过相关检测
+- Solana 一笔签名钓走目标钱包地址里的所有资产
+- 比特币铭文一键批量钓鱼，UTXO 机制
+- 各 EVM 链/Solana/Tron 等切换钓鱼
+
+如果你的钱包，弹框待签名确认时，无论你是 FOMO 还是手抖，一个“确认”点击后，签名就发出去了...那么这种钱包使用方式就不具备防火墙思维。更优实践是至少两次点击，多一次就多一层安全保障（当然也不必太多层，人会麻木的...）。比如我使用 Rabby、MetaMask、OKX Wallet 等这些的浏览器扩展钱包，测试钱包除外，其他的我尽量都会配套一个硬件钱包（最好还是较大屏幕，方便我识别待签名内容）。
+
+这个时候，扩展钱包的签名确认弹框会做第一层安全解析，比如钓鱼网站、风险钱包地址、所见即所签、高风险签名识别等，这些都是重要的用户交互安全。硬件钱包做第二层安全解析。如果这个时候再搭配个 Scam Sniffer、Wallet Guard、Pocket Universe 等这类浏览器钱包安全扩展，防火墙又增加了一个。但务必牢记，如果针对你正在进行的操作没风险提醒，自己也要警惕识别好，你才是你自己的兜底防火墙...
+
+防火墙思维习惯后，效率影响不大，安全感却大大提升了。其他场景大家举一反三吧。
+
+好了，这个小章节暂到此:)
 
 ## 那些官网
 ```
@@ -1067,13 +1105,17 @@ Sparrow Wallet https://sparrowwallet.com/
 MetaMask https://metamask.io/
 imToken https://token.im/
 Trust Wallet https://trustwallet.com/
+TokenPocket https://www.tokenpocket.pro/
 Gnosis Safe https://gnosis-safe.io/
 ZenGo https://zengo.com/
 Fireblocks https://www.fireblocks.com/
 Safeheron https://www.safeheron.com/
 Keystone https://keyst.one/
 Trezor https://trezor.io/
+OneKey https://onekey.so/
+imKey https://imkey.im/
 Rabby https://rabby.io/
+OKX Wallet https://www.okx.com/web3
 EdgeWallet https://edge.app/
 MyEtherWallet https://www.myetherwallet.com/
 Phantom https://phantom.app/
@@ -1084,7 +1126,9 @@ Compound https://compound.finance/
 SushiSwap https://www.sushi.com/
 OpenSea https://opensea.io/
 Revoke.cash https://revoke.cash/
-APPROVED.zone https://approved.zone/
+Scam Sniffer https://www.scamsniffer.io/
+Wallet Guard https://www.walletguard.app/
+Pocket Universe https://www.pocketuniverse.app/
 
 即刻 https://okjike.com/
 Kaspersky https://www.kaspersky.com.cn/

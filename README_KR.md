@@ -218,7 +218,7 @@ Keyless는 개인 키가 없다는 뜻입니다. 여기서는 Keyless를 두 가
 
 **SSS**, 는 시드를 여러 공유로 나눕니다(일반적으로 각 공유에는 20단어가 포함됩니다). 지갑을 복구하려면 일정 수의 단어를 모아서 사용해야 합니다. 자세한 내용은 아래 업계 모범 사례를 참조하세요.：
 
->https://support.keyst.one/v/chinese/gao-ji-gong-neng/zhu-ji-ci/chuang-jian-dao-ru-fen-pian-zhu-ji-ci<br>
+>https://guide.keyst.one/docs/shamir-backup<br>
 >https://wiki.trezor.io/Shamir_backup
 
 다중 서명 및 SSS와 같은 솔루션을 사용하면 마음의 평화를 얻을 수 있고 위험을 피할 수 있지만 관리가 상대적으로 복잡해질 수 있으며 때로는 여러 당사자가 관련될 수 있습니다. 편의성과 보안 사이에는 항상 절충안이 있습니다. 결정은 개인의 몫이지만 원칙적으로 게으르지 마십시오.

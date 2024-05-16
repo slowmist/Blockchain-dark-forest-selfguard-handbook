@@ -3,6 +3,7 @@
 
 :fire:Website: https://darkhandbook.io/<br>
 :us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
+:kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
 *Note: V1, Update Logs, please see the Chinese version.*
 

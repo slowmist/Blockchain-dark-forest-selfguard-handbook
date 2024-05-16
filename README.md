@@ -163,7 +163,7 @@ If you pay attention, you will find the download pages for both GPG tools give s
 
 **If it is a browser extension wallet**, such as MetaMask, the only thing you have to pay attention to is the download number and rating in the Chrome web store. MetaMask, for example, has more than 10 million downloads and more than 2,000 ratings (though the overall rating is not high). Some people might think that the downloads numberand ratings may be inflated. Truth to be told, it is very difficult to fake such a large number.   
 
-**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, Trust Wallet, etc. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
+**The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, OneKey, Trust Wallet, etc. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
 
 **If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is inact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
 
@@ -225,7 +225,7 @@ I will briefly explain each type.
 
 **SSS**, Shamir's Secret Sharing, SSS breaks down the seed into multiple shares (normally, each share contains 20 words). To recover the wallet, a specified number of shares has to be collected and used. For details, refer to the industry best practices below:
 
->https://support.keyst.one/advanced-features/recovery-phrase/import-or-create-shamir-backup<br>
+>https://guide.keyst.one/docs/shamir-backup<br>
 >https://wiki.trezor.io/Shamir_backup
 
 Using solutions such as multi-signature and SSS will give you peace of mind and avoid single-point risks, but it could make management relatively complicated and sometimes multiple parties will be involved. There is always a compromise between convenience and security. It is up to the individual to decide but never be lazy in principles.
@@ -293,7 +293,7 @@ To better avoid AML issues, always choose platforms and individuals with a good 
 
 ### Cold Wallet
 
-There are different ways to use a cold wallet. From a wallet's perspective, it can be considered as a cold wallet as long as it's not connected to any network. But how to use it when it's offline?  First of all, if you just want to receive cryptocurrency, it's not a big deal. A cold wallet could provide excellent experience by working with a Watch-only wallet, such as imToken, Trust Wallet, etc. These wallets could be turned into watch-only wallets by simply adding target wallet addresses.
+There are different ways to use a cold wallet. From a wallet's perspective, it can be considered as a cold wallet as long as it's not connected to any network. But how to use it when it's offline?  First of all, if you just want to receive cryptocurrency, it's not a big deal. A cold wallet could provide excellent experience by working with a Watch-only wallet, such as imToken, OneKey, Trust Wallet, etc. These wallets could be turned into watch-only wallets by simply adding target wallet addresses.
 
 If we want to send cryptocurrency using  cold wallets, here are the most commonly used ways:
 

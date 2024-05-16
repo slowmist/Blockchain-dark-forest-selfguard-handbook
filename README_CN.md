@@ -15,6 +15,7 @@ Blockchain dark forest selfguard handbook<br>
 
 | 日期 | 更新日志 |
 | --- | --- |
+| 2024/05/16 | V1.2 新增[韩文版](README_KR.md)，日文版及英文版同步更新！还有一点小修正>_< |
 | 2024/04/24 | V1.2 新增`那些工具`章节及更新`贡献者`、`那些官网`。 |
 | 2023/05/24 | V1.1 `小心签名！`章节做了点更新。 |
 | 2023/01/07 | 我在我的个人 GitHub 做扩展阅读更新：https://github.com/evilcos/darkhandbook |

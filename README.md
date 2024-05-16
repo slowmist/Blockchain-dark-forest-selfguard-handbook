@@ -4,6 +4,7 @@ Blockchain dark forest selfguard handbook<br>
 :fire:Website: https://darkhandbook.io/<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
 :jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 *Note: V1, Update Logs, please see the Chinese version.*
 
 Author: Cos@SlowMist Team<br>
@@ -71,6 +72,7 @@ Proofreader:
 - [Appendix](#appendix)
   - [Security rules and principles](#security-rules-and-principles)
   - [Contributors](#contributors)
+  - [The Tools](#the-tools)
   - [Official Sites](#official-sites)
 
 # Prologue
@@ -1036,22 +1038,61 @@ Security principles:
 
 ## Contributors
 
-Thanks to the contributors, this list will be continuously updated and I hope you can contact me if there are any ideas for this handbook.
+Thanks to all the contributors, this list will continue to be updated. If you have any ideas, please contact:
 
->Cos, Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+>Cos, Twitter([@evilcos](https://twitter.com/evilcos))、Jike  App(@余弦.jpg)
 
-Contributors
+Contributors:
 ```
 My wife
-SlowMist, Twitter (@SlowMist_Team), e.g. Pds, Johan, Kong, Kirk, Thinking, Blue, Lisa, Keywolf...
-Jike app
-Some anonymous friends ...
-More: https://darkhandbook.io/contributors.html
+SlowMist, Twitter (@SlowMist_Team), e.g. Pds | Johan | Kong | Kirk | Thinking | Blue | Lisa | Keywolf...
+English translator, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss |
+Japanese translator, e.g. Jack Jia | Mia
+Korean translator, e.g. Sharon | Jeongmin
+Jike App
+Some Anonymous friends ...
+More info: https://darkhandbook.io/contributors.html
 ```
 
-**If your contribution is accepted for inclusion in this handbook, you will be added to the list of contributors.**
+**As long as there is help that is adopted and included in this handbook, such as: providing specific defense suggestions and cases; translation work; correction of major errors, etc.**
 
-**For example**: provided specific safety defense suggestions or cases; participated in translation work; corrected larger errors, etc.
+## The Tools
+
+This handbook, commonly referred to as the "Dark Handbook," has been available for over two years, and I'm delighted to observe its helpful impact on many individuals. Its influence continues to expand, with a growing number of supporters advocating for updates. Typically, these updates to the Dark Handbook primarily consist of [expanded readings](https://github.com/evilcos/darkhandbook). The challenge with these extended readings is that they are technically complex and not very accessible for beginners. Additionally, I recognize that not everyone is keen to invest substantial time in mastering the nuances of blockchain security. Originally, this section aimed to recommend some beginner-friendly tools, such as wallets, security extensions, and scripting tools. However, after much deliberation, I have decided against endorsing specific products due to the swift pace of change within the industry. Although this manual has highlighted several reliable tools, it's uncertain whether they will remain effective or relevant in the future. Given my responsibility towards all readers, I must admit, I'm not sure.
+
+As I've stated previously, when recommending a tool, I strive to describe it as objectively and neutrally as possible. Additionally, for enhanced security, every reader should bear in mind the following:
+
+　*　Absolute security does not exist. Adopting a zero-trust approach with continuous verification is essential in navigating this complex landscape. Should any of these tools develop a bug, encounter a security issue, or, in a worse scenario, include a backdoor in a new update, the risk is yours to manage. I encourage you to think independently and critically before using these tools.
+  
+　*　My research skills are well-honed, and I have a broad network, so rest assured that I will recommend quality tools when it seems appropriate. There is no need to rush; if a tool proves reliable and earns widespread trust, I will naturally endorse it.
+ 
+　*　Everyone has their unique approach, and this is mine.
+ 
+　*　Stay away from the influence of coin prices.
+ 
+　*  Trust is hard to build, but it can collapse in an instant, so please cherish it.
+
+Although I do not make any specific tool recommendations in this section, I would like to share a valuable mindset: the firewall mindset. The previously emphasized concepts of "zero trust" and "continuous verification" are actually part of this firewall thinking.
+
+예For example, in the use of wallets, signing is a major area of concern for fund security, with various sophisticated phishing methods related to signing, such as:
+
+- The exploitation of native signing with eth_sign/personal_sign/eth_signTypedData_*, where eth_sign has been increasingly blocked by wallets.
+- The exploitation of authorization functions like approve/permit for Tokens/NFTs.
+- The utilization of powerful functions like Uniswap’s swapExactTokensForTokens/permit2.
+- The exploitation of protocol functions from OpenSea/Blur and others (which are very diverse).
+- The exploitation of TX data 4byte, such as for Claim Rewards/Security Update.
+- Using Create2 to pre-create funding receiving addresses, bypassing related checks.
+- A single signature on Solana phishing away all assets in a target wallet address.
+- Bitcoin inscription for one-click mass phishing, utilizing the UTXO mechanism.
+- Switching phishing across various EVM chains/Solana/Tron, etc.
+
+If your wallet, when prompting for signature confirmation, sends out the signature right after a single click—whether due to FOMO or a shaky hand—then this method of using the wallet does not embody the firewall mindset. A better practice is to require at least two clicks; each additional click adds a layer of security (of course, not too many layers, as people can become desensitized...). For example, I use browser extension wallets like Rabby, MetaMask, and OKX Wallet, and except for test wallets, I always pair these with a hardware wallet (preferably one with a larger screen to easily review the content about to be signed).
+
+At this point, the extension wallet’s signature confirmation popup will perform the first layer of security analysis, such as identifying phishing sites, risky wallet addresses, what-you-see-is-what-you-sign, and high-risk signature recognition. These are crucial for user interaction security. The hardware wallet provides a second layer of security analysis. If you then add a browser wallet security extension like Scam Sniffer, Wallet Guard, or Pocket Universe, you add another layer to your firewall. However, it’s essential to remember, even if there are no risk alerts for the action you are undertaking, you must still be vigilant and recognize that ultimately, you are your own last line of defense...
+
+Once accustomed to the firewall mindset, the impact on efficiency is minimal, but the sense of security is greatly enhanced. Let’s generalize this approach to other scenarios.
+
+That’s all,Thank you!
 
 ## Official Sites
 ```
@@ -1061,13 +1102,17 @@ Sparrow Wallet https://sparrowwallet.com/
 MetaMask https://metamask.io/
 imToken https://token.im/
 Trust Wallet https://trustwallet.com/
+TokenPocket https://www.tokenpocket.pro/
 Gnosis Safe https://gnosis-safe.io/
 ZenGo https://zengo.com/
 Fireblocks https://www.fireblocks.com/
 Safeheron https://www.safeheron.com/
 Keystone https://keyst.one/
 Trezor https://trezor.io/
+OneKey https://onekey.so/
+imKey https://imkey.im/
 Rabby https://rabby.io/
+OKX Wallet https://www.okx.com/web3
 EdgeWallet https://edge.app/
 MyEtherWallet https://www.myetherwallet.com/
 Phantom https://phantom.app/
@@ -1078,9 +1123,11 @@ Compound https://compound.finance/
 SushiSwap https://www.sushi.com/
 OpenSea https://opensea.io/
 Revoke.cash https://revoke.cash/
-APPROVED.zone https://approved.zone/
+Scam Sniffer https://www.scamsniffer.io/
+Wallet Guard https://www.walletguard.app/
+Pocket Universe https://www.pocketuniverse.app/
 
-即刻 https://okjike.com/
+Jike App https://okjike.com/
 Kaspersky https://www.kaspersky.com.cn/
 Bitdefender https://www.bitdefender.com/
 Cloudflare https://www.cloudflare.com/

@@ -488,7 +488,7 @@ Metadata refers mainly to the embedded picture, motion pictures and other conten
 
 There are two main security concerns that may arise here:
 
-* One is that the URI where the image (or motion picture) is located might not be trustworthy. It can just be a randomly selected centralized service, on one hand there is no guarantee of availability, on the other hand the project team can modify the images at will, thus the NFT will no longer become an immutable "digital collectible". Generally it's recommended to use centralized storage solutions such as IPFS, Arweave, and select a well-known URI gateway service.
+* One is that the URI where the image (or motion picture) is located might not be trustworthy. It can just be a randomly selected centralized service, on one hand there is no guarantee of availability, on the other hand the project team can modify the images at will, thus the NFT will no longer become an immutable "digital collectible". Generally it's recommended to use decentralized storage solutions such as IPFS, Arweave, and select a well-known URI gateway service.
 * Another is the potential for privacy leakage. A randomly selected URI service might capture user's basic information (such as IP, User-Agent, etc)
 
 Signing security is another big concern here, and we will illustrate it below.

@@ -1,7 +1,7 @@
 دليل النجاة في الغابة المظلمة للبلوكتشين<br>
 *حط بهذه الأمور، لتتحكم في أمن عملاتك المشفرة.<br>*
 
-:fire:웹사이트: https://darkhandbook.io/<br>
+:fire:موقع إلكتروني: https://darkhandbook.io/<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
 :us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
 :jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>

@@ -1,11 +1,11 @@
 ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック<br>
 *当ハンドブックの内容をマスターするということは、暗号資産におけるセキュリティをマスターするということです。<br>*
 
-:fire:Website: https://darkhandbook.io/<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
+:fire:Webサイト: https://darkhandbook.io/<br>
 :cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
+:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
 :kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
-*Note: V1, Update Logs, please see the Chinese version.*
+:saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
 
 著者: 余弦@慢雾安全团队<br>
 連絡先：Twitter([@evilcos](https://twitter.com/evilcos))、Okjike(@余弦.jpg)
@@ -1048,13 +1048,13 @@ Googleはその後、この問題を完全に解決するためにAuthenticator�
 SlowMist、Twitter(@SlowMist_Team)，例えば：Pds | Johan | Kong | Kirk | Thinking | Blue | Lisa | Keywolf...
 英語版翻訳者，例えば：Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss | XL
 日本語版翻訳者，例えば：Jack Jia | Mia
+韓国語版翻訳者，例えば：Sharon | Jeongmin
+アラビア語版翻訳者，例えば：Ahmed Alsayadi | Gabr Alsayadi
 okjike
 匿名の友人達
 他の方：https://darkhandbook.io/contributors.html
 ...
 ```
-
-
 
 **このハンドブックに掲載するために採用されたあらゆる補足、例えば、特定の防御や事例に関するアドバイス、翻訳作業、大きなミスの修正など。**
 

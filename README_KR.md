@@ -2,10 +2,10 @@
 *이것들을 파악하면 암호화폐의 보안을 파악하는 것입니다.<br>*
 
 :fire:웹사이트: https://darkhandbook.io/<br>
-:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
-:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
-*참고: V1, 업데이트 로그, 중국어 버전을 참조하세요.*
+:cn:中文版: [《区块链黑暗森林自救手册》](README_CN.md)<br>
+:us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
+:jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
 
 작성자: Cos@SlowMist Team<br>
 연락하기：Twitter([@evilcos](https://twitter.com/evilcos))、Jike App(@余弦.jpg)
@@ -1037,14 +1037,13 @@ SlowMist, Twitter(@SlowMist_Team), e.g. Pds | Johan | Kong | Kirk | Thinking | B
 English 역자, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss | XL
 日本語 역자, e.g. Jack Jia | Mia
 한국인 역자, e.g. Sharon | Jeongmin
+아랍어 역자, e.g. Ahmed Alsayadi | Gabr Alsayadi
 
 Jike App
 익명의 친구들
 더：https://darkhandbook.io/contributors.html
 ...
 ```
-
-
 
 **귀하의 기여가 이 핸드북에 포함되는 것이 적용되면 귀하는 기여자 목록에 추가됩니다. 예: 특정 안전 방어 제안 또는 사례 제공 번역 작업에 참여했습니다. 더 큰 오류 등을 수정했습니다.**
 
@@ -1117,8 +1116,7 @@ Scam Sniffer https://www.scamsniffer.io/
 Wallet Guard https://www.walletguard.app/
 Pocket Universe https://www.pocketuniverse.app/
 
-
-即刻 https://okjike.com/
+Jike https://okjike.com/
 Kaspersky https://www.kaspersky.com.cn/
 Bitdefender https://www.bitdefender.com/
 Cloudflare https://www.cloudflare.com/

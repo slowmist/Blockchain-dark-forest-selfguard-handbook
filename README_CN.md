@@ -1,10 +1,11 @@
 区块链黑暗森林自救手册<br>
 *掌握这些，掌握你的加密货币安全。*
 
-🔥Website: https://darkhandbook.io/<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
-:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
-:kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
+:fire:Website: https://darkhandbook.io/<br>
+:us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
+:jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
+:saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
 
 Blockchain dark forest selfguard handbook<br>
 *Master these, master the security of your cryptocurrency.<br>*
@@ -1058,6 +1059,8 @@ Punycode 这种钓鱼方式，几年前就有真实利用了，比如 2018 年�
 慢雾，Twitter(@SlowMist_Team)，如：Pds | Johan | Kong | Kirk | Thinking | Blue | Lisa | Keywolf...
 英文译者，如：Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss | XL
 日文译者，如：Jack Jia | Mia
+韩文译者，如：Sharon | Jeongmin
+阿拉伯文译者，如：Ahmed Alsayadi | Gabr Alsayadi
 即刻
 一些匿名的朋友
 更多：https://darkhandbook.io/contributors.html

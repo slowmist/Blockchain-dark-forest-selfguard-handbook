@@ -2,16 +2,16 @@
 *حط بهذه الأمور، لتتحكم في أمن عملاتك المشفرة.<br>*
 
 :fire:موقع إلكتروني: https://darkhandbook.io/<br>
-:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
-:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
-:kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
+:cn:中文版: [《区块链黑暗森林自救手册》](README_CN.md)<br>
+:us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
+:jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 
 مؤلف: Cos@SlowMist Team<br>
 معلومات الاتصال：تويتر([@evilcos](https://twitter.com/evilcos))、تطبيق Jike(@余弦.jpg)
 
 مترجم: 
->[Ahmed Alsayadi](https://x.com/alsayadii) | [Gabr Alsayadi ](https://github.com/JabrAlsayadi)
+>[Ahmed Alsayadi](https://x.com/alsayadii) | [Gabr Alsayadi](https://github.com/JabrAlsayadi)
 
 ![alt this](res/this.png)
 
@@ -1055,7 +1055,7 @@
 مترجمين اللغة الإنجليزية، مثل Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss |
 مترجمين اللغة اليابانية، مثل Jack Jia | Mia
 مترجمين اللغة الكورية، مثل Sharon | Jeongmin
-مترجمين اللغة العربية، مثل Ahmed Alsayadi | Gabr Alsayadi 
+مترجمين اللغة العربية، مثل Ahmed Alsayadi | Gabr Alsayadi
 
 تطبيق Jike
 بعض الأصدقاء المجهولين

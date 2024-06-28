@@ -2,13 +2,13 @@ Blockchain dark forest selfguard handbook<br>
 *Master these, master the security of your cryptocurrency.<br>*
 
 :fire:Website: https://darkhandbook.io/<br>
-:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
-:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
-:kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
-*Note: V1, Update Logs, please see the Chinese version.*
+:cn:中文版: [《区块链黑暗森林自救手册》](README_CN.md)<br>
+:jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
+:saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
 
 Author: Cos@SlowMist Team<br>
-Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、即刻(@余弦.jpg)
+Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、Jike(@余弦.jpg)
 
 Translator: 
 >[Alphatu](https://twitter.com/Alphatu4) | C. | [CJ](https://twitter.com/0xnjars) | [JZ](https://twitter.com/scorpionzhang) | [Lovepeace](https://twitter.com/lovepeace_53) | [Neethan](https://mobile.twitter.com/neethanverse) | [pseudoyu](https://twitter.com/pseudo_yu) | [SassyPanda](https://twitter.com/sassypandacap) | ss | [XL](https://twitter.com/leixing0309)
@@ -1049,6 +1049,7 @@ SlowMist, Twitter (@SlowMist_Team), e.g. Pds | Johan | Kong | Kirk | Thinking | 
 English translator, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss |
 Japanese translator, e.g. Jack Jia | Mia
 Korean translator, e.g. Sharon | Jeongmin
+Arabic translator, e.g. Ahmed Alsayadi | Gabr Alsayadi
 Jike App
 Some Anonymous friends ...
 More info: https://darkhandbook.io/contributors.html

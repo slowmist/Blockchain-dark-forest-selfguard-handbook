@@ -6,11 +6,12 @@
 :us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
 :jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 :saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
+:indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 작성자: Cos@SlowMist Team<br>
 연락하기：Twitter([@evilcos](https://twitter.com/evilcos))、Jike App(@余弦.jpg)
 
-번역자&교정자: 
+번역자 & 교정자: 
 >[ChainWith Sharon](https://twitter.com/sharonmkt) | Jeongmin
 
 ![alt this](res/this.png)
@@ -1038,7 +1039,7 @@ English 역자, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | S
 日本語 역자, e.g. Jack Jia | Mia
 한국인 역자, e.g. Sharon | Jeongmin
 아랍어 역자, e.g. Ahmed Alsayadi | Gabr Alsayadi
-
+인도네시아어 역자, e.g. Finball
 Jike App
 익명의 친구들
 더：https://darkhandbook.io/contributors.html

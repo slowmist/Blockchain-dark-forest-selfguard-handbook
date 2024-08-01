@@ -6,6 +6,7 @@ Blockchain dark forest selfguard handbook<br>
 :jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 :kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 :saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
+:indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 Author: Cos@SlowMist Team<br>
 Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、Jike(@余弦.jpg)
@@ -165,7 +166,7 @@ If you pay attention, you will find the download pages for both GPG tools give s
 
 **The mobile wallet** is similar to the browser extension wallet. However, it should be noted that the App Store has different versions for each region. Cryptocurrency is banned in Mainland China, so if you downloaded the wallet with your Chinese App Store account, there is only one suggestion: don't use it, change it to another account in a different region such as the US and then re-download it. Besides, the correct official website will also lead you to the correct download method (such as imToken, OneKey, Trust Wallet, etc. It is important for official websites to maintain high  website security. If the official website is hacked, there will be big problems.).
 
-**If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is inact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
+**If it is a hardware wallet**, it is highly recommended to buy it from the official website. Do not buy them from online stores. Once you receive the wallet, you should also pay attention to whether the wallet is intact. Of course, there are some shenanigans on the packaging that are hard to detect. In any case, when using a hardware wallet, you should create the seed phrase and wallet address at least three times from scratch. And make sure that they are not repeated.
 
 **If it is a web wallet**, we highly recommend not to use it.Unless you have no choice, make sure it is authentic and then use it sparingly and never rely on it.
 
@@ -1050,8 +1051,9 @@ English translator, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu
 Japanese translator, e.g. Jack Jia | Mia
 Korean translator, e.g. Sharon | Jeongmin
 Arabic translator, e.g. Ahmed Alsayadi | Gabr Alsayadi
+Indonesian translator, e.g. Finball
 Jike App
-Some Anonymous friends ...
+Some Anonymous friends...
 More info: https://darkhandbook.io/contributors.html
 ```
 
@@ -1075,7 +1077,7 @@ As I've stated previously, when recommending a tool, I strive to describe it as 
 
 Although I do not make any specific tool recommendations in this section, I would like to share a valuable mindset: the firewall mindset. The previously emphasized concepts of "zero trust" and "continuous verification" are actually part of this firewall thinking.
 
-예For example, in the use of wallets, signing is a major area of concern for fund security, with various sophisticated phishing methods related to signing, such as:
+For example, in the use of wallets, signing is a major area of concern for fund security, with various sophisticated phishing methods related to signing, such as:
 
 - The exploitation of native signing with eth_sign/personal_sign/eth_signTypedData_*, where eth_sign has been increasingly blocked by wallets.
 - The exploitation of authorization functions like approve/permit for Tokens/NFTs.

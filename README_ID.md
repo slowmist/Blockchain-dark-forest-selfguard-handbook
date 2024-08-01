@@ -62,7 +62,7 @@ Penterjemah:
 - [Kesalahpahaman (misconception)](#kesalahpahaman)
   - [Kode Adalah Hukum(code is law)](#kode-adalah-hukum)
   - [Bukan Kunci Anda, Bukan Koin Anda](#bukan-kunci-anda-bukan-koin-anda)
-  - [Di Blockchain Kami Percaya (seluruhnya)](#di-blockchain-kami-percaya
+  - [Di Blockchain Kami Percaya (seluruhnya)](#di-blockchain-kami-percaya)
   - [Keamanan Kriptografis Adalah Keamanan (pada umumnya)](#keamanan-kriptografis-adalah-keamanan)
   - [Apakah Memalukan Saat (kau menyadari menjadi korban) Diretas?](#apakah-memalukan-saat-diretas)
   - [Segera Perbarui (immediately update)](#segera-perbarui)
@@ -1067,8 +1067,8 @@ Seperti yang telah saya nyatakan sebelumnya, ketika merekomendasikan suatu alat,
 　*　Setiap orang memiliki pendekatan uniknya masing-masing, dan ini pendekatan saya.
  
 　*　Jauhi (emosional) pengaruh harga koin.
- 
-　*  Kepercayaan itu sulit dibangun, tapi dapat runtuh dalam sekejap, jadi mohon hargai halitu.
+
+　*　Kepercayaan itu sulit dibangun, tapi dapat runtuh dalam sekejap, jadi mohon hargai halitu.
 
 Meskipun saya tidak membuat rekomendasi alat khusus apa pun di bagian ini, saya ingin berbagi pola pikir yang berharga: pola pikir firewall. Konsep “zero trust” dan “verifikasi berkelanjutan” yang ditekankan sebelumnya sebenarnya adalah bagian dari pemikiran firewall ini.
 

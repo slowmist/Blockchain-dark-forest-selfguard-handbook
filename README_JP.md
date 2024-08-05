@@ -6,6 +6,7 @@
 :us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
 :kr:한국어 버전：[블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 :saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
+:indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 著者: 余弦@慢雾安全团队<br>
 連絡先：Twitter([@evilcos](https://twitter.com/evilcos))、Okjike(@余弦.jpg)
@@ -933,7 +934,6 @@ Web3の普及に伴い、Web3インフラやソーシャルプラットフォー
 
 以上、この部分について簡単に触れましたが、詳しく説明するつもりはありません。この分野の知識は膨大で、中には私が苦手とするものもあります。場合によって、習得すべき知識は以下です：
 
-
 * スマートコントラクトのセキュリティ分析とフォレンジック
 * オンチェーン資金の送金分析およびフォレンジック
 * Webのセキュリティ分析とフォレンジック
@@ -1050,6 +1050,7 @@ SlowMist、Twitter(@SlowMist_Team)，例えば：Pds | Johan | Kong | Kirk | Thi
 日本語版翻訳者，例えば：Jack Jia | Mia
 韓国語版翻訳者，例えば：Sharon | Jeongmin
 アラビア語版翻訳者，例えば：Ahmed Alsayadi | Gabr Alsayadi
+インドネシア語翻訳者，例えば：Finball
 okjike
 匿名の友人達
 他の方：https://darkhandbook.io/contributors.html

@@ -6,6 +6,7 @@ Blockchain dark forest selfguard handbook<br>
 :jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 :kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 :saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
+:indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 Author: Cos@SlowMist Team<br>
 Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、Jike(@余弦.jpg)
@@ -1050,8 +1051,9 @@ English translator, e.g. Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu
 Japanese translator, e.g. Jack Jia | Mia
 Korean translator, e.g. Sharon | Jeongmin
 Arabic translator, e.g. Ahmed Alsayadi | Gabr Alsayadi
+Indonesian translator, e.g. Finball
 Jike App
-Some Anonymous friends ...
+Some Anonymous friends...
 More info: https://darkhandbook.io/contributors.html
 ```
 
@@ -1075,7 +1077,7 @@ As I've stated previously, when recommending a tool, I strive to describe it as 
 
 Although I do not make any specific tool recommendations in this section, I would like to share a valuable mindset: the firewall mindset. The previously emphasized concepts of "zero trust" and "continuous verification" are actually part of this firewall thinking.
 
-예For example, in the use of wallets, signing is a major area of concern for fund security, with various sophisticated phishing methods related to signing, such as:
+For example, in the use of wallets, signing is a major area of concern for fund security, with various sophisticated phishing methods related to signing, such as:
 
 - The exploitation of native signing with eth_sign/personal_sign/eth_signTypedData_*, where eth_sign has been increasingly blocked by wallets.
 - The exploitation of authorization functions like approve/permit for Tokens/NFTs.

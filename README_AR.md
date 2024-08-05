@@ -6,6 +6,7 @@
 :us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
 :jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 :kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
+:indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 مؤلف: Cos@SlowMist Team<br>
 معلومات الاتصال：تويتر([@evilcos](https://twitter.com/evilcos))、تطبيق Jike(@余弦.jpg)
@@ -1055,8 +1056,7 @@
 مترجمين اللغة الإنجليزية، مثل Alphatu | C. | CJ | JZ | Lovepeace | Neethan | pseudoyu | SassyPanda | ss |
 مترجمين اللغة اليابانية، مثل Jack Jia | Mia
 مترجمين اللغة الكورية، مثل Sharon | Jeongmin
-مترجمين اللغة العربية، مثل Ahmed Alsayadi | Gabr Alsayadi
-
+مترجمين اللغة الإندونيسية، مثل Finball
 تطبيق Jike
 بعض الأصدقاء المجهولين
 لمزيد من المعلومات: darkhandbook.io/contributors.html

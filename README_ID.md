@@ -33,7 +33,7 @@ Penterjemah:
     - [Apa Itu Keamanan Defi?](#apa-itu-keamanan-defi)
     - [Keamanan NFT](#keamanan-nft)
     - [HATI-HATI Saat Penandatanganan (signing)!](#hati-hati-saat-penandatanganan)
-    - [HATI-HATI Dengan Permintaan Tanda Tangan Karena “ini tampak biasa”!](#hati-hati-dengan-permintaan-tanda-tangan-karena-“ini-tampak-biasa”)
+    - [HATI-HATI Dengan Permintaan Tanda Tangan karena “ini tampak biasa saja atau normal”!](#hati-hati-dengan-permintaan-tanda-tangan-karena-“ini-tampak-biasa-saja-atau-normal”)
     - [Beberapa Metodologi Penyerangan Tingkat Lanjut](#beberapa-metodologi-penyerangan-tingkat-lanjut)
   - [Perlindungan Privasi Tradisional](#perlindungan-privasi-tradisional)
     - [Sistem Operasi](#sistem-operasi)
@@ -161,9 +161,9 @@ Jika Anda memperhatikan, Anda akan menemukan halaman unduhan untuk kedua alat GP
 
 **Jika itu adalah dompet ekstensi browser**, seperti MetaMask, satu-satunya hal yang harus Anda perhatikan adalah jumlah unduhan dan peringkat di toko web Chrome. MetaMask, misalnya, memiliki lebih dari 10 juta unduhan dan lebih dari 2.000 Rating (meskipun peringkat keseluruhannya tidak tinggi). Beberapa orang mungkin berpikir bahwa jumlah unduhan dan peringkat mungkin dilebih-lebihkan. Sejujurnya, sangat sulit untuk memalsukan angka sebesar itu.  
 
-**Dompet seluler (Mobile wallet)** mirip dengan dompet ekstensi peramban. Namun, perlu dicatat bahwa App Store memiliki versi yang berbeda untuk setiap wilayah. Mata uang kripto dilarang di Tiongkok Daratan, jadi jika Anda mengunduh dompet dengan akun App Store Tiongkok Anda, hanya ada satu saran: jangan menggunakannya, ubah ke akun lain di wilayah lain seperti AS, lalu unduh ulang. Selain itu, situs web resmi yang benar juga akan mengarahkan Anda ke metode pengunduhan yang benar (seperti imToken, OneKey, Trust Wallet, dll. Penting bagi situs web resmi untuk menjaga keamanan situs web yang tinggi. Jika situs web resmi diretas, akan ada masalah besar.).
+**Dompet seluler (mobile wallet)** mirip dengan dompet ekstensi peramban. Namun, perlu dicatat bahwa App Store memiliki versi yang berbeda untuk setiap wilayah. Mata uang kripto dilarang di Tiongkok Daratan, jadi jika Anda mengunduh dompet dengan akun App Store Tiongkok Anda, hanya ada satu saran: jangan menggunakannya, ubah ke akun lain di wilayah lain seperti AS, lalu unduh ulang. Selain itu, situs web resmi yang benar juga akan mengarahkan Anda ke metode pengunduhan yang benar (seperti imToken, OneKey, Trust Wallet, dll. Penting bagi situs web resmi untuk menjaga keamanan situs web yang tinggi. Jika situs web resmi diretas, akan ada masalah besar.).
 
-**Jika itu adalah dompet perangkat keras**, sangat disarankan untuk membelinya dari situs web resmi. Jangan membelinya dari toko daring. Setelah Anda menerima dompet, Anda juga harus memperhatikan apakah dompet itu utuh. Tentu saja, ada beberapa kecurangan pada kemasan yang cukup sulit dideteksi. Bagaimanapun, saat menggunakan dompet perangkat keras, Anda harus membuat frasa awal dan alamat dompet (wallet address) setidaknya mengacak tiga kali dari bawaan (default). Dan pastikan itu tidak diulang.
+**Jika itu adalah dompet perangkat keras (hardware wallet)**, sangat disarankan untuk membelinya dari situs web resmi. Jangan membelinya dari toko daring. Setelah Anda menerima dompet, Anda juga harus memperhatikan apakah dompet itu utuh. Tentu saja, ada beberapa kecurangan pada kemasan yang cukup sulit dideteksi. Bagaimanapun, saat menggunakan dompet perangkat keras, Anda harus membuat frasa awal dan alamat dompet (wallet address) setidaknya mengacak tiga kali dari bawaan (default). Dan pastikan itu tidak diulang.
 
 **Jika dompet web**, kami sangat menyarankan untuk tidak menggunakannya. Kecuali Anda tidak punya pilihan lain, pastikan dompet tersebut asli, lalu gunakan dengan hemat dan jangan pernah mengandalkannya.
 
@@ -243,7 +243,7 @@ Saya tidak akan menjelaskan terlalu banyak tentang cara memilih orang yang ahli 
 * Cloud
 * Paper
 * Device
-* Brain
+* Brain (ingatan)
 
 **Cloud**, Banyak orang yang tidak mempercayai backup di Cloud, mereka menganggapnya rentan terhadap serangan hacker. Pada akhirnya, yang terpenting adalah pihak mana — penyerang atau bertahan — yang memberikan upaya lebih besar, baik dari segi tenaga maupun anggaran. Secara pribadi, saya percaya pada layanan cloud yang didukung oleh Google, Apple, Microsoft, dll., karena saya tahu seberapa kuat tim keamanan mereka dan berapa banyak yang mereka keluarkan untuk keamanan. Selain berjuang melawan peretas eksternal, saya juga sangat peduli dengan pengendalian risiko keamanan internal dan perlindungan data pribadi. Beberapa penyedia layanan yang saya percaya melakukan pekerjaan yang relatif lebih baik di bidang ini. Tapi tidak ada yang mutlak. Jika saya memilih salah satu layanan cloud ini untuk mencadangkan data penting (seperti dompet), saya pasti akan mengenkripsi dompet setidaknya sekali lagi.
 
@@ -261,7 +261,7 @@ Jika Anda ingin menghemat tenaga, ada kemungkinan lain namun keamanannya mungkin
 
 **Device**, Ini mengacu pada semua jenis peralatan; elektronik adalah jenis cadangan yang umum, seperti komputer, iPad, iPhone, atau hard drive, dll, tergantung pada preferensi pribadi. Kita juga harus memikirkan transmisi yang aman antar perangkat. Saya merasa nyaman menggunakan metode peer-to-peer seperti AirDrop dan USB karena perantara sulit membajak prosesnya. Saya tentu saja tidak nyaman dengan kenyataan bahwa peralatan elektronik mungkin rusak setelah beberapa tahun, jadi saya menjaga kebiasaan memeriksa perangkat setidaknya setahun sekali. Ada beberapa langkah berulang (seperti enkripsi) yang dapat Anda rujuk ke bagian Cloud.
 
-**Brain**, Mengandalkan ingatanmu itu mengasyikkan. Faktanya, setiap orang memiliki “istana kenangan” masing-masing. Memori tidaklah misterius dan dapat dilatih untuk bekerja lebih baik. Ada hal-hal tertentu yang memang lebih aman dengan ingatan. Apakah hanya mengandalkan otak atau tidak adalah pilihan pribadi. Namun perhatikan dua risiko: pertama, ingatan memudar seiring berjalannya waktu dan dapat menyebabkan kebingungan; risiko lainnya adalah Anda mungkin mengalami kecelakaan. Saya akan berhenti di sini dan membiarkan Anda menjelajah lebih jauh.
+**Brain (ingatan)**, Mengandalkan ingatanmu itu mengasyikkan. Faktanya, setiap orang memiliki “istana kenangan” masing-masing. Memori tidaklah misterius dan dapat dilatih untuk bekerja lebih baik. Ada hal-hal tertentu yang memang lebih aman dengan ingatan. Apakah hanya mengandalkan otak atau tidak adalah pilihan pribadi. Namun perhatikan dua risiko: pertama, ingatan memudar seiring berjalannya waktu dan dapat menyebabkan kebingungan; risiko lainnya adalah Anda mungkin mengalami kecelakaan. Saya akan berhenti di sini dan membiarkan Anda menjelajah lebih jauh.
 
 Sekarang Anda semua sudah dicadangkan. Jangan mengenkripsi terlalu banyak, jika tidak, Anda akan menderita sendiri setelah beberapa tahun. Sesuai dengan prinsip keamanan “verifikasi berkelanjutan”, metode enkripsi dan pencadangan Anda, baik berlebihan atau tidak, harus diverifikasi terus-menerus, baik secara berkala maupun acak. Frekuensi verifikasi bergantung pada memori Anda dan Anda tidak harus menyelesaikan seluruh proses. Selama prosesnya benar, verifikasi parsial juga berfungsi. Terakhir, kerahasiaan dan keamanan proses otentikasi juga perlu diperhatikan.
 
@@ -283,7 +283,7 @@ Anda dapat memverifikasi apakah suatu alamat dibekukan oleh Tether dari kontrak 
 
 <img src="res/usdt_isblacklisted.png" width="700">
 
-Gunakan alamat dompet target sebagai input di “isBlackListed” untuk memeriksa. Rantai lain yang menggunakan USDT juga memiliki cara verifikasi serupa.
+Gunakan alamat dompet target sebagai input di “isBlackListed” untuk memeriksa. Chain lain yang menggunakan USDT juga memiliki cara verifikasi serupa.
 
 Meskipun aset BTC dan ETH Anda tidak akan dibekukan di blockchain, bursa terpusat (centralized exchanges atau CEX) mungkin membekukan aset Anda sesuai dengan persyaratan AML setelah aset Anda ditransfer ke platform ini dan jika mereka terlibat dalam kasus terbuka yang sedang ditangani oleh penegak hukum.
 
@@ -349,7 +349,7 @@ Keamanan DeFi setidaknya mencakup komponen berikut:
 
 * Keamanan Kontrak Cerdas (smart contract)
 * Keamanan Yayasan Blockchain (blockchain foundation)
-* Keamanan Bagian Depan (frontend)
+* Keamanan Bagian Depan (front end)
 * Keamanan Komunikasi
 * Keamanan Manusia
 * Keamanan Keuangan
@@ -371,7 +371,7 @@ Risiko izin yang berlebihan sangat kecil. Dalam banyak kasus, admin proyek berta
 > Admin 2 modul ini adalah<br>
 > Kunci Waktu (Timelock)(0x6d903f6003cca6255d85cca4d3b5e5146dc33925)
 
-Anda dapat langsung mengetahui secara rantai bahwa Timelock (variabel penundaan) adalah 48 jam (172.800 detik):
+Anda dapat langsung mengetahui on chain bahwa Timelock (variabel penundaan) adalah 48 jam (172.800 detik):
 
 <img src="res/compound_timelock.png" width="700">
 
@@ -452,7 +452,7 @@ Keamanan finansial di DeFi rentan terhadap serangan berupa:
 * Praktik peluncuran token (launchpad) yang tidak adil seperti pra-penambangan (pre-mining) atau pra-penjualan (pre-sale);
 * Serangan paus kripto (whale);
 * Pompa dan buang (pump n dump);
-* Peristiwa angsa hitam (blackswan), seperti curahan air terjun pasar yang tiba-tiba runtuh; atau katakanlah ketika satu protokol DeFi menjadi semacam sarang besar atau dioperasikan dengan bermacam DeFi/Token lain, dan keamanan/keandalannya akan sangat bergantung pada protokol lain;
+* Peristiwa angsa hitam (blackswan) seperti curahan air dari air terjun yang masuk ke  pasar dan menyebabkan keruntuhan; atau katakanlah ketika satu protokol DeFi menjadi semacam sarang besar atau dioperasikan dengan bermacam DeFi/Token lain, dan keamanan/keandalannya akan sangat bergantung pada protokol lain;
 * Serangan teknis lainnya atau yang kita sebut dengan teknik ilmiah seperti front running, sandwich Attack, Flash Loan Attack, dll.
 
 **Keamanan Kepatuhan**
@@ -544,7 +544,7 @@ Pengguna dapat mencegah serangan tersebut pada sumbernya dengan membatalkan otor
 >https://github.com/evilcos/darkhandbook<br>
 >Memang benar bahwa pengetahuan tentang KEAMANAN TANDA TANGAN cukup menantang bagi pemula. Repositori ini mengkompilasi konten yang relevan, dan membacanya dengan cermat akan membantu Anda memahami pengetahuan keamanan. Dengan demikian, Anda tidak akan kesulitan lagi. (Jika Anda bisa membaca dan memahami semuanya, saya yakin pengetahuan keamanan tidak lagi sulit bagi Anda :)
 
-### HATI-HATI Dengan Permintaan Tanda Tangan karena “ini tampak biasa”!
+### HATI-HATI Dengan Permintaan Tanda Tangan karena “ini tampak biasa saja atau normal”!
 
 Saya ingin menyebutkan secara khusus risiko lain: **risiko kontra-intuitif**.
 
@@ -591,7 +591,7 @@ Trojan akan menggantikan MetaMask (asli) pengguna dengan yang palsu dan memiliki
 
 Pendekatan ini dirancang khusus untuk target terkenal dengan alamat dompet yang diketahui. Apa yang saya perhatikan adalah banyak orang yang terlalu sombong untuk mencegah diri mereka diretas. Setelah peretasan, banyak yang akan belajar dari pengalaman tersebut, melakukan peninjauan menyeluruh, mendapatkan peningkatan yang signifikan, dan juga menjalin kerja sama dan persahabatan jangka panjang dengan profesional atau lembaga keamanan tepercaya. Namun, selalu ada pengecualian di dunia ini. Beberapa orang atau proyek terus diretas berulang kali. Jika setiap kali hal ini terjadi karena sesuatu yang belum pernah ditemui sebelumnya, saya akan sangat menghormati mereka dan menyebut mereka pionir. Kemungkinan besar mereka akan sukses seiring berjalannya waktu. Sayangnya banyak insiden yang terjadi akibat kesalahan bodoh dan berulang-ulang yang sebenarnya bisa dihindari dengan mudah. Saya menyarankan untuk menjauhi proyek-proyek ini.
 
-Sebagai perbandingan, serangan phishing massal tersebut tidak komprehensif sama sekali. Penyerang akan menyiapkan sekumpulan nama domain yang serupa dan menyebarkan muatannya dengan membeli akun, pengikut, dan retweet di Twitter (kini “X”) atau platform sosial lainnya. Jika dikelola dengan baik, banyak orang yang akan terjerumus ke dalam perangkap. Sebenarnya tidak ada yang istimewa dalam serangan phishing semacam ini, dan biasanya penyerang akan secara brutal membuat pengguna mengotorisasi token (termasuk NFT) untuk mentransfernya.
+Sebagai perbandingan, serangan phishing massal tersebut tidak canggih sama sekali. Penyerang akan menyiapkan sekumpulan nama domain yang serupa dan menyebarkan muatannya dengan membeli akun, pengikut, dan retweet di Twitter (kini “X”) atau platform sosial lainnya. Jika dikelola dengan baik, banyak orang yang akan terjerumus ke dalam perangkap. Sebenarnya tidak ada yang istimewa dalam serangan phishing semacam ini, dan biasanya penyerang akan secara brutal membuat pengguna mengotorisasi token (termasuk NFT) untuk mentransfernya.
 
 Ada jenis serangan tingkat lanjut lainnya, misalnya menggunakan teknik seperti XSS, CSRF, Reverse Proxy untuk memperlancar proses serangan. Saya tidak akan menguraikan semuanya di sini, kecuali satu kasus yang sangat khusus (Serangan Cloudflare Man-in-the-Middle) yang merupakan salah satu skenario di Reverse Proxy. Ada serangan nyata yang menyebabkan kerugian finansial dengan menggunakan metode yang sangat rahasia ini.
 
@@ -716,7 +716,7 @@ Bitwarden melangkah lebih jauh karena sepenuhnya open source, termasuk sisi serv
 
 ### Otentikasi Dua Faktor (2FA)
 
-Berbicara tentang keamanan identitas Anda di Internet, lapisan pertama bergantung pada kata sandi, lapisan kedua bergantung pada otentikasi dua faktor, dan lapisan ketiga bergantung pada kemampuan pengendalian risiko proyek target itu sendiri. Saya tidak bisa mengatakan bahwa otentikasi dua faktor adalah suatu keharusan. Misalnya, jika Anda menggunakan dompet terdesentralisasi, satu lapisan kata sandi sudah cukup mengganggu (sekarang pada dasarnya mendukung identifikasi biometrik seperti pengenalan wajah atau sidik jari untuk meningkatkan pengalaman pengguna), tidak ada yang mau menggunakan faktor kedua. Namun dalam platform terpusat, Anda harus menggunakan 2FA. Siapa pun dapat mengakses platform (CEX) terpusat, dan jika kredensial Anda dicuri, akun Anda akan dibobol dan dana Anda akan hilang. Sebaliknya, kata sandi untuk dompet terdesentralisasi Anda hanyalah otentikasi lokal, meskipun hacker mendapatkan kata sandinya, mereka masih perlu mendapatkan akses ke perangkat tempat dompet Anda berada.
+Berbicara tentang keamanan identitas Anda di Internet, lapisan pertama bergantung pada kata sandi, lapisan kedua bergantung pada otentikasi dua faktor, dan lapisan ketiga bergantung pada kemampuan pengendalian risiko proyek target itu sendiri. Saya tidak bisa mengatakan bahwa otentikasi dua faktor adalah suatu keharusan. Misalnya, jika Anda menggunakan dompet terdesentralisasi, satu lapisan kata sandi sudah cukup mengganggu (sekarang pada dasarnya mendukung identifikasi biometrik seperti pengenalan wajah atau sidik jari untuk meningkatkan pengalaman pengguna), tidak ada yang mau menggunakan 2FA. Namun dalam platform terpusat, Anda harus menggunakan 2FA. Siapa pun dapat mengakses platform (CEX) terpusat, dan jika kredensial Anda dicuri, akun Anda akan dibobol dan dana Anda akan hilang. Sebaliknya, kata sandi untuk dompet terdesentralisasi Anda hanyalah otentikasi lokal, meskipun hacker mendapatkan kata sandinya, mereka masih perlu mendapatkan akses ke perangkat tempat dompet Anda berada.
 
 Sekarang Anda melihat perbedaannya?Beberapa alat otentikasi dua faktor (2FA) yang terkenal meliputi: Google Authenticator, Microsoft Authenticator, dll. Tentu saja, jika Anda menggunakan pengelola kata sandi (seperti 1Password), alat tersebut juga dilengkapi dengan modul 2FA , yang sangat berguna. Ingatlah selalu untuk membuat cadangan, karena kehilangan 2FA bisa merepotkan.
 
@@ -742,7 +742,7 @@ Selain layanan email dari raksasa teknologi ini, jika Anda sangat mengkhawatirka
 
 Kartu SIM dan nomor ponsel juga merupakan identitas dasar yang sangat penting dalam banyak kasus, seperti halnya email. Dalam beberapa tahun terakhir, operator besar di negara kita telah melakukan pekerjaan yang sangat baik dalam melindungi keamanan nomor ponsel. Misalnya, terdapat protokol keamanan & proses verifikasi yang ketat untuk pembatalan dan penerbitan ulang kartu SIM, dan semuanya dilakukan di lokasi. Mengenai topik serangan kartu SIM, izinkan saya memberi Anda sebuah contoh:
 
-Pada tahun 2019.5, akun Coinbase seseorang mengalami Serangan Port SIM (serangan transfer kartu SIM), dan sayangnya kehilangan lebih dari 100.000 dolar AS mata uang kripto. Proses serangannya kira-kira sebagai berikut:
+Pada tahun 2019, akun Coinbase seseorang mengalami Serangan Port SIM (serangan intrusif via kartu SIM), dan sayangnya mengakibatkan kehilangan lebih dari 100.000 dolar AS mata uang kripto. Proses serangannya kira-kira sebagai berikut:
 
 Penyerang memperoleh informasi privasi pengguna target melalui rekayasa sosial dan metode lainnya, dan menipu operator telepon seluler untuk memberinya kartu SIM baru, dan kemudian dia dengan mudah mengambil alih akun Coinbase pengguna target melalui nomor ponsel yang sama. SIM telah ditransfer, yang sangat merepotkan. Sangat merepotkan jika kartu SIM Anda ditransfer oleh penyerang, karena saat ini banyak layanan online yang menggunakan nomor ponsel kami sebagai faktor otentikasi langsung atau 2FA. Ini adalah mekanisme otentikasi yang sangat terpusat, dan nomor ponsel menjadi titik lemahnya.
 
@@ -794,13 +794,13 @@ Harap memberikan perhatian khusus pada poin-poin diatas, dan lihat bagaimana pel
 
 Saya sudah katakan sebelumnya bahwa Telegram adalah web gelap terbesar. Saya harus mengatakan bahwa orang-orang menyukai Telegram karena keamanan, stabilitas, dan fitur desain terbukanya. Namun budaya terbuka Telegram juga menarik orang-orang jahat: sejumlah besar pengguna, fungsionalitas yang sangat dapat disesuaikan, cukup mudah untuk membangun semua jenis layanan Bot. Jika digabungkan dengan mata uang kripto, pengalaman perdagangan sebenarnya jauh melampaui pasar web gelap (dark web) di Tor.
 
-Biasanya, pengenal unik akun media sosial hanya berupa nama pengguna, id pengguna, tetapi ini dapat sepenuhnya dikloning oleh pelaku kejahatan. Beberapa platform sosial memiliki mekanisme validasi akun, seperti menambahkan ikon “V biru” atau semacamnya. Akun media sosial publik dapat divalidasi melalui beberapa indikator, seperti jumlah pengikut, konten yang diposting, interaksi dengan penggemar, dll. Akun media sosial non-publik sedikit lebih sulit. Sangat menyenangkan melihat Telegram merilis fungsi “Grup mana yang kita ikuti bersama”.
+Biasanya, pengenal unik akun media sosial hanya berupa nama pengguna, id pengguna, tetapi ini dapat sepenuhnya dikloning oleh pelaku kejahatan. Beberapa platform sosial memiliki mekanisme validasi akun, seperti menambahkan ikon "(checkmark) ✓ biru” atau semacamnya. Akun media sosial publik dapat divalidasi melalui beberapa indikator, seperti jumlah pengikut, konten yang diposting, interaksi dengan penggemar, dll. Akun media sosial non-publik sedikit lebih sulit. Sangat menyenangkan melihat Telegram merilis fungsi “Grup mana yang kita ikuti bersama”.
 
 Dimanapun ada celah yang bisa dieksploitasi dan keuntungannya besar, pasti ada sekumpulan penjahat, itu sifat manusia.
 
 Akibatnya, platform media sosial penuh dengan jebakan phishing. Misalnya: Dalam obrolan grup, seseorang yang terlihat seperti layanan pelanggan resmi tiba-tiba muncul dan memulai obrolan pribadi (obrolan pribadi apa pun adalah fitur Telegram, tidak perlu permintaan pertemanan), dan kemudian keluar dari taktik klasik spam, “ikan akan menggigit satu demi satu”
 
-Atau penyerang mungkin melangkah lebih jauh dan menambahkan Anda ke grup lain. Semua peserta membeli Anda palsu, tetapi bagi Anda itu terlihat sangat realistis. Kami menyebut teknik ini sebagai Kloning Kelompok (Group Cloning) dalam komunitas underground.
+Atau penyerang mungkin melangkah lebih jauh dan menambahkan Anda ke grup lain. Semua peserta yg membeli token di grup itu adalah akun palsu (bot), tetapi bagi Anda itu terlihat sangat realistis. Kami menyebut teknik ini sebagai Kloning Kelompok (Group Cloning) dalam komunitas underground.
 
 Ini hanyalah metode dasar memanipulasi sifat manusia, teknik-teknik canggih akan dikombinasikan dengan kerentanan sehingga lebih sulit untuk dicegah.
 
@@ -824,7 +824,7 @@ Dengan banyaknya pencurian NFT di Discord, apa metode serangan utama? Sebelum ki
 
 Alasan utama di balik banyak proyek Discord hacks sebenarnya adalah Discord Token, yang merupakan konten bidang otorisasi di header permintaan HTTP. Itu sudah ada di Discord sejak lama. Bagi para hacker, jika mereka dapat menemukan cara untuk mendapatkan Token Discord ini, mereka hampir dapat mengontrol semua hak istimewa dari server Discord target. Artinya, jika targetnya adalah administrator, akun dengan hak administratif, atau bot Discord, peretas dapat melakukan apa pun yang mereka inginkan. Misalnya dengan mengumumkan situs phishing NFT, mereka membuat orang mengira itu adalah pengumuman resmi, dan ikan akan terpancing.
 
-Beberapa orang mungkin bertanya, bagaimana jika saya menambahkan otentikasi dua faktor (2FA) ke akun Discord saya? Benar-benar sebuah kebiasaan yang baik! Tapi Discord Token tidak ada hubungannya dengan status 2FA akun Anda. Setelah akun Anda dibobol, Anda harus segera mengubah kata sandi Discord Anda agar Token Discord asli menjadi tidak valid.
+Beberapa orang mungkin bertanya, bagaimana jika saya menambahkan otentikasi dua faktor (2FA) ke akun Discord saya? Itu adalah sebuah kebiasaan (web3 security) yang baik! Tapi Discord Token tidak ada hubungannya dengan status 2FA akun Anda. Setelah akun Anda dibobol, Anda harus segera mengubah kata sandi Discord Anda agar Token Discord asli menjadi tidak valid.
 
 Untuk pertanyaan bagaimana hacker bisa mendapatkan Discord Token, kami telah menemukan setidaknya tiga teknik utama, dan kami akan mencoba menjelaskannya secara detail di masa mendatang. Bagi pengguna awam, banyak hal yang bisa dilakukan, namun poin intinya adalah: jangan terburu-buru, jangan serakah, dan verifikasi dari berbagai sumber.
 

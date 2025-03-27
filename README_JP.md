@@ -1119,16 +1119,22 @@ OKX Wallet https://www.okx.com/web3
 EdgeWallet https://edge.app/
 MyEtherWallet https://www.myetherwallet.com/
 Phantom https://phantom.app/
-OpenSea https://opensea.io/
+Tornado Cash https://tornado.cash/
+Binance https://www.binance.com/
+Coinbase https://coinbase.com
+Compound https://compound.finance/
 SushiSwap https://www.sushi.com/
+OpenSea https://opensea.io/
 Revoke.cash https://revoke.cash/
 Scam Sniffer https://www.scamsniffer.io/
 Wallet Guard https://www.walletguard.app/
 Pocket Universe https://www.pocketuniverse.app/
 
 即刻 https://okjike.com/
-Kaspersky https://www.kaspersky.com.cn/
+AVG https://www.avg.com/
 Bitdefender https://www.bitdefender.com/
+Kaspersky https://www.kaspersky.com.cn/
+Malwarebytes https://www.malwarebytes.com/
 Cloudflare https://www.cloudflare.com/
 Akamai https://www.akamai.com/
 SURVEILLANCE SELF-DEFENSE https://ssd.eff.org/

@@ -56,6 +56,7 @@ Proofreader:
     - ["Official" phishing](#official-phishing)
     - [Web3 Privacy Issues](#web3-privacy-issues)
 - [Blockchain Shenanigans](#blockchain-shenanigans)
+- [What to do If Your Computer Gets Infected](#what-to-do-if-your-computer-gets-infected)
 - [What to do When You get hacked](#what-to-do-when-you-get-hacked)
   - [Stop Loss First](#stop-loss-first)
   - [Protect The Scene](#protect-the-scene)
@@ -876,6 +877,24 @@ Meanwhile, the SlowMist team has been maintaining and updating SlowMist Hacked -
 
 This handbook has introduced many security measures, and if you can apply them to your own security, then congratulations. I won't elaborate too much on the blockchain shenanigans. If you are interested, you can learn it on your own, which is definitely a good thing, especially since new scams and frauds are continuously evolving. The more you learn, the better you can defend yourself and make this industry better.
 
+# What to do If Your Computer Gets Infected
+
+Several hacker groups employ computer poisoning, often not through advanced zero-day techniques (like browser zero-days) but via social engineering induction. Examples include posing as investors, journalists, HR, etc., to trick users into installing fake conference software. Other methods involve impersonating "Telegram Safeguard" or requiring "Cloudflare human verification" to trick users into pasting malicious code locally.
+
+Examples of such tactics can be found here:
+> https://x.com/SlowMist_Team/status/1899713751625969997<br>
+> https://x.com/SlowMist_Team/status/1880520294496104827<br>
+> https://x.com/SlowMist_Team/status/1888879128172241000
+
+If you fall victim to such an attack, adopting a cautious approach and avoiding putting yourself in a precarious position is recommended. You should take the following steps:
+
+1. If you have wallets in use on your computer (including private key/mnemonic phrase backup files), you should promptly and securely transfer the funds from them. Don't assume having a password is sufficient.
+2. Change the passwords and 2FA for important accounts on your computer, such as Telegram/X/email/exchange accounts etc. (including saved passwords/logged-in accounts in browsers), and check these accounts for unknown device logins. Do not rely on luck.
+3. Install reputable antivirus software such as AVG/Bitdefender/Kaspersky/Malwarebytes etc., and thoroughly scan your computer. Decide which one to use, ideally a paid version. If you are still concerned, consider purchasing two and using them alternately.
+4. If you are still worried, back up your important files etc., and then you can reset your computer... Afterward, return to the previous step (step 3) and scan your backup files with antivirus.
+
+It's worth noting that these poisoning attacks target not only Windows but also Mac computers, and are sometimes compatible with parts of Linux.
+
 # What to do When You get hacked
 
 It is only a matter of time before you eventually get hacked. So what to do then? I'll simply cut straight to the chase. The following steps are not necessarily in order; there are times when you have to go back and forth, but the general idea is this.
@@ -1131,8 +1150,10 @@ Wallet Guard https://www.walletguard.app/
 Pocket Universe https://www.pocketuniverse.app/
 
 Jike App https://okjike.com/
-Kaspersky https://www.kaspersky.com.cn/
+AVG https://www.avg.com/
 Bitdefender https://www.bitdefender.com/
+Kaspersky https://www.kaspersky.com.cn/
+Malwarebytes https://www.malwarebytes.com/
 Cloudflare https://www.cloudflare.com/
 Akamai https://www.akamai.com/
 SURVEILLANCE SELF-DEFENSE https://ssd.eff.org/

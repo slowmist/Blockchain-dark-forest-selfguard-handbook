@@ -9,13 +9,13 @@ Blockchain dark forest selfguard handbook<br>
 :indonesia:Versi Indonesia：[Buku Panduan menjaga diri didalam "dark forest"](README_ID.md)<br>
 
 Author: Cos@SlowMist Team<br>
-Contact me：Twitter([@evilcos](https://twitter.com/evilcos))、Jike(@余弦.jpg)
+Contact me：X/Twitter([@evilcos](https://x.com/evilcos))、Jike(@余弦.jpg)
 
 Translator: 
->[Alphatu](https://twitter.com/Alphatu4) | C. | [CJ](https://twitter.com/0xnjars) | [JZ](https://twitter.com/scorpionzhang) | [Lovepeace](https://twitter.com/lovepeace_53) | [Neethan](https://mobile.twitter.com/neethanverse) | [pseudoyu](https://twitter.com/pseudo_yu) | [SassyPanda](https://twitter.com/sassypandacap) | ss | [XL](https://twitter.com/leixing0309)
+>[Alphatu](https://x.com/Alphatu4) | C. | [CJ](https://x.com/0xnjars) | [JZ](https://x.com/scorpionzhang) | [Lovepeace](https://x.com/lovepeace_53) | [Neethan](https://mobile.x.com/neethanverse) | [pseudoyu](https://x.com/pseudo_yu) | [SassyPanda](https://x.com/sassypandacap) | ss | [XL](https://x.com/leixing0309)
 
 Proofreader:
->[SassyPanda](https://twitter.com/sassypandacap) | [JZ](https://twitter.com/scorpionzhang) | [Neethan](https://mobile.twitter.com/neethanverse) | [Alphatu](https://twitter.com/Alphatu4) | [pseudoyu](https://twitter.com/pseudo_yu)
+>[SassyPanda](https://x.com/sassypandacap) | [JZ](https://x.com/scorpionzhang) | [Neethan](https://mobile.x.com/neethanverse) | [Alphatu](https://x.com/Alphatu4) | [pseudoyu](https://x.com/pseudo_yu)
 
 ![alt this](res/this.png)
 

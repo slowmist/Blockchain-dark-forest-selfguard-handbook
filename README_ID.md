@@ -2,14 +2,14 @@ Buku Panduan menjaga diri didalam "dark forest"<br>
 *Pelajari dan kuasai, jadilah pakar untuk keamanan pribadi (aset) kriptomu.<br>*
 
 :fire:Situs web: https://darkhandbook.io/<br>
-:cn:中文版: [《区块链黑暗森林自救手册》](README_CN.md)<br>
-:us:English：[Blockchain dark forest selfguard handbook](README.md)<br>
-:jp:日本語版: [ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
+:cn:中文版：[《区块链黑暗森林自救手册》](README_CN.md)<br>
+:us:English: [Blockchain dark forest selfguard handbook](README.md)<br>
+:jp:日本語版：[ブロックチェーンのダークフォレストにおける自己防衛のためのハンドブック](README_JP.md)<br>
 :kr:한국어 버전: [블록체인 다크 포레스트 셀프가드 핸드북](README_KR.md)<br>
 :saudi_arabia:اللغة العربية: [دليل النجاة في الغابة المظلمة للبلوكتشين](README_AR.md)<br>
 
 Pengarang buku: Cos@SlowMist Team<br>
-Kontak (pengarang buku)：Twitter([@evilcos](https://twitter.com/evilcos))、Jike(@余弦.jpg)
+Kontak (pengarang buku): Twitter ([@evilcos](https://twitter.com/evilcos)), Jike App (@余弦.jpg)
 
 Penterjemah: 
 >[Finball](https://x.com/GreyMatatabi)
@@ -22,55 +22,56 @@ Penterjemah:
   - [Membuat Dompet](#membuat-dompet)
     - [Unduh](#unduh)
     - [Frasa Mnemonik](#frasa-mnemonik)
-    - [Tanpa Kunci (keyless)](#tanpa-kunci)
+    - [Tanpa Kunci (keyless)](#tanpa-Kunci-keyless)
   - [Cadangkan Dompet Anda](#cadangkan-dompet-anda)
-    - [Frasa Mnemonik / Kunci Pribadi](#frasa-mnemonik-kunci-pribadi)
+    - [Frasa Mnemonik / Kunci Pribadi](#frasa-mnemonik--kunci-pribadi)
     - [Enkripsi](#enkripsi)
   - [Cara Menggunakan Dompet Anda](#cara-menggunakan-dompet-anda)
-    - [AML (anti pencucian uang)](#aml)
-    - [Dompet Dingin (cold wallet))](#dompet-dingin)
-    - [Dompet Panas (hot wallet)](#dompet-panas)
-    - [Apa Itu Keamanan Defi?](#apa-itu-keamanan-defi)
+    - [AML (anti pencucian uang)](#aml-anti-pencucian-uang)
+    - [Dompet Dingin (cold wallet)](#dompet-dingin-cold-wallet)
+    - [Dompet Panas (hot wallet)](#dompet-panas-hot-wallet)
+    - [Apa Itu Keamanan DeFi?](#apa-itu-keamanan-defi)
     - [Keamanan NFT](#keamanan-nft)
-    - [HATI-HATI Saat Penandatanganan (signing)!](#hati-hati-saat-penandatanganan)
-    - [HATI-HATI Dengan Permintaan Tanda Tangan karena “ini tampak biasa saja atau normal”!](#hati-hati-dengan-permintaan-tanda-tangan-karena-“ini-tampak-biasa-saja-atau-normal”)
+    - [HATI-HATI Saat Penandatanganan (signing)!](#hati-hati-saat-penandatanganan-signing)
+    - [HATI-HATI Dengan Permintaan Tanda Tangan karena "ini tampak biasa saja atau normal"!](#hati-hati-dengan-permintaan-tanda-tangan-karena-ini-tampak-biasa-saja-atau-normal)
     - [Beberapa Metodologi Penyerangan Tingkat Lanjut](#beberapa-metodologi-penyerangan-tingkat-lanjut)
   - [Perlindungan Privasi Tradisional](#perlindungan-privasi-tradisional)
     - [Sistem Operasi](#sistem-operasi)
-    - [Telepon Seluler (mobile phone)](#telepon-seluler)
+    - [Telepon Seluler (mobile phone)](#telepon-seluler-mobile-phone)
     - [Jaringan](#jaringan)
     - [Perambah](#perambah)
-    - [Pengelola Kata Sandi(password manager)](#pengelola-kata-sandi)
-    - [Otentikasi Dua Faktor (2FA)](#otentikasi-dua-faktor)
-    - [HATI-HATI Berinternet (selalu jaga keamananmu)](#hati-hati-berinternet)
+    - [Pengelola Kata Sandi (password manager)](#pengelola-kata-sandi-password-manager)
+    - [Otentikasi Dua Faktor (2FA)](#otentikasi-dua-faktor-2fa)
+    - [HATI-HATI Berinternet (selalu jaga keamananmu)](#hati-hati-berinternet-selalu-jaga-keamananmu)
     - [Email](#email)
     - [Kartu SIM](#kartu-sim)
     - [GPG](#gpg)
-    - [Pemisahan (segregation)](#pemisahan)
+    - [Pemisahan (segregation)](#pemisahan-segregation)
   - [Keamanan Sifat Manusia](#keamanan-sifat-manusia)
     - [Telegram](#telegram)
     - [Discord](#discord)
-    - [Phishing “Resmi”](#phishing-“resmi”)
+    - [Phishing "Resmi"](#phishing-resmi)
     - [Masalah Privasi Web3](#masalah-privasi-web3)
 - [Kejahatan Blockchain](#kejahatan-blockchain)
+- [Apa yang Harus Dilakukan Jika Komputer Anda "terkompromi"](#apa-yang-harus-dilakukan-jika-komputer-anda-terkompromi)
 - [Apa Yang Harus Dilakukan Ketika Anda Diretas](#apa-yang-harus-dilakukan-ketika-anda-diretas)
   - [Hentikan Kerugian Terlebih Dahulu](#hentikan-kerugian-terlebih-dahulu)
   - [Karantina Tempat Kejadian](#karantina-tempat-kejadian)
   - [Analisis Akar Masalah](#analisis-akar-masalah)
-  - [Penelusuran Sumber(source tracing)](#penelusuran-sumber)
+  - [Penelusuran Sumber (source tracing)](#penelusuran-sumber-source-tracing)
   - [Kesimpulan Kasus](#kesimpulan-kasus)
-- [Kesalahpahaman (misconception)](#kesalahpahaman)
-  - [Kode Adalah Hukum(code is law)](#kode-adalah-hukum)
+- [Kesalahpahaman (misconception)](#kesalahpahaman-misconception)
+  - [Kode Adalah Hukum (code is law)](#kode-adalah-hukum-code-is-law)
   - [Bukan Kunci Anda, Bukan Koin Anda](#bukan-kunci-anda-bukan-koin-anda)
-  - [Di Blockchain Kami Percaya (seluruhnya)](#di-blockchain-kami-percaya)
-  - [Keamanan Kriptografis Adalah Keamanan (pada umumnya)](#keamanan-kriptografis-adalah-keamanan)
-  - [Apakah Memalukan Saat (kau menyadari menjadi korban) Diretas?](#apakah-memalukan-saat-diretas)
-  - [Segera Perbarui (immediately update)](#segera-perbarui)
+  - [Di Blockchain Kami Percaya (seluruhnya)](#di-blockchain-kami-percaya-seluruhnya)
+  - [Keamanan Kriptografis Adalah Keamanan (pada umumnya)](#keamanan-kriptografis-adalah-keamanan-pada-umumnya)
+  - [Apakah Memalukan Saat (kau menyadari menjadi korban) Diretas?](#apakah-memalukan-saat-kau-menyadari-menjadi-korban-diretas)
+  - [Segera Perbarui (immediately update)](#segera-perbarui-immediately-update)
 - [Kesimpulan](#kesimpulan)
 - [Lampiran](#lampiran)
   - [Aturan Dan Prinsip Keamanan](#aturan-dan-prinsip-keamanan)
   - [Kontributor](#kontributor)
-  - [Alat2nya (tools)](#alat2nya)
+  - [Alat2nya (tools)](#alat2nya-tools)
   - [Situs Resmi](#situs-resmi)
 
 # Prolog
@@ -81,7 +82,7 @@ Selain itu, untuk memahami buku pegangan ini secara menyeluruh diperlukan bebera
 
 Sekali lagi, selalu bersikap skeptis :) termasuk pengetahuan yang disebutkan dalam buku pegangan ini.
 
-Blockchain adalah penemuan hebat yang membawa perubahan dalam hubungan produksi dan memecahkan masalah kepercayaan sampai taraf tertentu. Secara khusus, blockchain menciptakan banyak skenario “kepercayaan” tanpa perlu sentralisasi dan pihak ketiga, seperti kekekalan (immutable), pelaksanaan sesuai kesepakatan, dan pencegahan tas penolakan. Namun, kenyataan itu kejam. Ada banyak miskonsepsi tentang blockchain, dan orang jahat akan menggunakan miskonsepsi ini untuk mengeksploitasi celah dan mencuri uang dari orang-orang, yang menyebabkan banyak kerugian finansial. Saat ini, dunia kripto telah menjadi seperti hutan gelap.
+Blockchain adalah penemuan hebat yang membawa perubahan dalam hubungan produksi dan memecahkan masalah kepercayaan sampai taraf tertentu. Secara khusus, blockchain menciptakan banyak skenario "kepercayaan" tanpa perlu sentralisasi dan pihak ketiga, seperti kekekalan (immutable), pelaksanaan sesuai kesepakatan, dan pencegahan tas penolakan. Namun, kenyataan itu kejam. Ada banyak miskonsepsi tentang blockchain, dan orang jahat akan menggunakan miskonsepsi ini untuk mengeksploitasi celah dan mencuri uang dari orang-orang, yang menyebabkan banyak kerugian finansial. Saat ini, dunia kripto telah menjadi seperti hutan gelap.
 
 Harap diingat dua aturan keamanan berikut untuk bertahan hidup di hutan gelap blockchain.
 
@@ -122,7 +123,7 @@ Diklasifikasikan berdasarkan aplikasi, ada dompet Desktop, dompet ekstensi brows
 
 Apa pun jenis dompet yang Anda pilih, satu hal yang pasti: setelah Anda memiliki cukup pengalaman di dunia (blockchain) ini, satu dompet saja tidak cukup.
 
-Di sini kita harus mengingat prinsip keamanan lainnya: isolasi, yaitu, jangan menaruh semua telur Anda dalam satu keranjang. Semakin sering dompet digunakan, semakin berisiko dompet tersebut. Selalu ingat: saat mencoba sesuatu yang baru, pertama-tama siapkan dompet terpisah dan cobalah sebentar dengan mengisi sedikit uang. Bahkan bagi seorang veteran kripto seperti saya, jika sedang ingin “bermain api, Anda akan lebih mudah terbakar”.
+Di sini kita harus mengingat prinsip keamanan lainnya: isolasi, yaitu, jangan menaruh semua telur Anda dalam satu keranjang. Semakin sering dompet digunakan, semakin berisiko dompet tersebut. Selalu ingat: saat mencoba sesuatu yang baru, pertama-tama siapkan dompet terpisah dan cobalah sebentar dengan mengisi sedikit uang. Bahkan bagi seorang veteran kripto seperti saya, jika sedang ingin "bermain api, Anda akan lebih mudah terbakar".
 
 ### Unduh
 
@@ -139,7 +140,7 @@ Untuk mengatasi masalah pertama di atas, ada beberapa teknik untuk menemukan sit
 * menggunakan situs web resmi yang terkenal, seperti CoinMarketCap
 * bertanya kepada orang dan teman yang tepercaya
 
-Anda dapat merujuk silang informasi yang diperoleh dari berbagai sumber ini, dan pada akhirnya hanya akan ada satu kebenaran:) Selamat, Anda telah menemukan situs web resmi yang benar.
+Anda dapat merujuk silang informasi yang diperoleh dari berbagai sumber ini, dan pada akhirnya hanya akan ada satu kebenaran :) Selamat, Anda telah menemukan situs web resmi yang benar.
 
 Selanjutnya, Anda harus mengunduh dan memasang aplikasi tersebut. **Jika itu dompet Desktop**, setelah mengunduh dari situs web resmi, Anda perlu menginstalnya sendiri. Sangat disarankan untuk memverifikasi apakah tautan telah dirusak sebelum menginstal. Meskipun verifikasi ini mungkin tidak mencegah kasus-kasus di mana kode sumber diubah sepenuhnya (karena insider scam, peretasan internal, atau situs web resmi mungkin terkena hijack, dll.), namun, hal itu dapat mencegah kasus-kasus seperti perusakan sebagian kode sumber, serangan man-in-the-middle, dll.
 
@@ -148,7 +149,7 @@ Metode untuk memverifikasi apakah suatu file telah dirusak adalah pemeriksaan ko
 * **Pemeriksaan hash**: seperti MD5, SHA256, dll. MD5 berfungsi untuk sebagian besar kasus, tetapi masih ada sedikit risiko error crashed hash, jadi kami biasanya memilih SHA256, yang cukup aman.
 * **Verifikasi tanda tangan GPG**: metode ini juga sangat populer. Sangat disarankan untuk sudah ahli dengan Tools, Command, dan metode GPG. Meskipun metode ini agak sulit bagi pendatang baru, Anda akan merasa sangat berguna setelah Anda terbiasa dengannya.
 
-Namun, tidak banyak proyek di dunia kripto yang menyediakan verifikasi. Jadi, beruntunglah jika menemukannya. Misalnya, berikut adalah dompet bitcoin bernama Sparrow Wallet. Halaman unduhannya menyebutkan “Verifying the Release”, yang sangat mengesankan, dan ada panduan yang jelas untuk kedua metode yang disebutkan di atas, sehingga Anda dapat menggunakannya sebagai referensi:
+Namun, tidak banyak proyek di dunia kripto yang menyediakan verifikasi. Jadi, beruntunglah jika menemukannya. Misalnya, berikut adalah dompet bitcoin bernama Sparrow Wallet. Halaman unduhannya menyebutkan "Verifying the Release", yang sangat mengesankan, dan ada panduan yang jelas untuk kedua metode yang disebutkan di atas, sehingga Anda dapat menggunakannya sebagai referensi:
 
 >https://sparrowwallet.com/download/
 
@@ -157,9 +158,9 @@ Halaman unduhan menyebutkan dua alat GPG:
 * GPG Suite, untuk MacOS.
 * Gpg4win, untuk Windows.
 
-Jika Anda memperhatikan, Anda akan menemukan halaman unduhan untuk kedua alat GPG memberikan beberapa petunjuk tentang cara memeriksa konsistensi kedua metode tersebut. Namun, tidak ada panduan langkah demi langkah, artinya, Anda perlu belajar dan berlatih sendiri:)
+Jika Anda memperhatikan, Anda akan menemukan halaman unduhan untuk kedua alat GPG memberikan beberapa petunjuk tentang cara memeriksa konsistensi kedua metode tersebut. Namun, tidak ada panduan langkah demi langkah, artinya, Anda perlu belajar dan berlatih sendiri :)
 
-**Jika itu adalah dompet ekstensi browser**, seperti MetaMask, satu-satunya hal yang harus Anda perhatikan adalah jumlah unduhan dan peringkat di toko web Chrome. MetaMask, misalnya, memiliki lebih dari 10 juta unduhan dan lebih dari 2.000 Rating (meskipun peringkat keseluruhannya tidak tinggi). Beberapa orang mungkin berpikir bahwa jumlah unduhan dan peringkat mungkin dilebih-lebihkan. Sejujurnya, sangat sulit untuk memalsukan angka sebesar itu.  
+**Jika itu adalah dompet ekstensi browser**, seperti MetaMask, satu-satunya hal yang harus Anda perhatikan adalah jumlah unduhan dan peringkat di toko web Chrome. MetaMask, misalnya, memiliki lebih dari 10 juta unduhan dan lebih dari 2.000 Rating (meskipun peringkat keseluruhannya tidak tinggi). Beberapa orang mungkin berpikir bahwa jumlah unduhan dan peringkat mungkin dilebih-lebihkan. Sejujurnya, sangat sulit untuk memalsukan angka sebesar itu.
 
 **Dompet seluler (mobile wallet)** mirip dengan dompet ekstensi peramban. Namun, perlu dicatat bahwa App Store memiliki versi yang berbeda untuk setiap wilayah. Mata uang kripto dilarang di Tiongkok Daratan, jadi jika Anda mengunduh dompet dengan akun App Store Tiongkok Anda, hanya ada satu saran: jangan menggunakannya, ubah ke akun lain di wilayah lain seperti AS, lalu unduh ulang. Selain itu, situs web resmi yang benar juga akan mengarahkan Anda ke metode pengunduhan yang benar (seperti imToken, OneKey, Trust Wallet, dll. Penting bagi situs web resmi untuk menjaga keamanan situs web yang tinggi. Jika situs web resmi diretas, akan ada masalah besar.).
 
@@ -232,7 +233,7 @@ Menggunakan solusi seperti multi-signature dan SSS akan memberi Anda ketenangan 
 
 Enkripsi adalah konsep yang sangat, sangat luas. Tidak masalah apakah enkripsi tersebut simetris, asimetris, atau menggunakan teknologi canggih lainnya; selama pesan terenkripsi dapat dengan mudah didekripsi oleh Anda atau tim penanganan darurat Anda dengan mudah tetapi tidak ada orang lain setelah beberapa dekade, itu adalah enkripsi yang baik.
 
-Berdasarkan prinsip keamanan “zero trust”, saat kita mencadangkan dompet, kita harus berasumsi bahwa setiap langkah dapat diretas, termasuk lingkungan fisik seperti brankas. Ingatlah bahwa tidak ada orang lain selain diri Anda yang dapat dipercaya sepenuhnya. Faktanya, terkadang Anda bahkan tidak dapat mempercayai diri sendiri, karena ingatan Anda mungkin memudar atau hilang. Namun, saya tidak akan selalu membuat asumsi pesimistis, jika tidak, hal itu akan membawa saya pada beberapa hasil yang tidak diinginkan.
+Berdasarkan prinsip keamanan "zero trust", saat kita mencadangkan dompet, kita harus berasumsi bahwa setiap langkah dapat diretas, termasuk lingkungan fisik seperti brankas. Ingatlah bahwa tidak ada orang lain selain diri Anda yang dapat dipercaya sepenuhnya. Faktanya, terkadang Anda bahkan tidak dapat mempercayai diri sendiri, karena ingatan Anda mungkin memudar atau hilang. Namun, saya tidak akan selalu membuat asumsi pesimistis, jika tidak, hal itu akan membawa saya pada beberapa hasil yang tidak diinginkan.
 
 Saat melakukan pencadangan, pertimbangan khusus harus diberikan pada pemulihan bencana. Tujuan utama pemulihan bencana adalah untuk menghindari satu titik risiko. Apa yang akan terjadi jika Anda pergi atau lingkungan tempat Anda menyimpan cadangan sedang tidak berfungsi? Oleh karena itu, untuk hal-hal penting, ada beberapa hal yang perlu diperhatikan.
 
@@ -247,7 +248,7 @@ Saya tidak akan menjelaskan terlalu banyak tentang cara memilih orang yang ahli 
 
 **Cloud**, Banyak orang yang tidak mempercayai backup di Cloud, mereka menganggapnya rentan terhadap serangan hacker. Pada akhirnya, yang terpenting adalah pihak mana — penyerang atau bertahan — yang memberikan upaya lebih besar, baik dari segi tenaga maupun anggaran. Secara pribadi, saya percaya pada layanan cloud yang didukung oleh Google, Apple, Microsoft, dll., karena saya tahu seberapa kuat tim keamanan mereka dan berapa banyak yang mereka keluarkan untuk keamanan. Selain berjuang melawan peretas eksternal, saya juga sangat peduli dengan pengendalian risiko keamanan internal dan perlindungan data pribadi. Beberapa penyedia layanan yang saya percaya melakukan pekerjaan yang relatif lebih baik di bidang ini. Tapi tidak ada yang mutlak. Jika saya memilih salah satu layanan cloud ini untuk mencadangkan data penting (seperti dompet), saya pasti akan mengenkripsi dompet setidaknya sekali lagi.
 
-Saya sangat merekomendasikan menguasai GPG. Ini dapat digunakan untuk “verifikasi tanda tangan”, dan sementara itu memberikan keamanan enkripsi dan dekripsi yang kuat. Anda dapat mempelajari lebih lanjut tentang GPG di:
+Saya sangat merekomendasikan menguasai GPG. Ini dapat digunakan untuk "verifikasi tanda tangan", dan sementara itu memberikan keamanan enkripsi dan dekripsi yang kuat. Anda dapat mempelajari lebih lanjut tentang GPG di:
 
 >https://www.ruanyifeng.com/blog/2013/07/gpg.html
 
@@ -261,9 +262,9 @@ Jika Anda ingin menghemat tenaga, ada kemungkinan lain namun keamanannya mungkin
 
 **Device**, Ini mengacu pada semua jenis peralatan; elektronik adalah jenis cadangan yang umum, seperti komputer, iPad, iPhone, atau hard drive, dll, tergantung pada preferensi pribadi. Kita juga harus memikirkan transmisi yang aman antar perangkat. Saya merasa nyaman menggunakan metode peer-to-peer seperti AirDrop dan USB karena perantara sulit membajak prosesnya. Saya tentu saja tidak nyaman dengan kenyataan bahwa peralatan elektronik mungkin rusak setelah beberapa tahun, jadi saya menjaga kebiasaan memeriksa perangkat setidaknya setahun sekali. Ada beberapa langkah berulang (seperti enkripsi) yang dapat Anda rujuk ke bagian Cloud.
 
-**Brain (ingatan)**, Mengandalkan ingatanmu itu mengasyikkan. Faktanya, setiap orang memiliki “istana kenangan” masing-masing. Memori tidaklah misterius dan dapat dilatih untuk bekerja lebih baik. Ada hal-hal tertentu yang memang lebih aman dengan ingatan. Apakah hanya mengandalkan otak atau tidak adalah pilihan pribadi. Namun perhatikan dua risiko: pertama, ingatan memudar seiring berjalannya waktu dan dapat menyebabkan kebingungan; risiko lainnya adalah Anda mungkin mengalami kecelakaan. Saya akan berhenti di sini dan membiarkan Anda menjelajah lebih jauh.
+**Brain (ingatan)**, Mengandalkan ingatanmu itu mengasyikkan. Faktanya, setiap orang memiliki "istana kenangan" masing-masing. Memori tidaklah misterius dan dapat dilatih untuk bekerja lebih baik. Ada hal-hal tertentu yang memang lebih aman dengan ingatan. Apakah hanya mengandalkan otak atau tidak adalah pilihan pribadi. Namun perhatikan dua risiko: pertama, ingatan memudar seiring berjalannya waktu dan dapat menyebabkan kebingungan; risiko lainnya adalah Anda mungkin mengalami kecelakaan. Saya akan berhenti di sini dan membiarkan Anda menjelajah lebih jauh.
 
-Sekarang Anda semua sudah dicadangkan. Jangan mengenkripsi terlalu banyak, jika tidak, Anda akan menderita sendiri setelah beberapa tahun. Sesuai dengan prinsip keamanan “verifikasi berkelanjutan”, metode enkripsi dan pencadangan Anda, baik berlebihan atau tidak, harus diverifikasi terus-menerus, baik secara berkala maupun acak. Frekuensi verifikasi bergantung pada memori Anda dan Anda tidak harus menyelesaikan seluruh proses. Selama prosesnya benar, verifikasi parsial juga berfungsi. Terakhir, kerahasiaan dan keamanan proses otentikasi juga perlu diperhatikan.
+Sekarang Anda semua sudah dicadangkan. Jangan mengenkripsi terlalu banyak, jika tidak, Anda akan menderita sendiri setelah beberapa tahun. Sesuai dengan prinsip keamanan "verifikasi berkelanjutan", metode enkripsi dan pencadangan Anda, baik berlebihan atau tidak, harus diverifikasi terus-menerus, baik secara berkala maupun acak. Frekuensi verifikasi bergantung pada memori Anda dan Anda tidak harus menyelesaikan seluruh proses. Selama prosesnya benar, verifikasi parsial juga berfungsi. Terakhir, kerahasiaan dan keamanan proses otentikasi juga perlu diperhatikan.
 
 Oke, mari kita tarik napas dalam-dalam di sini. Memulai adalah bagian tersulit. Sekarang kamu sudah siap, ayo masuki hutan gelap ini :)
 
@@ -273,7 +274,7 @@ Setelah Anda membuat dan mencadangkan dompet Anda, inilah tantangan sebenarnya. 
 
 ### AML (anti pencucian uang)
 
-Namun, “relatif aman” bukan berarti “tidak ada risiko sama sekali” bukan. Sebab “kamu tidak pernah tahu mana yang akan datang terlebih dulu, hari esok atau kecelakaan”, bukan?. Kenapa sih? Coba pikirkan, dari mana Anda mendapatkan mata uang kripto tersebut? Itu tidak datang begitu saja, bukan? Anda mungkin menemukan AML (Anti Pencucian Uang) pada semua mata uang kripto yang Anda dapatkan kapan saja. Artinya, mata uang kripto yang Anda pegang saat ini mungkin “kotor”, dan jika Anda tidak beruntung, mata uang tersebut bahkan mungkin langsung dibekukan di rantainya. Menurut laporan publik, Tether pernah membekukan beberapa aset USDT sesuai permintaan lembaga penegak hukum. Daftar dana yang dibekukan dapat dilihat di sini.
+Namun, "relatif aman" bukan berarti "tidak ada risiko sama sekali" bukan. Sebab "kamu tidak pernah tahu mana yang akan datang terlebih dulu, hari esok atau kecelakaan", bukan?. Kenapa sih? Coba pikirkan, dari mana Anda mendapatkan mata uang kripto tersebut? Itu tidak datang begitu saja, bukan? Anda mungkin menemukan AML (Anti Pencucian Uang) pada semua mata uang kripto yang Anda dapatkan kapan saja. Artinya, mata uang kripto yang Anda pegang saat ini mungkin "kotor", dan jika Anda tidak beruntung, mata uang tersebut bahkan mungkin langsung dibekukan di rantainya. Menurut laporan publik, Tether pernah membekukan beberapa aset USDT sesuai permintaan lembaga penegak hukum. Daftar dana yang dibekukan dapat dilihat di sini.
 
 >https://dune.xyz/phabc/usdt---banned-addresses
 
@@ -283,15 +284,15 @@ Anda dapat memverifikasi apakah suatu alamat dibekukan oleh Tether dari kontrak 
 
 <img src="res/usdt_isblacklisted.png" width="700">
 
-Gunakan alamat dompet target sebagai input di “isBlackListed” untuk memeriksa. Chain lain yang menggunakan USDT juga memiliki cara verifikasi serupa.
+Gunakan alamat dompet target sebagai input di "isBlackListed" untuk memeriksa. Chain lain yang menggunakan USDT juga memiliki cara verifikasi serupa.
 
 Meskipun aset BTC dan ETH Anda tidak akan dibekukan di blockchain, bursa terpusat (centralized exchanges atau CEX) mungkin membekukan aset Anda sesuai dengan persyaratan AML setelah aset Anda ditransfer ke platform ini dan jika mereka terlibat dalam kasus terbuka yang sedang ditangani oleh penegak hukum.
 
-Untuk menghindari masalah AML dengan lebih baik, selalu pilih platform dan individu dengan reputasi baik sebagai rekanan Anda. Sebenarnya ada beberapa solusi untuk masalah seperti ini. Misalnya, di Ethereum, hampir semua penjahat dan orang yang sangat peduli dengan privasi mereka menggunakan Tornado Cash untuk “mencampur” koin. Saya tidak akan menggali lebih jauh topik ini karena sebagian besar metode di sini digunakan untuk melakukan kejahatan.
+Untuk menghindari masalah AML dengan lebih baik, selalu pilih platform dan individu dengan reputasi baik sebagai rekanan Anda. Sebenarnya ada beberapa solusi untuk masalah seperti ini. Misalnya, di Ethereum, hampir semua penjahat dan orang yang sangat peduli dengan privasi mereka menggunakan Tornado Cash untuk "mencampur" koin. Saya tidak akan menggali lebih jauh topik ini karena sebagian besar metode di sini digunakan untuk melakukan kejahatan.
 
 ### Dompet Dingin (cold wallet)
 
-Ada berbagai cara untuk menggunakan dompet dingin. Dari sudut pandang dompet, ini dapat dianggap sebagai dompet dingin selama tidak terhubung ke jaringan (internet) apa pun. Tapi bagaimana cara menggunakannya saat offline? Pertama-tama, jika Anda hanya ingin menerima cryptocurrency, itu bukan masalah besar. Dompet dingin dapat memberikan pengalaman luar biasa dengan bekerja dengan dompet khusus “watch only” (dimana kita hanya memantau asset kita saja), seperti imToken, OneKey, Trust Wallet, dll. Dompet ini dapat diubah menjadi dompet “watch only” hanya dengan menambahkan alamat dompet target.
+Ada berbagai cara untuk menggunakan dompet dingin. Dari sudut pandang dompet, ini dapat dianggap sebagai dompet dingin selama tidak terhubung ke jaringan (internet) apa pun. Tapi bagaimana cara menggunakannya saat offline? Pertama-tama, jika Anda hanya ingin menerima cryptocurrency, itu bukan masalah besar. Dompet dingin dapat memberikan pengalaman luar biasa dengan bekerja dengan dompet khusus "watch only" (dimana kita hanya memantau asset kita saja), seperti imToken, OneKey, Trust Wallet, dll. Dompet ini dapat diubah menjadi dompet "watch only" hanya dengan menambahkan alamat dompet target.
 
 Jika kita ingin mengirim cryptocurrency menggunakan cold wallet, berikut cara yang paling umum digunakan:
 
@@ -299,7 +300,7 @@ Jika kita ingin mengirim cryptocurrency menggunakan cold wallet, berikut cara ya
 * USB
 * Bluetooth
 
-Semua ini memerlukan aplikasi khusus (disebut Aplikasi Ringan atau Light App di sini) untuk bekerja dengan dompet dingin (cold wallet). Aplikasi Ringan akan online bersama dengan dompet khusus “watch only” yang disebutkan di atas. Setelah kita memahami prinsip esensial yang mendasarinya, kita seharusnya mampu memahami pendekatan-pendekatan ini. Prinsip pentingnya adalah: pada akhirnya, ini hanyalah mencari tahu cara menyiarkan konten yang ditandatangani ke dalam blockchain. Proses detailnya adalah sebagai berikut:
+Semua ini memerlukan aplikasi khusus (disebut Aplikasi Ringan atau Light App di sini) untuk bekerja dengan dompet dingin (cold wallet). Aplikasi Ringan akan online bersama dengan dompet khusus "watch only" yang disebutkan di atas. Setelah kita memahami prinsip esensial yang mendasarinya, kita seharusnya mampu memahami pendekatan-pendekatan ini. Prinsip pentingnya adalah: pada akhirnya, ini hanyalah mencari tahu cara menyiarkan konten yang ditandatangani ke dalam blockchain. Proses detailnya adalah sebagai berikut:
 
 * Konten yang akan ditandatangani dikirimkan oleh Light App ke Cold Wallet melalui salah satu cara berikut.
 * Tanda tangan (signature) diproses oleh Cold Wallet yang memiliki kunci pribadi dan kemudian dikirimkan kembali ke Cold Wallet menggunakan cara yang sama
@@ -310,20 +311,20 @@ Jadi apapun metode yang digunakan, kode QR, USB atau Bluetooth, harus mengikuti 
 Tampaknya memang merepotkan, tetapi akan lebih baik jika Anda terbiasa. Anda bahkan akan merasakan rasa aman sepenuhnya. Namun jangan dianggap 100% aman karena disini masih ada resiko dan banyak kasus kerugian besar akibat resiko tersebut. Berikut poin risikonya:
 
 * Alamat tujuan transfer koin tidak diperiksa dengan cermat sehingga mengakibatkan koin tersebut ditransfer ke orang lain. Kadang-kadang orang malas dan ceroboh. Misalnya, seringkali mereka hanya memeriksa bagian awal dan akhir alamat dompet daripada memeriksa seluruh alamat secara keseluruhan. Hal ini menyisakan pintu belakang (Backdoor) bagi orang-orang jahat. Mereka akan menjalankan program untuk mendapatkan alamat dompet dengan beberapa bit pertama dan terakhir yang sama dengan alamat target yang Anda inginkan dan kemudian mengganti alamat target transfer koin Anda dengan alamat yang berada di bawah kendali mereka menggunakan beberapa trik.
-* Koin diotorisasi ke alamat yang tidak diketahui. Biasanya otorisasi adalah mekanisme token kontrak pintar Ethereums, fungsi “setujui”, dengan satu argumen sebagai alamat otorisasi target dan argumen lainnya sebagai kuantitas (jumlah). Banyak orang tidak memahami mekanisme ini, sehingga mereka mungkin mengotorisasi token dalam jumlah tidak terbatas ke alamat target, dan pada saat itu alamat target memiliki izin untuk mentransfer semua token tersebut. Ini disebut pencurian koin terotorisasi, dan ada varian lain dari teknik ini, namun saya tidak akan membahasnya di sini.
+* Koin diotorisasi ke alamat yang tidak diketahui. Biasanya otorisasi adalah mekanisme token kontrak pintar Ethereums, fungsi "setujui", dengan satu argumen sebagai alamat otorisasi target dan argumen lainnya sebagai kuantitas (jumlah). Banyak orang tidak memahami mekanisme ini, sehingga mereka mungkin mengotorisasi token dalam jumlah tidak terbatas ke alamat target, dan pada saat itu alamat target memiliki izin untuk mentransfer semua token tersebut. Ini disebut pencurian koin terotorisasi, dan ada varian lain dari teknik ini, namun saya tidak akan membahasnya di sini.
 * Beberapa tanda tangan (signature) yang tampaknya tidak penting sebenarnya memiliki jebakan besar di belakangnya, dan saya tidak akan membahasnya sekarang, tetapi akan menjelaskan detailnya nanti.
 * Cold Wallet mungkin tidak memberikan cukup informasi yang diperlukan, sehingga menyebabkan Anda menjadi ceroboh dan salah menilai.
 
 Semuanya bermuara pada dua poins:
 
-* Mekanisme keamanan interaksi pengguna “Apa yang Anda lihat adalah apa yang Anda tandatangani” tidak ada ataupun tersedia.
+* Mekanisme keamanan interaksi pengguna "Apa yang Anda lihat adalah apa yang Anda tandatangani" tidak ada ataupun tersedia.
 * Kurangnya latar belakang pengetahuan yang relevan dari pengguna.
 
 ### Dompet Panas (hot wallet)
 
 Dibandingkan dengan dompet dingin, dompet panas pada dasarnya memiliki semua risiko yang dimiliki dompet dingin. Ditambah lagi, ada satu lagi: risiko pencurian frase rahasia (atau kunci pribadi). Pada titik ini ada lebih banyak masalah keamanan yang perlu dipertimbangkan dengan hot wallet, seperti keamanan runtime environment. Jika ada virus yang terkait dengan runtime environment, maka ada risiko dicuri. Ada juga dompet panas yang memiliki kerentanan tertentu sehingga frasa rahasia dapat mudah dicuri.
 
-Selain fungsi transfer koin biasa, jika Anda ingin berinteraksi dengan DApps lain (DeFi, NFT, GameFi, dll.), Anda harus mengaksesnya langsung dengan browser Anda sendiri atau berinteraksi dengan DApps yang dibuka di browser PC Anda melalui protokol “WalletConnect”.
+Selain fungsi transfer koin biasa, jika Anda ingin berinteraksi dengan DApps lain (DeFi, NFT, GameFi, dll.), Anda harus mengaksesnya langsung dengan browser Anda sendiri atau berinteraksi dengan DApps yang dibuka di browser PC Anda melalui protokol "WalletConnect".
 
 *Catatan: Referensi DApps dalam buku pegangan ini merujuk secara default ke proyek (smart contract) kontrak pintar yang berjalan di blockchain Ethereum.*
 
@@ -339,7 +340,7 @@ Dalam hal ini, ada beberapa cara untuk berbuat jahat:
 * Saat dompet berjalan dan pengguna memulai transfer, informasi seperti alamat target dan jumlah secara diam-diam diganti di backend dompet, dan sulit bagi pengguna untuk menyadarinya.
 * Merusak nilai entropi bilangan acak yang terkait dengan pembuatan frasa rahasia, yang membuatnya relatif mudah untuk diuraikan.
 
-Keamanan terkadang adalah sesuatu yang kita acuhkan dan sekedar diketahui saja, dan ada banyak hal yang dapat dengan mudah diabaikan atau dilewatkan. Jadi untuk dompet yang menyimpan aset penting, aturan keamanan saya juga sederhana: “if it ain’t broke, don’t fix it” jika masih bisa bekerja dengan baik, tidak perlu diperbaharui dulu.
+Keamanan terkadang adalah sesuatu yang kita acuhkan dan sekedar diketahui saja, dan ada banyak hal yang dapat dengan mudah diabaikan atau dilewatkan. Jadi untuk dompet yang menyimpan aset penting, aturan keamanan saya juga sederhana: "if it ain’t broke, don’t fix it" jika masih bisa bekerja dengan baik, tidak perlu diperbaharui dulu.
 
 ### Apa Itu Keamanan DeFi?
 
@@ -377,9 +378,9 @@ Anda dapat langsung mengetahui on chain bahwa Timelock (variabel penundaan) adal
 
 Artinya, jika admin Compound perlu mengubah beberapa variabel kunci dari kontrak pintar target, transaksi akan dicatat setelah dimulai pada blockchain, namun 48 jam harus menunggu sebelum transaksi dapat diselesaikan dan dieksekusi. Artinya, jika mau, Anda dapat mengaudit setiap operasi dari admin, dan Anda memiliki waktu setidaknya 48 jam untuk bertindak. Misalnya, jika Anda tidak yakin, Anda dapat menarik dana Anda dalam waktu 48 jam.
 
-Cara lain untuk memitigasi risiko izin admin yang berlebihan adalah dengan menambahkan multi-signature, seperti menggunakan Gnosis Safe untuk pengelolaan multisig, sehingga setidaknya tidak ada diktator. Perlu dicatat di sini bahwa multisig bisa menjadi “baju baru kaisar”. Misalnya, satu orang mungkin memegang banyak kunci. Oleh karena itu, strategi multisig dari proyek sasaran perlu dinyatakan dengan jelas. Siapa yang memegang kunci, dan identitas masing-masing pemegang kunci harus mempunyai reputasi baik. 
+Cara lain untuk memitigasi risiko izin admin yang berlebihan adalah dengan menambahkan multi-signature, seperti menggunakan Gnosis Safe untuk pengelolaan multisig, sehingga setidaknya tidak ada diktator. Perlu dicatat di sini bahwa multisig bisa menjadi "baju baru kaisar". Misalnya, satu orang mungkin memegang banyak kunci. Oleh karena itu, strategi multisig dari proyek sasaran perlu dinyatakan dengan jelas. Siapa yang memegang kunci, dan identitas masing-masing pemegang kunci harus mempunyai reputasi baik. 
 
-Perlu disebutkan di sini bahwa strategi keamanan apa pun dapat mengarah pada masalah “pakaian baru kaisar”, yang mana strategi tersebut mungkin tampak dilakukan dengan baik, namun kenyataannya tidak, sehingga menghasilkan ilusi keamanan. Ambil contoh lain, Timelock terlihat bagus di atas kertas. Sebenarnya, ada beberapa kasus di mana Timelock yang diterapkan oleh beberapa proyek memiliki pintu belakang. Umumnya, pengguna tidak melihat kode sumber Timelock, dan mereka belum tentu memahaminya meskipun mereka melakukannya, jadi admin memasang pintu belakang di sana, dan tidak ada yang akan menyadarinya untuk waktu yang cukup lama.
+Perlu disebutkan di sini bahwa strategi keamanan apa pun dapat mengarah pada masalah "pakaian baru kaisar", yang mana strategi tersebut mungkin tampak dilakukan dengan baik, namun kenyataannya tidak, sehingga menghasilkan ilusi keamanan. Ambil contoh lain, Timelock terlihat bagus di atas kertas. Sebenarnya, ada beberapa kasus di mana Timelock yang diterapkan oleh beberapa proyek memiliki pintu belakang. Umumnya, pengguna tidak melihat kode sumber Timelock, dan mereka belum tentu memahaminya meskipun mereka melakukannya, jadi admin memasang pintu belakang di sana, dan tidak ada yang akan menyadarinya untuk waktu yang cukup lama.
 
 Selain risiko izin yang berlebihan, elemen keamanan kontrak pintar lainnya juga penting. Namun, saya tidak akan membahasnya di sini, dengan mempertimbangkan prasyarat pemahaman anda. Inilah saran saya: Anda setidaknya harus belajar membaca laporan audit keamanan, dan dari banyak latihan akan menjadi sempurna.
 
@@ -452,12 +453,12 @@ Keamanan finansial di DeFi rentan terhadap serangan berupa:
 * Praktik peluncuran token (launchpad) yang tidak adil seperti pra-penambangan (pre-mining) atau pra-penjualan (pre-sale);
 * Serangan paus kripto (whale);
 * Pompa dan buang (pump n dump);
-* Peristiwa angsa hitam (blackswan) seperti curahan air dari air terjun yang masuk ke  pasar dan menyebabkan keruntuhan; atau katakanlah ketika satu protokol DeFi menjadi semacam sarang besar atau dioperasikan dengan bermacam DeFi/Token lain, dan keamanan/keandalannya akan sangat bergantung pada protokol lain;
+* Peristiwa angsa hitam (blackswan) seperti curahan air dari air terjun yang masuk ke pasar dan menyebabkan keruntuhan; atau katakanlah ketika satu protokol DeFi menjadi semacam sarang besar atau dioperasikan dengan bermacam DeFi/Token lain, dan keamanan/keandalannya akan sangat bergantung pada protokol lain;
 * Serangan teknis lainnya atau yang kita sebut dengan teknik ilmiah seperti front running, sandwich Attack, Flash Loan Attack, dll.
 
 **Keamanan Kepatuhan**
 
-Persyaratan kepatuhan adalah topik yang sangat besar, AML “anti money laundering” (Anti Pencucian Uang) yang disebutkan sebelumnya hanyalah salah satu poinnya. Ada juga aspek seperti KYC (Kenali Pelanggan Anda), sanksi, risiko sekuritas, dll. Sebenarnya bagi kami pengguna, hal ini bukanlah sesuatu yang berada di bawah kendali kami. Saat kami berinteraksi dengan proyek tertentu, karena proyek tersebut mungkin tunduk pada peraturan terkait di negara tertentu, informasi privasi kami mungkin dikumpulkan. Anda mungkin tidak peduli dengan masalah privasi seperti itu, tetapi ada orang yang peduli.
+Persyaratan kepatuhan adalah topik yang sangat besar, AML "anti money laundering" (Anti Pencucian Uang) yang disebutkan sebelumnya hanyalah salah satu poinnya. Ada juga aspek seperti KYC (Kenali Pelanggan Anda), sanksi, risiko sekuritas, dll. Sebenarnya bagi kami pengguna, hal ini bukanlah sesuatu yang berada di bawah kendali kami. Saat kami berinteraksi dengan proyek tertentu, karena proyek tersebut mungkin tunduk pada peraturan terkait di negara tertentu, informasi privasi kami mungkin dikumpulkan. Anda mungkin tidak peduli dengan masalah privasi seperti itu, tetapi ada orang yang peduli.
 
 Misalnya, di awal tahun 2022 terjadi insiden kecil: beberapa dompet memutuskan untuk mendukung protokol Address Ownership Proof Protocol (AOPP):
 
@@ -473,7 +474,7 @@ Seperti yang Anda lihat, ini adalah insiden kecil tetapi bagi sebagian orang, pr
 
 Sejauh ini, kami telah membahas sebagian besar konten di bagian Keamanan DeFi.
 
-Terlebih lagi, ada juga masalah keamanan yang disebabkan oleh penambahan atau pembaruan di masa mendatang. Kita sering mengatakan “postur keamanan itu dinamis, bukan statis”. Misalnya saat ini sebagian besar tim proyek melakukan audit keamanan dan menampilkan laporan audit keamanan yang bersih. Jika Anda pernah membaca laporan berkualitas baik dengan cermat, Anda akan melihat bahwa laporan ini akan dengan jelas menjelaskan cakupan, jangka waktu, dan pengidentifikasi unik dari konten yang diaudit (misalnya alamat kontrak pintar sumber terbuka yang terverifikasi, atau alamat penerapan di repo GitHub, atau hash dari file kode sumber target). Artinya, laporan tersebut statis, tetapi jika dalam suatu proyek Anda mengamati adanya penyimpangan dari apa yang disebutkan dalam laporan, Anda dapat melihatnya.
+Terlebih lagi, ada juga masalah keamanan yang disebabkan oleh penambahan atau pembaruan di masa mendatang. Kita sering mengatakan "postur keamanan itu dinamis, bukan statis". Misalnya saat ini sebagian besar tim proyek melakukan audit keamanan dan menampilkan laporan audit keamanan yang bersih. Jika Anda pernah membaca laporan berkualitas baik dengan cermat, Anda akan melihat bahwa laporan ini akan dengan jelas menjelaskan cakupan, jangka waktu, dan pengidentifikasi unik dari konten yang diaudit (misalnya alamat kontrak pintar sumber terbuka yang terverifikasi, atau alamat penerapan di repo GitHub, atau hash dari file kode sumber target). Artinya, laporan tersebut statis, tetapi jika dalam suatu proyek Anda mengamati adanya penyimpangan dari apa yang disebutkan dalam laporan, Anda dapat melihatnya.
 
 ### Keamanan NFT
 
@@ -488,7 +489,7 @@ Metadata terutama mengacu pada gambar yang disematkan, gambar bergerak, dan kont
 
 Ada dua masalah keamanan utama yang mungkin timbul di sini:
 
-* Salah satunya adalah URI yaitu tempat penyimpanan gambar (atau film) berada mungkin tidak dapat dipercaya. Bisa saja berupa layanan terpusat yang dipilih secara acak, di satu sisi tidak ada jaminan ketersediaan, di sisi lain tim proyek bisa memodifikasi gambar sesuka hati, sehingga NFT tidak lagi menjadi “barang koleksi digital” yang tidak dapat diubah. Umumnya disarankan untuk menggunakan solusi penyimpanan terdesentralisasi seperti IPFS, Arweave, dan pilih layanan gateway URI yang terkenal.
+* Salah satunya adalah URI yaitu tempat penyimpanan gambar (atau film) berada mungkin tidak dapat dipercaya. Bisa saja berupa layanan terpusat yang dipilih secara acak, di satu sisi tidak ada jaminan ketersediaan, di sisi lain tim proyek bisa memodifikasi gambar sesuka hati, sehingga NFT tidak lagi menjadi "barang koleksi digital" yang tidak dapat diubah. Umumnya disarankan untuk menggunakan solusi penyimpanan terdesentralisasi seperti IPFS, Arweave, dan pilih layanan gateway URI yang terkenal.
 * Potensi lainnya adalah potensi kebocoran privasi. Layanan URI yang dipilih secara acak mungkin menangkap informasi dasar pengguna (seperti IP, Agen-Pengguna, dll)
 
 SKeamanan penandatanganan (signing) adalah masalah besar lainnya di sini, dan kami akan mengilustrasikannya di bawah.
@@ -499,26 +500,26 @@ Keamanan tanda tangan adalah sesuatu yang ingin saya bahas secara spesifik karen
 
 Prinsip keamanan NO.1 dan paling penting dalam keamanan tanda tangan adalah: **Apa yang Anda lihat adalah apa yang Anda tandatangani**. Artinya, pesan dalam permintaan tanda tangan yang Anda terima adalah apa yang Anda harapkan setelah penandatanganan (signing). Setelah Anda menandatanganinya, hasilnya harus seperti yang Anda harapkan, bukan sesuatu yang akan Anda sesali.
 
-Beberapa rincian keamanan tanda tangan telah disebutkan di bagian “Dompet Dingin”. Jika Anda tidak dapat mengingatnya, saya sarankan Anda mengunjungi kembali bagian itu. Pada bagian ini, kami akan fokus pada aspek lainnya.
+Beberapa rincian keamanan tanda tangan telah disebutkan di bagian "Dompet Dingin". Jika Anda tidak dapat mengingatnya, saya sarankan Anda mengunjungi kembali bagian itu. Pada bagian ini, kami akan fokus pada aspek lainnya.
 
 Ada beberapa peretasan NFT yang terkenal di OpenSea sekitar tahun 2022. Pada tanggal 20 Februari 2022, terjadi wabah besar (banyak insiden). Akar penyebabnya adalah:
 
 * Pengguna menandatangani permintaan daftar (listing) NFT di OpenSea.
 * Hacker melakukan phishing untuk mendapatkan tanda tangan yang relevan dari pengguna.
 
-Sebenarnya tidak sulit bagi Hacker untuk mendapatkan tanda tangan terkait. Hacker perlu 1). menyusun pesan yang akan ditandatangani, 2). meng hash itu, 3). mengelabui pengguna target untuk menandatangani permintaan (ini akan menjadi penandatanganan buta atau “blind signing”, yang berarti pengguna tidak benar-benar tahu apa yang mereka tandatangani), 4). dapatkan konten yang ditandatangani dan buat datanya. Pada titik ini, pengguna telah dihack.
+Sebenarnya tidak sulit bagi Hacker untuk mendapatkan tanda tangan terkait. Hacker perlu 1). menyusun pesan yang akan ditandatangani, 2). meng hash itu, 3). mengelabui pengguna target untuk menandatangani permintaan (ini akan menjadi penandatanganan buta atau "blind signing", yang berarti pengguna tidak benar-benar tahu apa yang mereka tandatangani), 4). dapatkan konten yang ditandatangani dan buat datanya. Pada titik ini, pengguna telah dihack.
 
 Saya akan menggunakan Opensea sebagai contoh (pada kenyataannya, ini bisa berupa pasar NFT APAPUN). Setelah pengguna target mengotorisasi operasi pencatatan (Signing) NFT di pasar, Hacker akan membuat pesan untuk ditandatangani. Setelah melakukan hashing dengan Keccak256, permintaan tanda tangan akan muncul di halaman phishing. Pengguna akan melihat sesuatu seperti berikut:
 
 <img src="res/metamask_sign.jpg" width="360">
 
-Perhatikan baik-baik. Informasi apa saja yang bisa kita peroleh dari jendela popup MetaMask ini? Info Akun dan saldo akun, situs web sumber asal permintaan tanda tangan, pesan yang akan ditandatangani pengguna dan…tidak ada yang lain. Bagaimana pengguna bisa curiga bahwa bencana sedang terjadi? Dan bagaimana mereka bisa menyadari bahwa begitu mereka mengklik tombol “Tanda Tangan”, NFT mereka akan dicuri.
+Perhatikan baik-baik. Informasi apa saja yang bisa kita peroleh dari jendela popup MetaMask ini? Info Akun dan saldo akun, situs web sumber asal permintaan tanda tangan, pesan yang akan ditandatangani pengguna dan…tidak ada yang lain. Bagaimana pengguna bisa curiga bahwa bencana sedang terjadi? Dan bagaimana mereka bisa menyadari bahwa begitu mereka mengklik tombol "Tanda Tangan", NFT mereka akan dicuri.
 
 Ini sebenarnya adalah contoh penandatanganan buta (blind signing). Pengguna tidak diharuskan masuk ke pasar NFT. Sebaliknya, pengguna dapat tertipu ke situs web phishing mana pun untuk menandatangani pesan tanpa sepenuhnya memahami arti sebenarnya dan konsekuensi dari tanda tangan tersebut. Sayangnya, Hacker mengetahuinya. Sebagai pengguna, perlu diingat: JANGAN PERNAH BLIND SIGN APA PUN. OpenSea dulunya mempunyai masalah penandatanganan buta, dan mereka memperbaikinya dengan mengadopsi EIP-712 setelah 20 Februari 2022. Namun, tanpa penandatanganan buta, pengguna masih bisa ceroboh dan diretas dengan cara lain.
 
 Alasan paling penting mengapa hal ini terjadi adalah penandatanganan tidak dibatasi untuk mengikuti kebijakan asal yang sama pada browser. Anda dapat memahaminya sebagai berikut: kebijakan asal yang sama dapat memastikan bahwa suatu tindakan hanya terjadi pada domain tertentu dan tidak akan melintasi domain, kecuali tim proyek dengan sengaja menginginkan terjadinya penyeberangan domain. Jika penandatanganan mengikuti kebijakan asal yang sama, bahkan jika pengguna menandatangani permintaan tanda tangan yang dihasilkan oleh domain non-target, Hacker tidak dapat menggunakan tanda tangan tersebut untuk menyerang di bawah domain target. Saya akan berhenti di sini sebelum membahas lebih detail. Saya telah memperhatikan usulan baru mengenai peningkatan keamanan di tingkat protokol, dan saya berharap situasi ini dapat diperbaiki secepatnya.
 
-Kami telah menyebutkan sebagian besar format serangan utama yang dapat terjadi saat menandatangani (signing) pesan, namun sebenarnya ada beberapa varian. Betapapun berbedanya penampilan mereka, mereka mengikuti pola yang sama. Cara terbaik untuk memahaminya adalah dengan mereproduksi sendiri serangan dari awal hingga akhir, atau bahkan membuat beberapa metode serangan unik. Misalnya, serangan permintaan tanda tangan yang disebutkan di sini sebenarnya berisi banyak detail, seperti bagaimana membuat pesan yang akan ditandatangani, dan apa yang sebenarnya dihasilkan setelah penandatanganan? Apakah ada metode otorisasi selain “Setujui” (ya, misalnya: peningkatan Tunjangan). Ya, akan terlalu teknis jika kita memperluasnya di sini. Hal baiknya adalah Anda sudah memahami pentingnya menandatangani pesan.
+Kami telah menyebutkan sebagian besar format serangan utama yang dapat terjadi saat menandatangani (signing) pesan, namun sebenarnya ada beberapa varian. Betapapun berbedanya penampilan mereka, mereka mengikuti pola yang sama. Cara terbaik untuk memahaminya adalah dengan mereproduksi sendiri serangan dari awal hingga akhir, atau bahkan membuat beberapa metode serangan unik. Misalnya, serangan permintaan tanda tangan yang disebutkan di sini sebenarnya berisi banyak detail, seperti bagaimana membuat pesan yang akan ditandatangani, dan apa yang sebenarnya dihasilkan setelah penandatanganan? Apakah ada metode otorisasi selain "Setujui" (ya, misalnya: peningkatan Tunjangan). Ya, akan terlalu teknis jika kita memperluasnya di sini. Hal baiknya adalah Anda sudah memahami pentingnya menandatangani pesan.
 
 Pengguna dapat mencegah serangan tersebut pada sumbernya dengan membatalkan otorisasi/persetujuan. Berikut ini adalah beberapa alat (tools) terkenal yang dapat Anda gunakan.
 
@@ -537,18 +538,18 @@ Pengguna dapat mencegah serangan tersebut pada sumbernya dengan membatalkan otor
 
 * Rabby extension wallet
     >https://rabby.io/<br>
-    >Salah satu dompet yang sering kami kolaborasi. Jumlah blockchain yang kompatibel dengan EVM di mana mereka menyediakan fungsi “pemeriksaan dan pembatalan otorisasi” adalah yang terbanyak yang pernah saya lihat
+    >Salah satu dompet yang sering kami kolaborasi. Jumlah blockchain yang kompatibel dengan EVM di mana mereka menyediakan fungsi "pemeriksaan dan pembatalan otorisasi" adalah yang terbanyak yang pernah saya lihat
 
 :warning:**Catatan**: Jika Anda ingin pemahaman yang lebih komprehensif dan mendalam tentang SIGNATURE SECURITY, silakan periksa ekstensi pada penambahan repositori berikut sebagai referensi:
 
 >https://github.com/evilcos/darkhandbook<br>
 >Memang benar bahwa pengetahuan tentang KEAMANAN TANDA TANGAN cukup menantang bagi pemula. Repositori ini mengkompilasi konten yang relevan, dan membacanya dengan cermat akan membantu Anda memahami pengetahuan keamanan. Dengan demikian, Anda tidak akan kesulitan lagi. (Jika Anda bisa membaca dan memahami semuanya, saya yakin pengetahuan keamanan tidak lagi sulit bagi Anda :)
 
-### HATI-HATI Dengan Permintaan Tanda Tangan karena “ini tampak biasa saja atau normal”!
+### HATI-HATI Dengan Permintaan Tanda Tangan karena "ini tampak biasa saja atau normal"!
 
 Saya ingin menyebutkan secara khusus risiko lain: **risiko kontra-intuitif**.
 
-Apa itu kontra-intuitif? Misalnya, Anda sudah sangat familiar dengan Ethereum, dan telah menjadi OG dari semua jenis DeFi dan NFT. Saat pertama kali memasuki ekosistem Solana, Anda mungkin akan menemukan beberapa situs phishing serupa. Anda mungkin merasa sangat siap sehingga Anda mulai berpikir, “Saya telah melihatnya ribuan kali di ekosistem Ethereum dan bagaimana saya bisa tertipu?”
+Apa itu kontra-intuitif? Misalnya, Anda sudah sangat familiar dengan Ethereum, dan telah menjadi OG dari semua jenis DeFi dan NFT. Saat pertama kali memasuki ekosistem Solana, Anda mungkin akan menemukan beberapa situs phishing serupa. Anda mungkin merasa sangat siap sehingga Anda mulai berpikir, "Saya telah melihatnya ribuan kali di ekosistem Ethereum dan bagaimana saya bisa tertipu?"
 
 Sementara itu, Hacker akan senang karena Anda telah tertipu. Orang-orang yang terlalu mengikuti perasaan intuitif mereka itu membuat mereka ceroboh. Ketika terjadi serangan seperti ini, orang-orang akan jatuh ke dalam perangkap.
 
@@ -556,16 +557,16 @@ Oke, mari kita lihat kasus nyata yang memanfaatkan kontra-intuitif.
 
 <img src="res/solana_nft_phishing.jpg" width="800">
 
-Pertama-tama, sebuah peringatan: Otorisasi phishing di Solana jauh lebih kejam. Contoh di atas terjadi pada tanggal 5 Maret 2022. Penyerang mengirimkan NFT ke pengguna secara berkelompok atau batch (Gambar 1). Pengguna memasuki situs web target melalui tautan dalam deskripsi NFT yang dijatuhkan via airdrop (www_officialsolanarares_net) dan menghubungkan dompet mereka (Gambar 2). Setelah mereka mengklik tombol “Mint” di halaman tersebut, jendela persetujuan muncul (Gambar 3). Perhatikan bahwa tidak ada pemberitahuan atau pesan khusus di jendela pop up saat ini. Setelah disetujui, semua SOL di dompet akan ditransfer.
+Pertama-tama, sebuah peringatan: Otorisasi phishing di Solana jauh lebih kejam. Contoh di atas terjadi pada tanggal 5 Maret 2022. Penyerang mengirimkan NFT ke pengguna secara berkelompok atau batch (Gambar 1). Pengguna memasuki situs web target melalui tautan dalam deskripsi NFT yang dijatuhkan via airdrop (www_officialsolanarares_net) dan menghubungkan dompet mereka (Gambar 2). Setelah mereka mengklik tombol "Mint" di halaman tersebut, jendela persetujuan muncul (Gambar 3). Perhatikan bahwa tidak ada pemberitahuan atau pesan khusus di jendela pop up saat ini. Setelah disetujui, semua SOL di dompet akan ditransfer.
 
-Saat pengguna mengklik tombol “Setujui”, mereka sebenarnya berinteraksi dengan kontrak pintar berbahaya yang digunakan oleh penyerang:
+Saat pengguna mengklik tombol "Setujui", mereka sebenarnya berinteraksi dengan kontrak pintar berbahaya yang digunakan oleh penyerang:
 *3VtjHnDuDD1QreJiYNziDsdkeALMT6b2F9j3AXdL4q8v*
 
-Tujuan akhir dari kontrak pintar berbahaya ini adalah untuk memulai “Transfer SOL”, yang mentransfer hampir semua SOL pengguna. Dari analisis data on-chain, perilaku phishing berlanjut selama beberapa hari, dan jumlah korban terus meningkat selama periode tersebut.
+Tujuan akhir dari kontrak pintar berbahaya ini adalah untuk memulai "Transfer SOL", yang mentransfer hampir semua SOL pengguna. Dari analisis data on-chain, perilaku phishing berlanjut selama beberapa hari, dan jumlah korban terus meningkat selama periode tersebut.
 
 Ada dua lubang jebakan dari contoh ini yang perlu Anda perhatikan:
 1. Setelah pengguna menyetujuinya, kontrak pintar berbahaya dapat mentransfer aset asli pengguna (dalam hal ini SOL). Hal ini tidak mungkin dilakukan di Ethereum. Otorisasi phishing pada Ethereum hanya dapat memengaruhi token lain tetapi tidak pada aset asli ETH. Ini adalah bagian kontra-intuitif yang akan membuat kewaspadaan pengguna menjadi lebih rendah.
-2. Dompet paling terkenal di Solana, Phantom, memiliki celah dalam mekanisme keamanannya sehingga tidak mengikuti prinsip “apa yang Anda lihat adalah apa yang Anda tandatangani” (kami belum menguji dompet lain), dan tidak memberikan peringatan risiko yang cukup kepada pengguna. Hal ini dapat dengan mudah menciptakan titik buta keamanan yang merugikan pengguna.
+2. Dompet paling terkenal di Solana, Phantom, memiliki celah dalam mekanisme keamanannya sehingga tidak mengikuti prinsip "apa yang Anda lihat adalah apa yang Anda tandatangani" (kami belum menguji dompet lain), dan tidak memberikan peringatan risiko yang cukup kepada pengguna. Hal ini dapat dengan mudah menciptakan titik buta keamanan yang merugikan pengguna.
 
 ### Beberapa Metodologi Penyerangan Tingkat Lanjut
 
@@ -574,7 +575,7 @@ Sebenarnya ada banyak metodologi penyerangan tingkat lanjut, namun sebagian besa
 >https://twitter.com/Arthur_0x/status/1506167899437686784
 
 Hacker mengirim email phishing dengan lampiran berikut:
->A Huge Risk of Stablecoin(Protected).docx
+>A Huge Risk of Stablecoin (Protected).docx
 
 Sejujurnya, ini adalah dokumen yang menarik. Namun, begitu dibuka komputer pengguna akan ditanamkan Trojan (umumnya melalui makro Office atau eksploitasi zero day/ 1 hari), yang biasanya berisi fungsi-fungsi berikut:
 
@@ -591,11 +592,11 @@ Trojan akan menggantikan MetaMask (asli) pengguna dengan yang palsu dan memiliki
 
 Pendekatan ini dirancang khusus untuk target terkenal dengan alamat dompet yang diketahui. Apa yang saya perhatikan adalah banyak orang yang terlalu sombong untuk mencegah diri mereka diretas. Setelah peretasan, banyak yang akan belajar dari pengalaman tersebut, melakukan peninjauan menyeluruh, mendapatkan peningkatan yang signifikan, dan juga menjalin kerja sama dan persahabatan jangka panjang dengan profesional atau lembaga keamanan tepercaya. Namun, selalu ada pengecualian di dunia ini. Beberapa orang atau proyek terus diretas berulang kali. Jika setiap kali hal ini terjadi karena sesuatu yang belum pernah ditemui sebelumnya, saya akan sangat menghormati mereka dan menyebut mereka pionir. Kemungkinan besar mereka akan sukses seiring berjalannya waktu. Sayangnya banyak insiden yang terjadi akibat kesalahan bodoh dan berulang-ulang yang sebenarnya bisa dihindari dengan mudah. Saya menyarankan untuk menjauhi proyek-proyek ini.
 
-Sebagai perbandingan, serangan phishing massal tersebut tidak canggih sama sekali. Penyerang akan menyiapkan sekumpulan nama domain yang serupa dan menyebarkan muatannya dengan membeli akun, pengikut, dan retweet di Twitter (kini “X”) atau platform sosial lainnya. Jika dikelola dengan baik, banyak orang yang akan terjerumus ke dalam perangkap. Sebenarnya tidak ada yang istimewa dalam serangan phishing semacam ini, dan biasanya penyerang akan secara brutal membuat pengguna mengotorisasi token (termasuk NFT) untuk mentransfernya.
+Sebagai perbandingan, serangan phishing massal tersebut tidak canggih sama sekali. Penyerang akan menyiapkan sekumpulan nama domain yang serupa dan menyebarkan muatannya dengan membeli akun, pengikut, dan retweet di Twitter (kini "X") atau platform sosial lainnya. Jika dikelola dengan baik, banyak orang yang akan terjerumus ke dalam perangkap. Sebenarnya tidak ada yang istimewa dalam serangan phishing semacam ini, dan biasanya penyerang akan secara brutal membuat pengguna mengotorisasi token (termasuk NFT) untuk mentransfernya.
 
 Ada jenis serangan tingkat lanjut lainnya, misalnya menggunakan teknik seperti XSS, CSRF, Reverse Proxy untuk memperlancar proses serangan. Saya tidak akan menguraikan semuanya di sini, kecuali satu kasus yang sangat khusus (Serangan Cloudflare Man-in-the-Middle) yang merupakan salah satu skenario di Reverse Proxy. Ada serangan nyata yang menyebabkan kerugian finansial dengan menggunakan metode yang sangat rahasia ini.
 
-Masalahnya di sini bukanlah Cloudflare itu sendiri yang jahat atau diretas. Sebaliknya, akun Cloudflare tim proyeklah yang disusupi. Umumnya prosesnya seperti ini: Jika Anda menggunakan Cloudflare, Anda akan melihat modul “Pekerja” (worker) ini di dashboard, yang deskripsi resminya adalah:
+Masalahnya di sini bukanlah Cloudflare itu sendiri yang jahat atau diretas. Sebaliknya, akun Cloudflare tim proyeklah yang disusupi. Umumnya prosesnya seperti ini: Jika Anda menggunakan Cloudflare, Anda akan melihat modul "Pekerja" (worker) ini di dashboard, yang deskripsi resminya adalah:
 
 >Membangun aplikasi tanpa server dan menerapkannya secara instan di seluruh dunia, mencapai kinerja, keandalan, dan skala yang luar biasa. Untuk detailnya, silakan merujuk ke
 >https://developers.cloudflare.com/workers/
@@ -635,7 +636,7 @@ Dua sumber daya berikut sangat direkomendasikan:
 >TIPS, ALAT DAN CARA KOMUNIKASI ONLINE LEBIH AMAN<br>
 >https://ssd.eff.org/
 
-SURVEILLANCE SELF-DEFENSE adalah kependekan dari SSD. Diluncurkan oleh Electronic Frontier Foundation (EFF) yang terkenal, yang secara khusus telah mengeluarkan pedoman yang relevan untuk memberi tahu Anda cara menghindari “big brother” mengawasi Anda di dunia pemantauan Internet, yang mencakup beberapa alat yang berguna (seperti Tor, WhatsApp, Signal, PGP, dll.)
+SURVEILLANCE SELF-DEFENSE adalah kependekan dari SSD. Diluncurkan oleh Electronic Frontier Foundation (EFF) yang terkenal, yang secara khusus telah mengeluarkan pedoman yang relevan untuk memberi tahu Anda cara menghindari "big brother" mengawasi Anda di dunia pemantauan Internet, yang mencakup beberapa alat yang berguna (seperti Tor, WhatsApp, Signal, PGP, dll.)
 
 >Panduan Privasi: Lawan Pengawasan dengan Alat Enkripsi dan Privasi<br>
 >https://www.privacytools.io/
@@ -648,7 +649,7 @@ Berikut adalah beberapa hal penting dari alat yang saya sarankan untuk Anda guna
 
 Windows 10 Edition (dan lebih tinggi) dan macOS keduanya merupakan opsi yang aman. Jika Anda memiliki kemampuan, Anda dapat memilih Linux, seperti Ubuntu, atau bahkan yang sangat berfokus pada keamanan & privasi seperti Tails, atau Whonix.
 
-Pada topik Sistem Operasi, prinsip keamanan yang paling jelas adalah: perhatikan baik-baik pembaruan sistem, dan terapkan secepatnya jika tersedia. Kemampuan untuk menguasai Sistem Operasi adalah yang berikutnya. Mungkin ada yang bertanya, apa sih yang perlu Anda pelajari untuk menguasai Sistem Operasi seperti Windows atau MacOS? Bukankah itu hanya sekedar mengklik? Sebenarnya itu masih jauh dari cukup. Bagi pengguna pemula, perangkat lunak antivirus yang bagus, seperti Kaspersky, BitDefender, adalah suatu keharusan, dan keduanya tersedia di MacOS.  
+Pada topik Sistem Operasi, prinsip keamanan yang paling jelas adalah: perhatikan baik-baik pembaruan sistem, dan terapkan secepatnya jika tersedia. Kemampuan untuk menguasai Sistem Operasi adalah yang berikutnya. Mungkin ada yang bertanya, apa sih yang perlu Anda pelajari untuk menguasai Sistem Operasi seperti Windows atau MacOS? Bukankah itu hanya sekedar mengklik? Sebenarnya itu masih jauh dari cukup. Bagi pengguna pemula, perangkat lunak antivirus yang bagus, seperti Kaspersky, BitDefender, adalah suatu keharusan, dan keduanya tersedia di MacOS.
 
 Lalu, jangan lupa tentang keamanan pengunduhan, yang telah saya sebutkan sebelumnya. Anda akan menghilangkan sebagian besar risiko, jika Anda tidak mengunduh dan menginstal program secara sembarangan.
 
@@ -707,7 +708,7 @@ Yang perlu saya ingatkan di sini adalah:
  
 Satu hal yang saya kagumi adalah pengenalan dan deskripsi halaman keamanan 1Password, misalnya.
 >https://1password.com/security/
-  
+
 Halaman ini berisi konsep desain keamanan, sertifikat privasi dan keamanan yang relevan, kertas putih desain keamanan, laporan audit keamanan, dll. Tingkat transparansi dan keterbukaan ini juga memfasilitasi validasi yang diperlukan dalam industri. Semua tim proyek harus belajar dari ini.
 
 Bitwarden melangkah lebih jauh karena sepenuhnya open source, termasuk sisi server, sehingga siapa pun dapat memvalidasi, mengaudit, dan berkontribusi. Sekarang kamu paham? Maksud dari 1Password dan Bitwarden sangat jelas: 
@@ -736,7 +737,7 @@ Ketika berbicara tentang penyedia layanan Email, Anda harus memilih dari raksasa
 
 Jika Anda menemukan serangan yang sangat canggih terhadap penyedia layanan Email Anda, Anda sendirian.
 
-Selain layanan email dari raksasa teknologi ini, jika Anda sangat mengkhawatirkan privasi, Anda dapat melihat dua layanan email terkenal yang ramah privasi ini: ProtonMail dan Tutanota. Saran saya adalah untuk memisahkan kotak surat ramah Privasi ini dari penggunaan sehari-hari, dan hanya menggunakannya untuk layanan yang memerlukan perhatian khusus terhadap privasi. Anda juga perlu secara rutin menggunakan layanan Email gratis untuk mencegah akun Anda ditangguhkan karena tidak aktif dalam waktu lama.  
+Selain layanan email dari raksasa teknologi ini, jika Anda sangat mengkhawatirkan privasi, Anda dapat melihat dua layanan email terkenal yang ramah privasi ini: ProtonMail dan Tutanota. Saran saya adalah untuk memisahkan kotak surat ramah Privasi ini dari penggunaan sehari-hari, dan hanya menggunakannya untuk layanan yang memerlukan perhatian khusus terhadap privasi. Anda juga perlu secara rutin menggunakan layanan Email gratis untuk mencegah akun Anda ditangguhkan karena tidak aktif dalam waktu lama.
 
 ### Kartu SIM
 
@@ -781,7 +782,7 @@ Alasan sudut pandang ini adalah: dalam lingkungan Internet saat ini, privasi seb
 
 ## Keamanan Sifat Manusia
 
-Manusia selalu berada pada risiko tertinggi dan abadi. Ada kutipan dari The Three-Body Problem: “Kelemahan dan ketidaktahuan bukanlah penghalang untuk bertahan hidup, namun kesombongan adalah penghalang.”
+Manusia selalu berada pada risiko tertinggi dan abadi. Ada kutipan dari *The Three-Body Problem*: "Kelemahan dan ketidaktahuan bukanlah penghalang untuk bertahan hidup, namun kesombongan adalah penghalang."
 
 * Jangan sombong: Jika kamu berpikir kamu sudah kuat, kamu baik-baik saja dengan dirimu sendiri. Jangan meremehkan seluruh dunia. Secara khusus, jangan terlalu bangga dan berpikir Anda bisa menantang peretas global. Belajar tidak ada habisnya, dan masih banyak kendala.
 * Jangan serakah: Keserakahan memang menjadi motivasi untuk maju dalam banyak hal, tapi coba pikirkan, mengapa kesempatan bagus ini hanya diperuntukkan bagi Anda?
@@ -794,11 +795,11 @@ Harap memberikan perhatian khusus pada poin-poin diatas, dan lihat bagaimana pel
 
 Saya sudah katakan sebelumnya bahwa Telegram adalah web gelap terbesar. Saya harus mengatakan bahwa orang-orang menyukai Telegram karena keamanan, stabilitas, dan fitur desain terbukanya. Namun budaya terbuka Telegram juga menarik orang-orang jahat: sejumlah besar pengguna, fungsionalitas yang sangat dapat disesuaikan, cukup mudah untuk membangun semua jenis layanan Bot. Jika digabungkan dengan mata uang kripto, pengalaman perdagangan sebenarnya jauh melampaui pasar web gelap (dark web) di Tor.
 
-Biasanya, pengenal unik akun media sosial hanya berupa nama pengguna, id pengguna, tetapi ini dapat sepenuhnya dikloning oleh pelaku kejahatan. Beberapa platform sosial memiliki mekanisme validasi akun, seperti menambahkan ikon "(checkmark) ✓ biru” atau semacamnya. Akun media sosial publik dapat divalidasi melalui beberapa indikator, seperti jumlah pengikut, konten yang diposting, interaksi dengan penggemar, dll. Akun media sosial non-publik sedikit lebih sulit. Sangat menyenangkan melihat Telegram merilis fungsi “Grup mana yang kita ikuti bersama”.
+Biasanya, pengenal unik akun media sosial hanya berupa nama pengguna, id pengguna, tetapi ini dapat sepenuhnya dikloning oleh pelaku kejahatan. Beberapa platform sosial memiliki mekanisme validasi akun, seperti menambahkan ikon "(checkmark) ✓ biru" atau semacamnya. Akun media sosial publik dapat divalidasi melalui beberapa indikator, seperti jumlah pengikut, konten yang diposting, interaksi dengan penggemar, dll. Akun media sosial non-publik sedikit lebih sulit. Sangat menyenangkan melihat Telegram merilis fungsi "Grup mana yang kita ikuti bersama".
 
 Dimanapun ada celah yang bisa dieksploitasi dan keuntungannya besar, pasti ada sekumpulan penjahat, itu sifat manusia.
 
-Akibatnya, platform media sosial penuh dengan jebakan phishing. Misalnya: Dalam obrolan grup, seseorang yang terlihat seperti layanan pelanggan resmi tiba-tiba muncul dan memulai obrolan pribadi (obrolan pribadi apa pun adalah fitur Telegram, tidak perlu permintaan pertemanan), dan kemudian keluar dari taktik klasik spam, “ikan akan menggigit satu demi satu”
+Akibatnya, platform media sosial penuh dengan jebakan phishing. Misalnya: Dalam obrolan grup, seseorang yang terlihat seperti layanan pelanggan resmi tiba-tiba muncul dan memulai obrolan pribadi (obrolan pribadi apa pun adalah fitur Telegram, tidak perlu permintaan pertemanan), dan kemudian keluar dari taktik klasik spam, "ikan akan menggigit satu demi satu".
 
 Atau penyerang mungkin melangkah lebih jauh dan menambahkan Anda ke grup lain. Semua peserta yg membeli token di grup itu adalah akun palsu (bot), tetapi bagi Anda itu terlihat sangat realistis. Kami menyebut teknik ini sebagai Kloning Kelompok (Group Cloning) dalam komunitas underground.
 
@@ -828,7 +829,7 @@ Beberapa orang mungkin bertanya, bagaimana jika saya menambahkan otentikasi dua 
 
 Untuk pertanyaan bagaimana hacker bisa mendapatkan Discord Token, kami telah menemukan setidaknya tiga teknik utama, dan kami akan mencoba menjelaskannya secara detail di masa mendatang. Bagi pengguna awam, banyak hal yang bisa dilakukan, namun poin intinya adalah: jangan terburu-buru, jangan serakah, dan verifikasi dari berbagai sumber.
 
-### Phishing “Resmi”
+### Phishing "Resmi"
 
 Aktor jahat pandai memanfaatkan permainan peran, terutama peran resmi. Misalnya kami telah menyebutkan metode layanan pelanggan palsu sebelumnya. Selain itu, pada bulan April 2022, banyak pengguna dompet perangkat keras (Hardware wallet) terkenal Trezor, menerima email phishing dari trezor.us, yang bukan merupakan domain resmi Trezor trezor.io. Ada sedikit perbedaan pada akhiran nama domain. Terlebih lagi, domain berikut juga disebarkan melalui email phishing.
 
@@ -836,7 +837,7 @@ Aktor jahat pandai memanfaatkan permainan peran, terutama peran resmi. Misalnya 
 
 <img src="res/trezor_phishing.jpg" width="800">
 
-Nama domain ini memiliki “sorotan”, perhatikan baik-baik huruf “ẹ” di dalamnya, dan Anda akan menemukan bahwa itu bukan huruf “e”. Membingungkan? Ini sebenarnya adalah Punycode, deskripsi standarnya seperti di bawah ini:
+Nama domain ini memiliki "sorotan", perhatikan baik-baik huruf "ẹ" di dalamnya, dan Anda akan menemukan bahwa itu bukan huruf "e". Membingungkan? Ini sebenarnya adalah Punycode, deskripsi standarnya seperti di bawah ini:
 
 >Pengkodean Bootstring Unicode untuk Nama Domain Internasional dalam Aplikasi (IDNA)
 >adalah pengkodean nama domain internasional yang mewakili sekumpulan karakter terbatas dalam kode Unicode dan ASCII.
@@ -851,13 +852,13 @@ Jika itu adalah orang dalam (insider) yang jahat, pengguna tidak dapat berbuat a
 
 ### Masalah Privasi Web3
 
-Dengan semakin populernya Web3, semakin banyak proyek menarik atau serupa bermunculan: seperti semua jenis infrastruktur Web3, platform sosial, dll. Beberapa di antaranya telah melakukan analisis data besar-besaran dan mengidentifikasi berbagai “potret perilaku target”, tidak hanya di sisi blockchain, tetapi juga pada platform Web2 terkenal. Begitu data data terkumpul, target pada dasarnya seperti orang yang transparan. Dan kemunculan platform sosial Web3 juga dapat memperburuk masalah privasi tersebut.
+Dengan semakin populernya Web3, semakin banyak proyek menarik atau serupa bermunculan: seperti semua jenis infrastruktur Web3, platform sosial, dll. Beberapa di antaranya telah melakukan analisis data besar-besaran dan mengidentifikasi berbagai "potret perilaku target", tidak hanya di sisi blockchain, tetapi juga pada platform Web2 terkenal. Begitu data data terkumpul, target pada dasarnya seperti orang yang transparan. Dan kemunculan platform sosial Web3 juga dapat memperburuk masalah privasi tersebut.
 
 Pikirkan tentang hal ini, ketika Anda bermain-main dengan semua hal yang berhubungan dengan Web3 ini, seperti binding tanda tangan (signature) , interaksi on-chain, dll., apakah Anda memberikan lebih banyak privasi Anda? Banyak yang mungkin tidak setuju, namun seiring dengan banyaknya bagian yang digabungkan, akan ada gambaran yang lebih akurat dan komprehensif: NFT mana yang ingin Anda kumpulkan, komunitas mana yang Anda ikuti, White list (WL) mana yang Anda ikuti, dengan siapa Anda terhubung, akun Web2 mana Anda terikat, periode waktu apa Anda aktif, dan sebagainya. Lihat, blockchain terkadang memperburuk privasi. Jika Anda peduli dengan privasi, Anda harus berhati-hati dengan segala hal yang baru muncul dan menjaga kebiasaan baik dalam memisahkan identitas Anda.
 
 Pada titik ini, jika kunci pribadi dicuri secara tidak sengaja, kerugiannya tidak sesederhana hanya uang, tetapi semua hak dan kepentingan Web3 yang dijaga dengan hati-hati. Kami sering mengatakan bahwa kunci pribadi adalah identitas, dan sekarang Anda memiliki masalah ID yang sebenarnya.
 
-Jangan pernah “menguji” sifat manusia.
+Jangan pernah "menguji" sifat manusia.
 
 # Kejahatan Blockchain
 
@@ -872,6 +873,24 @@ Sementara itu, tim SlowMist telah memelihara dan memperbarui SlowMist Hacked —
 >https://hacked.slowmist.io/
 
 Buku pegangan (handbook) ini telah memperkenalkan banyak langkah keamanan, dan jika Anda dapat menerapkannya pada keamanan Anda sendiri, maka selamat untuk anda. Saya tidak akan menjelaskan terlalu banyak tentang kejahatan blockchain. Jika Anda tertarik, Anda dapat mempelajarinya sendiri, yang tentunya merupakan hal yang baik, terutama karena penipuan dan penipuan baru terus berkembang. Semakin banyak Anda belajar, semakin baik Anda dapat mempertahankan diri dan menjadikan industri ini lebih baik.
+
+# Apa yang Harus Dilakukan Jika Komputer Anda "terkompromi"
+
+Beberapa kelompok Hacker menggunakan peracunan komputer, sering kali tidak melalui teknik zero-day tingkat lanjut (seperti browser zero-days) tetapi melalui induksi rekayasa sosial. Contohnya termasuk menyamar sebagai investor, jurnalis, HRD, dll., untuk mengelabui pengguna agar memasang perangkat lunak konferensi palsu. Metode lain melibatkan menyamar sebagai "Telegram Safeguard" atau memerlukan "verifikasi manusia via Cloudflare" untuk mengelabui pengguna agar bisa menyisipkan kode berbahaya secara lokal (kedalam PC).
+
+Contoh taktik semacam itu dapat ditemukan di sini:
+> https://x.com/SlowMist_Team/status/1899713751625969997<br>
+> https://x.com/SlowMist_Team/status/1880520294496104827<br>
+> https://x.com/SlowMist_Team/status/1888879128172241000
+
+Jika Anda menjadi korban dari serangan semacam itu, sebaiknya Anda bersikap hati-hati dan menghindari menempatkan diri Anda dalam posisi yang (lebih) berbahaya. Anda harus mengambil langkah-langkah berikut:
+
+1. Jika Anda memiliki wallet yang digunakan di komputer Anda (termasuk kunci pribadi/file cadangan frasa mnemonik), Anda harus segera dan aman mentransfer dana dari wallet tersebut. Jangan berasumsi bahwa memiliki kata sandi sudah cukup.
+2. Ubah kata sandi dan 2FA untuk akun penting di komputer Anda, seperti akun Telegram/X/email/exchange, dll. (termasuk kata sandi yang tersimpan/akun yang login di browser), dan periksa akun tersebut untuk login perangkat yang tidak dikenal. Jangan berandai andai anda terhindar dari kemalangan (selalu berpikir skenario terburuk).
+3. Instal perangkat lunak antivirus yang bereputasi baik seperti AVG/Bitdefender/Kaspersky/Malwarebytes, dll., dan pindai komputer Anda secara menyeluruh. Putuskan mana yang akan digunakan, idealnya versi berbayar. Jika Anda masih khawatir, pertimbangkan untuk membeli dua dan menggunakannya secara bergantian.
+4. Jika Anda masih khawatir, cadangkan file penting Anda, dll., lalu Anda dapat mengatur ulang komputer Anda… Setelah itu, kembali ke langkah sebelumnya (langkah 3) dan pindai file cadangan Anda dengan antivirus.
+
+Perlu dicatat bahwa serangan peracunan ini tidak hanya menargetkan komputer Windows tetapi juga Mac, dan terkadang kompatibel dengan beberapa bagian Linux.
 
 # Apa Yang Harus Dilakukan Ketika Anda Diretas
 
@@ -895,19 +914,19 @@ Hal ini sangat penting karena kami telah beberapa kali menjumpai lokasi insiden 
 
 ## Analisis Akar Masalah
 
-Tujuan menganalisis penyebabnya adalah untuk memahami siapa lawan anda dan “menampilkan potret” hacker. Pada titik ini, laporan kejadian yang disebut juga Post Mortem Report menjadi sangat penting. Laporan Insiden dan Laporan Post Mortem (Post mortem report) mengacu pada hal yang sama.
+Tujuan menganalisis penyebabnya adalah untuk memahami siapa lawan anda dan "menampilkan potret" hacker. Pada titik ini, laporan kejadian yang disebut juga Post Mortem Report menjadi sangat penting. Laporan Insiden dan Laporan Post Mortem (Post mortem report) mengacu pada hal yang sama.
 
 Kami telah bertemu begitu banyak orang yang datang kepada kami untuk meminta bantuan setelah token/koin mereka dicuri, dan sangat sulit bagi kebanyakan dari mereka untuk menceritakan dengan jelas apa yang terjadi. Lebih sulit lagi bagi mereka untuk menghasilkan laporan kejadian yang jelas. Tapi menurut saya ini bisa dipraktekkan dan akan membantu jika mengacu pada contoh. Berikut ini bisa menjadi titik awal yang baik:
 
 * Rangkuman 1: Siapa saja yang terlibat, kapan kejadiannya, apa yang terjadi, dan berapa total kerugiannya?
 * Rangkuman 2: Alamat dompet (wallet address) terkait dengan kehilangan, alamat dompet peretas, jenis koin, jumlah koin. Ini bisa menjadi lebih jelas hanya dengan bantuan satu tabel.
-* Deskripsi proses: bagian ini adalah yang paling sulit. Anda perlu mendeskripsikan semua aspek kejadian dengan segala detailnya, yang berguna untuk menganalisis berbagai macam jejak yang terkait dengan peretas dan pada akhirnya “mendapatkan potret” Hacker dari mereka (termasuk motivasinya)
+* Deskripsi proses: bagian ini adalah yang paling sulit. Anda perlu mendeskripsikan semua aspek kejadian dengan segala detailnya, yang berguna untuk menganalisis berbagai macam jejak yang terkait dengan peretas dan pada akhirnya "mendapatkan potret" Hacker dari mereka (termasuk motivasinya)
 
 Jika menyangkut kasus tertentu, template nya akan jauh lebih kompleks. Terkadang ingatan manusia juga tidak dapat diandalkan, dan bahkan terdapat penyembunyian informasi penting yang disengaja yang menyebabkan waktu terbuang percuma atau waktu tertunda. Jadi dalam praktiknya, butuh upaya dan sumber daya yang besar (dari kami) dan kami perlu menggunakan pengalaman kami untuk memandu pekerjaan dengan baik. Terakhir, kami akan membuat laporan insiden dengan orang atau tim yang kehilangan koin, dan terus meng update laporan kejadian ini.
 
 ## Penelusuran Sumber (source tracing)
 
-Menurut Hukum Rocca (Rocca’s Law), dimana ada invasi, disitu ada jejak. Jika kita menyelidikinya dengan cukup teliti, kita akan selalu menemukan beberapa petunjuk. Proses investigasi sebenarnya adalah analisis forensik dan penelusuran sumber. Kami akan menelusuri sumber berdasarkan “potret Hacker” dari analisis forensik, dan terus memperkayanya, yang merupakan proses dinamis dan berulang.
+Menurut Hukum Rocca (Rocca’s Law), dimana ada invasi, disitu ada jejak. Jika kita menyelidikinya dengan cukup teliti, kita akan selalu menemukan beberapa petunjuk. Proses investigasi sebenarnya adalah analisis forensik dan penelusuran sumber. Kami akan menelusuri sumber berdasarkan "potret Hacker" dari analisis forensik, dan terus memperkayanya, yang merupakan proses dinamis dan berulang.
 
 Penelusuran sumber terdiri dari dua bagian utama:
 
@@ -948,7 +967,7 @@ Sejak awal, buku panduan ini memberitahu Anda untuk tetap skeptis! Ini mencakup 
 
 ## Kode Adalah Hukum (code is law)
 
-Kode adalah hukum. Namun, ketika sebuah proyek (terutama yang terkait dengan kontrak pintar) diretas atau dirusak, tidak ada satupun korban yang menginginkan “Code Is Law”, dan ternyata mereka masih harus bergantung pada hukum di dunia nyata.
+Kode adalah hukum. Namun, ketika sebuah proyek (terutama yang terkait dengan kontrak pintar) diretas atau dirusak, tidak ada satupun korban yang menginginkan "Code Is Law", dan ternyata mereka masih harus bergantung pada hukum di dunia nyata.
 
 ## Bukan Kunci Anda, Bukan Koin Anda
 
@@ -966,7 +985,7 @@ Kriptografi sangat kuat dan penting. Tanpa semua kerja keras para kriptografer, 
 
 Bukankah blockchain sangat aman sehingga butuh triliunan tahun untuk memecahkan kunci pribadi? Kenapa FBI bisa mendekripsi Dark Web Bitcoin? Mengapa NFT Jay Chou bisa dicuri?
 
-Saya dapat memaklumi pertanyaan-pertanyaan pemula ini… yang tidak dapat saya mengerti adalah kenyataan bahwa banyak yang disebut profesional keamanan menggunakan konsep keamanan kriptografi untuk “menipu” publik, mereka menyebutkan istilah-istilah seperti “enkripsi tingkat militer, enkripsi terbaik dunia , enkripsi tingkat kosmik, keamanan sistem absolut, tidak dapat diretas, dll.”
+Saya dapat memaklumi pertanyaan-pertanyaan pemula ini… yang tidak dapat saya mengerti adalah kenyataan bahwa banyak yang disebut profesional keamanan menggunakan konsep keamanan kriptografi untuk "menipu" publik, mereka menyebutkan istilah-istilah seperti "enkripsi tingkat militer, enkripsi terbaik dunia , enkripsi tingkat kosmik, keamanan sistem absolut, tidak dapat diretas, dll."
 
 Hacker? Mereka tidak peduli…
 
@@ -986,7 +1005,7 @@ Dari sudut pandang kemungkinan, Hacking adalah fenomena umum, biasanya sebagian 
 
 Seringkali buku pegangan (handbook) ini menyarankan untuk memperhatikan pembaruan. Jika ada pembaruan keamanan yang tersedia, segera terapkan. Sekarang pikirkan baik-baik, apakah ini solusi terbaik?
 
-Sebenarnya, dalam banyak kasus, “perbarui sekarang” adalah hal yang benar untuk dilakukan. Namun, ada kalanya dalam sejarah ketika pembaruan menyelesaikan satu masalah namun menimbulkan masalah lain. Contohnya adalah iPhone dan Google Authenticator:
+Sebenarnya, dalam banyak kasus, "perbarui sekarang" adalah hal yang benar untuk dilakukan. Namun, ada kalanya dalam sejarah ketika pembaruan menyelesaikan satu masalah namun menimbulkan masalah lain. Contohnya adalah iPhone dan Google Authenticator:
 
 >Ada risiko pembaruan (di) iOS 15 terbaru, yaitu informasi di Google Authenticator mungkin terhapus atau digandakan setelah pembaruan iPhone. Dalam hal ini, jangan pernah menghapus entri duplikat jika ternyata entri tersebut digandakan, karena dapat menyebabkan hilangnya semua informasi di Google Authenticator setelah dibuka kembali. Bagi yang belum mengupgrade ke sistem iOS 15 dan menggunakan Google Authenticator, sangat disarankan untuk melakukan backup sebelum melakukan upgrade.
 
@@ -1000,11 +1019,11 @@ Ingatlah bahwa buku pegangan (handbook) ini dimulai dengan diagram ini :)
 
 ![](res/web3_hacking_map.jpg)
 
-Pernahkah Anda memperhatikan bahwa saya telah menandai dengan “orang” (manusia) dalam diagram dengan warna merah?, Saya melakukannya untuk mengingatkan kembali semua orang bahwa manusia adalah dasar dari segalanya (disebut sebagai “prinsip antropik” dalam kosmologi). Tidak peduli apakah itu keamanan sifat manusia, atau kemampuan menguasai keterampilan keamanan, semuanya tergantung pada Anda. Ya, jika Anda cukup kuat, tidak ada yang bisa dengan mudah menyakiti Anda. 
+Pernahkah Anda memperhatikan bahwa saya telah menandai dengan "orang" (manusia) dalam diagram dengan warna merah?, Saya melakukannya untuk mengingatkan kembali semua orang bahwa manusia adalah dasar dari segalanya (disebut sebagai "prinsip antropik" dalam kosmologi). Tidak peduli apakah itu keamanan sifat manusia, atau kemampuan menguasai keterampilan keamanan, semuanya tergantung pada Anda. Ya, jika Anda cukup kuat, tidak ada yang bisa dengan mudah menyakiti Anda. 
 
 Saya mulai memperluas berdasarkan diagram, dan menjelaskan banyak poin kunci keamanan dalam tiga proses, membuat dompet, membuat cadangan dompet, dan menggunakan dompet. Lalu saya memperkenalkan perlindungan privasi tradisional. Saya menyatakan bahwa hal-hal tradisional seperti itu adalah landasan dan landasan bagi kita untuk tetap aman dalam ekosistem blockchain. Bagian keamanan alam manusia tidak dapat diabaikan. Ada baiknya untuk memahami lebih banyak tentang berbagai cara melakukan kejahatan, terutama jika Anda pernah terjatuh kedalam lubang, kesadaran keamanan di atas kertas pada akhirnya dapat menjadi pengalaman keamanan Anda. Tidak ada keamanan mutlak, jadi saya menjelaskan apa yang harus dilakukan jika Anda diretas. Saya tidak ingin kejadian buruk menimpa Anda, namun jika hal itu terjadi, saya harap buku panduan (handbook) ini dapat membantu Anda. Hal terakhir adalah membicarakan beberapa kesalahpahaman (misconception). Niat saya sangat sederhana, saya harap Anda dapat membangun pemikiran kritis Anda sendiri, karena dunia ini indah (dan juga) sekaligus mengerikan. 
 
-Saya sudah lama tidak menulis begitu banyak kata. Saya rasa terakhir kali adalah 10 tahun yang lalu ketika saya menulis buku “Web 前端黑客技术揭秘”. Rasanya cukup pahit. Setelah bertahun-tahun berkecimpung dalam keamanan web dan keamanan siber, saya memimpin tim untuk membuat ZoomEye, mesin pencari dunia maya. Dalam bidang keamanan siber, saya telah berkecimpung di banyak bidang, hanya beberapa di antaranya yang dapat saya katakan sebagai keahlian saya.
+Saya sudah lama tidak menulis begitu banyak kata. Saya rasa terakhir kali adalah 10 tahun yang lalu ketika saya menulis buku *Web 前端黑客技术揭秘*. Rasanya cukup pahit. Setelah bertahun-tahun berkecimpung dalam keamanan web dan keamanan siber, saya memimpin tim untuk membuat ZoomEye, mesin pencari dunia maya. Dalam bidang keamanan siber, saya telah berkecimpung di banyak bidang, hanya beberapa di antaranya yang dapat saya katakan sebagai keahlian saya.
 
 Sekarang dalam keamanan blockchain, SlowMist dan saya sendiri dianggap sebagai pionir. Ada begitu banyak kasus yang kami temui pada tahun-tahun ini sehingga Anda hampir dapat berpikir bahwa kami berada dalam kondisi trance setiap hari. Sangat disayangkan banyak wawasan yang tidak terekam dan dibagikan. Dan alhasil, atas desakan beberapa teman, lahirlah buku panduan ini.
 
@@ -1036,7 +1055,7 @@ Prinsip keamanan:
 
 Terima kasih kepada seluruh kontributor, daftar ini akan terus diperbarui. Jika Anda punya ide, silakan hubungi:
 
->Cos, Twitter([@evilcos](https://twitter.com/evilcos))、Jike  App(@余弦.jpg)
+>Cos, Twitter ([@evilcos](https://twitter.com/evilcos)), Jike App (@余弦.jpg)
 
 Kontributor:
 ```
@@ -1056,21 +1075,21 @@ Info lebih lanjut: https://darkhandbook.io/contributors.html
 
 ## Alat2nya (tools)
 
-Buku pegangan ini, yang biasa disebut sebagai “Dark Handbook,”, telah tersedia selama lebih dari dua tahun, dan saya senang melihat dampaknya yang bermanfaat bagi banyak orang. Pengaruhnya terus meluas, dengan semakin banyak pendukung yang [menganjurkan pembaruan](https://github.com/evilcos/darkhandbook). Biasanya, pembaruan pada “Dark Handbook,” ini terutama terdiri dari bacaan tambahan. Tantangan dari bacaan tambahan ini adalah bahwa bacaan tersebut secara teknis rumit dan tidak mudah diakses oleh pemula. Selain itu, saya menyadari bahwa tidak semua orang ingin menginvestasikan banyak waktu untuk menguasai berbagai nuansa keamanan di blockchain. Awalnya, bagian ini bertujuan untuk merekomendasikan beberapa alat yang ramah bagi pemula, seperti dompet, ekstensi keamanan, dan alat skrip. Namun, setelah banyak pertimbangan, saya memutuskan untuk tidak mendukung produk tertentu karena cepatnya perubahan dalam industri. Meskipun manual ini telah menyoroti beberapa alat yang dapat diandalkan, masih belum pasti apakah alat tersebut akan tetap efektif atau relevan di masa depan. Mengingat tanggung jawab saya terhadap semua pembaca, harus saya akui, saya tidak yakin.
+Buku pegangan ini, yang biasa disebut sebagai "Dark Handbook", telah tersedia selama lebih dari dua tahun, dan saya senang melihat dampaknya yang bermanfaat bagi banyak orang. Pengaruhnya terus meluas, dengan semakin banyak pendukung yang [menganjurkan pembaruan](https://github.com/evilcos/darkhandbook). Biasanya, pembaruan pada "Dark Handbook" ini terutama terdiri dari bacaan tambahan. Tantangan dari bacaan tambahan ini adalah bahwa bacaan tersebut secara teknis rumit dan tidak mudah diakses oleh pemula. Selain itu, saya menyadari bahwa tidak semua orang ingin menginvestasikan banyak waktu untuk menguasai berbagai nuansa keamanan di blockchain. Awalnya, bagian ini bertujuan untuk merekomendasikan beberapa alat yang ramah bagi pemula, seperti dompet, ekstensi keamanan, dan alat skrip. Namun, setelah banyak pertimbangan, saya memutuskan untuk tidak mendukung produk tertentu karena cepatnya perubahan dalam industri. Meskipun manual ini telah menyoroti beberapa alat yang dapat diandalkan, masih belum pasti apakah alat tersebut akan tetap efektif atau relevan di masa depan. Mengingat tanggung jawab saya terhadap semua pembaca, harus saya akui, saya tidak yakin.
 
 Seperti yang telah saya nyatakan sebelumnya, ketika merekomendasikan suatu alat, saya berusaha untuk mendeskripsikannya seobjektif dan senetral mungkin. Selain itu, untuk meningkatkan keamanan, setiap pembaca harus memperhatikan hal-hal berikut:
 
-　*　Keamanan mutlak (itu) tidak ada. Mengadopsi pendekatan zero-trust dengan verifikasi berkelanjutan sangat penting dalam menghadapi lanskap yang kompleks ini. Jika salah satu alat ini menimbulkan bug, mengalami masalah keamanan, atau, dalam skenario yang lebih buruk, menyertakan pintu belakang dalam pembaruan baru, risikonya ada pada Anda untuk dikelola. Saya mendorong Anda untuk berpikir mandiri dan kritis sebelum menggunakan alat ini.
-  
-　*　Keterampilan penelitian saya terasah dengan baik, dan saya memiliki jaringan yang luas, jadi yakinlah bahwa saya akan merekomendasikan alat berkualitas jika dirasa tepat. Tidak perlu terburu-buru; jika suatu alat terbukti andal dan mendapat kepercayaan luas, saya tentu saja akan mendukungnya.
- 
-　*　Setiap orang memiliki pendekatan uniknya masing-masing, dan ini pendekatan saya.
- 
-　*　Jauhi (emosional) pengaruh harga koin.
+　* Keamanan mutlak (itu) tidak ada. Mengadopsi pendekatan zero-trust dengan verifikasi berkelanjutan sangat penting dalam menghadapi lanskap yang kompleks ini. Jika salah satu alat ini menimbulkan bug, mengalami masalah keamanan, atau, dalam skenario yang lebih buruk, menyertakan pintu belakang dalam pembaruan baru, risikonya ada pada Anda untuk dikelola. Saya mendorong Anda untuk berpikir mandiri dan kritis sebelum menggunakan alat ini.
 
-　*　Kepercayaan itu sulit dibangun, tapi dapat runtuh dalam sekejap, jadi mohon hargai halitu.
+　* Keterampilan penelitian saya terasah dengan baik, dan saya memiliki jaringan yang luas, jadi yakinlah bahwa saya akan merekomendasikan alat berkualitas jika dirasa tepat. Tidak perlu terburu-buru; jika suatu alat terbukti andal dan mendapat kepercayaan luas, saya tentu saja akan mendukungnya.
+ 
+　* Setiap orang memiliki pendekatan uniknya masing-masing, dan ini pendekatan saya.
+ 
+　* Jauhi (emosional) pengaruh harga koin.
 
-Meskipun saya tidak membuat rekomendasi alat khusus apa pun di bagian ini, saya ingin berbagi pola pikir yang berharga: pola pikir firewall. Konsep “zero trust” dan “verifikasi berkelanjutan” yang ditekankan sebelumnya sebenarnya adalah bagian dari pemikiran firewall ini.
+　* Kepercayaan itu sulit dibangun, tapi dapat runtuh dalam sekejap, jadi mohon hargai halitu.
+
+Meskipun saya tidak membuat rekomendasi alat khusus apa pun di bagian ini, saya ingin berbagi pola pikir yang berharga: pola pikir firewall. Konsep "zero trust" dan "verifikasi berkelanjutan" yang ditekankan sebelumnya sebenarnya adalah bagian dari pemikiran firewall ini.
 
 Misalnya, dalam penggunaan dompet (wallet), penandatanganan (signing) merupakan masalah utama dalam hal keamanan dana, dengan berbagai metode phishing canggih terkait penandatanganan, seperti:
 
@@ -1086,7 +1105,7 @@ Misalnya, dalam penggunaan dompet (wallet), penandatanganan (signing) merupakan 
 
 Jika dompet (wallet) Anda, ketika meminta konfirmasi tanda tangan, mengirimkan tanda tangan tepat setelah satu klik — baik karena FOMO atau tangan gemetar — maka metode penggunaan dompet ini tidak mencerminkan pola pikir firewall. Praktik yang lebih baik adalah memerlukan setidaknya dua klik; setiap klik tambahan menambah lapisan keamanan (tentu saja, jangan terlalu banyak lapisan, karena orang bisa menjadi tidak peka…). Misalnya, saya menggunakan dompet ekstensi browser seperti Rabby, MetaMask, dan OKX Wallet, dan kecuali untuk dompet uji coba, saya selalu menyandingkannya dengan dompet perangkat keras (sebaiknya dompet dengan layar lebih besar agar mudah meninjau konten yang akan ditandatangani).
 
-Pada titik ini, popup konfirmasi tanda tangan dompet ekstensi akan melakukan analisis keamanan lapisan pertama, seperti mengidentifikasi situs phishing, alamat dompet (wallet address) berisiko, “apa yang Anda lihat adalah apa yang Anda tandatangani”, dan pengenalan tanda tangan berisiko tinggi. Ini sangat penting untuk keamanan interaksi pengguna. Dompet perangkat keras (hardware wallet) menyediakan analisis keamanan lapisan kedua. Jika Anda kemudian menambahkan ekstensi keamanan dompet browser seperti Scam Sniffer, Wallet Guard, atau Pocket Universe, Anda menambahkan lapisan lain ke firewall Anda. Namun, penting untuk diingat, meskipun tidak ada peringatan risiko atas tindakan yang Anda lakukan, Anda harus tetap waspada dan menyadari bahwa pada akhirnya, Anda adalah garis pertahanan terakhir Anda sendiri…
+Pada titik ini, popup konfirmasi tanda tangan dompet ekstensi akan melakukan analisis keamanan lapisan pertama, seperti mengidentifikasi situs phishing, alamat dompet (wallet address) berisiko, "apa yang Anda lihat adalah apa yang Anda tandatangani", dan pengenalan tanda tangan berisiko tinggi. Ini sangat penting untuk keamanan interaksi pengguna. Dompet perangkat keras (hardware wallet) menyediakan analisis keamanan lapisan kedua. Jika Anda kemudian menambahkan ekstensi keamanan dompet browser seperti Scam Sniffer, Wallet Guard, atau Pocket Universe, Anda menambahkan lapisan lain ke firewall Anda. Namun, penting untuk diingat, meskipun tidak ada peringatan risiko atas tindakan yang Anda lakukan, Anda harus tetap waspada dan menyadari bahwa pada akhirnya, Anda adalah garis pertahanan terakhir Anda sendiri…
 
 Itu saja dan terima kasih!
 

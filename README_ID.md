@@ -30,7 +30,7 @@ Penterjemah:
     - [AML (anti pencucian uang)](#aml-anti-pencucian-uang)
     - [Dompet Dingin (cold wallet)](#dompet-dingin-cold-wallet)
     - [Dompet Panas (hot wallet)](#dompet-panas-hot-wallet)
-    - [Apa Itu Keamanan Defi?](#apa-itu-keamanan-defi)
+    - [Apa Itu Keamanan DeFi?](#apa-itu-keamanan-defi)
     - [Keamanan NFT](#keamanan-nft)
     - [HATI-HATI Saat Penandatanganan (signing)!](#hati-hati-saat-penandatanganan-signing)
     - [HATI-HATI Dengan Permintaan Tanda Tangan karena "ini tampak biasa saja atau normal"!](#hati-hati-dengan-permintaan-tanda-tangan-karena-ini-tampak-biasa-saja-atau-normal)

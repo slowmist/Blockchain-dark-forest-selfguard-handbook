@@ -1125,7 +1125,7 @@ MetaMask https://metamask.io/
 imToken https://token.im/
 Trust Wallet https://trustwallet.com/
 TokenPocket https://www.tokenpocket.pro/
-Gnosis Safe https://gnosis-safe.io/
+Safe (formerly Gnosis Safe) https://safe.global/
 ZenGo https://zengo.com/
 Fireblocks https://www.fireblocks.com/
 Safeheron https://www.safeheron.com/
